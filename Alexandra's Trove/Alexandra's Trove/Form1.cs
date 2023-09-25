@@ -24,12 +24,6 @@ namespace Alexandra_s_Trove
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //this.Close();
-            //LogIn.Visible = true;
-            HelpDeveloper hd = new HelpDeveloper();
-            hd.Show();
-        }
+        
     }
 }
