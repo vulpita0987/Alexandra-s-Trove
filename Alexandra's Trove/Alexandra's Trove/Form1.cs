@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Alexandra_s_Trove
 {
-    public partial class Form1 : Form
+    public partial class LogIn : Form
     {
-        public Form1()
+        public LogIn()
         {
             InitializeComponent();
         }
@@ -20,6 +20,16 @@ namespace Alexandra_s_Trove
         private void Form1_Load(object sender, EventArgs e)
         {
             //first commit
+            //gMapControl1.MapProvider = GMap.NET.MapProviders.GoogleMapProvider.Instance;
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //this.Close();
+            //LogIn.Visible = true;
+            HelpDeveloper hd = new HelpDeveloper();
+            hd.Show();
         }
     }
 }
