@@ -16,7 +16,7 @@ namespace Alexandra_s_Trove
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LogIn());
+            Application.Run(new RegisterPage());
         }
     }
 }
