@@ -16,13 +16,13 @@ namespace Alexandra_s_Trove
         public RegisterPage()
         {
             InitializeComponent();
-           
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             //first commit
-           
+
 
         }
 
@@ -50,5 +50,15 @@ namespace Alexandra_s_Trove
         private void lblFeedbackSurvey_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Actual Feedback Survey", "Feedback Survey");
+        }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            SignInPage sip = new SignInPage(); sip.Show();
+            //Form.Close();
+            Hide();// rp = new RegisterPage(); rp.Close();#
+            
+        }
     }
 }
+

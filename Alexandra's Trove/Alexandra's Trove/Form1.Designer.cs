@@ -61,7 +61,7 @@
             // DeveloperHelp
             // 
             this.DeveloperHelp.Location = new System.Drawing.Point(9, 204);
-            this.DeveloperHelp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DeveloperHelp.Margin = new System.Windows.Forms.Padding(2);
             this.DeveloperHelp.Name = "DeveloperHelp";
             this.DeveloperHelp.Size = new System.Drawing.Size(126, 31);
             this.DeveloperHelp.TabIndex = 0;
@@ -73,7 +73,7 @@
             // 
             this.picAlex.Image = ((System.Drawing.Image)(resources.GetObject("picAlex.Image")));
             this.picAlex.Location = new System.Drawing.Point(75, -1);
-            this.picAlex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picAlex.Margin = new System.Windows.Forms.Padding(2);
             this.picAlex.Name = "picAlex";
             this.picAlex.Size = new System.Drawing.Size(432, 77);
             this.picAlex.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -84,7 +84,7 @@
             // 
             this.picFiller.Image = ((System.Drawing.Image)(resources.GetObject("picFiller.Image")));
             this.picFiller.Location = new System.Drawing.Point(-2, -1);
-            this.picFiller.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picFiller.Margin = new System.Windows.Forms.Padding(2);
             this.picFiller.Name = "picFiller";
             this.picFiller.Size = new System.Drawing.Size(364, 77);
             this.picFiller.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -95,7 +95,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1001, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(333, 98);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -106,7 +106,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(-10, 682);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(1345, 45);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -117,7 +117,7 @@
             // 
             this.picBottomLine.Image = ((System.Drawing.Image)(resources.GetObject("picBottomLine.Image")));
             this.picBottomLine.Location = new System.Drawing.Point(-2, 578);
-            this.picBottomLine.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBottomLine.Margin = new System.Windows.Forms.Padding(2);
             this.picBottomLine.Name = "picBottomLine";
             this.picBottomLine.Size = new System.Drawing.Size(891, 35);
             this.picBottomLine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -128,7 +128,7 @@
             // 
             this.picMainBox.Image = ((System.Drawing.Image)(resources.GetObject("picMainBox.Image")));
             this.picMainBox.Location = new System.Drawing.Point(172, 135);
-            this.picMainBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picMainBox.Margin = new System.Windows.Forms.Padding(2);
             this.picMainBox.Name = "picMainBox";
             this.picMainBox.Size = new System.Drawing.Size(560, 389);
             this.picMainBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -140,7 +140,7 @@
             this.btnRegister.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegister.Location = new System.Drawing.Point(178, 141);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(101, 33);
             this.btnRegister.TabIndex = 11;
@@ -152,12 +152,13 @@
             this.btnSignIn.BackColor = System.Drawing.Color.White;
             this.btnSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignIn.Location = new System.Drawing.Point(633, 141);
-            this.btnSignIn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSignIn.Margin = new System.Windows.Forms.Padding(2);
             this.btnSignIn.Name = "btnSignIn";
             this.btnSignIn.Size = new System.Drawing.Size(92, 33);
             this.btnSignIn.TabIndex = 12;
             this.btnSignIn.Text = "Sign In";
             this.btnSignIn.UseVisualStyleBackColor = false;
+            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
             // 
             // txtEmailAddress
             // 
@@ -309,7 +310,7 @@
             this.Controls.Add(this.picFiller);
             this.Controls.Add(this.pictureBox1);
             this.Name = "RegisterPage";
-            this.Text = "Register Page";
+            this.Text = "Registration Page";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picAlex)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFiller)).EndInit();
