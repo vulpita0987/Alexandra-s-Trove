@@ -66,6 +66,11 @@ namespace Alexandra_s_Trove
             txtAccountCreationDate.Text = "";
         }
 
+        private void btnClientAccountDeletion_Click(object sender, EventArgs e)
+        {
+          
+        }
+
 
 
         /* private async void button1_Click(object sender, EventArgs e)

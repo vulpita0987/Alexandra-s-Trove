@@ -30,6 +30,7 @@ namespace Alexandra_s_Trove
         {
             HelpDeveloper hd = new HelpDeveloper(); hd.Show();
 
+
         }
 
         private void lblTermsConditions_Click(object sender, EventArgs e)

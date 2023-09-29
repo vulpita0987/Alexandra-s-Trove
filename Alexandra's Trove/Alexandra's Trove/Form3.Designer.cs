@@ -351,6 +351,7 @@
             this.btnClientAccountDeletion.TabIndex = 23;
             this.btnClientAccountDeletion.Text = "Delete";
             this.btnClientAccountDeletion.UseVisualStyleBackColor = true;
+            this.btnClientAccountDeletion.Click += new System.EventHandler(this.btnClientAccountDeletion_Click);
             // 
             // txtClientDOB
             // 
