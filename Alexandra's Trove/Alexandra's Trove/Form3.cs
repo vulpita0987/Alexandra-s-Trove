@@ -16,6 +16,7 @@ using GMap.NET;
 using GMap.NET.MapProviders;
 using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
+using Hangfire.Common;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
@@ -31,18 +32,7 @@ namespace Alexandra_s_Trove
             InitializeComponent();
         }
 
-        
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private async void button1_Click(object sender, EventArgs e)
+        private async void btnClientInsert_Click(object sender, EventArgs e)
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -53,19 +43,64 @@ namespace Alexandra_s_Trove
 
             var NewClient = new Client
             {
-                ID = "C1",
-                Name = "Ioana-Alexandra Bucur",
-                DOB = "24/01/2002",
-                Address = "Coronation Screet 33, HR9 5HZ, Evesham",
-                PhoneNumber = "0743559751",
-                Password = "password",
-                CardDetails = "35-90-27, 5645 3567 3577 3673, Miss Ioana Bucur, 887",
-                AccountCreationDate = "29/09/2023"
+                ID = txtClientID.Text,
+                Name = txtClientName.Text,
+                DOB = txtClientDOB.Text,
+                Address = txtClientAddress.Text,
+                PhoneNumber = txtClientPhoneNumber.Text,
+                Password = txtClientPassword.Text,
+                CardDetails = txtClientCardDetails.Text,
+                AccountCreationDate = txtAccountCreationDate.Text
             };
             await Coll.InsertOneAsync(NewClient);
 
             //CardDetails = { "3344", "ddd" } - for lists
+
+            txtClientID.Text = "";
+            txtClientName.Text = "";
+            txtClientDOB.Text = "";
+            txtClientAddress.Text = "";
+            txtClientPhoneNumber.Text = "";
+            txtClientPassword.Text = "";
+            txtClientCardDetails.Text = "";
+            txtAccountCreationDate.Text = "";
         }
+
+
+
+        /* private async void button1_Click(object sender, EventArgs e)
+         {
+             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+             string DatabaseName = "Assignment";
+             string CollectionName = "Client";
+             var Connection = new MongoClient(ConnectionString);
+             var db = Connection.GetDatabase(DatabaseName);
+             var Coll = db.GetCollection<Client>(CollectionName);
+
+             var NewClient = new Client
+             {
+                 ID = textBox1.Text,
+                 Name = textBox2.Text,
+                 DOB = textBox3.Text,
+                 Address = textBox8.Text,
+                 PhoneNumber = textBox7.Text,
+                 Password = textBox6.Text,
+                 CardDetails = textBox5.Text,
+                 AccountCreationDate = textBox4.Text
+             };
+             await Coll.InsertOneAsync(NewClient);
+
+             //CardDetails = { "3344", "ddd" } - for lists
+
+             textBox1.Text = "";
+             textBox2.Text = "";
+             textBox3.Text = "";
+             textBox8.Text = "";
+             textBox7.Text = "";
+             textBox6.Text = "";
+             textBox5.Text = "";
+             textBox4.Text = "";
+         }*/
     }
 }
 
