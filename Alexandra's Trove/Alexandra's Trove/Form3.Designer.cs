@@ -156,6 +156,8 @@
             this.button31 = new System.Windows.Forms.Button();
             this.button37 = new System.Windows.Forms.Button();
             this.button32 = new System.Windows.Forms.Button();
+            this.button43 = new System.Windows.Forms.Button();
+            this.button44 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -167,6 +169,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Insert";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -274,6 +277,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(182, 20);
             this.textBox6.TabIndex = 15;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // textBox7
             // 
@@ -318,6 +322,7 @@
             this.button4.TabIndex = 20;
             this.button4.Text = "Update";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -1272,11 +1277,33 @@
             this.button32.Text = "Update";
             this.button32.UseVisualStyleBackColor = true;
             // 
+            // button43
+            // 
+            this.button43.Location = new System.Drawing.Point(329, 104);
+            this.button43.Margin = new System.Windows.Forms.Padding(2);
+            this.button43.Name = "button43";
+            this.button43.Size = new System.Drawing.Size(56, 19);
+            this.button43.TabIndex = 148;
+            this.button43.Text = "Update";
+            this.button43.UseVisualStyleBackColor = true;
+            // 
+            // button44
+            // 
+            this.button44.Location = new System.Drawing.Point(329, 236);
+            this.button44.Margin = new System.Windows.Forms.Padding(2);
+            this.button44.Name = "button44";
+            this.button44.Size = new System.Drawing.Size(56, 20);
+            this.button44.TabIndex = 149;
+            this.button44.Text = "Update";
+            this.button44.UseVisualStyleBackColor = true;
+            // 
             // HelpDeveloper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1192, 608);
+            this.Controls.Add(this.button44);
+            this.Controls.Add(this.button43);
             this.Controls.Add(this.button32);
             this.Controls.Add(this.button31);
             this.Controls.Add(this.button17);
@@ -1543,5 +1570,7 @@
         private System.Windows.Forms.Button button31;
         private System.Windows.Forms.Button button37;
         private System.Windows.Forms.Button button32;
+        private System.Windows.Forms.Button button43;
+        private System.Windows.Forms.Button button44;
     }
 }
