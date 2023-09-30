@@ -52,28 +52,25 @@
             this.btnClientAccountDeletion = new System.Windows.Forms.Button();
             this.txtClientDOB = new System.Windows.Forms.TextBox();
             this.lblClientDOB = new System.Windows.Forms.Label();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.button14 = new System.Windows.Forms.Button();
+            this.btnProductDelete = new System.Windows.Forms.Button();
+            this.btnProductPriceUpdate = new System.Windows.Forms.Button();
+            this.btnProductSpecificationUpdate = new System.Windows.Forms.Button();
+            this.btnProductNameUpdate = new System.Windows.Forms.Button();
+            this.txtProductPrice = new System.Windows.Forms.TextBox();
+            this.txtProductSpecification = new System.Windows.Forms.TextBox();
+            this.lblProductID = new System.Windows.Forms.Label();
+            this.lblProductSpecification = new System.Windows.Forms.Label();
+            this.lblProductPrice = new System.Windows.Forms.Label();
+            this.lblProductDescription = new System.Windows.Forms.Label();
+            this.lblProductName = new System.Windows.Forms.Label();
+            this.lblProduct = new System.Windows.Forms.Label();
+            this.txtProductDescription = new System.Windows.Forms.TextBox();
+            this.txtProductName = new System.Windows.Forms.TextBox();
+            this.txtProductID = new System.Windows.Forms.TextBox();
+            this.btnProductInsert = new System.Windows.Forms.Button();
             this.btnClientIDUpdate = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.btnProductIDUpdate = new System.Windows.Forms.Button();
+            this.btnProductDescriptionUpdate = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.textBox13 = new System.Windows.Forms.TextBox();
@@ -158,6 +155,8 @@
             this.button32 = new System.Windows.Forms.Button();
             this.btnClientDOBUpdate = new System.Windows.Forms.Button();
             this.btnAccountCreationDateUpdate = new System.Windows.Forms.Button();
+            this.picExample = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picExample)).BeginInit();
             this.SuspendLayout();
             // 
             // btnClientInsert
@@ -369,170 +368,145 @@
             this.lblClientDOB.TabIndex = 6;
             this.lblClientDOB.Text = "DOB";
             // 
-            // button8
+            // btnProductDelete
             // 
-            this.button8.Location = new System.Drawing.Point(617, 210);
-            this.button8.Margin = new System.Windows.Forms.Padding(2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(56, 19);
-            this.button8.TabIndex = 47;
-            this.button8.Text = "Delete";
-            this.button8.UseVisualStyleBackColor = true;
+            this.btnProductDelete.Location = new System.Drawing.Point(617, 187);
+            this.btnProductDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProductDelete.Name = "btnProductDelete";
+            this.btnProductDelete.Size = new System.Drawing.Size(56, 19);
+            this.btnProductDelete.TabIndex = 47;
+            this.btnProductDelete.Text = "Delete";
+            this.btnProductDelete.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // btnProductPriceUpdate
             // 
-            this.button9.Location = new System.Drawing.Point(720, 133);
-            this.button9.Margin = new System.Windows.Forms.Padding(2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(56, 19);
-            this.button9.TabIndex = 46;
-            this.button9.Text = "Update";
-            this.button9.UseVisualStyleBackColor = true;
+            this.btnProductPriceUpdate.Location = new System.Drawing.Point(720, 133);
+            this.btnProductPriceUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProductPriceUpdate.Name = "btnProductPriceUpdate";
+            this.btnProductPriceUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnProductPriceUpdate.TabIndex = 46;
+            this.btnProductPriceUpdate.Text = "Update";
+            this.btnProductPriceUpdate.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btnProductSpecificationUpdate
             // 
-            this.button10.Location = new System.Drawing.Point(720, 156);
-            this.button10.Margin = new System.Windows.Forms.Padding(2);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(56, 19);
-            this.button10.TabIndex = 45;
-            this.button10.Text = "Update";
-            this.button10.UseVisualStyleBackColor = true;
+            this.btnProductSpecificationUpdate.Location = new System.Drawing.Point(720, 159);
+            this.btnProductSpecificationUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProductSpecificationUpdate.Name = "btnProductSpecificationUpdate";
+            this.btnProductSpecificationUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnProductSpecificationUpdate.TabIndex = 44;
+            this.btnProductSpecificationUpdate.Text = "Update";
+            this.btnProductSpecificationUpdate.UseVisualStyleBackColor = true;
             // 
-            // button11
+            // btnProductNameUpdate
             // 
-            this.button11.Location = new System.Drawing.Point(720, 184);
-            this.button11.Margin = new System.Windows.Forms.Padding(2);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(56, 19);
-            this.button11.TabIndex = 44;
-            this.button11.Text = "Update";
-            this.button11.UseVisualStyleBackColor = true;
+            this.btnProductNameUpdate.Location = new System.Drawing.Point(721, 78);
+            this.btnProductNameUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProductNameUpdate.Name = "btnProductNameUpdate";
+            this.btnProductNameUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnProductNameUpdate.TabIndex = 42;
+            this.btnProductNameUpdate.Text = "Update";
+            this.btnProductNameUpdate.UseVisualStyleBackColor = true;
             // 
-            // button13
+            // txtProductPrice
             // 
-            this.button13.Location = new System.Drawing.Point(721, 78);
-            this.button13.Margin = new System.Windows.Forms.Padding(2);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(56, 19);
-            this.button13.TabIndex = 42;
-            this.button13.Text = "Update";
-            this.button13.UseVisualStyleBackColor = true;
+            this.txtProductPrice.Location = new System.Drawing.Point(523, 129);
+            this.txtProductPrice.Name = "txtProductPrice";
+            this.txtProductPrice.Size = new System.Drawing.Size(182, 20);
+            this.txtProductPrice.TabIndex = 41;
             // 
-            // textBox9
+            // txtProductSpecification
             // 
-            this.textBox9.Location = new System.Drawing.Point(523, 129);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(182, 20);
-            this.textBox9.TabIndex = 41;
+            this.txtProductSpecification.Location = new System.Drawing.Point(523, 158);
+            this.txtProductSpecification.Name = "txtProductSpecification";
+            this.txtProductSpecification.Size = new System.Drawing.Size(182, 20);
+            this.txtProductSpecification.TabIndex = 39;
             // 
-            // textBox10
+            // lblProductID
             // 
-            this.textBox10.Location = new System.Drawing.Point(523, 155);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(182, 20);
-            this.textBox10.TabIndex = 40;
+            this.lblProductID.AutoSize = true;
+            this.lblProductID.Location = new System.Drawing.Point(405, 59);
+            this.lblProductID.Name = "lblProductID";
+            this.lblProductID.Size = new System.Drawing.Size(18, 13);
+            this.lblProductID.TabIndex = 36;
+            this.lblProductID.Text = "ID";
             // 
-            // textBox11
+            // lblProductSpecification
             // 
-            this.textBox11.Location = new System.Drawing.Point(523, 181);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(182, 20);
-            this.textBox11.TabIndex = 39;
+            this.lblProductSpecification.AutoSize = true;
+            this.lblProductSpecification.Location = new System.Drawing.Point(404, 161);
+            this.lblProductSpecification.Name = "lblProductSpecification";
+            this.lblProductSpecification.Size = new System.Drawing.Size(73, 13);
+            this.lblProductSpecification.TabIndex = 33;
+            this.lblProductSpecification.Text = "Specifications";
             // 
-            // label10
+            // lblProductPrice
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(405, 59);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(18, 13);
-            this.label10.TabIndex = 36;
-            this.label10.Text = "ID";
+            this.lblProductPrice.AutoSize = true;
+            this.lblProductPrice.Location = new System.Drawing.Point(404, 132);
+            this.lblProductPrice.Name = "lblProductPrice";
+            this.lblProductPrice.Size = new System.Drawing.Size(75, 13);
+            this.lblProductPrice.TabIndex = 31;
+            this.lblProductPrice.Text = "Price/Quantity";
             // 
-            // label13
+            // lblProductDescription
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(404, 184);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(73, 13);
-            this.label13.TabIndex = 33;
-            this.label13.Text = "Specifications";
+            this.lblProductDescription.AutoSize = true;
+            this.lblProductDescription.Location = new System.Drawing.Point(404, 110);
+            this.lblProductDescription.Name = "lblProductDescription";
+            this.lblProductDescription.Size = new System.Drawing.Size(60, 13);
+            this.lblProductDescription.TabIndex = 30;
+            this.lblProductDescription.Text = "Description";
             // 
-            // label14
+            // lblProductName
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(404, 158);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(45, 13);
-            this.label14.TabIndex = 32;
-            this.label14.Text = "Pictures";
+            this.lblProductName.AutoSize = true;
+            this.lblProductName.Location = new System.Drawing.Point(405, 85);
+            this.lblProductName.Name = "lblProductName";
+            this.lblProductName.Size = new System.Drawing.Size(35, 13);
+            this.lblProductName.TabIndex = 29;
+            this.lblProductName.Text = "Name";
             // 
-            // label15
+            // lblProduct
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(404, 132);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(75, 13);
-            this.label15.TabIndex = 31;
-            this.label15.Text = "Price/Quantity";
+            this.lblProduct.AutoSize = true;
+            this.lblProduct.Location = new System.Drawing.Point(595, 21);
+            this.lblProduct.Name = "lblProduct";
+            this.lblProduct.Size = new System.Drawing.Size(44, 13);
+            this.lblProduct.TabIndex = 28;
+            this.lblProduct.Text = "Product";
             // 
-            // label16
+            // txtProductDescription
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(404, 110);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(60, 13);
-            this.label16.TabIndex = 30;
-            this.label16.Text = "Description";
+            this.txtProductDescription.Location = new System.Drawing.Point(523, 103);
+            this.txtProductDescription.Name = "txtProductDescription";
+            this.txtProductDescription.Size = new System.Drawing.Size(182, 20);
+            this.txtProductDescription.TabIndex = 27;
             // 
-            // label17
+            // txtProductName
             // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(405, 85);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(35, 13);
-            this.label17.TabIndex = 29;
-            this.label17.Text = "Name";
+            this.txtProductName.Location = new System.Drawing.Point(523, 77);
+            this.txtProductName.Name = "txtProductName";
+            this.txtProductName.Size = new System.Drawing.Size(182, 20);
+            this.txtProductName.TabIndex = 26;
             // 
-            // label18
+            // txtProductID
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(595, 21);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(44, 13);
-            this.label18.TabIndex = 28;
-            this.label18.Text = "Product";
+            this.txtProductID.Location = new System.Drawing.Point(523, 51);
+            this.txtProductID.Name = "txtProductID";
+            this.txtProductID.Size = new System.Drawing.Size(182, 20);
+            this.txtProductID.TabIndex = 25;
             // 
-            // textBox14
+            // btnProductInsert
             // 
-            this.textBox14.Location = new System.Drawing.Point(523, 103);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(182, 20);
-            this.textBox14.TabIndex = 27;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(523, 77);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(182, 20);
-            this.textBox15.TabIndex = 26;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(523, 51);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(182, 20);
-            this.textBox16.TabIndex = 25;
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(500, 210);
-            this.button14.Margin = new System.Windows.Forms.Padding(2);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(56, 19);
-            this.button14.TabIndex = 24;
-            this.button14.Text = "Insert";
-            this.button14.UseVisualStyleBackColor = true;
+            this.btnProductInsert.Location = new System.Drawing.Point(500, 187);
+            this.btnProductInsert.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProductInsert.Name = "btnProductInsert";
+            this.btnProductInsert.Size = new System.Drawing.Size(56, 19);
+            this.btnProductInsert.TabIndex = 24;
+            this.btnProductInsert.Text = "Insert";
+            this.btnProductInsert.UseVisualStyleBackColor = true;
+            this.btnProductInsert.Click += new System.EventHandler(this.btnProductInsert_Click);
             // 
             // btnClientIDUpdate
             // 
@@ -544,25 +518,25 @@
             this.btnClientIDUpdate.Text = "Update";
             this.btnClientIDUpdate.UseVisualStyleBackColor = true;
             // 
-            // button15
+            // btnProductIDUpdate
             // 
-            this.button15.Location = new System.Drawing.Point(720, 51);
-            this.button15.Margin = new System.Windows.Forms.Padding(2);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(56, 19);
-            this.button15.TabIndex = 49;
-            this.button15.Text = "Update";
-            this.button15.UseVisualStyleBackColor = true;
+            this.btnProductIDUpdate.Location = new System.Drawing.Point(720, 51);
+            this.btnProductIDUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProductIDUpdate.Name = "btnProductIDUpdate";
+            this.btnProductIDUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnProductIDUpdate.TabIndex = 49;
+            this.btnProductIDUpdate.Text = "Update";
+            this.btnProductIDUpdate.UseVisualStyleBackColor = true;
             // 
-            // button16
+            // btnProductDescriptionUpdate
             // 
-            this.button16.Location = new System.Drawing.Point(720, 104);
-            this.button16.Margin = new System.Windows.Forms.Padding(2);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(56, 19);
-            this.button16.TabIndex = 50;
-            this.button16.Text = "Update";
-            this.button16.UseVisualStyleBackColor = true;
+            this.btnProductDescriptionUpdate.Location = new System.Drawing.Point(720, 104);
+            this.btnProductDescriptionUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnProductDescriptionUpdate.Name = "btnProductDescriptionUpdate";
+            this.btnProductDescriptionUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnProductDescriptionUpdate.TabIndex = 50;
+            this.btnProductDescriptionUpdate.Text = "Update";
+            this.btnProductDescriptionUpdate.UseVisualStyleBackColor = true;
             // 
             // button19
             // 
@@ -1296,11 +1270,22 @@
             this.btnAccountCreationDateUpdate.Text = "Update";
             this.btnAccountCreationDateUpdate.UseVisualStyleBackColor = true;
             // 
+            // picExample
+            // 
+            this.picExample.Location = new System.Drawing.Point(408, 262);
+            this.picExample.Name = "picExample";
+            this.picExample.Size = new System.Drawing.Size(89, 48);
+            this.picExample.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picExample.TabIndex = 150;
+            this.picExample.TabStop = false;
+            this.picExample.Click += new System.EventHandler(this.picExample_Click);
+            // 
             // HelpDeveloper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1192, 608);
+            this.Controls.Add(this.picExample);
             this.Controls.Add(this.btnAccountCreationDateUpdate);
             this.Controls.Add(this.btnClientDOBUpdate);
             this.Controls.Add(this.button32);
@@ -1385,28 +1370,25 @@
             this.Controls.Add(this.textBox19);
             this.Controls.Add(this.textBox20);
             this.Controls.Add(this.button24);
-            this.Controls.Add(this.button16);
-            this.Controls.Add(this.button15);
+            this.Controls.Add(this.btnProductDescriptionUpdate);
+            this.Controls.Add(this.btnProductIDUpdate);
             this.Controls.Add(this.btnClientIDUpdate);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.button14);
+            this.Controls.Add(this.btnProductDelete);
+            this.Controls.Add(this.btnProductPriceUpdate);
+            this.Controls.Add(this.btnProductSpecificationUpdate);
+            this.Controls.Add(this.btnProductNameUpdate);
+            this.Controls.Add(this.txtProductPrice);
+            this.Controls.Add(this.txtProductSpecification);
+            this.Controls.Add(this.lblProductID);
+            this.Controls.Add(this.lblProductSpecification);
+            this.Controls.Add(this.lblProductPrice);
+            this.Controls.Add(this.lblProductDescription);
+            this.Controls.Add(this.lblProductName);
+            this.Controls.Add(this.lblProduct);
+            this.Controls.Add(this.txtProductDescription);
+            this.Controls.Add(this.txtProductName);
+            this.Controls.Add(this.txtProductID);
+            this.Controls.Add(this.btnProductInsert);
             this.Controls.Add(this.btnClientAccountDeletion);
             this.Controls.Add(this.btnClientAddressUpdate);
             this.Controls.Add(this.btnClientPhoneNumberUpdate);
@@ -1434,6 +1416,8 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "HelpDeveloper";
             this.Text = "HelpDeveloper";
+            this.Load += new System.EventHandler(this.HelpDeveloper_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.picExample)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1465,28 +1449,25 @@
         private System.Windows.Forms.Button btnClientAccountDeletion;
         private System.Windows.Forms.TextBox txtClientDOB;
         private System.Windows.Forms.Label lblClientDOB;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button btnProductDelete;
+        private System.Windows.Forms.Button btnProductPriceUpdate;
+        private System.Windows.Forms.Button btnProductSpecificationUpdate;
+        private System.Windows.Forms.Button btnProductNameUpdate;
+        private System.Windows.Forms.TextBox txtProductPrice;
+        private System.Windows.Forms.TextBox txtProductSpecification;
+        private System.Windows.Forms.Label lblProductID;
+        private System.Windows.Forms.Label lblProductSpecification;
+        private System.Windows.Forms.Label lblProductPrice;
+        private System.Windows.Forms.Label lblProductDescription;
+        private System.Windows.Forms.Label lblProductName;
+        private System.Windows.Forms.Label lblProduct;
+        private System.Windows.Forms.TextBox txtProductDescription;
+        private System.Windows.Forms.TextBox txtProductName;
+        private System.Windows.Forms.TextBox txtProductID;
+        private System.Windows.Forms.Button btnProductInsert;
         private System.Windows.Forms.Button btnClientIDUpdate;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button btnProductIDUpdate;
+        private System.Windows.Forms.Button btnProductDescriptionUpdate;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.TextBox textBox13;
@@ -1571,5 +1552,6 @@
         private System.Windows.Forms.Button button32;
         private System.Windows.Forms.Button btnClientDOBUpdate;
         private System.Windows.Forms.Button btnAccountCreationDateUpdate;
+        private System.Windows.Forms.PictureBox picExample;
     }
 }

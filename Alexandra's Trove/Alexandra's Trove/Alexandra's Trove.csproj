@@ -229,8 +229,19 @@
     <Compile Include="Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -252,6 +263,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="libmongocrypt.dylib" />
     <None Include="libmongocrypt.so" />
     <None Include="packages.config" />
@@ -270,6 +285,62 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="mongocrypt.dll" />
+    <None Include="Resources\Flowers4.jpg" />
+    <None Include="Resources\Flowers3.jpg" />
+    <None Include="Resources\Flowers2.jpg" />
+    <None Include="Resources\Flowers1.jpg" />
+    <None Include="Resources\RedApple4.jpg" />
+    <None Include="Resources\RedApple3.jpg" />
+    <None Include="Resources\RedApple2.jpg" />
+    <None Include="Resources\RedApple1.jpg" />
+    <None Include="Resources\Raspberries4.jpg" />
+    <None Include="Resources\Raspberries3.jpg" />
+    <None Include="Resources\Raspberries2.jpg" />
+    <None Include="Resources\Raspberries1.jpg" />
+    <None Include="Resources\Peas4.jpg" />
+    <None Include="Resources\Peas3.jpg" />
+    <None Include="Resources\Peas2.jpg" />
+    <None Include="Resources\Peas1.jpg" />
+    <None Include="Resources\Peaches4.jpg" />
+    <None Include="Resources\Peaches3.jpg" />
+    <None Include="Resources\Peaches2.jpg" />
+    <None Include="Resources\Peaches1.jpg" />
+    <None Include="Resources\FlatPeaches4.jpg" />
+    <None Include="Resources\FlatPeaches3.jpg" />
+    <None Include="Resources\FlatPeaches2.jpg" />
+    <None Include="Resources\FlatPeaches1.jpg" />
+    <None Include="Resources\Cherries4.jpg" />
+    <None Include="Resources\Cherries3.jpg" />
+    <None Include="Resources\Cherries2.jpg" />
+    <None Include="Resources\Cherries1.jpg" />
+    <None Include="Resources\Blueberries4.jpg" />
+    <None Include="Resources\Blueberries3.jpg" />
+    <None Include="Resources\Blueberries2.jpg" />
+    <None Include="Resources\Blueberries1.jpg" />
+    <None Include="Resources\NectarineTart4.jpg" />
+    <None Include="Resources\NectarineTart3.jpg" />
+    <None Include="Resources\NectarineTart2.jpg" />
+    <None Include="Resources\Tomatoes4.jpg" />
+    <None Include="Resources\Tomatoes3.jpg" />
+    <None Include="Resources\Tomatoes2.jpg" />
+    <None Include="Resources\Tomatoes1.jpg" />
+    <None Include="Resources\SpringOnions4.jpg" />
+    <None Include="Resources\SpringOnions3.jpg" />
+    <None Include="Resources\SpringOnions2.jpg" />
+    <None Include="Resources\SpringOnions1.jpg" />
+    <None Include="Resources\Jalapenoes4.jpg" />
+    <None Include="Resources\Jalapenoes3.jpg" />
+    <None Include="Resources\Jalapenoes2.jpg" />
+    <None Include="Resources\Jalapenoes1.jpg" />
+    <None Include="Resources\Cucumber4.jpg" />
+    <None Include="Resources\Cucumber3.jpg" />
+    <None Include="Resources\Cucumber2.jpg" />
+    <None Include="Resources\Cucumber1.jpg" />
+    <None Include="Resources\DarkChYo4.jpg" />
+    <None Include="Resources\DarkChYo3.jpg" />
+    <None Include="Resources\DarkChYo2.jpg" />
+    <None Include="Resources\DarkChYo1.jpg" />
+    <None Include="Resources\NectarineTart1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\AWSSDK.SecurityToken.3.7.201.44\analyzers\dotnet\cs\AWSSDK.SecurityToken.CodeAnalysis.dll" />

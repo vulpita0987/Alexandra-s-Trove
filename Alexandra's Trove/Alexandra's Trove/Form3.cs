@@ -71,42 +71,67 @@ namespace Alexandra_s_Trove
           
         }
 
+        private void picExample_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void HelpDeveloper_Load(object sender, EventArgs e)
+        {
+          
+        }
+
+        private async void btnProductInsert_Click(object sender, EventArgs e)
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Product";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Product>(CollectionName);
+
+            var NewProduct = new Product
+            {
+                ID = txtProductID.Text,
+                Name = txtProductName.Text,
+                Description = txtProductDescription.Text,
+                Price = txtProductPrice.Text,
+                Specifications = txtProductSpecification.Text,
+                
+            };
+            await Coll.InsertOneAsync(NewProduct);
+
+            //CardDetails = { "3344", "ddd" } - for lists
+
+            txtProductID.Text = "";
+            txtProductName.Text = "";
+            txtProductDescription.Text = "";
+            txtProductPrice.Text = "";
+            txtProductSpecification.Text = "";
+            
+        }
 
 
-        /* private async void button1_Click(object sender, EventArgs e)
-         {
-             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
-             string DatabaseName = "Assignment";
-             string CollectionName = "Client";
-             var Connection = new MongoClient(ConnectionString);
-             var db = Connection.GetDatabase(DatabaseName);
-             var Coll = db.GetCollection<Client>(CollectionName);
 
-             var NewClient = new Client
-             {
-                 ID = textBox1.Text,
-                 Name = textBox2.Text,
-                 DOB = textBox3.Text,
-                 Address = textBox8.Text,
-                 PhoneNumber = textBox7.Text,
-                 Password = textBox6.Text,
-                 CardDetails = textBox5.Text,
-                 AccountCreationDate = textBox4.Text
-             };
-             await Coll.InsertOneAsync(NewClient);
-
-             //CardDetails = { "3344", "ddd" } - for lists
-
-             textBox1.Text = "";
-             textBox2.Text = "";
-             textBox3.Text = "";
-             textBox8.Text = "";
-             textBox7.Text = "";
-             textBox6.Text = "";
-             textBox5.Text = "";
-             textBox4.Text = "";
-         }*/
+        
     }
+}
+
+
+[BsonIgnoreExtraElements]
+public class Product
+{
+    [BsonId]
+    //[BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
+    public string ID { get; set; }
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public string Price { get; set; }
+    public string Specifications { get; set; }
+
+
+
+
 }
 
 [BsonIgnoreExtraElements] 
@@ -127,3 +152,4 @@ public class Client
 
 
 }
+

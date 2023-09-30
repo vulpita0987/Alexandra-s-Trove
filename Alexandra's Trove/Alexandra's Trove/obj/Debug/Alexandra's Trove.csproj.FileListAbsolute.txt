@@ -128,3 +128,4 @@ C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's 
 C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\tr-TR\Hangfire.Core.resources.dll
 C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\zh\Hangfire.Core.resources.dll
 C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\zh-TW\Hangfire.Core.resources.dll
+C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.Resource.resources
