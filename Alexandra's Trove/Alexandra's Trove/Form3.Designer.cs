@@ -71,91 +71,93 @@
             this.btnClientIDUpdate = new System.Windows.Forms.Button();
             this.btnProductIDUpdate = new System.Windows.Forms.Button();
             this.btnProductDescriptionUpdate = new System.Windows.Forms.Button();
-            this.button19 = new System.Windows.Forms.Button();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.button24 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button20 = new System.Windows.Forms.Button();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.button23 = new System.Windows.Forms.Button();
-            this.button25 = new System.Windows.Forms.Button();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.textBox27 = new System.Windows.Forms.TextBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
-            this.button26 = new System.Windows.Forms.Button();
-            this.button27 = new System.Windows.Forms.Button();
-            this.button28 = new System.Windows.Forms.Button();
-            this.button29 = new System.Windows.Forms.Button();
-            this.button30 = new System.Windows.Forms.Button();
-            this.button33 = new System.Windows.Forms.Button();
-            this.textBox29 = new System.Windows.Forms.TextBox();
-            this.textBox30 = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.textBox34 = new System.Windows.Forms.TextBox();
-            this.textBox35 = new System.Windows.Forms.TextBox();
-            this.textBox36 = new System.Windows.Forms.TextBox();
-            this.button34 = new System.Windows.Forms.Button();
-            this.button35 = new System.Windows.Forms.Button();
-            this.button36 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button40 = new System.Windows.Forms.Button();
-            this.button41 = new System.Windows.Forms.Button();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox40 = new System.Windows.Forms.TextBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.textBox42 = new System.Windows.Forms.TextBox();
-            this.textBox43 = new System.Windows.Forms.TextBox();
-            this.textBox44 = new System.Windows.Forms.TextBox();
-            this.button42 = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button31 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
+            this.btnOrderDelete = new System.Windows.Forms.Button();
+            this.txtOrderTotal = new System.Windows.Forms.TextBox();
+            this.txtOrderDateOrdered = new System.Windows.Forms.TextBox();
+            this.txtOrderEstimatedDelivery = new System.Windows.Forms.TextBox();
+            this.lblOrderID = new System.Windows.Forms.Label();
+            this.lblOrderEstimatedDelivery = new System.Windows.Forms.Label();
+            this.lblOrderDateOrdered = new System.Windows.Forms.Label();
+            this.lblOrderTotal = new System.Windows.Forms.Label();
+            this.lblOrderProductID = new System.Windows.Forms.Label();
+            this.lblOrderClientID = new System.Windows.Forms.Label();
+            this.lblOrder = new System.Windows.Forms.Label();
+            this.txtOrderProductID = new System.Windows.Forms.TextBox();
+            this.txtOrderClientID = new System.Windows.Forms.TextBox();
+            this.txtOrderID = new System.Windows.Forms.TextBox();
+            this.btnOrderInsert = new System.Windows.Forms.Button();
+            this.btnReviewDelete = new System.Windows.Forms.Button();
+            this.btnReviewNoOfStarsUpdate = new System.Windows.Forms.Button();
+            this.btnReviewDescriptionUpdate = new System.Windows.Forms.Button();
+            this.btnReviewDateUpdate = new System.Windows.Forms.Button();
+            this.btnReviewTimeUpdate = new System.Windows.Forms.Button();
+            this.btnReviewClientIDUpdate = new System.Windows.Forms.Button();
+            this.txtReviewNoOfStars = new System.Windows.Forms.TextBox();
+            this.txtReviewDescription = new System.Windows.Forms.TextBox();
+            this.txtReviewDate = new System.Windows.Forms.TextBox();
+            this.txtReviewTime = new System.Windows.Forms.TextBox();
+            this.txtReviewPicture = new System.Windows.Forms.TextBox();
+            this.lblReviewID = new System.Windows.Forms.Label();
+            this.lblReviewPicture = new System.Windows.Forms.Label();
+            this.lblReviewTime = new System.Windows.Forms.Label();
+            this.lblReviewDate = new System.Windows.Forms.Label();
+            this.lblReviewDescription = new System.Windows.Forms.Label();
+            this.lblReviewNoOfStars = new System.Windows.Forms.Label();
+            this.lblReviewProductID = new System.Windows.Forms.Label();
+            this.lblReviewClientID = new System.Windows.Forms.Label();
+            this.lblReview = new System.Windows.Forms.Label();
+            this.txtReviewProductID = new System.Windows.Forms.TextBox();
+            this.txtReviewClientID = new System.Windows.Forms.TextBox();
+            this.txtReviewID = new System.Windows.Forms.TextBox();
+            this.btnReviewInsert = new System.Windows.Forms.Button();
+            this.btnWarehouseIDUpdate = new System.Windows.Forms.Button();
+            this.btnWarehouseDelete = new System.Windows.Forms.Button();
+            this.btnWarehouseLocationUpdate = new System.Windows.Forms.Button();
+            this.btnWarehouseNameUpdate = new System.Windows.Forms.Button();
+            this.btnWarehouseProductIDUpdate = new System.Windows.Forms.Button();
+            this.txtWarehouseLocation = new System.Windows.Forms.TextBox();
+            this.txtWarehouseName = new System.Windows.Forms.TextBox();
+            this.lblWarehouseID = new System.Windows.Forms.Label();
+            this.lblWarehouseName = new System.Windows.Forms.Label();
+            this.lblWarehouseLocation = new System.Windows.Forms.Label();
+            this.lblWarehouseQuntity = new System.Windows.Forms.Label();
+            this.lblWarehouseProductID = new System.Windows.Forms.Label();
+            this.lblWarehouse = new System.Windows.Forms.Label();
+            this.txtWarehouseQuantity = new System.Windows.Forms.TextBox();
+            this.txtWarehouseProductID = new System.Windows.Forms.TextBox();
+            this.txtWarehouseID = new System.Windows.Forms.TextBox();
+            this.btnWarehouseInsert = new System.Windows.Forms.Button();
+            this.btnTransportVehicleIDUpdate = new System.Windows.Forms.Button();
+            this.btnTransportVehicleDelete = new System.Windows.Forms.Button();
+            this.btnTransportVehicleCurrentLocationUpdate = new System.Windows.Forms.Button();
+            this.btnTransportVehicleCarPlateNumberUpdate = new System.Windows.Forms.Button();
+            this.btnTransportVehicleDeliveryUpdatesUpdate = new System.Windows.Forms.Button();
+            this.btnTransportVehicleOrderIDUpdate = new System.Windows.Forms.Button();
+            this.txtTransportVehiclePickUpDateAndTime = new System.Windows.Forms.TextBox();
+            this.txtTransportVehicleCurrentLocation = new System.Windows.Forms.TextBox();
+            this.txtTransportVehicleCarPlateNumber = new System.Windows.Forms.TextBox();
+            this.txtTransportVehicleDeliveryUpdates = new System.Windows.Forms.TextBox();
+            this.lblTransportVehicleID = new System.Windows.Forms.Label();
+            this.lblTransportVehicleDeliveryUpdates = new System.Windows.Forms.Label();
+            this.lblTransportVehicleCarPlateNumber = new System.Windows.Forms.Label();
+            this.lblTransportVehicleCurrentLocation = new System.Windows.Forms.Label();
+            this.lblTransportVehiclePickUpDateAndTime = new System.Windows.Forms.Label();
+            this.lblTransportVehiclePickUpLocation = new System.Windows.Forms.Label();
+            this.lblTransportVehicleOrderID = new System.Windows.Forms.Label();
+            this.lblTransportVehicle = new System.Windows.Forms.Label();
+            this.txtTransportVehiclePickUpLocation = new System.Windows.Forms.TextBox();
+            this.txtTransportVehicleOrderID = new System.Windows.Forms.TextBox();
+            this.txtTransportVehicleID = new System.Windows.Forms.TextBox();
+            this.btnTransportVehicleInsert = new System.Windows.Forms.Button();
+            this.btnReviewPictureUpdate = new System.Windows.Forms.Button();
+            this.btnWarehouseQuntityUpdate = new System.Windows.Forms.Button();
+            this.btnTransportVehiclePickUpDateAndTimeUpdate = new System.Windows.Forms.Button();
+            this.btnTransportVehiclePickUpLocationUpdate = new System.Windows.Forms.Button();
             this.btnClientDOBUpdate = new System.Windows.Forms.Button();
             this.btnAccountCreationDateUpdate = new System.Windows.Forms.Button();
             this.picExample = new System.Windows.Forms.PictureBox();
+            this.txtOrderDeliveryPrice = new System.Windows.Forms.TextBox();
+            this.lblOrderDeliveryPrice = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picExample)).BeginInit();
             this.SuspendLayout();
             // 
@@ -538,717 +540,720 @@
             this.btnProductDescriptionUpdate.Text = "Update";
             this.btnProductDescriptionUpdate.UseVisualStyleBackColor = true;
             // 
-            // button19
-            // 
-            this.button19.Location = new System.Drawing.Point(1008, 209);
-            this.button19.Margin = new System.Windows.Forms.Padding(2);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(56, 19);
-            this.button19.TabIndex = 69;
-            this.button19.Text = "Delete";
-            this.button19.UseVisualStyleBackColor = true;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(914, 128);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(182, 20);
-            this.textBox12.TabIndex = 64;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(914, 154);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(182, 20);
-            this.textBox13.TabIndex = 63;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(914, 180);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(182, 20);
-            this.textBox17.TabIndex = 62;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(796, 58);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(18, 13);
-            this.label11.TabIndex = 61;
-            this.label11.Text = "ID";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(795, 183);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(91, 13);
-            this.label12.TabIndex = 60;
-            this.label12.Text = "EstimatedDelivery";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(795, 157);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(68, 13);
-            this.label19.TabIndex = 59;
-            this.label19.Text = "DateOrdered";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(795, 131);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(31, 13);
-            this.label20.TabIndex = 58;
-            this.label20.Text = "Total";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(795, 109);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(55, 13);
-            this.label21.TabIndex = 57;
-            this.label21.Text = "ProductID";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(796, 84);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(44, 13);
-            this.label22.TabIndex = 56;
-            this.label22.Text = "ClientID";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(986, 20);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(33, 13);
-            this.label23.TabIndex = 55;
-            this.label23.Text = "Order";
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(914, 102);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(182, 20);
-            this.textBox18.TabIndex = 54;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(914, 76);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(182, 20);
-            this.textBox19.TabIndex = 53;
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(914, 50);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(182, 20);
-            this.textBox20.TabIndex = 52;
-            // 
-            // button24
-            // 
-            this.button24.Location = new System.Drawing.Point(891, 209);
-            this.button24.Margin = new System.Windows.Forms.Padding(2);
-            this.button24.Name = "button24";
-            this.button24.Size = new System.Drawing.Size(56, 19);
-            this.button24.TabIndex = 51;
-            this.button24.Text = "Insert";
-            this.button24.UseVisualStyleBackColor = true;
-            // 
-            // button18
-            // 
-            this.button18.Location = new System.Drawing.Point(206, 555);
-            this.button18.Margin = new System.Windows.Forms.Padding(2);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(56, 19);
-            this.button18.TabIndex = 93;
-            this.button18.Text = "Delete";
-            this.button18.UseVisualStyleBackColor = true;
-            // 
-            // button20
-            // 
-            this.button20.Location = new System.Drawing.Point(328, 426);
-            this.button20.Margin = new System.Windows.Forms.Padding(2);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(56, 19);
-            this.button20.TabIndex = 92;
-            this.button20.Text = "Update";
-            this.button20.UseVisualStyleBackColor = true;
-            // 
-            // button21
-            // 
-            this.button21.Location = new System.Drawing.Point(328, 449);
-            this.button21.Margin = new System.Windows.Forms.Padding(2);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(56, 19);
-            this.button21.TabIndex = 91;
-            this.button21.Text = "Update";
-            this.button21.UseVisualStyleBackColor = true;
-            // 
-            // button22
-            // 
-            this.button22.Location = new System.Drawing.Point(328, 477);
-            this.button22.Margin = new System.Windows.Forms.Padding(2);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(56, 19);
-            this.button22.TabIndex = 90;
-            this.button22.Text = "Update";
-            this.button22.UseVisualStyleBackColor = true;
-            // 
-            // button23
-            // 
-            this.button23.Location = new System.Drawing.Point(328, 500);
-            this.button23.Margin = new System.Windows.Forms.Padding(2);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(56, 20);
-            this.button23.TabIndex = 89;
-            this.button23.Text = "Update";
-            this.button23.UseVisualStyleBackColor = true;
-            // 
-            // button25
-            // 
-            this.button25.Location = new System.Drawing.Point(329, 371);
-            this.button25.Margin = new System.Windows.Forms.Padding(2);
-            this.button25.Name = "button25";
-            this.button25.Size = new System.Drawing.Size(56, 19);
-            this.button25.TabIndex = 88;
-            this.button25.Text = "Update";
-            this.button25.UseVisualStyleBackColor = true;
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(131, 422);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(182, 20);
-            this.textBox21.TabIndex = 87;
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(131, 448);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(182, 20);
-            this.textBox22.TabIndex = 86;
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(131, 474);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(182, 20);
-            this.textBox23.TabIndex = 85;
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(131, 500);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(182, 20);
-            this.textBox24.TabIndex = 84;
-            // 
-            // textBox25
-            // 
-            this.textBox25.Location = new System.Drawing.Point(131, 526);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(182, 20);
-            this.textBox25.TabIndex = 83;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(13, 352);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(18, 13);
-            this.label24.TabIndex = 82;
-            this.label24.Text = "ID";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(12, 529);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(40, 13);
-            this.label25.TabIndex = 81;
-            this.label25.Text = "Picture";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(12, 503);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(30, 13);
-            this.label26.TabIndex = 80;
-            this.label26.Text = "Time";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(12, 477);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(30, 13);
-            this.label27.TabIndex = 79;
-            this.label27.Text = "Date";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(12, 451);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(60, 13);
-            this.label28.TabIndex = 78;
-            this.label28.Text = "Description";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(12, 425);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(56, 13);
-            this.label29.TabIndex = 77;
-            this.label29.Text = "NoOfStars";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(12, 403);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(55, 13);
-            this.label30.TabIndex = 76;
-            this.label30.Text = "ProductID";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(13, 378);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(44, 13);
-            this.label31.TabIndex = 75;
-            this.label31.Text = "ClientID";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(203, 314);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(43, 13);
-            this.label32.TabIndex = 74;
-            this.label32.Text = "Review";
-            // 
-            // textBox26
-            // 
-            this.textBox26.Location = new System.Drawing.Point(131, 396);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.Size = new System.Drawing.Size(182, 20);
-            this.textBox26.TabIndex = 73;
-            // 
-            // textBox27
-            // 
-            this.textBox27.Location = new System.Drawing.Point(131, 370);
-            this.textBox27.Name = "textBox27";
-            this.textBox27.Size = new System.Drawing.Size(182, 20);
-            this.textBox27.TabIndex = 72;
-            // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(131, 344);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(182, 20);
-            this.textBox28.TabIndex = 71;
-            // 
-            // button26
-            // 
-            this.button26.Location = new System.Drawing.Point(71, 555);
-            this.button26.Margin = new System.Windows.Forms.Padding(2);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(56, 19);
-            this.button26.TabIndex = 70;
-            this.button26.Text = "Insert";
-            this.button26.UseVisualStyleBackColor = true;
-            // 
-            // button27
-            // 
-            this.button27.Location = new System.Drawing.Point(720, 340);
-            this.button27.Margin = new System.Windows.Forms.Padding(2);
-            this.button27.Name = "button27";
-            this.button27.Size = new System.Drawing.Size(56, 19);
-            this.button27.TabIndex = 119;
-            this.button27.Text = "Update";
-            this.button27.UseVisualStyleBackColor = true;
-            // 
-            // button28
-            // 
-            this.button28.Location = new System.Drawing.Point(601, 477);
-            this.button28.Margin = new System.Windows.Forms.Padding(2);
-            this.button28.Name = "button28";
-            this.button28.Size = new System.Drawing.Size(56, 19);
-            this.button28.TabIndex = 118;
-            this.button28.Text = "Delete";
-            this.button28.UseVisualStyleBackColor = true;
-            // 
-            // button29
-            // 
-            this.button29.Location = new System.Drawing.Point(720, 422);
-            this.button29.Margin = new System.Windows.Forms.Padding(2);
-            this.button29.Name = "button29";
-            this.button29.Size = new System.Drawing.Size(56, 19);
-            this.button29.TabIndex = 117;
-            this.button29.Text = "Update";
-            this.button29.UseVisualStyleBackColor = true;
-            // 
-            // button30
-            // 
-            this.button30.Location = new System.Drawing.Point(720, 445);
-            this.button30.Margin = new System.Windows.Forms.Padding(2);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(56, 19);
-            this.button30.TabIndex = 116;
-            this.button30.Text = "Update";
-            this.button30.UseVisualStyleBackColor = true;
-            // 
-            // button33
-            // 
-            this.button33.Location = new System.Drawing.Point(721, 367);
-            this.button33.Margin = new System.Windows.Forms.Padding(2);
-            this.button33.Name = "button33";
-            this.button33.Size = new System.Drawing.Size(56, 19);
-            this.button33.TabIndex = 113;
-            this.button33.Text = "Update";
-            this.button33.UseVisualStyleBackColor = true;
-            // 
-            // textBox29
-            // 
-            this.textBox29.Location = new System.Drawing.Point(523, 418);
-            this.textBox29.Name = "textBox29";
-            this.textBox29.Size = new System.Drawing.Size(182, 20);
-            this.textBox29.TabIndex = 112;
-            // 
-            // textBox30
-            // 
-            this.textBox30.Location = new System.Drawing.Point(523, 444);
-            this.textBox30.Name = "textBox30";
-            this.textBox30.Size = new System.Drawing.Size(182, 20);
-            this.textBox30.TabIndex = 111;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(405, 348);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(18, 13);
-            this.label33.TabIndex = 107;
-            this.label33.Text = "ID";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(404, 447);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(35, 13);
-            this.label37.TabIndex = 103;
-            this.label37.Text = "Name";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(404, 421);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(48, 13);
-            this.label38.TabIndex = 102;
-            this.label38.Text = "Location";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(404, 399);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(46, 13);
-            this.label39.TabIndex = 101;
-            this.label39.Text = "Quantity";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(405, 374);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(55, 13);
-            this.label40.TabIndex = 100;
-            this.label40.Text = "ProductID";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(595, 310);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(62, 13);
-            this.label41.TabIndex = 99;
-            this.label41.Text = "Warehouse";
-            // 
-            // textBox34
-            // 
-            this.textBox34.Location = new System.Drawing.Point(523, 392);
-            this.textBox34.Name = "textBox34";
-            this.textBox34.Size = new System.Drawing.Size(182, 20);
-            this.textBox34.TabIndex = 98;
-            // 
-            // textBox35
-            // 
-            this.textBox35.Location = new System.Drawing.Point(523, 366);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(182, 20);
-            this.textBox35.TabIndex = 97;
-            // 
-            // textBox36
-            // 
-            this.textBox36.Location = new System.Drawing.Point(523, 340);
-            this.textBox36.Name = "textBox36";
-            this.textBox36.Size = new System.Drawing.Size(182, 20);
-            this.textBox36.TabIndex = 96;
-            // 
-            // button34
-            // 
-            this.button34.Location = new System.Drawing.Point(486, 477);
-            this.button34.Margin = new System.Windows.Forms.Padding(2);
-            this.button34.Name = "button34";
-            this.button34.Size = new System.Drawing.Size(56, 19);
-            this.button34.TabIndex = 95;
-            this.button34.Text = "Insert";
-            this.button34.UseVisualStyleBackColor = true;
-            // 
-            // button35
-            // 
-            this.button35.Location = new System.Drawing.Point(1122, 339);
-            this.button35.Margin = new System.Windows.Forms.Padding(2);
-            this.button35.Name = "button35";
-            this.button35.Size = new System.Drawing.Size(56, 19);
-            this.button35.TabIndex = 144;
-            this.button35.Text = "Update";
-            this.button35.UseVisualStyleBackColor = true;
-            // 
-            // button36
-            // 
-            this.button36.Location = new System.Drawing.Point(1000, 527);
-            this.button36.Margin = new System.Windows.Forms.Padding(2);
-            this.button36.Name = "button36";
-            this.button36.Size = new System.Drawing.Size(56, 19);
-            this.button36.TabIndex = 143;
-            this.button36.Text = "Delete";
-            this.button36.UseVisualStyleBackColor = true;
-            // 
-            // button38
-            // 
-            this.button38.Location = new System.Drawing.Point(1122, 444);
-            this.button38.Margin = new System.Windows.Forms.Padding(2);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(56, 19);
-            this.button38.TabIndex = 141;
-            this.button38.Text = "Update";
-            this.button38.UseVisualStyleBackColor = true;
-            // 
-            // button39
-            // 
-            this.button39.Location = new System.Drawing.Point(1122, 472);
-            this.button39.Margin = new System.Windows.Forms.Padding(2);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(56, 19);
-            this.button39.TabIndex = 140;
-            this.button39.Text = "Update";
-            this.button39.UseVisualStyleBackColor = true;
-            // 
-            // button40
-            // 
-            this.button40.Location = new System.Drawing.Point(1122, 495);
-            this.button40.Margin = new System.Windows.Forms.Padding(2);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(56, 20);
-            this.button40.TabIndex = 139;
-            this.button40.Text = "Update";
-            this.button40.UseVisualStyleBackColor = true;
-            // 
-            // button41
-            // 
-            this.button41.Location = new System.Drawing.Point(1123, 366);
-            this.button41.Margin = new System.Windows.Forms.Padding(2);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(56, 19);
-            this.button41.TabIndex = 138;
-            this.button41.Text = "Update";
-            this.button41.UseVisualStyleBackColor = true;
-            // 
-            // textBox37
-            // 
-            this.textBox37.Location = new System.Drawing.Point(925, 417);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.Size = new System.Drawing.Size(182, 20);
-            this.textBox37.TabIndex = 137;
-            // 
-            // textBox38
-            // 
-            this.textBox38.Location = new System.Drawing.Point(925, 443);
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(182, 20);
-            this.textBox38.TabIndex = 136;
-            // 
-            // textBox39
-            // 
-            this.textBox39.Location = new System.Drawing.Point(925, 469);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(182, 20);
-            this.textBox39.TabIndex = 135;
-            // 
-            // textBox40
-            // 
-            this.textBox40.Location = new System.Drawing.Point(925, 495);
-            this.textBox40.Name = "textBox40";
-            this.textBox40.Size = new System.Drawing.Size(182, 20);
-            this.textBox40.TabIndex = 134;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(807, 347);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(18, 13);
-            this.label42.TabIndex = 132;
-            this.label42.Text = "ID";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(806, 498);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(85, 13);
-            this.label44.TabIndex = 130;
-            this.label44.Text = "DeliveryUpdates";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(806, 472);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(84, 13);
-            this.label45.TabIndex = 129;
-            this.label45.Text = "CarPlateNumber";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(806, 446);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(82, 13);
-            this.label46.TabIndex = 128;
-            this.label46.Text = "CurrentLocation";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(806, 420);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(107, 13);
-            this.label47.TabIndex = 127;
-            this.label47.Text = "PickUpDateAndTime";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(806, 398);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(83, 13);
-            this.label48.TabIndex = 126;
-            this.label48.Text = "PickUpLocation";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(807, 373);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(44, 13);
-            this.label49.TabIndex = 125;
-            this.label49.Text = "OrderID";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(997, 309);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(90, 13);
-            this.label50.TabIndex = 124;
-            this.label50.Text = "Transport Vehicle";
-            // 
-            // textBox42
-            // 
-            this.textBox42.Location = new System.Drawing.Point(925, 391);
-            this.textBox42.Name = "textBox42";
-            this.textBox42.Size = new System.Drawing.Size(182, 20);
-            this.textBox42.TabIndex = 123;
-            // 
-            // textBox43
-            // 
-            this.textBox43.Location = new System.Drawing.Point(925, 365);
-            this.textBox43.Name = "textBox43";
-            this.textBox43.Size = new System.Drawing.Size(182, 20);
-            this.textBox43.TabIndex = 122;
-            // 
-            // textBox44
-            // 
-            this.textBox44.Location = new System.Drawing.Point(925, 339);
-            this.textBox44.Name = "textBox44";
-            this.textBox44.Size = new System.Drawing.Size(182, 20);
-            this.textBox44.TabIndex = 121;
-            // 
-            // button42
-            // 
-            this.button42.Location = new System.Drawing.Point(857, 526);
-            this.button42.Margin = new System.Windows.Forms.Padding(2);
-            this.button42.Name = "button42";
-            this.button42.Size = new System.Drawing.Size(56, 19);
-            this.button42.TabIndex = 120;
-            this.button42.Text = "Insert";
-            this.button42.UseVisualStyleBackColor = true;
-            // 
-            // button17
-            // 
-            this.button17.Location = new System.Drawing.Point(328, 524);
-            this.button17.Margin = new System.Windows.Forms.Padding(2);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(56, 20);
-            this.button17.TabIndex = 145;
-            this.button17.Text = "Update";
-            this.button17.UseVisualStyleBackColor = true;
-            // 
-            // button31
-            // 
-            this.button31.Location = new System.Drawing.Point(720, 395);
-            this.button31.Margin = new System.Windows.Forms.Padding(2);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(56, 19);
-            this.button31.TabIndex = 146;
-            this.button31.Text = "Update";
-            this.button31.UseVisualStyleBackColor = true;
-            // 
-            // button37
-            // 
-            this.button37.Location = new System.Drawing.Point(1122, 421);
-            this.button37.Margin = new System.Windows.Forms.Padding(2);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(56, 19);
-            this.button37.TabIndex = 142;
-            this.button37.Text = "Update";
-            this.button37.UseVisualStyleBackColor = true;
-            // 
-            // button32
-            // 
-            this.button32.Location = new System.Drawing.Point(1123, 393);
-            this.button32.Margin = new System.Windows.Forms.Padding(2);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(56, 19);
-            this.button32.TabIndex = 147;
-            this.button32.Text = "Update";
-            this.button32.UseVisualStyleBackColor = true;
+            // btnOrderDelete
+            // 
+            this.btnOrderDelete.Location = new System.Drawing.Point(1000, 236);
+            this.btnOrderDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOrderDelete.Name = "btnOrderDelete";
+            this.btnOrderDelete.Size = new System.Drawing.Size(56, 19);
+            this.btnOrderDelete.TabIndex = 69;
+            this.btnOrderDelete.Text = "Delete";
+            this.btnOrderDelete.UseVisualStyleBackColor = true;
+            // 
+            // txtOrderTotal
+            // 
+            this.txtOrderTotal.Location = new System.Drawing.Point(914, 128);
+            this.txtOrderTotal.Name = "txtOrderTotal";
+            this.txtOrderTotal.Size = new System.Drawing.Size(182, 20);
+            this.txtOrderTotal.TabIndex = 64;
+            // 
+            // txtOrderDateOrdered
+            // 
+            this.txtOrderDateOrdered.Location = new System.Drawing.Point(914, 177);
+            this.txtOrderDateOrdered.Name = "txtOrderDateOrdered";
+            this.txtOrderDateOrdered.Size = new System.Drawing.Size(182, 20);
+            this.txtOrderDateOrdered.TabIndex = 63;
+            // 
+            // txtOrderEstimatedDelivery
+            // 
+            this.txtOrderEstimatedDelivery.Location = new System.Drawing.Point(914, 203);
+            this.txtOrderEstimatedDelivery.Name = "txtOrderEstimatedDelivery";
+            this.txtOrderEstimatedDelivery.Size = new System.Drawing.Size(182, 20);
+            this.txtOrderEstimatedDelivery.TabIndex = 62;
+            // 
+            // lblOrderID
+            // 
+            this.lblOrderID.AutoSize = true;
+            this.lblOrderID.Location = new System.Drawing.Point(796, 58);
+            this.lblOrderID.Name = "lblOrderID";
+            this.lblOrderID.Size = new System.Drawing.Size(18, 13);
+            this.lblOrderID.TabIndex = 61;
+            this.lblOrderID.Text = "ID";
+            // 
+            // lblOrderEstimatedDelivery
+            // 
+            this.lblOrderEstimatedDelivery.AutoSize = true;
+            this.lblOrderEstimatedDelivery.Location = new System.Drawing.Point(795, 206);
+            this.lblOrderEstimatedDelivery.Name = "lblOrderEstimatedDelivery";
+            this.lblOrderEstimatedDelivery.Size = new System.Drawing.Size(91, 13);
+            this.lblOrderEstimatedDelivery.TabIndex = 60;
+            this.lblOrderEstimatedDelivery.Text = "EstimatedDelivery";
+            // 
+            // lblOrderDateOrdered
+            // 
+            this.lblOrderDateOrdered.AutoSize = true;
+            this.lblOrderDateOrdered.Location = new System.Drawing.Point(795, 180);
+            this.lblOrderDateOrdered.Name = "lblOrderDateOrdered";
+            this.lblOrderDateOrdered.Size = new System.Drawing.Size(68, 13);
+            this.lblOrderDateOrdered.TabIndex = 59;
+            this.lblOrderDateOrdered.Text = "DateOrdered";
+            // 
+            // lblOrderTotal
+            // 
+            this.lblOrderTotal.AutoSize = true;
+            this.lblOrderTotal.Location = new System.Drawing.Point(795, 131);
+            this.lblOrderTotal.Name = "lblOrderTotal";
+            this.lblOrderTotal.Size = new System.Drawing.Size(31, 13);
+            this.lblOrderTotal.TabIndex = 58;
+            this.lblOrderTotal.Text = "Total";
+            // 
+            // lblOrderProductID
+            // 
+            this.lblOrderProductID.AutoSize = true;
+            this.lblOrderProductID.Location = new System.Drawing.Point(795, 109);
+            this.lblOrderProductID.Name = "lblOrderProductID";
+            this.lblOrderProductID.Size = new System.Drawing.Size(55, 13);
+            this.lblOrderProductID.TabIndex = 57;
+            this.lblOrderProductID.Text = "ProductID";
+            // 
+            // lblOrderClientID
+            // 
+            this.lblOrderClientID.AutoSize = true;
+            this.lblOrderClientID.Location = new System.Drawing.Point(796, 84);
+            this.lblOrderClientID.Name = "lblOrderClientID";
+            this.lblOrderClientID.Size = new System.Drawing.Size(44, 13);
+            this.lblOrderClientID.TabIndex = 56;
+            this.lblOrderClientID.Text = "ClientID";
+            // 
+            // lblOrder
+            // 
+            this.lblOrder.AutoSize = true;
+            this.lblOrder.Location = new System.Drawing.Point(986, 20);
+            this.lblOrder.Name = "lblOrder";
+            this.lblOrder.Size = new System.Drawing.Size(33, 13);
+            this.lblOrder.TabIndex = 55;
+            this.lblOrder.Text = "Order";
+            // 
+            // txtOrderProductID
+            // 
+            this.txtOrderProductID.Location = new System.Drawing.Point(914, 102);
+            this.txtOrderProductID.Name = "txtOrderProductID";
+            this.txtOrderProductID.Size = new System.Drawing.Size(182, 20);
+            this.txtOrderProductID.TabIndex = 54;
+            // 
+            // txtOrderClientID
+            // 
+            this.txtOrderClientID.Location = new System.Drawing.Point(914, 76);
+            this.txtOrderClientID.Name = "txtOrderClientID";
+            this.txtOrderClientID.Size = new System.Drawing.Size(182, 20);
+            this.txtOrderClientID.TabIndex = 53;
+            // 
+            // txtOrderID
+            // 
+            this.txtOrderID.Location = new System.Drawing.Point(914, 50);
+            this.txtOrderID.Name = "txtOrderID";
+            this.txtOrderID.Size = new System.Drawing.Size(182, 20);
+            this.txtOrderID.TabIndex = 52;
+            // 
+            // btnOrderInsert
+            // 
+            this.btnOrderInsert.Location = new System.Drawing.Point(891, 237);
+            this.btnOrderInsert.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOrderInsert.Name = "btnOrderInsert";
+            this.btnOrderInsert.Size = new System.Drawing.Size(56, 19);
+            this.btnOrderInsert.TabIndex = 51;
+            this.btnOrderInsert.Text = "Insert";
+            this.btnOrderInsert.UseVisualStyleBackColor = true;
+            this.btnOrderInsert.Click += new System.EventHandler(this.btnOrderInsert_Click);
+            // 
+            // btnReviewDelete
+            // 
+            this.btnReviewDelete.Location = new System.Drawing.Point(206, 555);
+            this.btnReviewDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReviewDelete.Name = "btnReviewDelete";
+            this.btnReviewDelete.Size = new System.Drawing.Size(56, 19);
+            this.btnReviewDelete.TabIndex = 93;
+            this.btnReviewDelete.Text = "Delete";
+            this.btnReviewDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnReviewNoOfStarsUpdate
+            // 
+            this.btnReviewNoOfStarsUpdate.Location = new System.Drawing.Point(328, 426);
+            this.btnReviewNoOfStarsUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReviewNoOfStarsUpdate.Name = "btnReviewNoOfStarsUpdate";
+            this.btnReviewNoOfStarsUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnReviewNoOfStarsUpdate.TabIndex = 92;
+            this.btnReviewNoOfStarsUpdate.Text = "Update";
+            this.btnReviewNoOfStarsUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnReviewDescriptionUpdate
+            // 
+            this.btnReviewDescriptionUpdate.Location = new System.Drawing.Point(328, 449);
+            this.btnReviewDescriptionUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReviewDescriptionUpdate.Name = "btnReviewDescriptionUpdate";
+            this.btnReviewDescriptionUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnReviewDescriptionUpdate.TabIndex = 91;
+            this.btnReviewDescriptionUpdate.Text = "Update";
+            this.btnReviewDescriptionUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnReviewDateUpdate
+            // 
+            this.btnReviewDateUpdate.Location = new System.Drawing.Point(328, 477);
+            this.btnReviewDateUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReviewDateUpdate.Name = "btnReviewDateUpdate";
+            this.btnReviewDateUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnReviewDateUpdate.TabIndex = 90;
+            this.btnReviewDateUpdate.Text = "Update";
+            this.btnReviewDateUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnReviewTimeUpdate
+            // 
+            this.btnReviewTimeUpdate.Location = new System.Drawing.Point(328, 500);
+            this.btnReviewTimeUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReviewTimeUpdate.Name = "btnReviewTimeUpdate";
+            this.btnReviewTimeUpdate.Size = new System.Drawing.Size(56, 20);
+            this.btnReviewTimeUpdate.TabIndex = 89;
+            this.btnReviewTimeUpdate.Text = "Update";
+            this.btnReviewTimeUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnReviewClientIDUpdate
+            // 
+            this.btnReviewClientIDUpdate.Location = new System.Drawing.Point(329, 371);
+            this.btnReviewClientIDUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReviewClientIDUpdate.Name = "btnReviewClientIDUpdate";
+            this.btnReviewClientIDUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnReviewClientIDUpdate.TabIndex = 88;
+            this.btnReviewClientIDUpdate.Text = "Update";
+            this.btnReviewClientIDUpdate.UseVisualStyleBackColor = true;
+            // 
+            // txtReviewNoOfStars
+            // 
+            this.txtReviewNoOfStars.Location = new System.Drawing.Point(131, 422);
+            this.txtReviewNoOfStars.Name = "txtReviewNoOfStars";
+            this.txtReviewNoOfStars.Size = new System.Drawing.Size(182, 20);
+            this.txtReviewNoOfStars.TabIndex = 87;
+            // 
+            // txtReviewDescription
+            // 
+            this.txtReviewDescription.Location = new System.Drawing.Point(131, 448);
+            this.txtReviewDescription.Name = "txtReviewDescription";
+            this.txtReviewDescription.Size = new System.Drawing.Size(182, 20);
+            this.txtReviewDescription.TabIndex = 86;
+            // 
+            // txtReviewDate
+            // 
+            this.txtReviewDate.Location = new System.Drawing.Point(131, 474);
+            this.txtReviewDate.Name = "txtReviewDate";
+            this.txtReviewDate.Size = new System.Drawing.Size(182, 20);
+            this.txtReviewDate.TabIndex = 85;
+            // 
+            // txtReviewTime
+            // 
+            this.txtReviewTime.Location = new System.Drawing.Point(131, 500);
+            this.txtReviewTime.Name = "txtReviewTime";
+            this.txtReviewTime.Size = new System.Drawing.Size(182, 20);
+            this.txtReviewTime.TabIndex = 84;
+            // 
+            // txtReviewPicture
+            // 
+            this.txtReviewPicture.Location = new System.Drawing.Point(131, 526);
+            this.txtReviewPicture.Name = "txtReviewPicture";
+            this.txtReviewPicture.Size = new System.Drawing.Size(182, 20);
+            this.txtReviewPicture.TabIndex = 83;
+            // 
+            // lblReviewID
+            // 
+            this.lblReviewID.AutoSize = true;
+            this.lblReviewID.Location = new System.Drawing.Point(13, 352);
+            this.lblReviewID.Name = "lblReviewID";
+            this.lblReviewID.Size = new System.Drawing.Size(18, 13);
+            this.lblReviewID.TabIndex = 82;
+            this.lblReviewID.Text = "ID";
+            // 
+            // lblReviewPicture
+            // 
+            this.lblReviewPicture.AutoSize = true;
+            this.lblReviewPicture.Location = new System.Drawing.Point(12, 529);
+            this.lblReviewPicture.Name = "lblReviewPicture";
+            this.lblReviewPicture.Size = new System.Drawing.Size(40, 13);
+            this.lblReviewPicture.TabIndex = 81;
+            this.lblReviewPicture.Text = "Picture";
+            // 
+            // lblReviewTime
+            // 
+            this.lblReviewTime.AutoSize = true;
+            this.lblReviewTime.Location = new System.Drawing.Point(12, 503);
+            this.lblReviewTime.Name = "lblReviewTime";
+            this.lblReviewTime.Size = new System.Drawing.Size(30, 13);
+            this.lblReviewTime.TabIndex = 80;
+            this.lblReviewTime.Text = "Time";
+            // 
+            // lblReviewDate
+            // 
+            this.lblReviewDate.AutoSize = true;
+            this.lblReviewDate.Location = new System.Drawing.Point(12, 477);
+            this.lblReviewDate.Name = "lblReviewDate";
+            this.lblReviewDate.Size = new System.Drawing.Size(30, 13);
+            this.lblReviewDate.TabIndex = 79;
+            this.lblReviewDate.Text = "Date";
+            // 
+            // lblReviewDescription
+            // 
+            this.lblReviewDescription.AutoSize = true;
+            this.lblReviewDescription.Location = new System.Drawing.Point(12, 451);
+            this.lblReviewDescription.Name = "lblReviewDescription";
+            this.lblReviewDescription.Size = new System.Drawing.Size(60, 13);
+            this.lblReviewDescription.TabIndex = 78;
+            this.lblReviewDescription.Text = "Description";
+            // 
+            // lblReviewNoOfStars
+            // 
+            this.lblReviewNoOfStars.AutoSize = true;
+            this.lblReviewNoOfStars.Location = new System.Drawing.Point(12, 425);
+            this.lblReviewNoOfStars.Name = "lblReviewNoOfStars";
+            this.lblReviewNoOfStars.Size = new System.Drawing.Size(56, 13);
+            this.lblReviewNoOfStars.TabIndex = 77;
+            this.lblReviewNoOfStars.Text = "NoOfStars";
+            // 
+            // lblReviewProductID
+            // 
+            this.lblReviewProductID.AutoSize = true;
+            this.lblReviewProductID.Location = new System.Drawing.Point(12, 403);
+            this.lblReviewProductID.Name = "lblReviewProductID";
+            this.lblReviewProductID.Size = new System.Drawing.Size(55, 13);
+            this.lblReviewProductID.TabIndex = 76;
+            this.lblReviewProductID.Text = "ProductID";
+            // 
+            // lblReviewClientID
+            // 
+            this.lblReviewClientID.AutoSize = true;
+            this.lblReviewClientID.Location = new System.Drawing.Point(13, 378);
+            this.lblReviewClientID.Name = "lblReviewClientID";
+            this.lblReviewClientID.Size = new System.Drawing.Size(44, 13);
+            this.lblReviewClientID.TabIndex = 75;
+            this.lblReviewClientID.Text = "ClientID";
+            // 
+            // lblReview
+            // 
+            this.lblReview.AutoSize = true;
+            this.lblReview.Location = new System.Drawing.Point(203, 314);
+            this.lblReview.Name = "lblReview";
+            this.lblReview.Size = new System.Drawing.Size(43, 13);
+            this.lblReview.TabIndex = 74;
+            this.lblReview.Text = "Review";
+            // 
+            // txtReviewProductID
+            // 
+            this.txtReviewProductID.Location = new System.Drawing.Point(131, 396);
+            this.txtReviewProductID.Name = "txtReviewProductID";
+            this.txtReviewProductID.Size = new System.Drawing.Size(182, 20);
+            this.txtReviewProductID.TabIndex = 73;
+            // 
+            // txtReviewClientID
+            // 
+            this.txtReviewClientID.Location = new System.Drawing.Point(131, 370);
+            this.txtReviewClientID.Name = "txtReviewClientID";
+            this.txtReviewClientID.Size = new System.Drawing.Size(182, 20);
+            this.txtReviewClientID.TabIndex = 72;
+            // 
+            // txtReviewID
+            // 
+            this.txtReviewID.Location = new System.Drawing.Point(131, 344);
+            this.txtReviewID.Name = "txtReviewID";
+            this.txtReviewID.Size = new System.Drawing.Size(182, 20);
+            this.txtReviewID.TabIndex = 71;
+            // 
+            // btnReviewInsert
+            // 
+            this.btnReviewInsert.Location = new System.Drawing.Point(71, 555);
+            this.btnReviewInsert.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReviewInsert.Name = "btnReviewInsert";
+            this.btnReviewInsert.Size = new System.Drawing.Size(56, 19);
+            this.btnReviewInsert.TabIndex = 70;
+            this.btnReviewInsert.Text = "Insert";
+            this.btnReviewInsert.UseVisualStyleBackColor = true;
+            this.btnReviewInsert.Click += new System.EventHandler(this.btnReviewInsert_Click);
+            // 
+            // btnWarehouseIDUpdate
+            // 
+            this.btnWarehouseIDUpdate.Location = new System.Drawing.Point(720, 340);
+            this.btnWarehouseIDUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnWarehouseIDUpdate.Name = "btnWarehouseIDUpdate";
+            this.btnWarehouseIDUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnWarehouseIDUpdate.TabIndex = 119;
+            this.btnWarehouseIDUpdate.Text = "Update";
+            this.btnWarehouseIDUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnWarehouseDelete
+            // 
+            this.btnWarehouseDelete.Location = new System.Drawing.Point(601, 477);
+            this.btnWarehouseDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnWarehouseDelete.Name = "btnWarehouseDelete";
+            this.btnWarehouseDelete.Size = new System.Drawing.Size(56, 19);
+            this.btnWarehouseDelete.TabIndex = 118;
+            this.btnWarehouseDelete.Text = "Delete";
+            this.btnWarehouseDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnWarehouseLocationUpdate
+            // 
+            this.btnWarehouseLocationUpdate.Location = new System.Drawing.Point(720, 422);
+            this.btnWarehouseLocationUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnWarehouseLocationUpdate.Name = "btnWarehouseLocationUpdate";
+            this.btnWarehouseLocationUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnWarehouseLocationUpdate.TabIndex = 117;
+            this.btnWarehouseLocationUpdate.Text = "Update";
+            this.btnWarehouseLocationUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnWarehouseNameUpdate
+            // 
+            this.btnWarehouseNameUpdate.Location = new System.Drawing.Point(720, 445);
+            this.btnWarehouseNameUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnWarehouseNameUpdate.Name = "btnWarehouseNameUpdate";
+            this.btnWarehouseNameUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnWarehouseNameUpdate.TabIndex = 116;
+            this.btnWarehouseNameUpdate.Text = "Update";
+            this.btnWarehouseNameUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnWarehouseProductIDUpdate
+            // 
+            this.btnWarehouseProductIDUpdate.Location = new System.Drawing.Point(721, 367);
+            this.btnWarehouseProductIDUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnWarehouseProductIDUpdate.Name = "btnWarehouseProductIDUpdate";
+            this.btnWarehouseProductIDUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnWarehouseProductIDUpdate.TabIndex = 113;
+            this.btnWarehouseProductIDUpdate.Text = "Update";
+            this.btnWarehouseProductIDUpdate.UseVisualStyleBackColor = true;
+            // 
+            // txtWarehouseLocation
+            // 
+            this.txtWarehouseLocation.Location = new System.Drawing.Point(523, 418);
+            this.txtWarehouseLocation.Name = "txtWarehouseLocation";
+            this.txtWarehouseLocation.Size = new System.Drawing.Size(182, 20);
+            this.txtWarehouseLocation.TabIndex = 112;
+            // 
+            // txtWarehouseName
+            // 
+            this.txtWarehouseName.Location = new System.Drawing.Point(523, 444);
+            this.txtWarehouseName.Name = "txtWarehouseName";
+            this.txtWarehouseName.Size = new System.Drawing.Size(182, 20);
+            this.txtWarehouseName.TabIndex = 111;
+            // 
+            // lblWarehouseID
+            // 
+            this.lblWarehouseID.AutoSize = true;
+            this.lblWarehouseID.Location = new System.Drawing.Point(405, 348);
+            this.lblWarehouseID.Name = "lblWarehouseID";
+            this.lblWarehouseID.Size = new System.Drawing.Size(18, 13);
+            this.lblWarehouseID.TabIndex = 107;
+            this.lblWarehouseID.Text = "ID";
+            // 
+            // lblWarehouseName
+            // 
+            this.lblWarehouseName.AutoSize = true;
+            this.lblWarehouseName.Location = new System.Drawing.Point(404, 447);
+            this.lblWarehouseName.Name = "lblWarehouseName";
+            this.lblWarehouseName.Size = new System.Drawing.Size(35, 13);
+            this.lblWarehouseName.TabIndex = 103;
+            this.lblWarehouseName.Text = "Name";
+            // 
+            // lblWarehouseLocation
+            // 
+            this.lblWarehouseLocation.AutoSize = true;
+            this.lblWarehouseLocation.Location = new System.Drawing.Point(404, 421);
+            this.lblWarehouseLocation.Name = "lblWarehouseLocation";
+            this.lblWarehouseLocation.Size = new System.Drawing.Size(48, 13);
+            this.lblWarehouseLocation.TabIndex = 102;
+            this.lblWarehouseLocation.Text = "Location";
+            // 
+            // lblWarehouseQuntity
+            // 
+            this.lblWarehouseQuntity.AutoSize = true;
+            this.lblWarehouseQuntity.Location = new System.Drawing.Point(404, 399);
+            this.lblWarehouseQuntity.Name = "lblWarehouseQuntity";
+            this.lblWarehouseQuntity.Size = new System.Drawing.Size(46, 13);
+            this.lblWarehouseQuntity.TabIndex = 101;
+            this.lblWarehouseQuntity.Text = "Quantity";
+            // 
+            // lblWarehouseProductID
+            // 
+            this.lblWarehouseProductID.AutoSize = true;
+            this.lblWarehouseProductID.Location = new System.Drawing.Point(405, 374);
+            this.lblWarehouseProductID.Name = "lblWarehouseProductID";
+            this.lblWarehouseProductID.Size = new System.Drawing.Size(55, 13);
+            this.lblWarehouseProductID.TabIndex = 100;
+            this.lblWarehouseProductID.Text = "ProductID";
+            // 
+            // lblWarehouse
+            // 
+            this.lblWarehouse.AutoSize = true;
+            this.lblWarehouse.Location = new System.Drawing.Point(595, 310);
+            this.lblWarehouse.Name = "lblWarehouse";
+            this.lblWarehouse.Size = new System.Drawing.Size(62, 13);
+            this.lblWarehouse.TabIndex = 99;
+            this.lblWarehouse.Text = "Warehouse";
+            // 
+            // txtWarehouseQuantity
+            // 
+            this.txtWarehouseQuantity.Location = new System.Drawing.Point(523, 392);
+            this.txtWarehouseQuantity.Name = "txtWarehouseQuantity";
+            this.txtWarehouseQuantity.Size = new System.Drawing.Size(182, 20);
+            this.txtWarehouseQuantity.TabIndex = 98;
+            // 
+            // txtWarehouseProductID
+            // 
+            this.txtWarehouseProductID.Location = new System.Drawing.Point(523, 366);
+            this.txtWarehouseProductID.Name = "txtWarehouseProductID";
+            this.txtWarehouseProductID.Size = new System.Drawing.Size(182, 20);
+            this.txtWarehouseProductID.TabIndex = 97;
+            // 
+            // txtWarehouseID
+            // 
+            this.txtWarehouseID.Location = new System.Drawing.Point(523, 340);
+            this.txtWarehouseID.Name = "txtWarehouseID";
+            this.txtWarehouseID.Size = new System.Drawing.Size(182, 20);
+            this.txtWarehouseID.TabIndex = 96;
+            // 
+            // btnWarehouseInsert
+            // 
+            this.btnWarehouseInsert.Location = new System.Drawing.Point(486, 477);
+            this.btnWarehouseInsert.Margin = new System.Windows.Forms.Padding(2);
+            this.btnWarehouseInsert.Name = "btnWarehouseInsert";
+            this.btnWarehouseInsert.Size = new System.Drawing.Size(56, 19);
+            this.btnWarehouseInsert.TabIndex = 95;
+            this.btnWarehouseInsert.Text = "Insert";
+            this.btnWarehouseInsert.UseVisualStyleBackColor = true;
+            this.btnWarehouseInsert.Click += new System.EventHandler(this.btnWarehouseInsert_Click);
+            // 
+            // btnTransportVehicleIDUpdate
+            // 
+            this.btnTransportVehicleIDUpdate.Location = new System.Drawing.Point(1122, 339);
+            this.btnTransportVehicleIDUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTransportVehicleIDUpdate.Name = "btnTransportVehicleIDUpdate";
+            this.btnTransportVehicleIDUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnTransportVehicleIDUpdate.TabIndex = 144;
+            this.btnTransportVehicleIDUpdate.Text = "Update";
+            this.btnTransportVehicleIDUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnTransportVehicleDelete
+            // 
+            this.btnTransportVehicleDelete.Location = new System.Drawing.Point(1000, 527);
+            this.btnTransportVehicleDelete.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTransportVehicleDelete.Name = "btnTransportVehicleDelete";
+            this.btnTransportVehicleDelete.Size = new System.Drawing.Size(56, 19);
+            this.btnTransportVehicleDelete.TabIndex = 143;
+            this.btnTransportVehicleDelete.Text = "Delete";
+            this.btnTransportVehicleDelete.UseVisualStyleBackColor = true;
+            // 
+            // btnTransportVehicleCurrentLocationUpdate
+            // 
+            this.btnTransportVehicleCurrentLocationUpdate.Location = new System.Drawing.Point(1122, 444);
+            this.btnTransportVehicleCurrentLocationUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTransportVehicleCurrentLocationUpdate.Name = "btnTransportVehicleCurrentLocationUpdate";
+            this.btnTransportVehicleCurrentLocationUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnTransportVehicleCurrentLocationUpdate.TabIndex = 141;
+            this.btnTransportVehicleCurrentLocationUpdate.Text = "Update";
+            this.btnTransportVehicleCurrentLocationUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnTransportVehicleCarPlateNumberUpdate
+            // 
+            this.btnTransportVehicleCarPlateNumberUpdate.Location = new System.Drawing.Point(1122, 472);
+            this.btnTransportVehicleCarPlateNumberUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTransportVehicleCarPlateNumberUpdate.Name = "btnTransportVehicleCarPlateNumberUpdate";
+            this.btnTransportVehicleCarPlateNumberUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnTransportVehicleCarPlateNumberUpdate.TabIndex = 140;
+            this.btnTransportVehicleCarPlateNumberUpdate.Text = "Update";
+            this.btnTransportVehicleCarPlateNumberUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnTransportVehicleDeliveryUpdatesUpdate
+            // 
+            this.btnTransportVehicleDeliveryUpdatesUpdate.Location = new System.Drawing.Point(1122, 495);
+            this.btnTransportVehicleDeliveryUpdatesUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTransportVehicleDeliveryUpdatesUpdate.Name = "btnTransportVehicleDeliveryUpdatesUpdate";
+            this.btnTransportVehicleDeliveryUpdatesUpdate.Size = new System.Drawing.Size(56, 20);
+            this.btnTransportVehicleDeliveryUpdatesUpdate.TabIndex = 139;
+            this.btnTransportVehicleDeliveryUpdatesUpdate.Text = "Update";
+            this.btnTransportVehicleDeliveryUpdatesUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnTransportVehicleOrderIDUpdate
+            // 
+            this.btnTransportVehicleOrderIDUpdate.Location = new System.Drawing.Point(1123, 366);
+            this.btnTransportVehicleOrderIDUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTransportVehicleOrderIDUpdate.Name = "btnTransportVehicleOrderIDUpdate";
+            this.btnTransportVehicleOrderIDUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnTransportVehicleOrderIDUpdate.TabIndex = 138;
+            this.btnTransportVehicleOrderIDUpdate.Text = "Update";
+            this.btnTransportVehicleOrderIDUpdate.UseVisualStyleBackColor = true;
+            // 
+            // txtTransportVehiclePickUpDateAndTime
+            // 
+            this.txtTransportVehiclePickUpDateAndTime.Location = new System.Drawing.Point(925, 417);
+            this.txtTransportVehiclePickUpDateAndTime.Name = "txtTransportVehiclePickUpDateAndTime";
+            this.txtTransportVehiclePickUpDateAndTime.Size = new System.Drawing.Size(182, 20);
+            this.txtTransportVehiclePickUpDateAndTime.TabIndex = 137;
+            // 
+            // txtTransportVehicleCurrentLocation
+            // 
+            this.txtTransportVehicleCurrentLocation.Location = new System.Drawing.Point(925, 443);
+            this.txtTransportVehicleCurrentLocation.Name = "txtTransportVehicleCurrentLocation";
+            this.txtTransportVehicleCurrentLocation.Size = new System.Drawing.Size(182, 20);
+            this.txtTransportVehicleCurrentLocation.TabIndex = 136;
+            // 
+            // txtTransportVehicleCarPlateNumber
+            // 
+            this.txtTransportVehicleCarPlateNumber.Location = new System.Drawing.Point(925, 469);
+            this.txtTransportVehicleCarPlateNumber.Name = "txtTransportVehicleCarPlateNumber";
+            this.txtTransportVehicleCarPlateNumber.Size = new System.Drawing.Size(182, 20);
+            this.txtTransportVehicleCarPlateNumber.TabIndex = 135;
+            // 
+            // txtTransportVehicleDeliveryUpdates
+            // 
+            this.txtTransportVehicleDeliveryUpdates.Location = new System.Drawing.Point(925, 495);
+            this.txtTransportVehicleDeliveryUpdates.Name = "txtTransportVehicleDeliveryUpdates";
+            this.txtTransportVehicleDeliveryUpdates.Size = new System.Drawing.Size(182, 20);
+            this.txtTransportVehicleDeliveryUpdates.TabIndex = 134;
+            // 
+            // lblTransportVehicleID
+            // 
+            this.lblTransportVehicleID.AutoSize = true;
+            this.lblTransportVehicleID.Location = new System.Drawing.Point(807, 347);
+            this.lblTransportVehicleID.Name = "lblTransportVehicleID";
+            this.lblTransportVehicleID.Size = new System.Drawing.Size(18, 13);
+            this.lblTransportVehicleID.TabIndex = 132;
+            this.lblTransportVehicleID.Text = "ID";
+            // 
+            // lblTransportVehicleDeliveryUpdates
+            // 
+            this.lblTransportVehicleDeliveryUpdates.AutoSize = true;
+            this.lblTransportVehicleDeliveryUpdates.Location = new System.Drawing.Point(806, 498);
+            this.lblTransportVehicleDeliveryUpdates.Name = "lblTransportVehicleDeliveryUpdates";
+            this.lblTransportVehicleDeliveryUpdates.Size = new System.Drawing.Size(85, 13);
+            this.lblTransportVehicleDeliveryUpdates.TabIndex = 130;
+            this.lblTransportVehicleDeliveryUpdates.Text = "DeliveryUpdates";
+            // 
+            // lblTransportVehicleCarPlateNumber
+            // 
+            this.lblTransportVehicleCarPlateNumber.AutoSize = true;
+            this.lblTransportVehicleCarPlateNumber.Location = new System.Drawing.Point(806, 472);
+            this.lblTransportVehicleCarPlateNumber.Name = "lblTransportVehicleCarPlateNumber";
+            this.lblTransportVehicleCarPlateNumber.Size = new System.Drawing.Size(84, 13);
+            this.lblTransportVehicleCarPlateNumber.TabIndex = 129;
+            this.lblTransportVehicleCarPlateNumber.Text = "CarPlateNumber";
+            // 
+            // lblTransportVehicleCurrentLocation
+            // 
+            this.lblTransportVehicleCurrentLocation.AutoSize = true;
+            this.lblTransportVehicleCurrentLocation.Location = new System.Drawing.Point(806, 446);
+            this.lblTransportVehicleCurrentLocation.Name = "lblTransportVehicleCurrentLocation";
+            this.lblTransportVehicleCurrentLocation.Size = new System.Drawing.Size(82, 13);
+            this.lblTransportVehicleCurrentLocation.TabIndex = 128;
+            this.lblTransportVehicleCurrentLocation.Text = "CurrentLocation";
+            // 
+            // lblTransportVehiclePickUpDateAndTime
+            // 
+            this.lblTransportVehiclePickUpDateAndTime.AutoSize = true;
+            this.lblTransportVehiclePickUpDateAndTime.Location = new System.Drawing.Point(806, 420);
+            this.lblTransportVehiclePickUpDateAndTime.Name = "lblTransportVehiclePickUpDateAndTime";
+            this.lblTransportVehiclePickUpDateAndTime.Size = new System.Drawing.Size(107, 13);
+            this.lblTransportVehiclePickUpDateAndTime.TabIndex = 127;
+            this.lblTransportVehiclePickUpDateAndTime.Text = "PickUpDateAndTime";
+            // 
+            // lblTransportVehiclePickUpLocation
+            // 
+            this.lblTransportVehiclePickUpLocation.AutoSize = true;
+            this.lblTransportVehiclePickUpLocation.Location = new System.Drawing.Point(806, 398);
+            this.lblTransportVehiclePickUpLocation.Name = "lblTransportVehiclePickUpLocation";
+            this.lblTransportVehiclePickUpLocation.Size = new System.Drawing.Size(83, 13);
+            this.lblTransportVehiclePickUpLocation.TabIndex = 126;
+            this.lblTransportVehiclePickUpLocation.Text = "PickUpLocation";
+            // 
+            // lblTransportVehicleOrderID
+            // 
+            this.lblTransportVehicleOrderID.AutoSize = true;
+            this.lblTransportVehicleOrderID.Location = new System.Drawing.Point(807, 373);
+            this.lblTransportVehicleOrderID.Name = "lblTransportVehicleOrderID";
+            this.lblTransportVehicleOrderID.Size = new System.Drawing.Size(44, 13);
+            this.lblTransportVehicleOrderID.TabIndex = 125;
+            this.lblTransportVehicleOrderID.Text = "OrderID";
+            // 
+            // lblTransportVehicle
+            // 
+            this.lblTransportVehicle.AutoSize = true;
+            this.lblTransportVehicle.Location = new System.Drawing.Point(997, 309);
+            this.lblTransportVehicle.Name = "lblTransportVehicle";
+            this.lblTransportVehicle.Size = new System.Drawing.Size(90, 13);
+            this.lblTransportVehicle.TabIndex = 124;
+            this.lblTransportVehicle.Text = "Transport Vehicle";
+            // 
+            // txtTransportVehiclePickUpLocation
+            // 
+            this.txtTransportVehiclePickUpLocation.Location = new System.Drawing.Point(925, 391);
+            this.txtTransportVehiclePickUpLocation.Name = "txtTransportVehiclePickUpLocation";
+            this.txtTransportVehiclePickUpLocation.Size = new System.Drawing.Size(182, 20);
+            this.txtTransportVehiclePickUpLocation.TabIndex = 123;
+            // 
+            // txtTransportVehicleOrderID
+            // 
+            this.txtTransportVehicleOrderID.Location = new System.Drawing.Point(925, 365);
+            this.txtTransportVehicleOrderID.Name = "txtTransportVehicleOrderID";
+            this.txtTransportVehicleOrderID.Size = new System.Drawing.Size(182, 20);
+            this.txtTransportVehicleOrderID.TabIndex = 122;
+            // 
+            // txtTransportVehicleID
+            // 
+            this.txtTransportVehicleID.Location = new System.Drawing.Point(925, 339);
+            this.txtTransportVehicleID.Name = "txtTransportVehicleID";
+            this.txtTransportVehicleID.Size = new System.Drawing.Size(182, 20);
+            this.txtTransportVehicleID.TabIndex = 121;
+            // 
+            // btnTransportVehicleInsert
+            // 
+            this.btnTransportVehicleInsert.Location = new System.Drawing.Point(857, 526);
+            this.btnTransportVehicleInsert.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTransportVehicleInsert.Name = "btnTransportVehicleInsert";
+            this.btnTransportVehicleInsert.Size = new System.Drawing.Size(56, 19);
+            this.btnTransportVehicleInsert.TabIndex = 120;
+            this.btnTransportVehicleInsert.Text = "Insert";
+            this.btnTransportVehicleInsert.UseVisualStyleBackColor = true;
+            // 
+            // btnReviewPictureUpdate
+            // 
+            this.btnReviewPictureUpdate.Location = new System.Drawing.Point(328, 524);
+            this.btnReviewPictureUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnReviewPictureUpdate.Name = "btnReviewPictureUpdate";
+            this.btnReviewPictureUpdate.Size = new System.Drawing.Size(56, 20);
+            this.btnReviewPictureUpdate.TabIndex = 145;
+            this.btnReviewPictureUpdate.Text = "Update";
+            this.btnReviewPictureUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnWarehouseQuntityUpdate
+            // 
+            this.btnWarehouseQuntityUpdate.Location = new System.Drawing.Point(720, 395);
+            this.btnWarehouseQuntityUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnWarehouseQuntityUpdate.Name = "btnWarehouseQuntityUpdate";
+            this.btnWarehouseQuntityUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnWarehouseQuntityUpdate.TabIndex = 146;
+            this.btnWarehouseQuntityUpdate.Text = "Update";
+            this.btnWarehouseQuntityUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnTransportVehiclePickUpDateAndTimeUpdate
+            // 
+            this.btnTransportVehiclePickUpDateAndTimeUpdate.Location = new System.Drawing.Point(1122, 421);
+            this.btnTransportVehiclePickUpDateAndTimeUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTransportVehiclePickUpDateAndTimeUpdate.Name = "btnTransportVehiclePickUpDateAndTimeUpdate";
+            this.btnTransportVehiclePickUpDateAndTimeUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnTransportVehiclePickUpDateAndTimeUpdate.TabIndex = 142;
+            this.btnTransportVehiclePickUpDateAndTimeUpdate.Text = "Update";
+            this.btnTransportVehiclePickUpDateAndTimeUpdate.UseVisualStyleBackColor = true;
+            // 
+            // btnTransportVehiclePickUpLocationUpdate
+            // 
+            this.btnTransportVehiclePickUpLocationUpdate.Location = new System.Drawing.Point(1123, 393);
+            this.btnTransportVehiclePickUpLocationUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTransportVehiclePickUpLocationUpdate.Name = "btnTransportVehiclePickUpLocationUpdate";
+            this.btnTransportVehiclePickUpLocationUpdate.Size = new System.Drawing.Size(56, 19);
+            this.btnTransportVehiclePickUpLocationUpdate.TabIndex = 147;
+            this.btnTransportVehiclePickUpLocationUpdate.Text = "Update";
+            this.btnTransportVehiclePickUpLocationUpdate.UseVisualStyleBackColor = true;
             // 
             // btnClientDOBUpdate
             // 
@@ -1272,7 +1277,7 @@
             // 
             // picExample
             // 
-            this.picExample.Location = new System.Drawing.Point(408, 262);
+            this.picExample.Location = new System.Drawing.Point(408, 237);
             this.picExample.Name = "picExample";
             this.picExample.Size = new System.Drawing.Size(89, 48);
             this.picExample.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1280,96 +1285,114 @@
             this.picExample.TabStop = false;
             this.picExample.Click += new System.EventHandler(this.picExample_Click);
             // 
+            // txtOrderDeliveryPrice
+            // 
+            this.txtOrderDeliveryPrice.Location = new System.Drawing.Point(914, 151);
+            this.txtOrderDeliveryPrice.Name = "txtOrderDeliveryPrice";
+            this.txtOrderDeliveryPrice.Size = new System.Drawing.Size(182, 20);
+            this.txtOrderDeliveryPrice.TabIndex = 152;
+            // 
+            // lblOrderDeliveryPrice
+            // 
+            this.lblOrderDeliveryPrice.AutoSize = true;
+            this.lblOrderDeliveryPrice.Location = new System.Drawing.Point(795, 154);
+            this.lblOrderDeliveryPrice.Name = "lblOrderDeliveryPrice";
+            this.lblOrderDeliveryPrice.Size = new System.Drawing.Size(69, 13);
+            this.lblOrderDeliveryPrice.TabIndex = 151;
+            this.lblOrderDeliveryPrice.Text = "DeliveryPrice";
+            // 
             // HelpDeveloper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1192, 608);
+            this.Controls.Add(this.txtOrderDeliveryPrice);
+            this.Controls.Add(this.lblOrderDeliveryPrice);
             this.Controls.Add(this.picExample);
             this.Controls.Add(this.btnAccountCreationDateUpdate);
             this.Controls.Add(this.btnClientDOBUpdate);
-            this.Controls.Add(this.button32);
-            this.Controls.Add(this.button31);
-            this.Controls.Add(this.button17);
-            this.Controls.Add(this.button35);
-            this.Controls.Add(this.button36);
-            this.Controls.Add(this.button37);
-            this.Controls.Add(this.button38);
-            this.Controls.Add(this.button39);
-            this.Controls.Add(this.button40);
-            this.Controls.Add(this.button41);
-            this.Controls.Add(this.textBox37);
-            this.Controls.Add(this.textBox38);
-            this.Controls.Add(this.textBox39);
-            this.Controls.Add(this.textBox40);
-            this.Controls.Add(this.label42);
-            this.Controls.Add(this.label44);
-            this.Controls.Add(this.label45);
-            this.Controls.Add(this.label46);
-            this.Controls.Add(this.label47);
-            this.Controls.Add(this.label48);
-            this.Controls.Add(this.label49);
-            this.Controls.Add(this.label50);
-            this.Controls.Add(this.textBox42);
-            this.Controls.Add(this.textBox43);
-            this.Controls.Add(this.textBox44);
-            this.Controls.Add(this.button42);
-            this.Controls.Add(this.button27);
-            this.Controls.Add(this.button28);
-            this.Controls.Add(this.button29);
-            this.Controls.Add(this.button30);
-            this.Controls.Add(this.button33);
-            this.Controls.Add(this.textBox29);
-            this.Controls.Add(this.textBox30);
-            this.Controls.Add(this.label33);
-            this.Controls.Add(this.label37);
-            this.Controls.Add(this.label38);
-            this.Controls.Add(this.label39);
-            this.Controls.Add(this.label40);
-            this.Controls.Add(this.label41);
-            this.Controls.Add(this.textBox34);
-            this.Controls.Add(this.textBox35);
-            this.Controls.Add(this.textBox36);
-            this.Controls.Add(this.button34);
-            this.Controls.Add(this.button18);
-            this.Controls.Add(this.button20);
-            this.Controls.Add(this.button21);
-            this.Controls.Add(this.button22);
-            this.Controls.Add(this.button23);
-            this.Controls.Add(this.button25);
-            this.Controls.Add(this.textBox21);
-            this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.textBox23);
-            this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.textBox25);
-            this.Controls.Add(this.label24);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.label26);
-            this.Controls.Add(this.label27);
-            this.Controls.Add(this.label28);
-            this.Controls.Add(this.label29);
-            this.Controls.Add(this.label30);
-            this.Controls.Add(this.label31);
-            this.Controls.Add(this.label32);
-            this.Controls.Add(this.textBox26);
-            this.Controls.Add(this.textBox27);
-            this.Controls.Add(this.textBox28);
-            this.Controls.Add(this.button26);
-            this.Controls.Add(this.button19);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.label23);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.button24);
+            this.Controls.Add(this.btnTransportVehiclePickUpLocationUpdate);
+            this.Controls.Add(this.btnWarehouseQuntityUpdate);
+            this.Controls.Add(this.btnReviewPictureUpdate);
+            this.Controls.Add(this.btnTransportVehicleIDUpdate);
+            this.Controls.Add(this.btnTransportVehicleDelete);
+            this.Controls.Add(this.btnTransportVehiclePickUpDateAndTimeUpdate);
+            this.Controls.Add(this.btnTransportVehicleCurrentLocationUpdate);
+            this.Controls.Add(this.btnTransportVehicleCarPlateNumberUpdate);
+            this.Controls.Add(this.btnTransportVehicleDeliveryUpdatesUpdate);
+            this.Controls.Add(this.btnTransportVehicleOrderIDUpdate);
+            this.Controls.Add(this.txtTransportVehiclePickUpDateAndTime);
+            this.Controls.Add(this.txtTransportVehicleCurrentLocation);
+            this.Controls.Add(this.txtTransportVehicleCarPlateNumber);
+            this.Controls.Add(this.txtTransportVehicleDeliveryUpdates);
+            this.Controls.Add(this.lblTransportVehicleID);
+            this.Controls.Add(this.lblTransportVehicleDeliveryUpdates);
+            this.Controls.Add(this.lblTransportVehicleCarPlateNumber);
+            this.Controls.Add(this.lblTransportVehicleCurrentLocation);
+            this.Controls.Add(this.lblTransportVehiclePickUpDateAndTime);
+            this.Controls.Add(this.lblTransportVehiclePickUpLocation);
+            this.Controls.Add(this.lblTransportVehicleOrderID);
+            this.Controls.Add(this.lblTransportVehicle);
+            this.Controls.Add(this.txtTransportVehiclePickUpLocation);
+            this.Controls.Add(this.txtTransportVehicleOrderID);
+            this.Controls.Add(this.txtTransportVehicleID);
+            this.Controls.Add(this.btnTransportVehicleInsert);
+            this.Controls.Add(this.btnWarehouseIDUpdate);
+            this.Controls.Add(this.btnWarehouseDelete);
+            this.Controls.Add(this.btnWarehouseLocationUpdate);
+            this.Controls.Add(this.btnWarehouseNameUpdate);
+            this.Controls.Add(this.btnWarehouseProductIDUpdate);
+            this.Controls.Add(this.txtWarehouseLocation);
+            this.Controls.Add(this.txtWarehouseName);
+            this.Controls.Add(this.lblWarehouseID);
+            this.Controls.Add(this.lblWarehouseName);
+            this.Controls.Add(this.lblWarehouseLocation);
+            this.Controls.Add(this.lblWarehouseQuntity);
+            this.Controls.Add(this.lblWarehouseProductID);
+            this.Controls.Add(this.lblWarehouse);
+            this.Controls.Add(this.txtWarehouseQuantity);
+            this.Controls.Add(this.txtWarehouseProductID);
+            this.Controls.Add(this.txtWarehouseID);
+            this.Controls.Add(this.btnWarehouseInsert);
+            this.Controls.Add(this.btnReviewDelete);
+            this.Controls.Add(this.btnReviewNoOfStarsUpdate);
+            this.Controls.Add(this.btnReviewDescriptionUpdate);
+            this.Controls.Add(this.btnReviewDateUpdate);
+            this.Controls.Add(this.btnReviewTimeUpdate);
+            this.Controls.Add(this.btnReviewClientIDUpdate);
+            this.Controls.Add(this.txtReviewNoOfStars);
+            this.Controls.Add(this.txtReviewDescription);
+            this.Controls.Add(this.txtReviewDate);
+            this.Controls.Add(this.txtReviewTime);
+            this.Controls.Add(this.txtReviewPicture);
+            this.Controls.Add(this.lblReviewID);
+            this.Controls.Add(this.lblReviewPicture);
+            this.Controls.Add(this.lblReviewTime);
+            this.Controls.Add(this.lblReviewDate);
+            this.Controls.Add(this.lblReviewDescription);
+            this.Controls.Add(this.lblReviewNoOfStars);
+            this.Controls.Add(this.lblReviewProductID);
+            this.Controls.Add(this.lblReviewClientID);
+            this.Controls.Add(this.lblReview);
+            this.Controls.Add(this.txtReviewProductID);
+            this.Controls.Add(this.txtReviewClientID);
+            this.Controls.Add(this.txtReviewID);
+            this.Controls.Add(this.btnReviewInsert);
+            this.Controls.Add(this.btnOrderDelete);
+            this.Controls.Add(this.txtOrderTotal);
+            this.Controls.Add(this.txtOrderDateOrdered);
+            this.Controls.Add(this.txtOrderEstimatedDelivery);
+            this.Controls.Add(this.lblOrderID);
+            this.Controls.Add(this.lblOrderEstimatedDelivery);
+            this.Controls.Add(this.lblOrderDateOrdered);
+            this.Controls.Add(this.lblOrderTotal);
+            this.Controls.Add(this.lblOrderProductID);
+            this.Controls.Add(this.lblOrderClientID);
+            this.Controls.Add(this.lblOrder);
+            this.Controls.Add(this.txtOrderProductID);
+            this.Controls.Add(this.txtOrderClientID);
+            this.Controls.Add(this.txtOrderID);
+            this.Controls.Add(this.btnOrderInsert);
             this.Controls.Add(this.btnProductDescriptionUpdate);
             this.Controls.Add(this.btnProductIDUpdate);
             this.Controls.Add(this.btnClientIDUpdate);
@@ -1468,90 +1491,92 @@
         private System.Windows.Forms.Button btnClientIDUpdate;
         private System.Windows.Forms.Button btnProductIDUpdate;
         private System.Windows.Forms.Button btnProductDescriptionUpdate;
-        private System.Windows.Forms.Button button19;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button20;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button23;
-        private System.Windows.Forms.Button button25;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.TextBox textBox27;
-        private System.Windows.Forms.TextBox textBox28;
-        private System.Windows.Forms.Button button26;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button28;
-        private System.Windows.Forms.Button button29;
-        private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.Button button33;
-        private System.Windows.Forms.TextBox textBox29;
-        private System.Windows.Forms.TextBox textBox30;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox textBox34;
-        private System.Windows.Forms.TextBox textBox35;
-        private System.Windows.Forms.TextBox textBox36;
-        private System.Windows.Forms.Button button34;
-        private System.Windows.Forms.Button button35;
-        private System.Windows.Forms.Button button36;
-        private System.Windows.Forms.Button button38;
-        private System.Windows.Forms.Button button39;
-        private System.Windows.Forms.Button button40;
-        private System.Windows.Forms.Button button41;
-        private System.Windows.Forms.TextBox textBox37;
-        private System.Windows.Forms.TextBox textBox38;
-        private System.Windows.Forms.TextBox textBox39;
-        private System.Windows.Forms.TextBox textBox40;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.TextBox textBox42;
-        private System.Windows.Forms.TextBox textBox43;
-        private System.Windows.Forms.TextBox textBox44;
-        private System.Windows.Forms.Button button42;
-        private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.Button button31;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button32;
+        private System.Windows.Forms.Button btnOrderDelete;
+        private System.Windows.Forms.TextBox txtOrderTotal;
+        private System.Windows.Forms.TextBox txtOrderDateOrdered;
+        private System.Windows.Forms.TextBox txtOrderEstimatedDelivery;
+        private System.Windows.Forms.Label lblOrderID;
+        private System.Windows.Forms.Label lblOrderEstimatedDelivery;
+        private System.Windows.Forms.Label lblOrderDateOrdered;
+        private System.Windows.Forms.Label lblOrderTotal;
+        private System.Windows.Forms.Label lblOrderProductID;
+        private System.Windows.Forms.Label lblOrderClientID;
+        private System.Windows.Forms.Label lblOrder;
+        private System.Windows.Forms.TextBox txtOrderProductID;
+        private System.Windows.Forms.TextBox txtOrderClientID;
+        private System.Windows.Forms.TextBox txtOrderID;
+        private System.Windows.Forms.Button btnOrderInsert;
+        private System.Windows.Forms.Button btnReviewDelete;
+        private System.Windows.Forms.Button btnReviewNoOfStarsUpdate;
+        private System.Windows.Forms.Button btnReviewDescriptionUpdate;
+        private System.Windows.Forms.Button btnReviewDateUpdate;
+        private System.Windows.Forms.Button btnReviewTimeUpdate;
+        private System.Windows.Forms.Button btnReviewClientIDUpdate;
+        private System.Windows.Forms.TextBox txtReviewNoOfStars;
+        private System.Windows.Forms.TextBox txtReviewDescription;
+        private System.Windows.Forms.TextBox txtReviewDate;
+        private System.Windows.Forms.TextBox txtReviewTime;
+        private System.Windows.Forms.TextBox txtReviewPicture;
+        private System.Windows.Forms.Label lblReviewID;
+        private System.Windows.Forms.Label lblReviewPicture;
+        private System.Windows.Forms.Label lblReviewTime;
+        private System.Windows.Forms.Label lblReviewDate;
+        private System.Windows.Forms.Label lblReviewDescription;
+        private System.Windows.Forms.Label lblReviewNoOfStars;
+        private System.Windows.Forms.Label lblReviewProductID;
+        private System.Windows.Forms.Label lblReviewClientID;
+        private System.Windows.Forms.Label lblReview;
+        private System.Windows.Forms.TextBox txtReviewProductID;
+        private System.Windows.Forms.TextBox txtReviewClientID;
+        private System.Windows.Forms.TextBox txtReviewID;
+        private System.Windows.Forms.Button btnReviewInsert;
+        private System.Windows.Forms.Button btnWarehouseIDUpdate;
+        private System.Windows.Forms.Button btnWarehouseDelete;
+        private System.Windows.Forms.Button btnWarehouseLocationUpdate;
+        private System.Windows.Forms.Button btnWarehouseNameUpdate;
+        private System.Windows.Forms.Button btnWarehouseProductIDUpdate;
+        private System.Windows.Forms.TextBox txtWarehouseLocation;
+        private System.Windows.Forms.TextBox txtWarehouseName;
+        private System.Windows.Forms.Label lblWarehouseID;
+        private System.Windows.Forms.Label lblWarehouseName;
+        private System.Windows.Forms.Label lblWarehouseLocation;
+        private System.Windows.Forms.Label lblWarehouseQuntity;
+        private System.Windows.Forms.Label lblWarehouseProductID;
+        private System.Windows.Forms.Label lblWarehouse;
+        private System.Windows.Forms.TextBox txtWarehouseQuantity;
+        private System.Windows.Forms.TextBox txtWarehouseProductID;
+        private System.Windows.Forms.TextBox txtWarehouseID;
+        private System.Windows.Forms.Button btnWarehouseInsert;
+        private System.Windows.Forms.Button btnTransportVehicleIDUpdate;
+        private System.Windows.Forms.Button btnTransportVehicleDelete;
+        private System.Windows.Forms.Button btnTransportVehicleCurrentLocationUpdate;
+        private System.Windows.Forms.Button btnTransportVehicleCarPlateNumberUpdate;
+        private System.Windows.Forms.Button btnTransportVehicleDeliveryUpdatesUpdate;
+        private System.Windows.Forms.Button btnTransportVehicleOrderIDUpdate;
+        private System.Windows.Forms.TextBox txtTransportVehiclePickUpDateAndTime;
+        private System.Windows.Forms.TextBox txtTransportVehicleCurrentLocation;
+        private System.Windows.Forms.TextBox txtTransportVehicleCarPlateNumber;
+        private System.Windows.Forms.TextBox txtTransportVehicleDeliveryUpdates;
+        private System.Windows.Forms.Label lblTransportVehicleID;
+        private System.Windows.Forms.Label lblTransportVehicleDeliveryUpdates;
+        private System.Windows.Forms.Label lblTransportVehicleCarPlateNumber;
+        private System.Windows.Forms.Label lblTransportVehicleCurrentLocation;
+        private System.Windows.Forms.Label lblTransportVehiclePickUpDateAndTime;
+        private System.Windows.Forms.Label lblTransportVehiclePickUpLocation;
+        private System.Windows.Forms.Label lblTransportVehicleOrderID;
+        private System.Windows.Forms.Label lblTransportVehicle;
+        private System.Windows.Forms.TextBox txtTransportVehiclePickUpLocation;
+        private System.Windows.Forms.TextBox txtTransportVehicleOrderID;
+        private System.Windows.Forms.TextBox txtTransportVehicleID;
+        private System.Windows.Forms.Button btnTransportVehicleInsert;
+        private System.Windows.Forms.Button btnReviewPictureUpdate;
+        private System.Windows.Forms.Button btnWarehouseQuntityUpdate;
+        private System.Windows.Forms.Button btnTransportVehiclePickUpDateAndTimeUpdate;
+        private System.Windows.Forms.Button btnTransportVehiclePickUpLocationUpdate;
         private System.Windows.Forms.Button btnClientDOBUpdate;
         private System.Windows.Forms.Button btnAccountCreationDateUpdate;
         private System.Windows.Forms.PictureBox picExample;
+        private System.Windows.Forms.TextBox txtOrderDeliveryPrice;
+        private System.Windows.Forms.Label lblOrderDeliveryPrice;
     }
 }
