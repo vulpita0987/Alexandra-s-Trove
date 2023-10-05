@@ -1214,6 +1214,7 @@
             this.btnTransportVehicleInsert.TabIndex = 120;
             this.btnTransportVehicleInsert.Text = "Insert";
             this.btnTransportVehicleInsert.UseVisualStyleBackColor = true;
+            this.btnTransportVehicleInsert.Click += new System.EventHandler(this.btnTransportVehicleInsert_Click);
             // 
             // btnReviewPictureUpdate
             // 

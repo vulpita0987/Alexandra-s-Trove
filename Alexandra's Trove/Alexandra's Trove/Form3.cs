@@ -23,6 +23,8 @@ using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
+using System.Collections.Generic;
+
 
 namespace Alexandra_s_Trove
 {
@@ -200,7 +202,7 @@ namespace Alexandra_s_Trove
 
             var NewWarehouse = new Warehouse
             {
-                WarehouseID = txtWarehouseID.Text,
+                ID = txtWarehouseID.Text,
                 ProductID = txtWarehouseProductID.Text,
                 Quantity = txtWarehouseQuantity.Text,
                 Location = txtWarehouseLocation.Text,
@@ -219,16 +221,68 @@ namespace Alexandra_s_Trove
             txtWarehouseName.Text = "";
            
         }
+
+        private async void btnTransportVehicleInsert_Click(object sender, EventArgs e)
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "TransportVehicle";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<TransportVehicle>(CollectionName);
+
+
+
+            var newTransportVehicle = new TransportVehicle
+            {
+                ID = txtTransportVehicleID.Text,
+                OrderID = txtTransportVehicleOrderID.Text,
+                PickUpLocation = txtTransportVehiclePickUpLocation.Text,
+                PickUpDateAndTime = txtTransportVehiclePickUpDateAndTime.Text,
+                CurrentLocation = txtTransportVehicleCurrentLocation.Text,
+                CarPlateNo = txtTransportVehicleCarPlateNumber.Text,
+                DeliveryUpdates = txtTransportVehicleDeliveryUpdates.Text
+                
+
+            };
+            await Coll.InsertOneAsync(newTransportVehicle);
+
+            //CardDetails = { "3344", "ddd" } - for lists
+
+            txtTransportVehicleID.Text = "";
+            txtTransportVehicleOrderID.Text = "";
+            txtTransportVehiclePickUpLocation.Text = "";
+            txtTransportVehiclePickUpDateAndTime.Text = "";
+            txtTransportVehicleCurrentLocation.Text = "";
+            txtTransportVehicleCarPlateNumber.Text = "";
+            txtTransportVehicleDeliveryUpdates.Text = "";
+        }
     }
 }
 
 
 [BsonIgnoreExtraElements]
+public class TransportVehicle
+{
+    [BsonId]
+    //[BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
+    public string ID { get; set; }
+    public string OrderID { get; set; }
+    public string PickUpLocation { get; set; }
+    public string PickUpDateAndTime { get; set; }
+    public string CurrentLocation { get; set; }
+    public string CarPlateNo { get; set; }
+    public string DeliveryUpdates { get; set; }
+    
+    //List<string> servers = new List<string>();
+}
+
+[BsonIgnoreExtraElements]
 public class Warehouse
 {
     [BsonId]
-    [BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
-    public string WarehouseID { get; set; }
+    //[BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
+    public string ID { get; set; }
     public string ProductID { get; set; }
     public string Quantity { get; set; }
     public string Location { get; set; }
