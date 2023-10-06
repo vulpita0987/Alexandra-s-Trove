@@ -24,7 +24,7 @@ using MongoDB.Driver;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 using System.Collections.Generic;
-
+using Alexandra_s_Trove.Resources;
 
 namespace Alexandra_s_Trove
 {
@@ -33,7 +33,7 @@ namespace Alexandra_s_Trove
         public HelpDeveloper()
         {
             InitializeComponent();
-
+            DatabaseHandler.Example();//example
         }
 
         private async void btnClientInsert_Click(object sender, EventArgs e)
