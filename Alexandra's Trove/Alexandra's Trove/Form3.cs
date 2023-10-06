@@ -25,6 +25,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 using System.Collections.Generic;
 using Alexandra_s_Trove.Resources;
+using static GMap.NET.Entity.OpenStreetMapGeocodeEntity;
 
 namespace Alexandra_s_Trove
 {
@@ -72,7 +73,9 @@ namespace Alexandra_s_Trove
 
         private void btnClientAccountDeletion_Click(object sender, EventArgs e)
         {
-          
+            DatabaseHandler.InsertNewClient(txtClientID.Text, txtClientName.Text, txtClientDOB.Text, txtClientAddress.Text,
+                txtClientPhoneNumber.Text, txtClientPassword.Text, txtClientCardDetails.Text, txtAccountCreationDate.Text);//example
+
         }
 
         private void picExample_Click(object sender, EventArgs e)
