@@ -158,6 +158,9 @@
             this.picExample = new System.Windows.Forms.PictureBox();
             this.txtOrderDeliveryPrice = new System.Windows.Forms.TextBox();
             this.lblOrderDeliveryPrice = new System.Windows.Forms.Label();
+            this.lblOrderDeliveryDate = new System.Windows.Forms.Label();
+            this.txtOrderDeliveryDate = new System.Windows.Forms.TextBox();
+            this.btnOrderDeliveryDate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picExample)).BeginInit();
             this.SuspendLayout();
             // 
@@ -542,7 +545,7 @@
             // 
             // btnOrderDelete
             // 
-            this.btnOrderDelete.Location = new System.Drawing.Point(1000, 236);
+            this.btnOrderDelete.Location = new System.Drawing.Point(1000, 252);
             this.btnOrderDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnOrderDelete.Name = "btnOrderDelete";
             this.btnOrderDelete.Size = new System.Drawing.Size(56, 19);
@@ -657,7 +660,7 @@
             // 
             // btnOrderInsert
             // 
-            this.btnOrderInsert.Location = new System.Drawing.Point(891, 237);
+            this.btnOrderInsert.Location = new System.Drawing.Point(891, 252);
             this.btnOrderInsert.Margin = new System.Windows.Forms.Padding(2);
             this.btnOrderInsert.Name = "btnOrderInsert";
             this.btnOrderInsert.Size = new System.Drawing.Size(56, 19);
@@ -1036,7 +1039,7 @@
             // 
             // btnTransportVehicleDelete
             // 
-            this.btnTransportVehicleDelete.Location = new System.Drawing.Point(1000, 527);
+            this.btnTransportVehicleDelete.Location = new System.Drawing.Point(1000, 555);
             this.btnTransportVehicleDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnTransportVehicleDelete.Name = "btnTransportVehicleDelete";
             this.btnTransportVehicleDelete.Size = new System.Drawing.Size(56, 19);
@@ -1046,7 +1049,7 @@
             // 
             // btnTransportVehicleCurrentLocationUpdate
             // 
-            this.btnTransportVehicleCurrentLocationUpdate.Location = new System.Drawing.Point(1122, 444);
+            this.btnTransportVehicleCurrentLocationUpdate.Location = new System.Drawing.Point(1124, 496);
             this.btnTransportVehicleCurrentLocationUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnTransportVehicleCurrentLocationUpdate.Name = "btnTransportVehicleCurrentLocationUpdate";
             this.btnTransportVehicleCurrentLocationUpdate.Size = new System.Drawing.Size(56, 19);
@@ -1056,7 +1059,7 @@
             // 
             // btnTransportVehicleCarPlateNumberUpdate
             // 
-            this.btnTransportVehicleCarPlateNumberUpdate.Location = new System.Drawing.Point(1122, 472);
+            this.btnTransportVehicleCarPlateNumberUpdate.Location = new System.Drawing.Point(1122, 367);
             this.btnTransportVehicleCarPlateNumberUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnTransportVehicleCarPlateNumberUpdate.Name = "btnTransportVehicleCarPlateNumberUpdate";
             this.btnTransportVehicleCarPlateNumberUpdate.Size = new System.Drawing.Size(56, 19);
@@ -1066,7 +1069,7 @@
             // 
             // btnTransportVehicleDeliveryUpdatesUpdate
             // 
-            this.btnTransportVehicleDeliveryUpdatesUpdate.Location = new System.Drawing.Point(1122, 495);
+            this.btnTransportVehicleDeliveryUpdatesUpdate.Location = new System.Drawing.Point(1122, 522);
             this.btnTransportVehicleDeliveryUpdatesUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnTransportVehicleDeliveryUpdatesUpdate.Name = "btnTransportVehicleDeliveryUpdatesUpdate";
             this.btnTransportVehicleDeliveryUpdatesUpdate.Size = new System.Drawing.Size(56, 20);
@@ -1076,7 +1079,7 @@
             // 
             // btnTransportVehicleOrderIDUpdate
             // 
-            this.btnTransportVehicleOrderIDUpdate.Location = new System.Drawing.Point(1123, 366);
+            this.btnTransportVehicleOrderIDUpdate.Location = new System.Drawing.Point(1125, 418);
             this.btnTransportVehicleOrderIDUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnTransportVehicleOrderIDUpdate.Name = "btnTransportVehicleOrderIDUpdate";
             this.btnTransportVehicleOrderIDUpdate.Size = new System.Drawing.Size(56, 19);
@@ -1086,28 +1089,28 @@
             // 
             // txtTransportVehiclePickUpDateAndTime
             // 
-            this.txtTransportVehiclePickUpDateAndTime.Location = new System.Drawing.Point(925, 417);
+            this.txtTransportVehiclePickUpDateAndTime.Location = new System.Drawing.Point(927, 469);
             this.txtTransportVehiclePickUpDateAndTime.Name = "txtTransportVehiclePickUpDateAndTime";
             this.txtTransportVehiclePickUpDateAndTime.Size = new System.Drawing.Size(182, 20);
             this.txtTransportVehiclePickUpDateAndTime.TabIndex = 137;
             // 
             // txtTransportVehicleCurrentLocation
             // 
-            this.txtTransportVehicleCurrentLocation.Location = new System.Drawing.Point(925, 443);
+            this.txtTransportVehicleCurrentLocation.Location = new System.Drawing.Point(927, 495);
             this.txtTransportVehicleCurrentLocation.Name = "txtTransportVehicleCurrentLocation";
             this.txtTransportVehicleCurrentLocation.Size = new System.Drawing.Size(182, 20);
             this.txtTransportVehicleCurrentLocation.TabIndex = 136;
             // 
             // txtTransportVehicleCarPlateNumber
             // 
-            this.txtTransportVehicleCarPlateNumber.Location = new System.Drawing.Point(925, 469);
+            this.txtTransportVehicleCarPlateNumber.Location = new System.Drawing.Point(925, 364);
             this.txtTransportVehicleCarPlateNumber.Name = "txtTransportVehicleCarPlateNumber";
             this.txtTransportVehicleCarPlateNumber.Size = new System.Drawing.Size(182, 20);
             this.txtTransportVehicleCarPlateNumber.TabIndex = 135;
             // 
             // txtTransportVehicleDeliveryUpdates
             // 
-            this.txtTransportVehicleDeliveryUpdates.Location = new System.Drawing.Point(925, 495);
+            this.txtTransportVehicleDeliveryUpdates.Location = new System.Drawing.Point(925, 522);
             this.txtTransportVehicleDeliveryUpdates.Name = "txtTransportVehicleDeliveryUpdates";
             this.txtTransportVehicleDeliveryUpdates.Size = new System.Drawing.Size(182, 20);
             this.txtTransportVehicleDeliveryUpdates.TabIndex = 134;
@@ -1124,7 +1127,7 @@
             // lblTransportVehicleDeliveryUpdates
             // 
             this.lblTransportVehicleDeliveryUpdates.AutoSize = true;
-            this.lblTransportVehicleDeliveryUpdates.Location = new System.Drawing.Point(806, 498);
+            this.lblTransportVehicleDeliveryUpdates.Location = new System.Drawing.Point(806, 525);
             this.lblTransportVehicleDeliveryUpdates.Name = "lblTransportVehicleDeliveryUpdates";
             this.lblTransportVehicleDeliveryUpdates.Size = new System.Drawing.Size(85, 13);
             this.lblTransportVehicleDeliveryUpdates.TabIndex = 130;
@@ -1133,7 +1136,7 @@
             // lblTransportVehicleCarPlateNumber
             // 
             this.lblTransportVehicleCarPlateNumber.AutoSize = true;
-            this.lblTransportVehicleCarPlateNumber.Location = new System.Drawing.Point(806, 472);
+            this.lblTransportVehicleCarPlateNumber.Location = new System.Drawing.Point(806, 367);
             this.lblTransportVehicleCarPlateNumber.Name = "lblTransportVehicleCarPlateNumber";
             this.lblTransportVehicleCarPlateNumber.Size = new System.Drawing.Size(84, 13);
             this.lblTransportVehicleCarPlateNumber.TabIndex = 129;
@@ -1142,7 +1145,7 @@
             // lblTransportVehicleCurrentLocation
             // 
             this.lblTransportVehicleCurrentLocation.AutoSize = true;
-            this.lblTransportVehicleCurrentLocation.Location = new System.Drawing.Point(806, 446);
+            this.lblTransportVehicleCurrentLocation.Location = new System.Drawing.Point(808, 498);
             this.lblTransportVehicleCurrentLocation.Name = "lblTransportVehicleCurrentLocation";
             this.lblTransportVehicleCurrentLocation.Size = new System.Drawing.Size(82, 13);
             this.lblTransportVehicleCurrentLocation.TabIndex = 128;
@@ -1151,7 +1154,7 @@
             // lblTransportVehiclePickUpDateAndTime
             // 
             this.lblTransportVehiclePickUpDateAndTime.AutoSize = true;
-            this.lblTransportVehiclePickUpDateAndTime.Location = new System.Drawing.Point(806, 420);
+            this.lblTransportVehiclePickUpDateAndTime.Location = new System.Drawing.Point(808, 472);
             this.lblTransportVehiclePickUpDateAndTime.Name = "lblTransportVehiclePickUpDateAndTime";
             this.lblTransportVehiclePickUpDateAndTime.Size = new System.Drawing.Size(107, 13);
             this.lblTransportVehiclePickUpDateAndTime.TabIndex = 127;
@@ -1160,7 +1163,7 @@
             // lblTransportVehiclePickUpLocation
             // 
             this.lblTransportVehiclePickUpLocation.AutoSize = true;
-            this.lblTransportVehiclePickUpLocation.Location = new System.Drawing.Point(806, 398);
+            this.lblTransportVehiclePickUpLocation.Location = new System.Drawing.Point(808, 450);
             this.lblTransportVehiclePickUpLocation.Name = "lblTransportVehiclePickUpLocation";
             this.lblTransportVehiclePickUpLocation.Size = new System.Drawing.Size(83, 13);
             this.lblTransportVehiclePickUpLocation.TabIndex = 126;
@@ -1169,7 +1172,7 @@
             // lblTransportVehicleOrderID
             // 
             this.lblTransportVehicleOrderID.AutoSize = true;
-            this.lblTransportVehicleOrderID.Location = new System.Drawing.Point(807, 373);
+            this.lblTransportVehicleOrderID.Location = new System.Drawing.Point(809, 425);
             this.lblTransportVehicleOrderID.Name = "lblTransportVehicleOrderID";
             this.lblTransportVehicleOrderID.Size = new System.Drawing.Size(44, 13);
             this.lblTransportVehicleOrderID.TabIndex = 125;
@@ -1186,14 +1189,14 @@
             // 
             // txtTransportVehiclePickUpLocation
             // 
-            this.txtTransportVehiclePickUpLocation.Location = new System.Drawing.Point(925, 391);
+            this.txtTransportVehiclePickUpLocation.Location = new System.Drawing.Point(927, 443);
             this.txtTransportVehiclePickUpLocation.Name = "txtTransportVehiclePickUpLocation";
             this.txtTransportVehiclePickUpLocation.Size = new System.Drawing.Size(182, 20);
             this.txtTransportVehiclePickUpLocation.TabIndex = 123;
             // 
             // txtTransportVehicleOrderID
             // 
-            this.txtTransportVehicleOrderID.Location = new System.Drawing.Point(925, 365);
+            this.txtTransportVehicleOrderID.Location = new System.Drawing.Point(927, 417);
             this.txtTransportVehicleOrderID.Name = "txtTransportVehicleOrderID";
             this.txtTransportVehicleOrderID.Size = new System.Drawing.Size(182, 20);
             this.txtTransportVehicleOrderID.TabIndex = 122;
@@ -1207,7 +1210,7 @@
             // 
             // btnTransportVehicleInsert
             // 
-            this.btnTransportVehicleInsert.Location = new System.Drawing.Point(857, 526);
+            this.btnTransportVehicleInsert.Location = new System.Drawing.Point(857, 555);
             this.btnTransportVehicleInsert.Margin = new System.Windows.Forms.Padding(2);
             this.btnTransportVehicleInsert.Name = "btnTransportVehicleInsert";
             this.btnTransportVehicleInsert.Size = new System.Drawing.Size(56, 19);
@@ -1238,7 +1241,7 @@
             // 
             // btnTransportVehiclePickUpDateAndTimeUpdate
             // 
-            this.btnTransportVehiclePickUpDateAndTimeUpdate.Location = new System.Drawing.Point(1122, 421);
+            this.btnTransportVehiclePickUpDateAndTimeUpdate.Location = new System.Drawing.Point(1124, 473);
             this.btnTransportVehiclePickUpDateAndTimeUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnTransportVehiclePickUpDateAndTimeUpdate.Name = "btnTransportVehiclePickUpDateAndTimeUpdate";
             this.btnTransportVehiclePickUpDateAndTimeUpdate.Size = new System.Drawing.Size(56, 19);
@@ -1248,7 +1251,7 @@
             // 
             // btnTransportVehiclePickUpLocationUpdate
             // 
-            this.btnTransportVehiclePickUpLocationUpdate.Location = new System.Drawing.Point(1123, 393);
+            this.btnTransportVehiclePickUpLocationUpdate.Location = new System.Drawing.Point(1125, 445);
             this.btnTransportVehiclePickUpLocationUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnTransportVehiclePickUpLocationUpdate.Name = "btnTransportVehiclePickUpLocationUpdate";
             this.btnTransportVehiclePickUpLocationUpdate.Size = new System.Drawing.Size(56, 19);
@@ -1302,11 +1305,40 @@
             this.lblOrderDeliveryPrice.TabIndex = 151;
             this.lblOrderDeliveryPrice.Text = "DeliveryPrice";
             // 
+            // lblOrderDeliveryDate
+            // 
+            this.lblOrderDeliveryDate.AutoSize = true;
+            this.lblOrderDeliveryDate.Location = new System.Drawing.Point(795, 233);
+            this.lblOrderDeliveryDate.Name = "lblOrderDeliveryDate";
+            this.lblOrderDeliveryDate.Size = new System.Drawing.Size(68, 13);
+            this.lblOrderDeliveryDate.TabIndex = 153;
+            this.lblOrderDeliveryDate.Text = "DeliveryDate";
+            // 
+            // txtOrderDeliveryDate
+            // 
+            this.txtOrderDeliveryDate.Location = new System.Drawing.Point(914, 226);
+            this.txtOrderDeliveryDate.Name = "txtOrderDeliveryDate";
+            this.txtOrderDeliveryDate.Size = new System.Drawing.Size(182, 20);
+            this.txtOrderDeliveryDate.TabIndex = 154;
+            // 
+            // btnOrderDeliveryDate
+            // 
+            this.btnOrderDeliveryDate.Location = new System.Drawing.Point(1112, 226);
+            this.btnOrderDeliveryDate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnOrderDeliveryDate.Name = "btnOrderDeliveryDate";
+            this.btnOrderDeliveryDate.Size = new System.Drawing.Size(56, 19);
+            this.btnOrderDeliveryDate.TabIndex = 155;
+            this.btnOrderDeliveryDate.Text = "Update";
+            this.btnOrderDeliveryDate.UseVisualStyleBackColor = true;
+            // 
             // HelpDeveloper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1192, 608);
+            this.Controls.Add(this.btnOrderDeliveryDate);
+            this.Controls.Add(this.txtOrderDeliveryDate);
+            this.Controls.Add(this.lblOrderDeliveryDate);
             this.Controls.Add(this.txtOrderDeliveryPrice);
             this.Controls.Add(this.lblOrderDeliveryPrice);
             this.Controls.Add(this.picExample);
@@ -1579,5 +1611,8 @@
         private System.Windows.Forms.PictureBox picExample;
         private System.Windows.Forms.TextBox txtOrderDeliveryPrice;
         private System.Windows.Forms.Label lblOrderDeliveryPrice;
+        private System.Windows.Forms.Label lblOrderDeliveryDate;
+        private System.Windows.Forms.TextBox txtOrderDeliveryDate;
+        private System.Windows.Forms.Button btnOrderDeliveryDate;
     }
 }
