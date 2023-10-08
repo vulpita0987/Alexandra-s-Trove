@@ -129,30 +129,18 @@
             this.btnWarehouseInsert = new System.Windows.Forms.Button();
             this.btnTransportVehicleIDUpdate = new System.Windows.Forms.Button();
             this.btnTransportVehicleDelete = new System.Windows.Forms.Button();
-            this.btnTransportVehicleCurrentLocationUpdate = new System.Windows.Forms.Button();
             this.btnTransportVehicleCarPlateNumberUpdate = new System.Windows.Forms.Button();
-            this.btnTransportVehicleDeliveryUpdatesUpdate = new System.Windows.Forms.Button();
-            this.btnTransportVehicleOrderIDUpdate = new System.Windows.Forms.Button();
-            this.txtTransportVehiclePickUpDateAndTime = new System.Windows.Forms.TextBox();
-            this.txtTransportVehicleCurrentLocation = new System.Windows.Forms.TextBox();
+            this.btnTransportVehicleStorageWarehouseIDUpdate = new System.Windows.Forms.Button();
             this.txtTransportVehicleCarPlateNumber = new System.Windows.Forms.TextBox();
-            this.txtTransportVehicleDeliveryUpdates = new System.Windows.Forms.TextBox();
+            this.txtTransportVehicleStorageWarehouseID = new System.Windows.Forms.TextBox();
             this.lblTransportVehicleID = new System.Windows.Forms.Label();
-            this.lblTransportVehicleDeliveryUpdates = new System.Windows.Forms.Label();
+            this.lblTransportVehicleStorageWarehouseID = new System.Windows.Forms.Label();
             this.lblTransportVehicleCarPlateNumber = new System.Windows.Forms.Label();
-            this.lblTransportVehicleCurrentLocation = new System.Windows.Forms.Label();
-            this.lblTransportVehiclePickUpDateAndTime = new System.Windows.Forms.Label();
-            this.lblTransportVehiclePickUpLocation = new System.Windows.Forms.Label();
-            this.lblTransportVehicleOrderID = new System.Windows.Forms.Label();
             this.lblTransportVehicle = new System.Windows.Forms.Label();
-            this.txtTransportVehiclePickUpLocation = new System.Windows.Forms.TextBox();
-            this.txtTransportVehicleOrderID = new System.Windows.Forms.TextBox();
             this.txtTransportVehicleID = new System.Windows.Forms.TextBox();
             this.btnTransportVehicleInsert = new System.Windows.Forms.Button();
             this.btnReviewPictureUpdate = new System.Windows.Forms.Button();
             this.btnWarehouseQuntityUpdate = new System.Windows.Forms.Button();
-            this.btnTransportVehiclePickUpDateAndTimeUpdate = new System.Windows.Forms.Button();
-            this.btnTransportVehiclePickUpLocationUpdate = new System.Windows.Forms.Button();
             this.btnClientDOBUpdate = new System.Windows.Forms.Button();
             this.btnAccountCreationDateUpdate = new System.Windows.Forms.Button();
             this.picExample = new System.Windows.Forms.PictureBox();
@@ -1039,23 +1027,13 @@
             // 
             // btnTransportVehicleDelete
             // 
-            this.btnTransportVehicleDelete.Location = new System.Drawing.Point(1000, 555);
+            this.btnTransportVehicleDelete.Location = new System.Drawing.Point(1000, 423);
             this.btnTransportVehicleDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnTransportVehicleDelete.Name = "btnTransportVehicleDelete";
             this.btnTransportVehicleDelete.Size = new System.Drawing.Size(56, 19);
             this.btnTransportVehicleDelete.TabIndex = 143;
             this.btnTransportVehicleDelete.Text = "Delete";
             this.btnTransportVehicleDelete.UseVisualStyleBackColor = true;
-            // 
-            // btnTransportVehicleCurrentLocationUpdate
-            // 
-            this.btnTransportVehicleCurrentLocationUpdate.Location = new System.Drawing.Point(1124, 496);
-            this.btnTransportVehicleCurrentLocationUpdate.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTransportVehicleCurrentLocationUpdate.Name = "btnTransportVehicleCurrentLocationUpdate";
-            this.btnTransportVehicleCurrentLocationUpdate.Size = new System.Drawing.Size(56, 19);
-            this.btnTransportVehicleCurrentLocationUpdate.TabIndex = 141;
-            this.btnTransportVehicleCurrentLocationUpdate.Text = "Update";
-            this.btnTransportVehicleCurrentLocationUpdate.UseVisualStyleBackColor = true;
             // 
             // btnTransportVehicleCarPlateNumberUpdate
             // 
@@ -1067,39 +1045,15 @@
             this.btnTransportVehicleCarPlateNumberUpdate.Text = "Update";
             this.btnTransportVehicleCarPlateNumberUpdate.UseVisualStyleBackColor = true;
             // 
-            // btnTransportVehicleDeliveryUpdatesUpdate
+            // btnTransportVehicleStorageWarehouseIDUpdate
             // 
-            this.btnTransportVehicleDeliveryUpdatesUpdate.Location = new System.Drawing.Point(1122, 522);
-            this.btnTransportVehicleDeliveryUpdatesUpdate.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTransportVehicleDeliveryUpdatesUpdate.Name = "btnTransportVehicleDeliveryUpdatesUpdate";
-            this.btnTransportVehicleDeliveryUpdatesUpdate.Size = new System.Drawing.Size(56, 20);
-            this.btnTransportVehicleDeliveryUpdatesUpdate.TabIndex = 139;
-            this.btnTransportVehicleDeliveryUpdatesUpdate.Text = "Update";
-            this.btnTransportVehicleDeliveryUpdatesUpdate.UseVisualStyleBackColor = true;
-            // 
-            // btnTransportVehicleOrderIDUpdate
-            // 
-            this.btnTransportVehicleOrderIDUpdate.Location = new System.Drawing.Point(1125, 418);
-            this.btnTransportVehicleOrderIDUpdate.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTransportVehicleOrderIDUpdate.Name = "btnTransportVehicleOrderIDUpdate";
-            this.btnTransportVehicleOrderIDUpdate.Size = new System.Drawing.Size(56, 19);
-            this.btnTransportVehicleOrderIDUpdate.TabIndex = 138;
-            this.btnTransportVehicleOrderIDUpdate.Text = "Update";
-            this.btnTransportVehicleOrderIDUpdate.UseVisualStyleBackColor = true;
-            // 
-            // txtTransportVehiclePickUpDateAndTime
-            // 
-            this.txtTransportVehiclePickUpDateAndTime.Location = new System.Drawing.Point(927, 469);
-            this.txtTransportVehiclePickUpDateAndTime.Name = "txtTransportVehiclePickUpDateAndTime";
-            this.txtTransportVehiclePickUpDateAndTime.Size = new System.Drawing.Size(182, 20);
-            this.txtTransportVehiclePickUpDateAndTime.TabIndex = 137;
-            // 
-            // txtTransportVehicleCurrentLocation
-            // 
-            this.txtTransportVehicleCurrentLocation.Location = new System.Drawing.Point(927, 495);
-            this.txtTransportVehicleCurrentLocation.Name = "txtTransportVehicleCurrentLocation";
-            this.txtTransportVehicleCurrentLocation.Size = new System.Drawing.Size(182, 20);
-            this.txtTransportVehicleCurrentLocation.TabIndex = 136;
+            this.btnTransportVehicleStorageWarehouseIDUpdate.Location = new System.Drawing.Point(1122, 390);
+            this.btnTransportVehicleStorageWarehouseIDUpdate.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTransportVehicleStorageWarehouseIDUpdate.Name = "btnTransportVehicleStorageWarehouseIDUpdate";
+            this.btnTransportVehicleStorageWarehouseIDUpdate.Size = new System.Drawing.Size(56, 20);
+            this.btnTransportVehicleStorageWarehouseIDUpdate.TabIndex = 139;
+            this.btnTransportVehicleStorageWarehouseIDUpdate.Text = "Update";
+            this.btnTransportVehicleStorageWarehouseIDUpdate.UseVisualStyleBackColor = true;
             // 
             // txtTransportVehicleCarPlateNumber
             // 
@@ -1108,12 +1062,12 @@
             this.txtTransportVehicleCarPlateNumber.Size = new System.Drawing.Size(182, 20);
             this.txtTransportVehicleCarPlateNumber.TabIndex = 135;
             // 
-            // txtTransportVehicleDeliveryUpdates
+            // txtTransportVehicleStorageWarehouseID
             // 
-            this.txtTransportVehicleDeliveryUpdates.Location = new System.Drawing.Point(925, 522);
-            this.txtTransportVehicleDeliveryUpdates.Name = "txtTransportVehicleDeliveryUpdates";
-            this.txtTransportVehicleDeliveryUpdates.Size = new System.Drawing.Size(182, 20);
-            this.txtTransportVehicleDeliveryUpdates.TabIndex = 134;
+            this.txtTransportVehicleStorageWarehouseID.Location = new System.Drawing.Point(925, 390);
+            this.txtTransportVehicleStorageWarehouseID.Name = "txtTransportVehicleStorageWarehouseID";
+            this.txtTransportVehicleStorageWarehouseID.Size = new System.Drawing.Size(182, 20);
+            this.txtTransportVehicleStorageWarehouseID.TabIndex = 134;
             // 
             // lblTransportVehicleID
             // 
@@ -1124,14 +1078,14 @@
             this.lblTransportVehicleID.TabIndex = 132;
             this.lblTransportVehicleID.Text = "ID";
             // 
-            // lblTransportVehicleDeliveryUpdates
+            // lblTransportVehicleStorageWarehouseID
             // 
-            this.lblTransportVehicleDeliveryUpdates.AutoSize = true;
-            this.lblTransportVehicleDeliveryUpdates.Location = new System.Drawing.Point(806, 525);
-            this.lblTransportVehicleDeliveryUpdates.Name = "lblTransportVehicleDeliveryUpdates";
-            this.lblTransportVehicleDeliveryUpdates.Size = new System.Drawing.Size(85, 13);
-            this.lblTransportVehicleDeliveryUpdates.TabIndex = 130;
-            this.lblTransportVehicleDeliveryUpdates.Text = "DeliveryUpdates";
+            this.lblTransportVehicleStorageWarehouseID.AutoSize = true;
+            this.lblTransportVehicleStorageWarehouseID.Location = new System.Drawing.Point(806, 393);
+            this.lblTransportVehicleStorageWarehouseID.Name = "lblTransportVehicleStorageWarehouseID";
+            this.lblTransportVehicleStorageWarehouseID.Size = new System.Drawing.Size(110, 13);
+            this.lblTransportVehicleStorageWarehouseID.TabIndex = 130;
+            this.lblTransportVehicleStorageWarehouseID.Text = "StorageWarehouseID";
             // 
             // lblTransportVehicleCarPlateNumber
             // 
@@ -1142,42 +1096,6 @@
             this.lblTransportVehicleCarPlateNumber.TabIndex = 129;
             this.lblTransportVehicleCarPlateNumber.Text = "CarPlateNumber";
             // 
-            // lblTransportVehicleCurrentLocation
-            // 
-            this.lblTransportVehicleCurrentLocation.AutoSize = true;
-            this.lblTransportVehicleCurrentLocation.Location = new System.Drawing.Point(808, 498);
-            this.lblTransportVehicleCurrentLocation.Name = "lblTransportVehicleCurrentLocation";
-            this.lblTransportVehicleCurrentLocation.Size = new System.Drawing.Size(82, 13);
-            this.lblTransportVehicleCurrentLocation.TabIndex = 128;
-            this.lblTransportVehicleCurrentLocation.Text = "CurrentLocation";
-            // 
-            // lblTransportVehiclePickUpDateAndTime
-            // 
-            this.lblTransportVehiclePickUpDateAndTime.AutoSize = true;
-            this.lblTransportVehiclePickUpDateAndTime.Location = new System.Drawing.Point(808, 472);
-            this.lblTransportVehiclePickUpDateAndTime.Name = "lblTransportVehiclePickUpDateAndTime";
-            this.lblTransportVehiclePickUpDateAndTime.Size = new System.Drawing.Size(107, 13);
-            this.lblTransportVehiclePickUpDateAndTime.TabIndex = 127;
-            this.lblTransportVehiclePickUpDateAndTime.Text = "PickUpDateAndTime";
-            // 
-            // lblTransportVehiclePickUpLocation
-            // 
-            this.lblTransportVehiclePickUpLocation.AutoSize = true;
-            this.lblTransportVehiclePickUpLocation.Location = new System.Drawing.Point(808, 450);
-            this.lblTransportVehiclePickUpLocation.Name = "lblTransportVehiclePickUpLocation";
-            this.lblTransportVehiclePickUpLocation.Size = new System.Drawing.Size(83, 13);
-            this.lblTransportVehiclePickUpLocation.TabIndex = 126;
-            this.lblTransportVehiclePickUpLocation.Text = "PickUpLocation";
-            // 
-            // lblTransportVehicleOrderID
-            // 
-            this.lblTransportVehicleOrderID.AutoSize = true;
-            this.lblTransportVehicleOrderID.Location = new System.Drawing.Point(809, 425);
-            this.lblTransportVehicleOrderID.Name = "lblTransportVehicleOrderID";
-            this.lblTransportVehicleOrderID.Size = new System.Drawing.Size(44, 13);
-            this.lblTransportVehicleOrderID.TabIndex = 125;
-            this.lblTransportVehicleOrderID.Text = "OrderID";
-            // 
             // lblTransportVehicle
             // 
             this.lblTransportVehicle.AutoSize = true;
@@ -1186,20 +1104,6 @@
             this.lblTransportVehicle.Size = new System.Drawing.Size(90, 13);
             this.lblTransportVehicle.TabIndex = 124;
             this.lblTransportVehicle.Text = "Transport Vehicle";
-            // 
-            // txtTransportVehiclePickUpLocation
-            // 
-            this.txtTransportVehiclePickUpLocation.Location = new System.Drawing.Point(927, 443);
-            this.txtTransportVehiclePickUpLocation.Name = "txtTransportVehiclePickUpLocation";
-            this.txtTransportVehiclePickUpLocation.Size = new System.Drawing.Size(182, 20);
-            this.txtTransportVehiclePickUpLocation.TabIndex = 123;
-            // 
-            // txtTransportVehicleOrderID
-            // 
-            this.txtTransportVehicleOrderID.Location = new System.Drawing.Point(927, 417);
-            this.txtTransportVehicleOrderID.Name = "txtTransportVehicleOrderID";
-            this.txtTransportVehicleOrderID.Size = new System.Drawing.Size(182, 20);
-            this.txtTransportVehicleOrderID.TabIndex = 122;
             // 
             // txtTransportVehicleID
             // 
@@ -1210,7 +1114,7 @@
             // 
             // btnTransportVehicleInsert
             // 
-            this.btnTransportVehicleInsert.Location = new System.Drawing.Point(857, 555);
+            this.btnTransportVehicleInsert.Location = new System.Drawing.Point(857, 423);
             this.btnTransportVehicleInsert.Margin = new System.Windows.Forms.Padding(2);
             this.btnTransportVehicleInsert.Name = "btnTransportVehicleInsert";
             this.btnTransportVehicleInsert.Size = new System.Drawing.Size(56, 19);
@@ -1238,26 +1142,6 @@
             this.btnWarehouseQuntityUpdate.TabIndex = 146;
             this.btnWarehouseQuntityUpdate.Text = "Update";
             this.btnWarehouseQuntityUpdate.UseVisualStyleBackColor = true;
-            // 
-            // btnTransportVehiclePickUpDateAndTimeUpdate
-            // 
-            this.btnTransportVehiclePickUpDateAndTimeUpdate.Location = new System.Drawing.Point(1124, 473);
-            this.btnTransportVehiclePickUpDateAndTimeUpdate.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTransportVehiclePickUpDateAndTimeUpdate.Name = "btnTransportVehiclePickUpDateAndTimeUpdate";
-            this.btnTransportVehiclePickUpDateAndTimeUpdate.Size = new System.Drawing.Size(56, 19);
-            this.btnTransportVehiclePickUpDateAndTimeUpdate.TabIndex = 142;
-            this.btnTransportVehiclePickUpDateAndTimeUpdate.Text = "Update";
-            this.btnTransportVehiclePickUpDateAndTimeUpdate.UseVisualStyleBackColor = true;
-            // 
-            // btnTransportVehiclePickUpLocationUpdate
-            // 
-            this.btnTransportVehiclePickUpLocationUpdate.Location = new System.Drawing.Point(1125, 445);
-            this.btnTransportVehiclePickUpLocationUpdate.Margin = new System.Windows.Forms.Padding(2);
-            this.btnTransportVehiclePickUpLocationUpdate.Name = "btnTransportVehiclePickUpLocationUpdate";
-            this.btnTransportVehiclePickUpLocationUpdate.Size = new System.Drawing.Size(56, 19);
-            this.btnTransportVehiclePickUpLocationUpdate.TabIndex = 147;
-            this.btnTransportVehiclePickUpLocationUpdate.Text = "Update";
-            this.btnTransportVehiclePickUpLocationUpdate.UseVisualStyleBackColor = true;
             // 
             // btnClientDOBUpdate
             // 
@@ -1344,30 +1228,18 @@
             this.Controls.Add(this.picExample);
             this.Controls.Add(this.btnAccountCreationDateUpdate);
             this.Controls.Add(this.btnClientDOBUpdate);
-            this.Controls.Add(this.btnTransportVehiclePickUpLocationUpdate);
             this.Controls.Add(this.btnWarehouseQuntityUpdate);
             this.Controls.Add(this.btnReviewPictureUpdate);
             this.Controls.Add(this.btnTransportVehicleIDUpdate);
             this.Controls.Add(this.btnTransportVehicleDelete);
-            this.Controls.Add(this.btnTransportVehiclePickUpDateAndTimeUpdate);
-            this.Controls.Add(this.btnTransportVehicleCurrentLocationUpdate);
             this.Controls.Add(this.btnTransportVehicleCarPlateNumberUpdate);
-            this.Controls.Add(this.btnTransportVehicleDeliveryUpdatesUpdate);
-            this.Controls.Add(this.btnTransportVehicleOrderIDUpdate);
-            this.Controls.Add(this.txtTransportVehiclePickUpDateAndTime);
-            this.Controls.Add(this.txtTransportVehicleCurrentLocation);
+            this.Controls.Add(this.btnTransportVehicleStorageWarehouseIDUpdate);
             this.Controls.Add(this.txtTransportVehicleCarPlateNumber);
-            this.Controls.Add(this.txtTransportVehicleDeliveryUpdates);
+            this.Controls.Add(this.txtTransportVehicleStorageWarehouseID);
             this.Controls.Add(this.lblTransportVehicleID);
-            this.Controls.Add(this.lblTransportVehicleDeliveryUpdates);
+            this.Controls.Add(this.lblTransportVehicleStorageWarehouseID);
             this.Controls.Add(this.lblTransportVehicleCarPlateNumber);
-            this.Controls.Add(this.lblTransportVehicleCurrentLocation);
-            this.Controls.Add(this.lblTransportVehiclePickUpDateAndTime);
-            this.Controls.Add(this.lblTransportVehiclePickUpLocation);
-            this.Controls.Add(this.lblTransportVehicleOrderID);
             this.Controls.Add(this.lblTransportVehicle);
-            this.Controls.Add(this.txtTransportVehiclePickUpLocation);
-            this.Controls.Add(this.txtTransportVehicleOrderID);
             this.Controls.Add(this.txtTransportVehicleID);
             this.Controls.Add(this.btnTransportVehicleInsert);
             this.Controls.Add(this.btnWarehouseIDUpdate);
@@ -1582,30 +1454,18 @@
         private System.Windows.Forms.Button btnWarehouseInsert;
         private System.Windows.Forms.Button btnTransportVehicleIDUpdate;
         private System.Windows.Forms.Button btnTransportVehicleDelete;
-        private System.Windows.Forms.Button btnTransportVehicleCurrentLocationUpdate;
         private System.Windows.Forms.Button btnTransportVehicleCarPlateNumberUpdate;
-        private System.Windows.Forms.Button btnTransportVehicleDeliveryUpdatesUpdate;
-        private System.Windows.Forms.Button btnTransportVehicleOrderIDUpdate;
-        private System.Windows.Forms.TextBox txtTransportVehiclePickUpDateAndTime;
-        private System.Windows.Forms.TextBox txtTransportVehicleCurrentLocation;
+        private System.Windows.Forms.Button btnTransportVehicleStorageWarehouseIDUpdate;
         private System.Windows.Forms.TextBox txtTransportVehicleCarPlateNumber;
-        private System.Windows.Forms.TextBox txtTransportVehicleDeliveryUpdates;
+        private System.Windows.Forms.TextBox txtTransportVehicleStorageWarehouseID;
         private System.Windows.Forms.Label lblTransportVehicleID;
-        private System.Windows.Forms.Label lblTransportVehicleDeliveryUpdates;
+        private System.Windows.Forms.Label lblTransportVehicleStorageWarehouseID;
         private System.Windows.Forms.Label lblTransportVehicleCarPlateNumber;
-        private System.Windows.Forms.Label lblTransportVehicleCurrentLocation;
-        private System.Windows.Forms.Label lblTransportVehiclePickUpDateAndTime;
-        private System.Windows.Forms.Label lblTransportVehiclePickUpLocation;
-        private System.Windows.Forms.Label lblTransportVehicleOrderID;
         private System.Windows.Forms.Label lblTransportVehicle;
-        private System.Windows.Forms.TextBox txtTransportVehiclePickUpLocation;
-        private System.Windows.Forms.TextBox txtTransportVehicleOrderID;
         private System.Windows.Forms.TextBox txtTransportVehicleID;
         private System.Windows.Forms.Button btnTransportVehicleInsert;
         private System.Windows.Forms.Button btnReviewPictureUpdate;
         private System.Windows.Forms.Button btnWarehouseQuntityUpdate;
-        private System.Windows.Forms.Button btnTransportVehiclePickUpDateAndTimeUpdate;
-        private System.Windows.Forms.Button btnTransportVehiclePickUpLocationUpdate;
         private System.Windows.Forms.Button btnClientDOBUpdate;
         private System.Windows.Forms.Button btnAccountCreationDateUpdate;
         private System.Windows.Forms.PictureBox picExample;

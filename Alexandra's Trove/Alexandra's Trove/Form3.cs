@@ -26,7 +26,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 
-using System.Collections.Generic;
+
 using Alexandra_s_Trove.Resources;
 using static GMap.NET.Entity.OpenStreetMapGeocodeEntity;
 
@@ -38,7 +38,7 @@ namespace Alexandra_s_Trove
         public HelpDeveloper()
         {
             InitializeComponent();
-            DatabaseHandler.Example();//example
+            //DatabaseHandler.Example();//example
         }
 
         private async void btnClientInsert_Click(object sender, EventArgs e)
@@ -63,7 +63,7 @@ namespace Alexandra_s_Trove
             };
             await Coll.InsertOneAsync(NewClient);
 
-            //CardDetails = { "3344", "ddd" } - for lists
+           
 
             txtClientID.Text = "";
             txtClientName.Text = "";
@@ -79,6 +79,15 @@ namespace Alexandra_s_Trove
         {
             DatabaseHandler.InsertNewClient(txtClientID.Text, txtClientName.Text, txtClientDOB.Text, txtClientAddress.Text,
                 txtClientPhoneNumber.Text, txtClientPassword.Text, txtClientCardDetails.Text, txtAccountCreationDate.Text);//example
+
+            txtClientID.Text = "";
+            txtClientName.Text = "";
+            txtClientDOB.Text = "";
+            txtClientAddress.Text = "";
+            txtClientPhoneNumber.Text = "";
+            txtClientPassword.Text = "";
+            txtClientCardDetails.Text = "";
+            txtAccountCreationDate.Text = "";
 
         }
 
@@ -112,7 +121,7 @@ namespace Alexandra_s_Trove
             };
             await Coll.InsertOneAsync(NewProduct);
 
-            //CardDetails = { "3344", "ddd" } - for lists
+            
 
             txtProductID.Text = "";
             txtProductName.Text = "";
@@ -124,30 +133,9 @@ namespace Alexandra_s_Trove
 
         private async void btnOrderInsert_Click(object sender, EventArgs e)
         {
-            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
-            string DatabaseName = "Assignment";
-            string CollectionName = "Order";
-            var Connection = new MongoClient(ConnectionString);
-            var db = Connection.GetDatabase(DatabaseName);
-            var Coll = db.GetCollection<Order>(CollectionName);
 
-            
-            
-            var NewOrder = new Order
-            {
-                ID = txtOrderID.Text,
-                ClientID = txtOrderClientID.Text,
-                ProductIDs = txtOrderProductID.Text,
-                Total = txtOrderTotal.Text,
-                DeliveryPrice = txtOrderDeliveryPrice.Text,
-                DateOrdered = txtOrderDateOrdered.Text,
-                EstimatedDelivery = txtOrderEstimatedDelivery.Text,
-                DeliveryDate = txtOrderDeliveryDate.Text
-
-            };
-            await Coll.InsertOneAsync(NewOrder);
-
-            //CardDetails = { "3344", "ddd" } - for lists
+            DatabaseHandler.InsertNewOrder(txtOrderID.Text, txtOrderClientID.Text, txtOrderTotal.Text, txtOrderDeliveryPrice.Text,
+               txtOrderDateOrdered.Text, txtOrderEstimatedDelivery.Text, txtOrderProductID.Text, txtOrderDeliveryDate.Text);//example 
 
             txtOrderID.Text = "";
             txtOrderClientID.Text = "";
@@ -186,7 +174,7 @@ namespace Alexandra_s_Trove
             };
             await Coll.InsertOneAsync(NewReview);
 
-            //CardDetails = { "3344", "ddd" } - for lists
+            
 
             txtReviewID.Text = "";
             txtReviewClientID.Text = "";
@@ -221,7 +209,7 @@ namespace Alexandra_s_Trove
             };
             await Coll.InsertOneAsync(NewWarehouse);
 
-            //CardDetails = { "3344", "ddd" } - for lists
+           
 
             txtWarehouseID.Text = "";
             txtWarehouseProductID.Text = "";
@@ -245,10 +233,10 @@ namespace Alexandra_s_Trove
             var newTransportVehicle = new TransportVehicle
             {
                 ID = txtTransportVehicleID.Text,
-                
-                CarPlateNo = txtTransportVehicleCarPlateNumber.Text
-               
-                
+
+                CarPlateNo = txtTransportVehicleCarPlateNumber.Text,
+                StorageWarehouseID = ""
+                //storage warehouse id
 
             };
             await Coll.InsertOneAsync(newTransportVehicle);
@@ -256,12 +244,9 @@ namespace Alexandra_s_Trove
             //CardDetails = { "3344", "ddd" } - for lists
 
             txtTransportVehicleID.Text = "";
-            txtTransportVehicleOrderID.Text = "";
-            txtTransportVehiclePickUpLocation.Text = "";
-            txtTransportVehiclePickUpDateAndTime.Text = "";
-            txtTransportVehicleCurrentLocation.Text = "";
+           
             txtTransportVehicleCarPlateNumber.Text = "";
-            txtTransportVehicleDeliveryUpdates.Text = "";
+           
         }
     }
 }

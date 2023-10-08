@@ -14,7 +14,7 @@ namespace Alexandra_s_Trove.Resources
        
         public static void Example()
         {
-            Debug.WriteLine("Hello World");
+            //Debug.WriteLine("Hello World");
         }
 
 
@@ -44,8 +44,48 @@ namespace Alexandra_s_Trove.Resources
             
         }
 
+        public async static void InsertNewOrder(string OrderID, string OrderClientID, string OrderProductID, string OrderTotal, string OrderDeliveryPrice, string OrderDateOrdered, string OrderEstimatedDelivery, string OrderDeliveryDate)
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Order";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Order>(CollectionName);
 
-       
+
+
+            var NewOrder = new Order
+            {
+                ID = OrderID,
+                ClientID = OrderClientID,
+                ProductIDs = OrderProductID,
+                Total = OrderTotal,
+                DeliveryPrice = OrderDeliveryPrice,
+                DateOrdered = OrderDateOrdered,
+                EstimatedDelivery = OrderEstimatedDelivery,
+                DeliveryDate = OrderDeliveryDate
+
+            };
+            await Coll.InsertOneAsync(NewOrder);
+
+
+        }
+
+
+
+    }
+
+    [BsonIgnoreExtraElements]
+    public class Warehouse
+    {
+        [BsonId]
+
+        public string ID { get; set; }
+        public string ProductID { get; set; }
+        public string Quantity { get; set; }
+        public string Location { get; set; }
+        public string Name { get; set; }
 
 
     }
@@ -58,29 +98,17 @@ namespace Alexandra_s_Trove.Resources
         public string ID { get; set; }
         public string CarPlateNo { get; set; }
 
-
+        public string StorageWarehouseID { get; set; }
         //List<string> servers = new List<string>();
     }
 
-    [BsonIgnoreExtraElements]
-    public class Warehouse
-    {
-        [BsonId]
-        //[BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
-        public string ID { get; set; }
-        public string ProductID { get; set; }
-        public string Quantity { get; set; }
-        public string Location { get; set; }
-        public string Name { get; set; }
-
-
-    }
+  
 
     [BsonIgnoreExtraElements]
     public class Review
     {
         [BsonId]
-        //[BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
+        
         public string ID { get; set; }
         public string ClientID { get; set; }
         public string ProductID { get; set; }
@@ -96,7 +124,7 @@ namespace Alexandra_s_Trove.Resources
     public class Product
     {
         [BsonId]
-        //[BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
+        
         public string ID { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
@@ -113,7 +141,7 @@ namespace Alexandra_s_Trove.Resources
     public class Order
     {
         [BsonId]
-        //[BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
+        
         public string ID { get; set; }
         public string ClientID { get; set; }
         public string ProductIDs { get; set; }
@@ -131,14 +159,14 @@ namespace Alexandra_s_Trove.Resources
     public class Client
     {
         [BsonId]
-        //[BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
+       
         public string ID { get; set; }
         public string Name { get; set; }
         public string DOB { get; set; }
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
         public string Password { get; set; }
-        //public List<string> CardDetails { get; set; }
+       
         public string CardDetails { get; set; }
         public string AccountCreationDate { get; set; }
 
