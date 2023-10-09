@@ -39,10 +39,17 @@ namespace Alexandra_s_Trove.Resources
                 AccountCreationDate = ClientAccountCreationDate
             };
             await Coll.InsertOneAsync(NewClient);
-
-
-            
+  
         }
+
+        public async static void DeleteClient () { }//include await
+        public async static void UpdateClientName() { }
+        public async static void UpdateClientDOB() { }
+        public async static void UpdateClientAddress() { }
+        public async static void UpdateClientPhoneNumber() { }
+        public async static void UpdateClientPassword() { }
+        public async static void UpdateClientCardDetails() { }
+
 
         public async static void InsertNewOrder(string OrderID, string OrderClientID, string OrderProductID, string OrderTotal, string OrderDeliveryPrice, string OrderDateOrdered, string OrderEstimatedDelivery, string OrderDeliveryDate)
         {
@@ -71,10 +78,118 @@ namespace Alexandra_s_Trove.Resources
 
 
         }
+        
+
+        public async static void InsertNewProduct(string ProductID, string ProductName, 
+            string ProductDescription, string ProductPrice, string ProductSpecification)
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Product";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Product>(CollectionName);
+
+            var NewProduct = new Product
+            {
+                ID = ProductID,
+                Name = ProductName,
+                Description = ProductDescription,
+                Price = ProductPrice,
+                Specifications = ProductSpecification
+
+            };
+            await Coll.InsertOneAsync(NewProduct);
+
+        }
+
+        
+
+        public async static void InsertNewReview(string ReviewID, string ReviewClientID, string ReviewProductID, 
+            string ReviewNoOfStars, string ReviewDescription, string ReviewDate, string ReviewTime)
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Review";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Review>(CollectionName);
 
 
 
-    }
+            var NewReview = new Review
+            {
+                ID = ReviewID,
+                ClientID = ReviewClientID,
+                ProductID = ReviewProductID,
+                NoOfStars = ReviewNoOfStars,
+                Description = ReviewDescription,
+                Date = ReviewDate,
+                Time = ReviewTime
+
+            };
+            await Coll.InsertOneAsync(NewReview);
+
+        }
+
+        public async static void DeleteReview() { } //include await
+        public async static void UpdateReviewNoOfStars() { }
+        public async static void UpdateReviewDescription() { }
+        public async static void UpdateReviewDate() { }
+        public async static void UpdateReviewTime() { }
+
+        public async static void InsertNewTransportVehicle(string TransportVehicleID, string TransportVehicleCarPlateNumber, string StorageWarehouseID)
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "TransportVehicle";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<TransportVehicle>(CollectionName);
+
+
+
+            var newTransportVehicle = new TransportVehicle
+            {
+                ID = TransportVehicleID,
+                CarPlateNo = TransportVehicleCarPlateNumber,
+                StorageWarehouseID = StorageWarehouseID
+
+
+            };
+            await Coll.InsertOneAsync(newTransportVehicle);
+
+
+        }
+
+        public async static void InsertNewWarehouse(string WarehouseID, string WarehouseProductID, string WarehouseQuantity,
+            string WarehouseLocation, string WarehouseName)
+        {
+
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Warehouse";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Warehouse>(CollectionName);
+
+
+
+            var NewWarehouse = new Warehouse
+            {
+                ID = WarehouseID,
+                ProductID = WarehouseProductID,
+                Quantity = WarehouseQuantity,
+                Location = WarehouseLocation,
+                Name = WarehouseName
+
+
+            };
+            await Coll.InsertOneAsync(NewWarehouse);
+
+        }
+
+    
 
     [BsonIgnoreExtraElements]
     public class Warehouse
@@ -97,7 +212,6 @@ namespace Alexandra_s_Trove.Resources
         //[BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
         public string ID { get; set; }
         public string CarPlateNo { get; set; }
-
         public string StorageWarehouseID { get; set; }
         //List<string> servers = new List<string>();
     }
@@ -173,4 +287,6 @@ namespace Alexandra_s_Trove.Resources
 
 
     }
+
+    }//client - order - product - review - transportVehicle - warehouse
 }
