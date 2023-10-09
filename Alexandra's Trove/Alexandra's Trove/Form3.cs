@@ -113,6 +113,11 @@ namespace Alexandra_s_Trove
             txtReviewTime.Text = "";
         }
 
+        private void btnReviewDelete_Click(object sender, EventArgs e)
+        {
+            DatabaseHandler.DeleteReview(txtReviewID.Text);
+            txtReviewID.Text = "";
+        }
         private void btnWarehouseInsert_Click(object sender, EventArgs e)
         {
 
@@ -138,6 +143,8 @@ namespace Alexandra_s_Trove
             txtTransportVehicleStorageWarehouseID.Text = "";
 
         }
+
+
     }
 }
 

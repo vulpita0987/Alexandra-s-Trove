@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Alexandra_s_Trove.Resources
 {
@@ -132,7 +133,49 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        public async static void DeleteReview() { } //include await
+        public async static void DeleteReview(string IDForDeletion) 
+        {
+
+            List<string> ReviewsID = new List<string>();
+
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Review";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Review>(CollectionName);
+
+            
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ReviewsID.Add(datas.ID);
+                }
+            }
+            MessageBox.Show(ReviewsID[1]);
+            bool IDExists = false;
+            
+            for (int i = 0; i < ReviewsID.Count; i++)
+            {
+                if (ReviewsID[i] == IDForDeletion) { IDExists = true; }
+
+            }
+            if (IDExists == true)
+            {
+                var location = Coll.DeleteOne(a => a.ID == IDForDeletion);
+                
+            }
+            else
+            {
+                MessageBox.Show("ID "+ IDForDeletion + " does not exist");
+                
+            }
+
+
+        } //include await
         public async static void UpdateReviewNoOfStars() { }
         public async static void UpdateReviewDescription() { }
         public async static void UpdateReviewDate() { }
