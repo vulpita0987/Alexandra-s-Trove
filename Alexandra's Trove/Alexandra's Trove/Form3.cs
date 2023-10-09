@@ -24,6 +24,7 @@ using MongoDB.Driver;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using Alexandra_s_Trove.Resources;
 using static GMap.NET.Entity.OpenStreetMapGeocodeEntity;
+using static System.Net.Mime.MediaTypeNames;
 
 
 namespace Alexandra_s_Trove
@@ -50,17 +51,7 @@ namespace Alexandra_s_Trove
             txtClientCardDetails.Text = "";
             txtAccountCreationDate.Text = "";
         }
-
-        private void btnClientAccountDeletion_Click(object sender, EventArgs e)
-        {
-          
-
-        }
-
-        private void picExample_Click(object sender, EventArgs e)
-        {
-           
-        }
+      
 
         private void HelpDeveloper_Load(object sender, EventArgs e)
         {
@@ -118,6 +109,39 @@ namespace Alexandra_s_Trove
             DatabaseHandler.DeleteReview(txtReviewID.Text);
             txtReviewID.Text = "";
         }
+
+        private void btnReviewNoOfStarsUpdate_Click(object sender, EventArgs e)
+        {
+            DatabaseHandler.UpdateReviewNoOfStars(txtReviewID.Text, txtReviewNoOfStars.Text);
+
+            txtReviewID.Text = "";
+            txtReviewNoOfStars.Text = "";
+        }
+
+        private void btnReviewDescriptionUpdate_Click(object sender, EventArgs e)
+        {
+            DatabaseHandler.UpdateReviewDescription(txtReviewID.Text, txtReviewDescription.Text);
+
+            txtReviewID.Text = "";
+            txtReviewDescription.Text = "";
+        }
+
+        private void btnReviewDateUpdate_Click(object sender, EventArgs e)
+        {
+            DatabaseHandler.UpdateReviewDate(txtReviewID.Text, txtReviewDate.Text);
+
+            txtReviewID.Text = "";
+            txtReviewDate.Text = "";
+
+        }
+
+        private void btnReviewTimeUpdate_Click(object sender, EventArgs e)
+        {
+            DatabaseHandler.UpdateReviewTime(txtReviewID.Text, txtReviewTime.Text);
+
+            txtReviewID.Text = "";
+            txtReviewTime.Text = "";
+        }
         private void btnWarehouseInsert_Click(object sender, EventArgs e)
         {
 
@@ -144,7 +168,7 @@ namespace Alexandra_s_Trove
 
         }
 
-
+        
     }
 }
 

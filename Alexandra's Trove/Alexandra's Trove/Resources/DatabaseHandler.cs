@@ -43,7 +43,7 @@ namespace Alexandra_s_Trove.Resources
   
         }
 
-        public async static void DeleteClient () { }//include await
+        public async static void DeleteClient () { }
         public async static void UpdateClientName() { }
         public async static void UpdateClientDOB() { }
         public async static void UpdateClientAddress() { }
@@ -155,7 +155,7 @@ namespace Alexandra_s_Trove.Resources
                     ReviewsID.Add(datas.ID);
                 }
             }
-            MessageBox.Show(ReviewsID[1]);
+            
             bool IDExists = false;
             
             for (int i = 0; i < ReviewsID.Count; i++)
@@ -176,10 +176,202 @@ namespace Alexandra_s_Trove.Resources
 
 
         } //include await
-        public async static void UpdateReviewNoOfStars() { }
-        public async static void UpdateReviewDescription() { }
-        public async static void UpdateReviewDate() { }
-        public async static void UpdateReviewTime() { }
+        public async static void UpdateReviewNoOfStars(string ReviewIDForUpdate, string newNoOfStars) 
+        {
+
+            List<string> ReviewsID = new List<string>();
+
+
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Review";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Review>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ReviewsID.Add(datas.ID);
+                }
+            }
+
+            bool IDExists = false;
+            
+            for (int i = 0; i < ReviewsID.Count; i++)
+            {
+                if (ReviewsID[i] == ReviewIDForUpdate) { IDExists = true; }
+
+            }
+            if (IDExists == true)
+            {
+
+                var filter = Builders<Review>
+                   .Filter
+                   .Eq(a => a.ID, ReviewIDForUpdate);
+               
+               var update = Builders<Review>
+                    .Update
+                    .Set(a => a.NoOfStars, newNoOfStars);
+
+                var result = Coll.UpdateOne(filter, update);
+            }
+            else
+            {
+                MessageBox.Show("ID "+ ReviewIDForUpdate + " does not exist");
+                
+            }
+
+        }
+        public async static void UpdateReviewDescription(string ReviewIDForUpdate, string newDescription) 
+        {
+            List<string> ReviewsID = new List<string>();
+
+
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Review";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Review>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ReviewsID.Add(datas.ID);
+                }
+            }
+
+            bool IDExists = false;
+
+            for (int i = 0; i < ReviewsID.Count; i++)
+            {
+                if (ReviewsID[i] == ReviewIDForUpdate) { IDExists = true; }
+
+            }
+            if (IDExists == true)
+            {
+
+                var filter = Builders<Review>
+                   .Filter
+                   .Eq(a => a.ID, ReviewIDForUpdate);
+
+                var update = Builders<Review>
+                     .Update
+                     .Set(a => a.Description, newDescription);
+
+                var result = Coll.UpdateOne(filter, update);
+            }
+            else
+            {
+                MessageBox.Show("ID " + ReviewIDForUpdate + " does not exist");
+
+            }
+
+        }
+        public async static void UpdateReviewDate(string ReviewIDForUpdate, string newDate) //today (now!!) - change later
+        {
+            List<string> ReviewsID = new List<string>();
+
+
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Review";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Review>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ReviewsID.Add(datas.ID);
+                }
+            }
+
+            bool IDExists = false;
+
+            for (int i = 0; i < ReviewsID.Count; i++)
+            {
+                if (ReviewsID[i] == ReviewIDForUpdate) { IDExists = true; }
+
+            }
+            if (IDExists == true)
+            {
+
+                var filter = Builders<Review>
+                   .Filter
+                   .Eq(a => a.ID, ReviewIDForUpdate);
+
+                var update = Builders<Review>
+                     .Update
+                     .Set(a => a.Date, newDate);
+
+                var result = Coll.UpdateOne(filter, update);
+            }
+            else
+            {
+                MessageBox.Show("ID " + ReviewIDForUpdate + " does not exist");
+
+            }
+
+        }
+        public async static void UpdateReviewTime(string ReviewIDForUpdate, string newTime) //today (now!!) - change later
+        {
+            List<string> ReviewsID = new List<string>();
+
+
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Review";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Review>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ReviewsID.Add(datas.ID);
+                }
+            }
+
+            bool IDExists = false;
+
+            for (int i = 0; i < ReviewsID.Count; i++)
+            {
+                if (ReviewsID[i] == ReviewIDForUpdate) { IDExists = true; }
+
+            }
+            if (IDExists == true)
+            {
+
+                var filter = Builders<Review>
+                   .Filter
+                   .Eq(a => a.ID, ReviewIDForUpdate);
+
+                var update = Builders<Review>
+                     .Update
+                     .Set(a => a.Time, newTime);
+
+                var result = Coll.UpdateOne(filter, update);
+            }
+            else
+            {
+                MessageBox.Show("ID " + ReviewIDForUpdate + " does not exist");
+
+            }
+        }
 
         public async static void InsertNewTransportVehicle(string TransportVehicleID, string TransportVehicleCarPlateNumber, string StorageWarehouseID)
         {

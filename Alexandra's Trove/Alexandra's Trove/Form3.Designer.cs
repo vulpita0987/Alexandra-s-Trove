@@ -96,9 +96,7 @@
             this.txtReviewDescription = new System.Windows.Forms.TextBox();
             this.txtReviewDate = new System.Windows.Forms.TextBox();
             this.txtReviewTime = new System.Windows.Forms.TextBox();
-            this.txtReviewPicture = new System.Windows.Forms.TextBox();
             this.lblReviewID = new System.Windows.Forms.Label();
-            this.lblReviewPicture = new System.Windows.Forms.Label();
             this.lblReviewTime = new System.Windows.Forms.Label();
             this.lblReviewDate = new System.Windows.Forms.Label();
             this.lblReviewDescription = new System.Windows.Forms.Label();
@@ -139,7 +137,6 @@
             this.lblTransportVehicle = new System.Windows.Forms.Label();
             this.txtTransportVehicleID = new System.Windows.Forms.TextBox();
             this.btnTransportVehicleInsert = new System.Windows.Forms.Button();
-            this.btnReviewPictureUpdate = new System.Windows.Forms.Button();
             this.btnWarehouseQuntityUpdate = new System.Windows.Forms.Button();
             this.btnClientDOBUpdate = new System.Windows.Forms.Button();
             this.btnAccountCreationDateUpdate = new System.Windows.Forms.Button();
@@ -166,7 +163,7 @@
             // txtClientID
             // 
             this.txtClientID.Location = new System.Drawing.Point(175, 63);
-            this.txtClientID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtClientID.Margin = new System.Windows.Forms.Padding(4);
             this.txtClientID.Name = "txtClientID";
             this.txtClientID.Size = new System.Drawing.Size(241, 22);
             this.txtClientID.TabIndex = 1;
@@ -174,7 +171,7 @@
             // txtClientName
             // 
             this.txtClientName.Location = new System.Drawing.Point(175, 95);
-            this.txtClientName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtClientName.Margin = new System.Windows.Forms.Padding(4);
             this.txtClientName.Name = "txtClientName";
             this.txtClientName.Size = new System.Drawing.Size(241, 22);
             this.txtClientName.TabIndex = 2;
@@ -262,7 +259,7 @@
             // txtAccountCreationDate
             // 
             this.txtAccountCreationDate.Location = new System.Drawing.Point(175, 287);
-            this.txtAccountCreationDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAccountCreationDate.Margin = new System.Windows.Forms.Padding(4);
             this.txtAccountCreationDate.Name = "txtAccountCreationDate";
             this.txtAccountCreationDate.Size = new System.Drawing.Size(241, 22);
             this.txtAccountCreationDate.TabIndex = 13;
@@ -270,7 +267,7 @@
             // txtClientCardDetails
             // 
             this.txtClientCardDetails.Location = new System.Drawing.Point(175, 255);
-            this.txtClientCardDetails.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtClientCardDetails.Margin = new System.Windows.Forms.Padding(4);
             this.txtClientCardDetails.Name = "txtClientCardDetails";
             this.txtClientCardDetails.Size = new System.Drawing.Size(241, 22);
             this.txtClientCardDetails.TabIndex = 14;
@@ -278,7 +275,7 @@
             // txtClientPassword
             // 
             this.txtClientPassword.Location = new System.Drawing.Point(175, 223);
-            this.txtClientPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtClientPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtClientPassword.Name = "txtClientPassword";
             this.txtClientPassword.Size = new System.Drawing.Size(241, 22);
             this.txtClientPassword.TabIndex = 15;
@@ -286,7 +283,7 @@
             // txtClientPhoneNumber
             // 
             this.txtClientPhoneNumber.Location = new System.Drawing.Point(175, 191);
-            this.txtClientPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtClientPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtClientPhoneNumber.Name = "txtClientPhoneNumber";
             this.txtClientPhoneNumber.Size = new System.Drawing.Size(241, 22);
             this.txtClientPhoneNumber.TabIndex = 16;
@@ -294,7 +291,7 @@
             // txtClientAddress
             // 
             this.txtClientAddress.Location = new System.Drawing.Point(175, 159);
-            this.txtClientAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtClientAddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtClientAddress.Name = "txtClientAddress";
             this.txtClientAddress.Size = new System.Drawing.Size(241, 22);
             this.txtClientAddress.TabIndex = 17;
@@ -358,12 +355,11 @@
             this.btnClientAccountDeletion.TabIndex = 23;
             this.btnClientAccountDeletion.Text = "Delete";
             this.btnClientAccountDeletion.UseVisualStyleBackColor = true;
-            this.btnClientAccountDeletion.Click += new System.EventHandler(this.btnClientAccountDeletion_Click);
             // 
             // txtClientDOB
             // 
             this.txtClientDOB.Location = new System.Drawing.Point(175, 127);
-            this.txtClientDOB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtClientDOB.Margin = new System.Windows.Forms.Padding(4);
             this.txtClientDOB.Name = "txtClientDOB";
             this.txtClientDOB.Size = new System.Drawing.Size(241, 22);
             this.txtClientDOB.TabIndex = 3;
@@ -421,7 +417,7 @@
             // txtProductPrice
             // 
             this.txtProductPrice.Location = new System.Drawing.Point(697, 159);
-            this.txtProductPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProductPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductPrice.Name = "txtProductPrice";
             this.txtProductPrice.Size = new System.Drawing.Size(241, 22);
             this.txtProductPrice.TabIndex = 41;
@@ -429,7 +425,7 @@
             // txtProductSpecification
             // 
             this.txtProductSpecification.Location = new System.Drawing.Point(697, 194);
-            this.txtProductSpecification.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProductSpecification.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductSpecification.Name = "txtProductSpecification";
             this.txtProductSpecification.Size = new System.Drawing.Size(241, 22);
             this.txtProductSpecification.TabIndex = 39;
@@ -497,7 +493,7 @@
             // txtProductDescription
             // 
             this.txtProductDescription.Location = new System.Drawing.Point(697, 127);
-            this.txtProductDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProductDescription.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductDescription.Name = "txtProductDescription";
             this.txtProductDescription.Size = new System.Drawing.Size(241, 22);
             this.txtProductDescription.TabIndex = 27;
@@ -505,7 +501,7 @@
             // txtProductName
             // 
             this.txtProductName.Location = new System.Drawing.Point(697, 95);
-            this.txtProductName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProductName.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductName.Name = "txtProductName";
             this.txtProductName.Size = new System.Drawing.Size(241, 22);
             this.txtProductName.TabIndex = 26;
@@ -513,7 +509,7 @@
             // txtProductID
             // 
             this.txtProductID.Location = new System.Drawing.Point(697, 63);
-            this.txtProductID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtProductID.Margin = new System.Windows.Forms.Padding(4);
             this.txtProductID.Name = "txtProductID";
             this.txtProductID.Size = new System.Drawing.Size(241, 22);
             this.txtProductID.TabIndex = 25;
@@ -572,7 +568,7 @@
             // txtOrderTotal
             // 
             this.txtOrderTotal.Location = new System.Drawing.Point(1219, 158);
-            this.txtOrderTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOrderTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtOrderTotal.Name = "txtOrderTotal";
             this.txtOrderTotal.Size = new System.Drawing.Size(241, 22);
             this.txtOrderTotal.TabIndex = 64;
@@ -580,7 +576,7 @@
             // txtOrderDateOrdered
             // 
             this.txtOrderDateOrdered.Location = new System.Drawing.Point(1219, 218);
-            this.txtOrderDateOrdered.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOrderDateOrdered.Margin = new System.Windows.Forms.Padding(4);
             this.txtOrderDateOrdered.Name = "txtOrderDateOrdered";
             this.txtOrderDateOrdered.Size = new System.Drawing.Size(241, 22);
             this.txtOrderDateOrdered.TabIndex = 63;
@@ -588,7 +584,7 @@
             // txtOrderEstimatedDelivery
             // 
             this.txtOrderEstimatedDelivery.Location = new System.Drawing.Point(1219, 250);
-            this.txtOrderEstimatedDelivery.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOrderEstimatedDelivery.Margin = new System.Windows.Forms.Padding(4);
             this.txtOrderEstimatedDelivery.Name = "txtOrderEstimatedDelivery";
             this.txtOrderEstimatedDelivery.Size = new System.Drawing.Size(241, 22);
             this.txtOrderEstimatedDelivery.TabIndex = 62;
@@ -666,7 +662,7 @@
             // txtOrderProductID
             // 
             this.txtOrderProductID.Location = new System.Drawing.Point(1219, 126);
-            this.txtOrderProductID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOrderProductID.Margin = new System.Windows.Forms.Padding(4);
             this.txtOrderProductID.Name = "txtOrderProductID";
             this.txtOrderProductID.Size = new System.Drawing.Size(241, 22);
             this.txtOrderProductID.TabIndex = 54;
@@ -674,7 +670,7 @@
             // txtOrderClientID
             // 
             this.txtOrderClientID.Location = new System.Drawing.Point(1219, 94);
-            this.txtOrderClientID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOrderClientID.Margin = new System.Windows.Forms.Padding(4);
             this.txtOrderClientID.Name = "txtOrderClientID";
             this.txtOrderClientID.Size = new System.Drawing.Size(241, 22);
             this.txtOrderClientID.TabIndex = 53;
@@ -682,7 +678,7 @@
             // txtOrderID
             // 
             this.txtOrderID.Location = new System.Drawing.Point(1219, 62);
-            this.txtOrderID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOrderID.Margin = new System.Windows.Forms.Padding(4);
             this.txtOrderID.Name = "txtOrderID";
             this.txtOrderID.Size = new System.Drawing.Size(241, 22);
             this.txtOrderID.TabIndex = 52;
@@ -718,6 +714,7 @@
             this.btnReviewNoOfStarsUpdate.TabIndex = 92;
             this.btnReviewNoOfStarsUpdate.Text = "Update";
             this.btnReviewNoOfStarsUpdate.UseVisualStyleBackColor = true;
+            this.btnReviewNoOfStarsUpdate.Click += new System.EventHandler(this.btnReviewNoOfStarsUpdate_Click);
             // 
             // btnReviewDescriptionUpdate
             // 
@@ -728,6 +725,7 @@
             this.btnReviewDescriptionUpdate.TabIndex = 91;
             this.btnReviewDescriptionUpdate.Text = "Update";
             this.btnReviewDescriptionUpdate.UseVisualStyleBackColor = true;
+            this.btnReviewDescriptionUpdate.Click += new System.EventHandler(this.btnReviewDescriptionUpdate_Click);
             // 
             // btnReviewDateUpdate
             // 
@@ -738,6 +736,7 @@
             this.btnReviewDateUpdate.TabIndex = 90;
             this.btnReviewDateUpdate.Text = "Update";
             this.btnReviewDateUpdate.UseVisualStyleBackColor = true;
+            this.btnReviewDateUpdate.Click += new System.EventHandler(this.btnReviewDateUpdate_Click);
             // 
             // btnReviewTimeUpdate
             // 
@@ -748,6 +747,7 @@
             this.btnReviewTimeUpdate.TabIndex = 89;
             this.btnReviewTimeUpdate.Text = "Update";
             this.btnReviewTimeUpdate.UseVisualStyleBackColor = true;
+            this.btnReviewTimeUpdate.Click += new System.EventHandler(this.btnReviewTimeUpdate_Click);
             // 
             // btnReviewClientIDUpdate
             // 
@@ -762,7 +762,7 @@
             // txtReviewNoOfStars
             // 
             this.txtReviewNoOfStars.Location = new System.Drawing.Point(175, 519);
-            this.txtReviewNoOfStars.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtReviewNoOfStars.Margin = new System.Windows.Forms.Padding(4);
             this.txtReviewNoOfStars.Name = "txtReviewNoOfStars";
             this.txtReviewNoOfStars.Size = new System.Drawing.Size(241, 22);
             this.txtReviewNoOfStars.TabIndex = 87;
@@ -770,7 +770,7 @@
             // txtReviewDescription
             // 
             this.txtReviewDescription.Location = new System.Drawing.Point(175, 551);
-            this.txtReviewDescription.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtReviewDescription.Margin = new System.Windows.Forms.Padding(4);
             this.txtReviewDescription.Name = "txtReviewDescription";
             this.txtReviewDescription.Size = new System.Drawing.Size(241, 22);
             this.txtReviewDescription.TabIndex = 86;
@@ -778,7 +778,7 @@
             // txtReviewDate
             // 
             this.txtReviewDate.Location = new System.Drawing.Point(175, 583);
-            this.txtReviewDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtReviewDate.Margin = new System.Windows.Forms.Padding(4);
             this.txtReviewDate.Name = "txtReviewDate";
             this.txtReviewDate.Size = new System.Drawing.Size(241, 22);
             this.txtReviewDate.TabIndex = 85;
@@ -786,18 +786,10 @@
             // txtReviewTime
             // 
             this.txtReviewTime.Location = new System.Drawing.Point(175, 615);
-            this.txtReviewTime.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtReviewTime.Margin = new System.Windows.Forms.Padding(4);
             this.txtReviewTime.Name = "txtReviewTime";
             this.txtReviewTime.Size = new System.Drawing.Size(241, 22);
             this.txtReviewTime.TabIndex = 84;
-            // 
-            // txtReviewPicture
-            // 
-            this.txtReviewPicture.Location = new System.Drawing.Point(175, 647);
-            this.txtReviewPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtReviewPicture.Name = "txtReviewPicture";
-            this.txtReviewPicture.Size = new System.Drawing.Size(241, 22);
-            this.txtReviewPicture.TabIndex = 83;
             // 
             // lblReviewID
             // 
@@ -808,16 +800,6 @@
             this.lblReviewID.Size = new System.Drawing.Size(20, 16);
             this.lblReviewID.TabIndex = 82;
             this.lblReviewID.Text = "ID";
-            // 
-            // lblReviewPicture
-            // 
-            this.lblReviewPicture.AutoSize = true;
-            this.lblReviewPicture.Location = new System.Drawing.Point(16, 651);
-            this.lblReviewPicture.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblReviewPicture.Name = "lblReviewPicture";
-            this.lblReviewPicture.Size = new System.Drawing.Size(48, 16);
-            this.lblReviewPicture.TabIndex = 81;
-            this.lblReviewPicture.Text = "Picture";
             // 
             // lblReviewTime
             // 
@@ -892,7 +874,7 @@
             // txtReviewProductID
             // 
             this.txtReviewProductID.Location = new System.Drawing.Point(175, 487);
-            this.txtReviewProductID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtReviewProductID.Margin = new System.Windows.Forms.Padding(4);
             this.txtReviewProductID.Name = "txtReviewProductID";
             this.txtReviewProductID.Size = new System.Drawing.Size(241, 22);
             this.txtReviewProductID.TabIndex = 73;
@@ -900,7 +882,7 @@
             // txtReviewClientID
             // 
             this.txtReviewClientID.Location = new System.Drawing.Point(175, 455);
-            this.txtReviewClientID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtReviewClientID.Margin = new System.Windows.Forms.Padding(4);
             this.txtReviewClientID.Name = "txtReviewClientID";
             this.txtReviewClientID.Size = new System.Drawing.Size(241, 22);
             this.txtReviewClientID.TabIndex = 72;
@@ -908,7 +890,7 @@
             // txtReviewID
             // 
             this.txtReviewID.Location = new System.Drawing.Point(175, 423);
-            this.txtReviewID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtReviewID.Margin = new System.Windows.Forms.Padding(4);
             this.txtReviewID.Name = "txtReviewID";
             this.txtReviewID.Size = new System.Drawing.Size(241, 22);
             this.txtReviewID.TabIndex = 71;
@@ -977,7 +959,7 @@
             // txtWarehouseLocation
             // 
             this.txtWarehouseLocation.Location = new System.Drawing.Point(697, 514);
-            this.txtWarehouseLocation.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtWarehouseLocation.Margin = new System.Windows.Forms.Padding(4);
             this.txtWarehouseLocation.Name = "txtWarehouseLocation";
             this.txtWarehouseLocation.Size = new System.Drawing.Size(241, 22);
             this.txtWarehouseLocation.TabIndex = 112;
@@ -985,7 +967,7 @@
             // txtWarehouseName
             // 
             this.txtWarehouseName.Location = new System.Drawing.Point(697, 546);
-            this.txtWarehouseName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtWarehouseName.Margin = new System.Windows.Forms.Padding(4);
             this.txtWarehouseName.Name = "txtWarehouseName";
             this.txtWarehouseName.Size = new System.Drawing.Size(241, 22);
             this.txtWarehouseName.TabIndex = 111;
@@ -1053,7 +1035,7 @@
             // txtWarehouseQuantity
             // 
             this.txtWarehouseQuantity.Location = new System.Drawing.Point(697, 482);
-            this.txtWarehouseQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtWarehouseQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.txtWarehouseQuantity.Name = "txtWarehouseQuantity";
             this.txtWarehouseQuantity.Size = new System.Drawing.Size(241, 22);
             this.txtWarehouseQuantity.TabIndex = 98;
@@ -1061,7 +1043,7 @@
             // txtWarehouseProductID
             // 
             this.txtWarehouseProductID.Location = new System.Drawing.Point(697, 450);
-            this.txtWarehouseProductID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtWarehouseProductID.Margin = new System.Windows.Forms.Padding(4);
             this.txtWarehouseProductID.Name = "txtWarehouseProductID";
             this.txtWarehouseProductID.Size = new System.Drawing.Size(241, 22);
             this.txtWarehouseProductID.TabIndex = 97;
@@ -1069,7 +1051,7 @@
             // txtWarehouseID
             // 
             this.txtWarehouseID.Location = new System.Drawing.Point(697, 418);
-            this.txtWarehouseID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtWarehouseID.Margin = new System.Windows.Forms.Padding(4);
             this.txtWarehouseID.Name = "txtWarehouseID";
             this.txtWarehouseID.Size = new System.Drawing.Size(241, 22);
             this.txtWarehouseID.TabIndex = 96;
@@ -1128,7 +1110,7 @@
             // txtTransportVehicleCarPlateNumber
             // 
             this.txtTransportVehicleCarPlateNumber.Location = new System.Drawing.Point(1233, 448);
-            this.txtTransportVehicleCarPlateNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTransportVehicleCarPlateNumber.Margin = new System.Windows.Forms.Padding(4);
             this.txtTransportVehicleCarPlateNumber.Name = "txtTransportVehicleCarPlateNumber";
             this.txtTransportVehicleCarPlateNumber.Size = new System.Drawing.Size(241, 22);
             this.txtTransportVehicleCarPlateNumber.TabIndex = 135;
@@ -1136,7 +1118,7 @@
             // txtTransportVehicleStorageWarehouseID
             // 
             this.txtTransportVehicleStorageWarehouseID.Location = new System.Drawing.Point(1233, 480);
-            this.txtTransportVehicleStorageWarehouseID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTransportVehicleStorageWarehouseID.Margin = new System.Windows.Forms.Padding(4);
             this.txtTransportVehicleStorageWarehouseID.Name = "txtTransportVehicleStorageWarehouseID";
             this.txtTransportVehicleStorageWarehouseID.Size = new System.Drawing.Size(241, 22);
             this.txtTransportVehicleStorageWarehouseID.TabIndex = 134;
@@ -1184,7 +1166,7 @@
             // txtTransportVehicleID
             // 
             this.txtTransportVehicleID.Location = new System.Drawing.Point(1233, 417);
-            this.txtTransportVehicleID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTransportVehicleID.Margin = new System.Windows.Forms.Padding(4);
             this.txtTransportVehicleID.Name = "txtTransportVehicleID";
             this.txtTransportVehicleID.Size = new System.Drawing.Size(241, 22);
             this.txtTransportVehicleID.TabIndex = 121;
@@ -1199,16 +1181,6 @@
             this.btnTransportVehicleInsert.Text = "Insert";
             this.btnTransportVehicleInsert.UseVisualStyleBackColor = true;
             this.btnTransportVehicleInsert.Click += new System.EventHandler(this.btnTransportVehicleInsert_Click);
-            // 
-            // btnReviewPictureUpdate
-            // 
-            this.btnReviewPictureUpdate.Location = new System.Drawing.Point(437, 645);
-            this.btnReviewPictureUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnReviewPictureUpdate.Name = "btnReviewPictureUpdate";
-            this.btnReviewPictureUpdate.Size = new System.Drawing.Size(75, 25);
-            this.btnReviewPictureUpdate.TabIndex = 145;
-            this.btnReviewPictureUpdate.Text = "Update";
-            this.btnReviewPictureUpdate.UseVisualStyleBackColor = true;
             // 
             // btnWarehouseQuntityUpdate
             // 
@@ -1243,18 +1215,17 @@
             // picExample
             // 
             this.picExample.Location = new System.Drawing.Point(544, 292);
-            this.picExample.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picExample.Margin = new System.Windows.Forms.Padding(4);
             this.picExample.Name = "picExample";
             this.picExample.Size = new System.Drawing.Size(119, 59);
             this.picExample.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picExample.TabIndex = 150;
             this.picExample.TabStop = false;
-            this.picExample.Click += new System.EventHandler(this.picExample_Click);
             // 
             // txtOrderDeliveryPrice
             // 
             this.txtOrderDeliveryPrice.Location = new System.Drawing.Point(1219, 186);
-            this.txtOrderDeliveryPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOrderDeliveryPrice.Margin = new System.Windows.Forms.Padding(4);
             this.txtOrderDeliveryPrice.Name = "txtOrderDeliveryPrice";
             this.txtOrderDeliveryPrice.Size = new System.Drawing.Size(241, 22);
             this.txtOrderDeliveryPrice.TabIndex = 152;
@@ -1282,7 +1253,7 @@
             // txtOrderDeliveryDate
             // 
             this.txtOrderDeliveryDate.Location = new System.Drawing.Point(1219, 278);
-            this.txtOrderDeliveryDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtOrderDeliveryDate.Margin = new System.Windows.Forms.Padding(4);
             this.txtOrderDeliveryDate.Name = "txtOrderDeliveryDate";
             this.txtOrderDeliveryDate.Size = new System.Drawing.Size(241, 22);
             this.txtOrderDeliveryDate.TabIndex = 154;
@@ -1311,7 +1282,6 @@
             this.Controls.Add(this.btnAccountCreationDateUpdate);
             this.Controls.Add(this.btnClientDOBUpdate);
             this.Controls.Add(this.btnWarehouseQuntityUpdate);
-            this.Controls.Add(this.btnReviewPictureUpdate);
             this.Controls.Add(this.btnTransportVehicleIDUpdate);
             this.Controls.Add(this.btnTransportVehicleDelete);
             this.Controls.Add(this.btnTransportVehicleCarPlateNumberUpdate);
@@ -1351,9 +1321,7 @@
             this.Controls.Add(this.txtReviewDescription);
             this.Controls.Add(this.txtReviewDate);
             this.Controls.Add(this.txtReviewTime);
-            this.Controls.Add(this.txtReviewPicture);
             this.Controls.Add(this.lblReviewID);
-            this.Controls.Add(this.lblReviewPicture);
             this.Controls.Add(this.lblReviewTime);
             this.Controls.Add(this.lblReviewDate);
             this.Controls.Add(this.lblReviewDescription);
@@ -1503,9 +1471,7 @@
         private System.Windows.Forms.TextBox txtReviewDescription;
         private System.Windows.Forms.TextBox txtReviewDate;
         private System.Windows.Forms.TextBox txtReviewTime;
-        private System.Windows.Forms.TextBox txtReviewPicture;
         private System.Windows.Forms.Label lblReviewID;
-        private System.Windows.Forms.Label lblReviewPicture;
         private System.Windows.Forms.Label lblReviewTime;
         private System.Windows.Forms.Label lblReviewDate;
         private System.Windows.Forms.Label lblReviewDescription;
@@ -1546,7 +1512,6 @@
         private System.Windows.Forms.Label lblTransportVehicle;
         private System.Windows.Forms.TextBox txtTransportVehicleID;
         private System.Windows.Forms.Button btnTransportVehicleInsert;
-        private System.Windows.Forms.Button btnReviewPictureUpdate;
         private System.Windows.Forms.Button btnWarehouseQuntityUpdate;
         private System.Windows.Forms.Button btnClientDOBUpdate;
         private System.Windows.Forms.Button btnAccountCreationDateUpdate;
