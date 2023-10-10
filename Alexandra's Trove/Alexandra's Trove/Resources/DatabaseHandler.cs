@@ -19,7 +19,7 @@ namespace Alexandra_s_Trove.Resources
         }
 
 
-        public async static void InsertNewClient(string ClientID, string ClientName, string ClientDOB, string ClientAddress, string ClientPhoneNumber, string ClientPassword, string ClientCardDetails, string ClientAccountCreationDate)
+        public async static void InsertNewClient(string ClientID, string ClientName, string ClientDOB, string ClientAddress, string ClientPhoneNumber, string ClientPassword, string ClientCardDetails)
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -37,19 +37,349 @@ namespace Alexandra_s_Trove.Resources
                 PhoneNumber = ClientPhoneNumber,
                 Password = ClientPassword,
                 CardDetails = ClientCardDetails,
-                AccountCreationDate = ClientAccountCreationDate
+                AccountCreationDate = DateTime.Now.ToString("d/M/yyyy") //double check - example in Form3.cs
             };
             await Coll.InsertOneAsync(NewClient);
   
         }
 
-        public async static void DeleteClient () { }
-        public async static void UpdateClientName() { }
-        public async static void UpdateClientDOB() { }
-        public async static void UpdateClientAddress() { }
-        public async static void UpdateClientPhoneNumber() { }
-        public async static void UpdateClientPassword() { }
-        public async static void UpdateClientCardDetails() { }
+        public async static void DeleteClient (string ClientIDForDeletion) 
+        {
+
+            List<string> ClientID = new List<string>();
+
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Client";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Client>(CollectionName);
+
+
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ClientID.Add(datas.ID);
+                }
+            }
+
+            bool IDExists = false;
+
+            for (int i = 0; i < ClientID.Count; i++)
+            {
+                if (ClientID[i] == ClientIDForDeletion) { IDExists = true; }
+
+            }
+            if (IDExists == true)
+            {
+                var location = Coll.DeleteOne(a => a.ID == ClientIDForDeletion);
+
+            }
+            else
+            {
+                MessageBox.Show("ID " + ClientIDForDeletion + " does not exist");
+
+            }
+
+        }
+        public async static void UpdateClientName(string ClientIDForUpdate, string newName) 
+        {
+            List<string> ClientIDs = new List<string>();
+
+
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Client";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Client>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ClientIDs.Add(datas.ID);
+                }
+            }
+
+            bool IDExists = false;
+
+            for (int i = 0; i < ClientIDs.Count; i++)
+            {
+                if (ClientIDs[i] == ClientIDForUpdate) { IDExists = true; }
+
+            }
+            if (IDExists == true)
+            {
+
+                var filter = Builders<Client>
+                   .Filter
+                   .Eq(a => a.ID, ClientIDForUpdate);
+
+                var update = Builders<Client>
+                     .Update
+                     .Set(a => a.Name, newName);
+
+                var result = Coll.UpdateOne(filter, update);
+            }
+            else
+            {
+                MessageBox.Show("ID " + ClientIDForUpdate + " does not exist");
+
+            }
+
+        }
+        public async static void UpdateClientDOB(string ClientIDForUpdate, string newDOB)
+        {
+
+            List<string> ClientIDs = new List<string>();
+
+
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Client";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Client>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ClientIDs.Add(datas.ID);
+                }
+            }
+
+            bool IDExists = false;
+
+            for (int i = 0; i < ClientIDs.Count; i++)
+            {
+                if (ClientIDs[i] == ClientIDForUpdate) { IDExists = true; }
+
+            }
+            if (IDExists == true)
+            {
+
+                var filter = Builders<Client>
+                   .Filter
+                   .Eq(a => a.ID, ClientIDForUpdate);
+
+                var update = Builders<Client>
+                     .Update
+                     .Set(a => a.DOB, newDOB);
+
+                var result = Coll.UpdateOne(filter, update);
+            }
+            else
+            {
+                MessageBox.Show("ID " + ClientIDForUpdate + " does not exist");
+
+            }
+        }
+        public async static void UpdateClientAddress(string ClientIDForUpdate, string newAddress) 
+        {
+            List<string> ClientIDs = new List<string>();
+
+
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Client";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Client>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ClientIDs.Add(datas.ID);
+                }
+            }
+
+            bool IDExists = false;
+
+            for (int i = 0; i < ClientIDs.Count; i++)
+            {
+                if (ClientIDs[i] == ClientIDForUpdate) { IDExists = true; }
+
+            }
+            if (IDExists == true)
+            {
+
+                var filter = Builders<Client>
+                   .Filter
+                   .Eq(a => a.ID, ClientIDForUpdate);
+
+                var update = Builders<Client>
+                     .Update
+                     .Set(a => a.Address, newAddress);
+
+                var result = Coll.UpdateOne(filter, update);
+            }
+            else
+            {
+                MessageBox.Show("ID " + ClientIDForUpdate + " does not exist");
+
+            }
+        }
+        public async static void UpdateClientPhoneNumber(string ClientIDForUpdate, string newPhoneNymber) 
+        {
+            List<string> ClientIDs = new List<string>();
+
+
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Client";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Client>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ClientIDs.Add(datas.ID);
+                }
+            }
+
+            bool IDExists = false;
+
+            for (int i = 0; i < ClientIDs.Count; i++)
+            {
+                if (ClientIDs[i] == ClientIDForUpdate) { IDExists = true; }
+
+            }
+            if (IDExists == true)
+            {
+
+                var filter = Builders<Client>
+                   .Filter
+                   .Eq(a => a.ID, ClientIDForUpdate);
+
+                var update = Builders<Client>
+                     .Update
+                     .Set(a => a.PhoneNumber, newPhoneNymber);
+
+                var result = Coll.UpdateOne(filter, update);
+            }
+            else
+            {
+                MessageBox.Show("ID " + ClientIDForUpdate + " does not exist");
+
+            }
+
+
+        }
+        public async static void UpdateClientPassword(string ClientIDForUpdate, string newPassword) 
+        {
+
+            List<string> ClientIDs = new List<string>();
+
+
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Client";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Client>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ClientIDs.Add(datas.ID);
+                }
+            }
+
+            bool IDExists = false;
+
+            for (int i = 0; i < ClientIDs.Count; i++)
+            {
+                if (ClientIDs[i] == ClientIDForUpdate) { IDExists = true; }
+
+            }
+            if (IDExists == true)
+            {
+
+                var filter = Builders<Client>
+                   .Filter
+                   .Eq(a => a.ID, ClientIDForUpdate);
+
+                var update = Builders<Client>
+                     .Update
+                     .Set(a => a.Password, newPassword);
+
+                var result = Coll.UpdateOne(filter, update);
+            }
+            else
+            {
+                MessageBox.Show("ID " + ClientIDForUpdate + " does not exist");
+
+            }
+        }
+        public async static void UpdateClientCardDetails(string ClientIDForUpdate, string newCardDetails) 
+        {
+
+            List<string> ClientIDs = new List<string>();
+
+
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Client";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Client>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ClientIDs.Add(datas.ID);
+                }
+            }
+
+            bool IDExists = false;
+
+            for (int i = 0; i < ClientIDs.Count; i++)
+            {
+                if (ClientIDs[i] == ClientIDForUpdate) { IDExists = true; }
+
+            }
+            if (IDExists == true)
+            {
+
+                var filter = Builders<Client>
+                   .Filter
+                   .Eq(a => a.ID, ClientIDForUpdate);
+
+                var update = Builders<Client>
+                     .Update
+                     .Set(a => a.CardDetails, newCardDetails);
+
+                var result = Coll.UpdateOne(filter, update);
+            }
+            else
+            {
+                MessageBox.Show("ID " + ClientIDForUpdate + " does not exist");
+
+            }
+
+        }
 
 
         public async static void InsertNewOrder(string OrderID, string OrderClientID, string OrderProductID, string OrderTotal, string OrderDeliveryPrice, string OrderDateOrdered, string OrderEstimatedDelivery, string OrderDeliveryDate)
@@ -133,7 +463,7 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        public async static void DeleteReview(string IDForDeletion) 
+        public async static void DeleteReview(string ReviewIDForDeletion) 
         {
 
             List<string> ReviewsID = new List<string>();
@@ -160,22 +490,22 @@ namespace Alexandra_s_Trove.Resources
             
             for (int i = 0; i < ReviewsID.Count; i++)
             {
-                if (ReviewsID[i] == IDForDeletion) { IDExists = true; }
+                if (ReviewsID[i] == ReviewIDForDeletion) { IDExists = true; }
 
             }
             if (IDExists == true)
             {
-                var location = Coll.DeleteOne(a => a.ID == IDForDeletion);
+                var location = Coll.DeleteOne(a => a.ID == ReviewIDForDeletion);
                 
             }
             else
             {
-                MessageBox.Show("ID "+ IDForDeletion + " does not exist");
+                MessageBox.Show("ID "+ ReviewIDForDeletion + " does not exist");
                 
             }
 
 
-        } //include await
+        } 
         public async static void UpdateReviewNoOfStars(string ReviewIDForUpdate, string newNoOfStars) 
         {
 
@@ -515,7 +845,6 @@ namespace Alexandra_s_Trove.Resources
         public string Address { get; set; }
         public string PhoneNumber { get; set; }
         public string Password { get; set; }
-       
         public string CardDetails { get; set; }
         public string AccountCreationDate { get; set; }
 

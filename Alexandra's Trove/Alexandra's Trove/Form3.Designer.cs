@@ -544,6 +544,7 @@
             this.btnProductIDUpdate.TabIndex = 49;
             this.btnProductIDUpdate.Text = "Update";
             this.btnProductIDUpdate.UseVisualStyleBackColor = true;
+            this.btnProductIDUpdate.Click += new System.EventHandler(this.btnProductIDUpdate_Click);
             // 
             // btnProductDescriptionUpdate
             // 

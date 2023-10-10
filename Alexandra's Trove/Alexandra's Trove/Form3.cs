@@ -40,7 +40,7 @@ namespace Alexandra_s_Trove
         private void btnClientInsert_Click(object sender, EventArgs e)
         {
             DatabaseHandler.InsertNewClient(txtClientID.Text, txtClientName.Text, txtClientDOB.Text, txtClientAddress.Text,
-            txtClientPhoneNumber.Text, txtClientPassword.Text, txtClientCardDetails.Text, txtAccountCreationDate.Text);//example
+            txtClientPhoneNumber.Text, txtClientPassword.Text, txtClientCardDetails.Text);//example
 
             txtClientID.Text = "";
             txtClientName.Text = "";
@@ -168,7 +168,14 @@ namespace Alexandra_s_Trove
 
         }
 
-        
+        private void btnProductIDUpdate_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(DateTime.Now.ToString("d/M/yyyy h:mm:ss tt"));//day/month/year hour/minute/second PM/AM
+            MessageBox.Show(DateTime.Now.ToString("h:mm:ss tt"));//hour/minute/second PM/AM
+            MessageBox.Show(DateTime.Now.ToString("d/M/yyyy"));//day/month/year
+
+
+        }
     }
 }
 
