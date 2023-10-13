@@ -73,18 +73,16 @@ namespace Alexandra_s_Trove
 
         private void btnOrderInsert_Click(object sender, EventArgs e)
         {
-
-            DatabaseHandler.InsertNewOrder(txtOrderID.Text, txtOrderClientID.Text, txtOrderTotal.Text, txtOrderDeliveryPrice.Text,
-            txtOrderDateOrdered.Text, txtOrderEstimatedDelivery.Text, txtOrderProductID.Text, txtOrderDeliveryDate.Text);
+            
+            DatabaseHandler.InsertNewOrder(txtOrderID.Text, txtOrderClientID.Text, txtOrderProductID.Text, txtOrderTotal.Text,
+             txtOrderDeliveryPrice.Text);
 
             txtOrderID.Text = "";
             txtOrderClientID.Text = "";
             txtOrderTotal.Text = "";
             txtOrderDeliveryPrice.Text = "";
-            txtOrderDateOrdered.Text = "";
-            txtOrderEstimatedDelivery.Text = "";
             txtOrderProductID.Text = "";
-            txtOrderDeliveryDate.Text = "";
+         
 
 
         }
@@ -128,7 +126,7 @@ namespace Alexandra_s_Trove
 
         private void btnReviewDateUpdate_Click(object sender, EventArgs e)
         {
-            DatabaseHandler.UpdateReviewDate(txtReviewID.Text, txtReviewDate.Text);
+            DatabaseHandler.UpdateReviewDate(txtReviewID.Text);
 
             txtReviewID.Text = "";
             txtReviewDate.Text = "";
@@ -137,11 +135,11 @@ namespace Alexandra_s_Trove
 
         private void btnReviewTimeUpdate_Click(object sender, EventArgs e)
         {
-            DatabaseHandler.UpdateReviewTime(txtReviewID.Text, txtReviewTime.Text);
+            DatabaseHandler.UpdateReviewTime(txtReviewID.Text);
 
             txtReviewID.Text = "";
-            txtReviewTime.Text = "";
         }
+
         private void btnWarehouseInsert_Click(object sender, EventArgs e)
         {
 
@@ -170,11 +168,17 @@ namespace Alexandra_s_Trove
 
         private void btnProductIDUpdate_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(DateTime.Now.ToString("d/M/yyyy h:mm:ss tt"));//day/month/year hour/minute/second PM/AM
-            MessageBox.Show(DateTime.Now.ToString("h:mm:ss tt"));//hour/minute/second PM/AM
-            MessageBox.Show(DateTime.Now.ToString("d/M/yyyy"));//day/month/year
+            // MessageBox.Show(DateTime.Now.ToString("d/M/yyyy h:mm:ss tt"));//day/month/year hour/minute/second PM/AM
+            // MessageBox.Show(DateTime.Now.ToString("h:mm:ss tt"));//hour/minute/second PM/AM
+            // MessageBox.Show(DateTime.Now.ToString("d/M/yyyy"));//day/month/year
 
-
+           
+           
+            DateTime d1 = (DateTime.Now).AddDays(1);
+            
+            string date = d1.ToString();
+            date = date + " 12:00 AM";
+            MessageBox.Show(date);//day/month/year
         }
     }
 }

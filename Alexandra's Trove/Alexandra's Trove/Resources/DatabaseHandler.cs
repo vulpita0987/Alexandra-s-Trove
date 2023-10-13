@@ -1,5 +1,6 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver;
+using MongoDB.Driver.Linq;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -37,7 +38,7 @@ namespace Alexandra_s_Trove.Resources
                 PhoneNumber = ClientPhoneNumber,
                 Password = ClientPassword,
                 CardDetails = ClientCardDetails,
-                AccountCreationDate = DateTime.Now.ToString("d/M/yyyy") //double check - example in Form3.cs
+                AccountCreationDate = DateTime.Now.ToString("d/M/yyyy") 
             };
             await Coll.InsertOneAsync(NewClient);
   
@@ -382,7 +383,7 @@ namespace Alexandra_s_Trove.Resources
         }
 
 
-        public async static void InsertNewOrder(string OrderID, string OrderClientID, string OrderProductID, string OrderTotal, string OrderDeliveryPrice, string OrderDateOrdered, string OrderEstimatedDelivery, string OrderDeliveryDate)
+        public async static void InsertNewOrder(string OrderID, string OrderClientID, string OrderProductID, string OrderTotal, string OrderDeliveryPrice)
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -391,8 +392,9 @@ namespace Alexandra_s_Trove.Resources
             var db = Connection.GetDatabase(DatabaseName);
             var Coll = db.GetCollection<Order>(CollectionName);
 
-
-
+            DateTime d1 = (DateTime.Now).AddDays(1);
+            string date = d1.ToString();
+          
             var NewOrder = new Order
             {
                 ID = OrderID,
@@ -400,10 +402,9 @@ namespace Alexandra_s_Trove.Resources
                 ProductIDs = OrderProductID,
                 Total = OrderTotal,
                 DeliveryPrice = OrderDeliveryPrice,
-                DateOrdered = OrderDateOrdered,
-                EstimatedDelivery = OrderEstimatedDelivery,
-                DeliveryDate = OrderDeliveryDate
-
+                DateOrdered = DateTime.Now.ToString("d/M/yyyy"),
+                EstimatedDelivery = date
+               
             };
             await Coll.InsertOneAsync(NewOrder);
 
@@ -446,8 +447,6 @@ namespace Alexandra_s_Trove.Resources
             var db = Connection.GetDatabase(DatabaseName);
             var Coll = db.GetCollection<Review>(CollectionName);
 
-
-
             var NewReview = new Review
             {
                 ID = ReviewID,
@@ -455,8 +454,8 @@ namespace Alexandra_s_Trove.Resources
                 ProductID = ReviewProductID,
                 NoOfStars = ReviewNoOfStars,
                 Description = ReviewDescription,
-                Date = ReviewDate,
-                Time = ReviewTime
+                Date = DateTime.Now.ToString("d/M/yyyy"),
+                Time = DateTime.Now.ToString("h:mm:ss tt")
 
             };
             await Coll.InsertOneAsync(NewReview);
@@ -605,11 +604,11 @@ namespace Alexandra_s_Trove.Resources
             }
 
         }
-        public async static void UpdateReviewDate(string ReviewIDForUpdate, string newDate) //today (now!!) - change later
+        public async static void UpdateReviewDate(string ReviewIDForUpdate) 
         {
             List<string> ReviewsID = new List<string>();
 
-
+           
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
             string CollectionName = "Review";
@@ -643,7 +642,7 @@ namespace Alexandra_s_Trove.Resources
 
                 var update = Builders<Review>
                      .Update
-                     .Set(a => a.Date, newDate);
+                     .Set(a => a.Date, DateTime.Now.ToString("d/M/yyyy"));
 
                 var result = Coll.UpdateOne(filter, update);
             }
@@ -654,10 +653,9 @@ namespace Alexandra_s_Trove.Resources
             }
 
         }
-        public async static void UpdateReviewTime(string ReviewIDForUpdate, string newTime) //today (now!!) - change later
+        public async static void UpdateReviewTime(string ReviewIDForUpdate) //today (now!!) - change later
         {
             List<string> ReviewsID = new List<string>();
-
 
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -692,7 +690,7 @@ namespace Alexandra_s_Trove.Resources
 
                 var update = Builders<Review>
                      .Update
-                     .Set(a => a.Time, newTime);
+                     .Set(a => a.Time, DateTime.Now.ToString("h:mm:ss tt"));
 
                 var result = Coll.UpdateOne(filter, update);
             }
@@ -829,7 +827,6 @@ namespace Alexandra_s_Trove.Resources
         public string DateOrdered { get; set; }
         public string EstimatedDelivery { get; set; }
 
-        public string DeliveryDate { get; set; }
 
 
     }
