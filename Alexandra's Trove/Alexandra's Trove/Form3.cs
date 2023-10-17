@@ -56,6 +56,7 @@ namespace Alexandra_s_Trove
         private void HelpDeveloper_Load(object sender, EventArgs e)
         {
             picExample.Image = Resource.Cherries4; //example
+            
         }
 
         private void btnProductInsert_Click(object sender, EventArgs e)
@@ -172,13 +173,25 @@ namespace Alexandra_s_Trove
             // MessageBox.Show(DateTime.Now.ToString("h:mm:ss tt"));//hour/minute/second PM/AM
             // MessageBox.Show(DateTime.Now.ToString("d/M/yyyy"));//day/month/year
 
-           
-           
-            DateTime d1 = (DateTime.Now).AddDays(1);
-            
-            string date = d1.ToString();
-            date = date + " 12:00 AM";
-            MessageBox.Show(date);//day/month/year
+
+
+            //DateTime d1 = (DateTime.Now).AddDays(1);
+
+            //string date = d1.ToString();
+            //date = date + " 12:00 AM";
+            //MessageBox.Show(date);//day/month/year
+
+
+
+            //Console.WriteLine("Please enter a secret key for the symmetric algorithm.");
+            //var key = Console.ReadLine();
+            string encrypted = EncryptDecrypt.Encrypt("AcumSauNiciodata");
+            MessageBox.Show(encrypted);
+            string descrypted = EncryptDecrypt.Decrypt(encrypted);
+            MessageBox.Show(descrypted);
+
+
+
         }
     }
 }
