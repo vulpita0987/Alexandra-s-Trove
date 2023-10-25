@@ -8,6 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Web;
+using Hangfire.Common;
+using static GMap.NET.Entity.OpenStreetMapGeocodeEntity;
+using System.Xml.Linq;
+using System.Net;
 
 namespace Alexandra_s_Trove.Resources
 {
@@ -20,7 +25,7 @@ namespace Alexandra_s_Trove.Resources
         }
 
 
-        public async static void InsertNewClient(string ClientID, string ClientName, string ClientDOB, string ClientAddress, string ClientPhoneNumber, string ClientPassword, string ClientCardDetails)
+        public async static void InsertNewClient(string ClientName, string ClientDOB, string ClientAddress, string ClientPhoneNumber, string ClientPassword, string ClientCardDetails)
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -28,6 +33,23 @@ namespace Alexandra_s_Trove.Resources
             var Connection = new MongoClient(ConnectionString);
             var db = Connection.GetDatabase(DatabaseName);
             var Coll = db.GetCollection<Client>(CollectionName);
+
+
+            int idSuffix = 1;
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    idSuffix = idSuffix + 1;
+                }
+            }
+
+            string ClientID = "C" + idSuffix; idSuffix.ToString();
+
+            ClientPassword = EncryptDecrypt.Encrypt(ClientPassword);
+            ClientCardDetails = EncryptDecrypt.Encrypt(ClientCardDetails);
 
             var NewClient = new Client
             {
@@ -43,7 +65,7 @@ namespace Alexandra_s_Trove.Resources
             await Coll.InsertOneAsync(NewClient);
   
         }
-
+       
         public async static void DeleteClient (string ClientIDForDeletion) 
         {
 
@@ -285,6 +307,8 @@ namespace Alexandra_s_Trove.Resources
         public async static void UpdateClientPassword(string ClientIDForUpdate, string newPassword) 
         {
 
+            newPassword = EncryptDecrypt.Encrypt(newPassword);
+
             List<string> ClientIDs = new List<string>();
 
 
@@ -334,6 +358,8 @@ namespace Alexandra_s_Trove.Resources
         public async static void UpdateClientCardDetails(string ClientIDForUpdate, string newCardDetails) 
         {
 
+            newCardDetails = EncryptDecrypt.Encrypt(newCardDetails);
+
             List<string> ClientIDs = new List<string>();
 
 
@@ -381,9 +407,87 @@ namespace Alexandra_s_Trove.Resources
             }
 
         }
+      
+        public async static void GetClient(string ClientIDToGet)//for later use
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Client";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Client>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            List<string> ClientIDs = new List<string>();
+            List<string> names = new List<string>();
+            List<string> DOBs = new List<string>();
+            List<string> addresses = new List<string>();
+            List<string> phoneNumbers = new List<string>();
+            List<string> passwords = new List<string>();
+            List<string> creaditCardDetailsAll = new List<string>();
+            List<string> accountCreationDates = new List<string>();
+            string name1 = "";
+            string DOB1 = "";
+            string address1 = "";
+            string phoneNumber1 = "";
+            string password1 = "";
+            string creaditCardDetails1 = "";
+            string accountCreationDate1 = "";
+           
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ClientIDs.Add(datas.ID);
+                    names.Add(datas.Name);
+                    DOBs.Add(datas.DOB);
+                    addresses.Add(datas.Address);
+                    phoneNumbers.Add(datas.PhoneNumber);
+                    passwords.Add(datas.Password);
+                    creaditCardDetailsAll.Add(datas.CardDetails);
+                    accountCreationDates.Add(datas.AccountCreationDate);
+                }
+            }
+
+            bool IDExists = false;
+
+            for (int i = 0; i < ClientIDs.Count; i++)
+            {
+                if (ClientIDs[i] == ClientIDToGet) 
+                {
+
+                     name1 = names[i];
+                     DOB1 = DOBs[i];
+                     address1 = addresses[i];
+                     phoneNumber1 = phoneNumbers[i];
+                     password1 = passwords[i];
+                     creaditCardDetails1 = creaditCardDetailsAll[i];
+                     accountCreationDate1 = accountCreationDates[i];
+
+                     password1 = EncryptDecrypt.Decrypt(password1);
+                     creaditCardDetails1 = EncryptDecrypt.Decrypt(creaditCardDetails1);
 
 
-        public async static void InsertNewOrder(string OrderID, string OrderClientID, string OrderProductID, string OrderTotal, string OrderDeliveryPrice)
+                    IDExists = true;
+                }
+            }
+            if (IDExists == true)
+            {
+
+                MessageBox.Show(name1 + "/" + DOB1 + "/" + address1 + "/" + phoneNumber1 + "/" + password1 + "/" + creaditCardDetails1 + "/" + accountCreationDate1);
+                //do bunch of stuff
+            }
+            else
+            {
+                MessageBox.Show("ID " + ClientIDToGet + " does not exist");
+
+            }
+
+        }
+
+        public async static void InsertNewOrder(string OrderClientID, string OrderProductID, string OrderTotal, string OrderDeliveryPrice)
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -391,6 +495,20 @@ namespace Alexandra_s_Trove.Resources
             var Connection = new MongoClient(ConnectionString);
             var db = Connection.GetDatabase(DatabaseName);
             var Coll = db.GetCollection<Order>(CollectionName);
+
+
+            int idSuffix = 1;
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    idSuffix = idSuffix + 1;
+                }
+            }
+
+            string OrderID = "ORD" + idSuffix; idSuffix.ToString();
 
             DateTime d1 = (DateTime.Now).AddDays(1);
             string date = d1.ToString();
@@ -410,7 +528,7 @@ namespace Alexandra_s_Trove.Resources
 
 
         }
-        
+        //order functions slot ////////////////////////////
 
         public async static void InsertNewProduct(string ProductID, string ProductName, 
             string ProductDescription, string ProductPrice, string ProductSpecification)
@@ -435,9 +553,111 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        
+        public async static void GetProduct(string ProductIDToGet)//for later use
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Product";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Product>(CollectionName);
 
-        public async static void InsertNewReview(string ReviewID, string ReviewClientID, string ReviewProductID, 
+            var data = await Coll.FindAsync(_ => true);
+
+            List<string> ProductIDs = new List<string>();
+            List<string> Names = new List<string>();
+            List<string> Descriptions = new List<string>();
+            List<string> Prices = new List<string>();
+            List<string> Specifications = new List<string>();
+          
+            string name = "";
+            string description = "";
+            string price = "";
+            string specification = "";
+
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ProductIDs.Add(datas.ID);
+                    Names.Add(datas.Name);
+                    Descriptions.Add(datas.Description);
+                    Prices.Add(datas.Price);
+                    Specifications.Add(datas.Specifications);
+                    
+                }
+            }
+
+            bool IDExists = false;
+
+            for (int i = 0; i < ProductIDs.Count; i++)
+            {
+                if (ProductIDs[i] == ProductIDToGet)
+                {
+
+                    name = Names[i];
+                    description = Descriptions[i];
+                    price = Prices[i];
+                    specification = Specifications[i];
+
+
+                    IDExists = true;
+                }
+            }
+            if (IDExists == true)
+            {
+                MessageBox.Show(name + "/" + description + "/" + price + "/" + specification);
+                //do bunch of stuff
+            }
+            else
+            {
+                MessageBox.Show("ID " + ProductIDToGet + " does not exist");
+
+            }
+
+        }
+
+        public async static void GetProducts()//for later use
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Product";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Product>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            List<string> ProductIDs = new List<string>();
+            List<string> Names = new List<string>();
+            List<string> Descriptions = new List<string>();
+            List<string> Prices = new List<string>();
+            List<string> Specifications = new List<string>();
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ProductIDs.Add(datas.ID);
+                    Names.Add(datas.Name);
+                    Descriptions.Add(datas.Description);
+                    Prices.Add(datas.Price);
+                    Specifications.Add(datas.Specifications);
+
+                }
+            }
+
+            for (int i = 0; i < ProductIDs.Count; i++)
+            {
+                MessageBox.Show(ProductIDs[i] + "/" + Names[i] + "/" + Descriptions[i] + "/" + Prices[i] + "/" + Specifications[i]);
+            }
+           
+
+        }
+
+
+        public async static void InsertNewReview(string ReviewClientID, string ReviewProductID, 
             string ReviewNoOfStars, string ReviewDescription, string ReviewDate, string ReviewTime)
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
@@ -446,6 +666,19 @@ namespace Alexandra_s_Trove.Resources
             var Connection = new MongoClient(ConnectionString);
             var db = Connection.GetDatabase(DatabaseName);
             var Coll = db.GetCollection<Review>(CollectionName);
+
+            int idSuffix = 1;
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    idSuffix = idSuffix + 1;
+                }
+            }
+
+            string ReviewID = "R" + idSuffix; idSuffix.ToString();
 
             var NewReview = new Review
             {
@@ -653,7 +886,7 @@ namespace Alexandra_s_Trove.Resources
             }
 
         }
-        public async static void UpdateReviewTime(string ReviewIDForUpdate) //today (now!!) - change later
+        public async static void UpdateReviewTime(string ReviewIDForUpdate) 
         {
             List<string> ReviewsID = new List<string>();
 
@@ -699,6 +932,48 @@ namespace Alexandra_s_Trove.Resources
                 MessageBox.Show("ID " + ReviewIDForUpdate + " does not exist");
 
             }
+        }
+
+        public async static void GetReviews()//for later use
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Review";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Review>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            List<string> ReviewIDs = new List<string>();
+            List<string> ClientIDs = new List<string>();
+            List<string> ProductIDs = new List<string>();
+            List<string> NoOfStartsAll = new List<string>();
+            List<string> DescriptionAll = new List<string>();
+            List<string> Dates = new List<string>();
+            List<string> Times = new List<string>();
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ReviewIDs.Add(datas.ID);
+                    ClientIDs.Add(datas.ClientID);
+                    ProductIDs.Add(datas.ProductID);
+                    NoOfStartsAll.Add(datas.NoOfStars);
+                    DescriptionAll.Add(datas.Description);
+                    Dates.Add(datas.Date);
+                    Times.Add(datas.Time);
+
+                }
+            }
+
+            for (int i = 0; i < ReviewIDs.Count; i++)
+            {
+                MessageBox.Show(ReviewIDs[i] + "/" + ClientIDs[i] + "/" + ProductIDs[i] + "/" + NoOfStartsAll[i] + "/" + DescriptionAll[i] + "/" + Dates[i] + "/" + Times[i]);
+            }
+
+
         }
 
         public async static void InsertNewTransportVehicle(string TransportVehicleID, string TransportVehicleCarPlateNumber, string StorageWarehouseID)

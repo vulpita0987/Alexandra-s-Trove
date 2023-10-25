@@ -39,7 +39,7 @@ namespace Alexandra_s_Trove
 
         private void btnClientInsert_Click(object sender, EventArgs e)
         {
-            DatabaseHandler.InsertNewClient(txtClientID.Text, txtClientName.Text, txtClientDOB.Text, txtClientAddress.Text,
+            DatabaseHandler.InsertNewClient(txtClientName.Text, txtClientDOB.Text, txtClientAddress.Text,
             txtClientPhoneNumber.Text, txtClientPassword.Text, txtClientCardDetails.Text);//example
 
             txtClientID.Text = "";
@@ -75,7 +75,7 @@ namespace Alexandra_s_Trove
         private void btnOrderInsert_Click(object sender, EventArgs e)
         {
             
-            DatabaseHandler.InsertNewOrder(txtOrderID.Text, txtOrderClientID.Text, txtOrderProductID.Text, txtOrderTotal.Text,
+            DatabaseHandler.InsertNewOrder(txtOrderClientID.Text, txtOrderProductID.Text, txtOrderTotal.Text,
              txtOrderDeliveryPrice.Text);
 
             txtOrderID.Text = "";
@@ -83,15 +83,13 @@ namespace Alexandra_s_Trove
             txtOrderTotal.Text = "";
             txtOrderDeliveryPrice.Text = "";
             txtOrderProductID.Text = "";
-         
-
 
         }
 
         private void btnReviewInsert_Click(object sender, EventArgs e)
         {
 
-            DatabaseHandler.InsertNewReview(txtReviewID.Text, txtReviewClientID.Text, txtReviewProductID.Text, txtReviewNoOfStars.Text,
+            DatabaseHandler.InsertNewReview(txtReviewClientID.Text, txtReviewProductID.Text, txtReviewNoOfStars.Text,
             txtReviewDescription.Text, txtReviewDate.Text, txtReviewTime.Text);
 
             txtReviewID.Text = "";
@@ -174,23 +172,12 @@ namespace Alexandra_s_Trove
             // MessageBox.Show(DateTime.Now.ToString("d/M/yyyy"));//day/month/year
 
 
+            //DatabaseHandler.InsertNewClient("Sanda", "24/01/2002", "Aici","07625353652", "helloKitty", "12343 16562");//example
 
-            //DateTime d1 = (DateTime.Now).AddDays(1);
-
-            //string date = d1.ToString();
-            //date = date + " 12:00 AM";
-            //MessageBox.Show(date);//day/month/year
-
-
-
-            //Console.WriteLine("Please enter a secret key for the symmetric algorithm.");
-            //var key = Console.ReadLine();
-            string encrypted = EncryptDecrypt.Encrypt("AcumSauNiciodata");
-            MessageBox.Show(encrypted);
-            string descrypted = EncryptDecrypt.Decrypt(encrypted);
-            MessageBox.Show(descrypted);
-
-
+            //DatabaseHandler.GetClient("C1");
+            //DatabaseHandler.GetProduct("P1");
+            //DatabaseHandler.GetProducts();
+            //DatabaseHandler.GetReviews();
 
         }
     }
