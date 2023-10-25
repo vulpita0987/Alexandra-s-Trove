@@ -163,29 +163,35 @@
             // txtEmailAddress
             // 
             this.txtEmailAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailAddress.Location = new System.Drawing.Point(320, 200);
+            this.txtEmailAddress.Location = new System.Drawing.Point(319, 201);
             this.txtEmailAddress.Name = "txtEmailAddress";
             this.txtEmailAddress.Size = new System.Drawing.Size(283, 31);
             this.txtEmailAddress.TabIndex = 13;
             this.txtEmailAddress.Text = "Email Address";
+            this.txtEmailAddress.MouseEnter += new System.EventHandler(this.txtEmailAddress_MouseEnter);
+            this.txtEmailAddress.MouseLeave += new System.EventHandler(this.txtEmailAddress_MouseLeave);
             // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(320, 248);
+            this.txtPassword.Location = new System.Drawing.Point(319, 247);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(283, 31);
             this.txtPassword.TabIndex = 14;
             this.txtPassword.Text = "Password";
+            this.txtPassword.MouseEnter += new System.EventHandler(this.txtPassword_MouseEnter);
+            this.txtPassword.MouseLeave += new System.EventHandler(this.txtPassword_MouseLeave);
             // 
             // txtReEnterPassword
             // 
             this.txtReEnterPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtReEnterPassword.Location = new System.Drawing.Point(320, 295);
+            this.txtReEnterPassword.Location = new System.Drawing.Point(319, 295);
             this.txtReEnterPassword.Name = "txtReEnterPassword";
             this.txtReEnterPassword.Size = new System.Drawing.Size(283, 31);
             this.txtReEnterPassword.TabIndex = 15;
             this.txtReEnterPassword.Text = "Re-Enter Password";
+            this.txtReEnterPassword.MouseEnter += new System.EventHandler(this.txtReEnterPassword_MouseEnter);
+            this.txtReEnterPassword.MouseLeave += new System.EventHandler(this.txtReEnterPassword_MouseLeave);
             // 
             // rbtnTermsConditions
             // 
@@ -277,7 +283,7 @@
             this.lblTermsCond.AutoSize = true;
             this.lblTermsCond.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTermsCond.Image = ((System.Drawing.Image)(resources.GetObject("lblTermsCond.Image")));
-            this.lblTermsCond.Location = new System.Drawing.Point(473, 329);
+            this.lblTermsCond.Location = new System.Drawing.Point(472, 329);
             this.lblTermsCond.Name = "lblTermsCond";
             this.lblTermsCond.Size = new System.Drawing.Size(130, 13);
             this.lblTermsCond.TabIndex = 23;

@@ -57,7 +57,7 @@
             this.lblTermsCond.AutoSize = true;
             this.lblTermsCond.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTermsCond.Image = ((System.Drawing.Image)(resources.GetObject("lblTermsCond.Image")));
-            this.lblTermsCond.Location = new System.Drawing.Point(473, 329);
+            this.lblTermsCond.Location = new System.Drawing.Point(473, 324);
             this.lblTermsCond.Name = "lblTermsCond";
             this.lblTermsCond.Size = new System.Drawing.Size(130, 13);
             this.lblTermsCond.TabIndex = 41;
@@ -125,24 +125,29 @@
             this.btnLogIn.TabIndex = 36;
             this.btnLogIn.Text = "Log In";
             this.btnLogIn.UseVisualStyleBackColor = false;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(320, 284);
+            this.txtPassword.Location = new System.Drawing.Point(320, 290);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(283, 31);
             this.txtPassword.TabIndex = 33;
             this.txtPassword.Text = "Password";
+            this.txtPassword.MouseEnter += new System.EventHandler(this.txtPassword_MouseEnter);
+            this.txtPassword.MouseLeave += new System.EventHandler(this.txtPassword_MouseLeave);
             // 
             // txtEmailAddress
             // 
             this.txtEmailAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailAddress.Location = new System.Drawing.Point(320, 238);
+            this.txtEmailAddress.Location = new System.Drawing.Point(320, 244);
             this.txtEmailAddress.Name = "txtEmailAddress";
             this.txtEmailAddress.Size = new System.Drawing.Size(283, 31);
             this.txtEmailAddress.TabIndex = 32;
             this.txtEmailAddress.Text = "Email Address";
+            this.txtEmailAddress.MouseEnter += new System.EventHandler(this.txtEmailAddress_MouseEnter);
+            this.txtEmailAddress.MouseLeave += new System.EventHandler(this.txtEmailAddress_MouseLeave);
             // 
             // btnSignIn
             // 

@@ -60,6 +60,54 @@ namespace Alexandra_s_Trove
             Hide();// rp = new RegisterPage(); rp.Close();#
             
         }
+
+        private void txtEmailAddress_MouseEnter(object sender, EventArgs e)
+        {
+            if (txtEmailAddress.Text == "Email Address") 
+            {
+                txtEmailAddress.Text = "";
+            }
+        }
+
+        private void txtEmailAddress_MouseLeave(object sender, EventArgs e)
+        {
+            if (txtEmailAddress.Text == "")
+            {
+                txtEmailAddress.Text = "Email Address";
+            }
+        }
+
+        private void txtPassword_MouseEnter(object sender, EventArgs e)
+        {
+            if (txtPassword.Text == "Password")
+            {
+                txtPassword.Text = "";
+            }
+        }
+
+        private void txtPassword_MouseLeave(object sender, EventArgs e)
+        {
+            if (txtPassword.Text == "")
+            {
+                txtPassword.Text = "Password";
+            }
+        }
+
+        private void txtReEnterPassword_MouseEnter(object sender, EventArgs e)
+        {
+            if (txtReEnterPassword.Text == "Re-Enter Password")
+            {
+                txtReEnterPassword.Text = "";
+            }
+        }
+
+        private void txtReEnterPassword_MouseLeave(object sender, EventArgs e)
+        {
+            if (txtReEnterPassword.Text == "")
+            {
+                txtReEnterPassword.Text = "Re-Enter Password";
+            }
+        }
     }
 }
 

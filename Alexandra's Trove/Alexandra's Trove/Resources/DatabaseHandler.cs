@@ -25,7 +25,8 @@ namespace Alexandra_s_Trove.Resources
         }
 
 
-        public async static void InsertNewClient(string ClientName, string ClientDOB, string ClientAddress, string ClientPhoneNumber, string ClientPassword, string ClientCardDetails)
+
+        public async static void InsertNewClient(string ClientName, string ClientDOB, string ClientAddress, string ClientPhoneNumber, string ClientPassword, string ClientCardDetails, string ClientEmailAddress)
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -60,7 +61,8 @@ namespace Alexandra_s_Trove.Resources
                 PhoneNumber = ClientPhoneNumber,
                 Password = ClientPassword,
                 CardDetails = ClientCardDetails,
-                AccountCreationDate = DateTime.Now.ToString("d/M/yyyy") 
+                AccountCreationDate = DateTime.Now.ToString("d/M/yyyy"),
+                EmailAddress = ClientEmailAddress
             };
             await Coll.InsertOneAsync(NewClient);
   
@@ -147,6 +149,56 @@ namespace Alexandra_s_Trove.Resources
                 var update = Builders<Client>
                      .Update
                      .Set(a => a.Name, newName);
+
+                var result = Coll.UpdateOne(filter, update);
+            }
+            else
+            {
+                MessageBox.Show("ID " + ClientIDForUpdate + " does not exist");
+
+            }
+
+        }
+
+        public async static void UpdateClientEmail(string ClientIDForUpdate, string newEmail)
+        {
+            List<string> ClientIDs = new List<string>();
+
+
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Client";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Client>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ClientIDs.Add(datas.ID);
+                }
+            }
+
+            bool IDExists = false;
+
+            for (int i = 0; i < ClientIDs.Count; i++)
+            {
+                if (ClientIDs[i] == ClientIDForUpdate) { IDExists = true; }
+
+            }
+            if (IDExists == true)
+            {
+
+                var filter = Builders<Client>
+                   .Filter
+                   .Eq(a => a.ID, ClientIDForUpdate);
+
+                var update = Builders<Client>
+                     .Update
+                     .Set(a => a.EmailAddress, newEmail);
 
                 var result = Coll.UpdateOne(filter, update);
             }
@@ -427,6 +479,7 @@ namespace Alexandra_s_Trove.Resources
             List<string> passwords = new List<string>();
             List<string> creaditCardDetailsAll = new List<string>();
             List<string> accountCreationDates = new List<string>();
+            List<string> emailAddresses = new List<string>();
             string name1 = "";
             string DOB1 = "";
             string address1 = "";
@@ -434,7 +487,8 @@ namespace Alexandra_s_Trove.Resources
             string password1 = "";
             string creaditCardDetails1 = "";
             string accountCreationDate1 = "";
-           
+            string emailAddress1 = "";
+
 
             foreach (var datas in data.ToList())
             {
@@ -448,6 +502,7 @@ namespace Alexandra_s_Trove.Resources
                     passwords.Add(datas.Password);
                     creaditCardDetailsAll.Add(datas.CardDetails);
                     accountCreationDates.Add(datas.AccountCreationDate);
+                    emailAddresses.Add(datas.EmailAddress);
                 }
             }
 
@@ -465,6 +520,7 @@ namespace Alexandra_s_Trove.Resources
                      password1 = passwords[i];
                      creaditCardDetails1 = creaditCardDetailsAll[i];
                      accountCreationDate1 = accountCreationDates[i];
+                    emailAddress1 = emailAddresses[i];
 
                      password1 = EncryptDecrypt.Decrypt(password1);
                      creaditCardDetails1 = EncryptDecrypt.Decrypt(creaditCardDetails1);
@@ -476,7 +532,7 @@ namespace Alexandra_s_Trove.Resources
             if (IDExists == true)
             {
 
-                MessageBox.Show(name1 + "/" + DOB1 + "/" + address1 + "/" + phoneNumber1 + "/" + password1 + "/" + creaditCardDetails1 + "/" + accountCreationDate1);
+                MessageBox.Show(name1 + "/" + DOB1 + "/" + address1 + "/" + phoneNumber1 + "/" + password1 + "/" + creaditCardDetails1 + "/" + accountCreationDate1 + "/" + emailAddress1);
                 //do bunch of stuff
             }
             else
@@ -528,7 +584,123 @@ namespace Alexandra_s_Trove.Resources
 
 
         }
-        //order functions slot ////////////////////////////
+        
+        public async static void GetOrder(string OrderIDToGet)//for later use
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Order";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Order>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            List<string> OrderIDs = new List<string>();
+            List<string> ClientIDs = new List<string>();
+            List<string> ProductsIDs = new List<string>();
+            List<string> Totals = new List<string>();
+            List<string> DeliveryPrices = new List<string>();
+            List<string> DatesOrdered = new List<string>();
+            List<string> EstimatedDeliveries = new List<string>();
+            
+            string clientID = "";
+            string productIDs = "";
+            string total = "";
+            string deliveryPrice = "";
+            string dateOrdered = "";
+            string estimatedDelivery = "";
+           
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    OrderIDs.Add(datas.ID);
+                    ClientIDs.Add(datas.ClientID);
+                    ProductsIDs.Add(datas.ProductIDs);
+                    Totals.Add(datas.Total);
+                    DeliveryPrices.Add(datas.DeliveryPrice);
+                    DatesOrdered.Add(datas.DateOrdered);
+                    EstimatedDeliveries.Add(datas.EstimatedDelivery);
+                    
+                }
+            }
+
+            bool IDExists = false;
+
+            for (int i = 0; i < OrderIDs.Count; i++)
+            {
+                if (OrderIDs[i] == OrderIDToGet)
+                {
+
+                    clientID = ClientIDs[i];
+                    productIDs = ProductsIDs[i];
+                    total = Totals[i];
+                    deliveryPrice = DeliveryPrices[i];
+                    dateOrdered = DatesOrdered[i];
+                    estimatedDelivery = EstimatedDeliveries[i];
+                    
+
+
+                    IDExists = true;
+                }
+            }
+            if (IDExists == true)
+            {
+
+                MessageBox.Show(clientID + "/" + productIDs + "/" + total + "/" + deliveryPrice + "/" + dateOrdered + "/" + estimatedDelivery);
+                //do bunch of stuff
+            }
+            else
+            {
+                MessageBox.Show("ID " + OrderIDToGet + " does not exist");
+
+            }
+
+        }
+
+        public async static void GetOrders()//for later use
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Order";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Order>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            List<string> OrderIDs = new List<string>();
+            List<string> ClientIDs = new List<string>();
+            List<string> ProductsIDs = new List<string>();
+            List<string> Totals = new List<string>();
+            List<string> DeliveryPrices = new List<string>();
+            List<string> DatesOrdered = new List<string>();
+            List<string> EstimatedDeliveries = new List<string>();
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    OrderIDs.Add(datas.ID);
+                    ClientIDs.Add(datas.ClientID);
+                    ProductsIDs.Add(datas.ProductIDs);
+                    Totals.Add(datas.Total);
+                    DeliveryPrices.Add(datas.DeliveryPrice);
+                    DatesOrdered.Add(datas.DateOrdered);
+                    EstimatedDeliveries.Add(datas.EstimatedDelivery);
+
+                }
+            }
+
+            for (int i = 0; i < OrderIDs.Count; i++)
+            {
+                MessageBox.Show(OrderIDs[i] + "/" + ClientIDs[i] + "/" + ProductsIDs[i] + "/" + Totals[i] + "/" + DeliveryPrices[i] + "/" + DatesOrdered[i] + "/" + EstimatedDeliveries[i]);
+            }
+
+
+        }
 
         public async static void InsertNewProduct(string ProductID, string ProductName, 
             string ProductDescription, string ProductPrice, string ProductSpecification)
@@ -1119,10 +1291,11 @@ namespace Alexandra_s_Trove.Resources
         public string Password { get; set; }
         public string CardDetails { get; set; }
         public string AccountCreationDate { get; set; }
+        public string EmailAddress { get; set; }
 
 
 
-    }
+        }
 
     }//client - order - product - review - transportVehicle - warehouse
 }
