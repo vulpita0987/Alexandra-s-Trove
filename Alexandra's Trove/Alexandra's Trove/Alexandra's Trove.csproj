@@ -242,6 +242,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resource.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\ClientAccountAccess.cs" />
     <Compile Include="Resources\DatabaseHandler.cs" />
     <Compile Include="Resources\EncryptDecrypt.cs" />
     <EmbeddedResource Include="Form1.resx">

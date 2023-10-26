@@ -50,7 +50,6 @@ C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's 
 C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra's Trove.csproj.AssemblyReference.cache
 C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra's Trove.csproj.SuggestedBindingRedirects.cache
-C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.UserLoggedIn.resources
 C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.HelpDeveloper.resources
 C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.Properties.Resources.resources
 C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra's Trove.csproj.GenerateResource.cache
@@ -198,3 +197,4 @@ C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's 
 C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.RegisterPage.resources
 C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.SignInPage.resources
 C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.Resource.resources
+C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.LoggedInPage.resources

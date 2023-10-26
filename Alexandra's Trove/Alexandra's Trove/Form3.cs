@@ -174,13 +174,14 @@ namespace Alexandra_s_Trove
 
             //DatabaseHandler.InsertNewClient("Sanda", "24/01/2002", "Aici","07625353652", "helloKitty", "12343 16562");//example
 
-            DatabaseHandler.GetClient("C1");
+            //DatabaseHandler.GetClient("C1");
             //DatabaseHandler.GetProduct("P1");
             //DatabaseHandler.GetProducts();
             //DatabaseHandler.GetReviews();
             //DatabaseHandler.GetOrder("ORD1");
             //DatabaseHandler.GetOrders();
             //DatabaseHandler.GetProducts();
+            
         }
 
        

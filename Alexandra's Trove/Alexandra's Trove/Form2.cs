@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Alexandra_s_Trove
 {
-    public partial class UserLoggedIn : Form
+    public partial class LoggedInPage : Form
     {
-        public UserLoggedIn()
+        public LoggedInPage()
         {
             InitializeComponent();
         }

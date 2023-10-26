@@ -77,6 +77,7 @@ namespace Alexandra_s_Trove
             List<string> accountCreationDates = new List<string>();
             List<string> emailAddresses = new List<string>();
             string name1 = "";
+            string ID = "";
             string DOB1 = "";
             string address1 = "";
             string phoneNumber1 = "";
@@ -111,6 +112,7 @@ namespace Alexandra_s_Trove
                     string password = EncryptDecrypt.Decrypt(passwords[i]);
                     if (clientPassword == password) 
                     {
+                        ID = ClientIDs[i];
                         name1 = names[i];
                         DOB1 = DOBs[i];
                         address1 = addresses[i];
@@ -130,8 +132,12 @@ namespace Alexandra_s_Trove
             }
             if (IDExists == true)
             {
+                ClientAccountAccess.SetID(ID);
+                MessageBox.Show(ClientAccountAccess.GetID());
+                LoggedInPage log = new LoggedInPage(); log.Show();
+                Hide();
 
-                MessageBox.Show(name1 + "/" + DOB1 + "/" + address1 + "/" + phoneNumber1 + "/" + password1 + "/" + creaditCardDetails1 + "/" + accountCreationDate1 + "/" + emailAddress1);
+                //MessageBox.Show(name1 + "/" + DOB1 + "/" + address1 + "/" + phoneNumber1 + "/" + password1 + "/" + creaditCardDetails1 + "/" + accountCreationDate1 + "/" + emailAddress1);
                 //do bunch of stuff
             }
             else
