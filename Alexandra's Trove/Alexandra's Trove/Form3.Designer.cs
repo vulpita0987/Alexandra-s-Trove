@@ -140,19 +140,19 @@
             this.btnWarehouseQuntityUpdate = new System.Windows.Forms.Button();
             this.btnClientDOBUpdate = new System.Windows.Forms.Button();
             this.btnAccountCreationDateUpdate = new System.Windows.Forms.Button();
-            this.picExample = new System.Windows.Forms.PictureBox();
             this.txtOrderDeliveryPrice = new System.Windows.Forms.TextBox();
             this.lblOrderDeliveryPrice = new System.Windows.Forms.Label();
             this.lblOrderDeliveryDate = new System.Windows.Forms.Label();
             this.txtOrderDeliveryDate = new System.Windows.Forms.TextBox();
             this.btnOrderDeliveryDate = new System.Windows.Forms.Button();
+            this.picExample = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picExample)).BeginInit();
             this.SuspendLayout();
             // 
             // btnClientInsert
             // 
             this.btnClientInsert.Location = new System.Drawing.Point(71, 262);
-            this.btnClientInsert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClientInsert.Margin = new System.Windows.Forms.Padding(2);
             this.btnClientInsert.Name = "btnClientInsert";
             this.btnClientInsert.Size = new System.Drawing.Size(56, 19);
             this.btnClientInsert.TabIndex = 0;
@@ -284,7 +284,7 @@
             // btnClientNameUpdate
             // 
             this.btnClientNameUpdate.Location = new System.Drawing.Point(329, 78);
-            this.btnClientNameUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClientNameUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnClientNameUpdate.Name = "btnClientNameUpdate";
             this.btnClientNameUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnClientNameUpdate.TabIndex = 18;
@@ -294,7 +294,7 @@
             // btnClientCardDetailsUpdate
             // 
             this.btnClientCardDetailsUpdate.Location = new System.Drawing.Point(328, 207);
-            this.btnClientCardDetailsUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClientCardDetailsUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnClientCardDetailsUpdate.Name = "btnClientCardDetailsUpdate";
             this.btnClientCardDetailsUpdate.Size = new System.Drawing.Size(56, 20);
             this.btnClientCardDetailsUpdate.TabIndex = 19;
@@ -304,7 +304,7 @@
             // btnClientPasswordUpdate
             // 
             this.btnClientPasswordUpdate.Location = new System.Drawing.Point(328, 184);
-            this.btnClientPasswordUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClientPasswordUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnClientPasswordUpdate.Name = "btnClientPasswordUpdate";
             this.btnClientPasswordUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnClientPasswordUpdate.TabIndex = 20;
@@ -314,7 +314,7 @@
             // btnClientPhoneNumberUpdate
             // 
             this.btnClientPhoneNumberUpdate.Location = new System.Drawing.Point(328, 156);
-            this.btnClientPhoneNumberUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClientPhoneNumberUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnClientPhoneNumberUpdate.Name = "btnClientPhoneNumberUpdate";
             this.btnClientPhoneNumberUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnClientPhoneNumberUpdate.TabIndex = 21;
@@ -324,7 +324,7 @@
             // btnClientAddressUpdate
             // 
             this.btnClientAddressUpdate.Location = new System.Drawing.Point(328, 133);
-            this.btnClientAddressUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClientAddressUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnClientAddressUpdate.Name = "btnClientAddressUpdate";
             this.btnClientAddressUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnClientAddressUpdate.TabIndex = 22;
@@ -334,7 +334,7 @@
             // btnClientAccountDeletion
             // 
             this.btnClientAccountDeletion.Location = new System.Drawing.Point(206, 262);
-            this.btnClientAccountDeletion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClientAccountDeletion.Margin = new System.Windows.Forms.Padding(2);
             this.btnClientAccountDeletion.Name = "btnClientAccountDeletion";
             this.btnClientAccountDeletion.Size = new System.Drawing.Size(56, 19);
             this.btnClientAccountDeletion.TabIndex = 23;
@@ -360,7 +360,7 @@
             // btnProductDelete
             // 
             this.btnProductDelete.Location = new System.Drawing.Point(617, 187);
-            this.btnProductDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProductDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnProductDelete.Name = "btnProductDelete";
             this.btnProductDelete.Size = new System.Drawing.Size(56, 19);
             this.btnProductDelete.TabIndex = 47;
@@ -370,7 +370,7 @@
             // btnProductPriceUpdate
             // 
             this.btnProductPriceUpdate.Location = new System.Drawing.Point(720, 133);
-            this.btnProductPriceUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProductPriceUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnProductPriceUpdate.Name = "btnProductPriceUpdate";
             this.btnProductPriceUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnProductPriceUpdate.TabIndex = 46;
@@ -380,7 +380,7 @@
             // btnProductSpecificationUpdate
             // 
             this.btnProductSpecificationUpdate.Location = new System.Drawing.Point(720, 159);
-            this.btnProductSpecificationUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProductSpecificationUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnProductSpecificationUpdate.Name = "btnProductSpecificationUpdate";
             this.btnProductSpecificationUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnProductSpecificationUpdate.TabIndex = 44;
@@ -390,7 +390,7 @@
             // btnProductNameUpdate
             // 
             this.btnProductNameUpdate.Location = new System.Drawing.Point(721, 78);
-            this.btnProductNameUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProductNameUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnProductNameUpdate.Name = "btnProductNameUpdate";
             this.btnProductNameUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnProductNameUpdate.TabIndex = 42;
@@ -489,7 +489,7 @@
             // btnProductInsert
             // 
             this.btnProductInsert.Location = new System.Drawing.Point(500, 187);
-            this.btnProductInsert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProductInsert.Margin = new System.Windows.Forms.Padding(2);
             this.btnProductInsert.Name = "btnProductInsert";
             this.btnProductInsert.Size = new System.Drawing.Size(56, 19);
             this.btnProductInsert.TabIndex = 24;
@@ -500,7 +500,7 @@
             // btnClientIDUpdate
             // 
             this.btnClientIDUpdate.Location = new System.Drawing.Point(328, 51);
-            this.btnClientIDUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClientIDUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnClientIDUpdate.Name = "btnClientIDUpdate";
             this.btnClientIDUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnClientIDUpdate.TabIndex = 48;
@@ -510,7 +510,7 @@
             // btnProductIDUpdate
             // 
             this.btnProductIDUpdate.Location = new System.Drawing.Point(720, 51);
-            this.btnProductIDUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProductIDUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnProductIDUpdate.Name = "btnProductIDUpdate";
             this.btnProductIDUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnProductIDUpdate.TabIndex = 49;
@@ -521,7 +521,7 @@
             // btnProductDescriptionUpdate
             // 
             this.btnProductDescriptionUpdate.Location = new System.Drawing.Point(720, 104);
-            this.btnProductDescriptionUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnProductDescriptionUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnProductDescriptionUpdate.Name = "btnProductDescriptionUpdate";
             this.btnProductDescriptionUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnProductDescriptionUpdate.TabIndex = 50;
@@ -531,7 +531,7 @@
             // btnOrderDelete
             // 
             this.btnOrderDelete.Location = new System.Drawing.Point(1000, 252);
-            this.btnOrderDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOrderDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnOrderDelete.Name = "btnOrderDelete";
             this.btnOrderDelete.Size = new System.Drawing.Size(56, 19);
             this.btnOrderDelete.TabIndex = 69;
@@ -646,7 +646,7 @@
             // btnOrderInsert
             // 
             this.btnOrderInsert.Location = new System.Drawing.Point(891, 252);
-            this.btnOrderInsert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOrderInsert.Margin = new System.Windows.Forms.Padding(2);
             this.btnOrderInsert.Name = "btnOrderInsert";
             this.btnOrderInsert.Size = new System.Drawing.Size(56, 19);
             this.btnOrderInsert.TabIndex = 51;
@@ -657,7 +657,7 @@
             // btnReviewDelete
             // 
             this.btnReviewDelete.Location = new System.Drawing.Point(206, 555);
-            this.btnReviewDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReviewDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnReviewDelete.Name = "btnReviewDelete";
             this.btnReviewDelete.Size = new System.Drawing.Size(56, 19);
             this.btnReviewDelete.TabIndex = 93;
@@ -668,7 +668,7 @@
             // btnReviewNoOfStarsUpdate
             // 
             this.btnReviewNoOfStarsUpdate.Location = new System.Drawing.Point(328, 426);
-            this.btnReviewNoOfStarsUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReviewNoOfStarsUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnReviewNoOfStarsUpdate.Name = "btnReviewNoOfStarsUpdate";
             this.btnReviewNoOfStarsUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnReviewNoOfStarsUpdate.TabIndex = 92;
@@ -679,7 +679,7 @@
             // btnReviewDescriptionUpdate
             // 
             this.btnReviewDescriptionUpdate.Location = new System.Drawing.Point(328, 449);
-            this.btnReviewDescriptionUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReviewDescriptionUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnReviewDescriptionUpdate.Name = "btnReviewDescriptionUpdate";
             this.btnReviewDescriptionUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnReviewDescriptionUpdate.TabIndex = 91;
@@ -690,7 +690,7 @@
             // btnReviewDateUpdate
             // 
             this.btnReviewDateUpdate.Location = new System.Drawing.Point(328, 477);
-            this.btnReviewDateUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReviewDateUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnReviewDateUpdate.Name = "btnReviewDateUpdate";
             this.btnReviewDateUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnReviewDateUpdate.TabIndex = 90;
@@ -701,7 +701,7 @@
             // btnReviewTimeUpdate
             // 
             this.btnReviewTimeUpdate.Location = new System.Drawing.Point(328, 500);
-            this.btnReviewTimeUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReviewTimeUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnReviewTimeUpdate.Name = "btnReviewTimeUpdate";
             this.btnReviewTimeUpdate.Size = new System.Drawing.Size(56, 20);
             this.btnReviewTimeUpdate.TabIndex = 89;
@@ -712,7 +712,7 @@
             // btnReviewClientIDUpdate
             // 
             this.btnReviewClientIDUpdate.Location = new System.Drawing.Point(329, 371);
-            this.btnReviewClientIDUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReviewClientIDUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnReviewClientIDUpdate.Name = "btnReviewClientIDUpdate";
             this.btnReviewClientIDUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnReviewClientIDUpdate.TabIndex = 88;
@@ -843,7 +843,7 @@
             // btnReviewInsert
             // 
             this.btnReviewInsert.Location = new System.Drawing.Point(71, 555);
-            this.btnReviewInsert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReviewInsert.Margin = new System.Windows.Forms.Padding(2);
             this.btnReviewInsert.Name = "btnReviewInsert";
             this.btnReviewInsert.Size = new System.Drawing.Size(56, 19);
             this.btnReviewInsert.TabIndex = 70;
@@ -854,7 +854,7 @@
             // btnWarehouseIDUpdate
             // 
             this.btnWarehouseIDUpdate.Location = new System.Drawing.Point(720, 340);
-            this.btnWarehouseIDUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnWarehouseIDUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnWarehouseIDUpdate.Name = "btnWarehouseIDUpdate";
             this.btnWarehouseIDUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnWarehouseIDUpdate.TabIndex = 119;
@@ -864,7 +864,7 @@
             // btnWarehouseDelete
             // 
             this.btnWarehouseDelete.Location = new System.Drawing.Point(601, 477);
-            this.btnWarehouseDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnWarehouseDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnWarehouseDelete.Name = "btnWarehouseDelete";
             this.btnWarehouseDelete.Size = new System.Drawing.Size(56, 19);
             this.btnWarehouseDelete.TabIndex = 118;
@@ -874,7 +874,7 @@
             // btnWarehouseLocationUpdate
             // 
             this.btnWarehouseLocationUpdate.Location = new System.Drawing.Point(720, 422);
-            this.btnWarehouseLocationUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnWarehouseLocationUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnWarehouseLocationUpdate.Name = "btnWarehouseLocationUpdate";
             this.btnWarehouseLocationUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnWarehouseLocationUpdate.TabIndex = 117;
@@ -884,7 +884,7 @@
             // btnWarehouseNameUpdate
             // 
             this.btnWarehouseNameUpdate.Location = new System.Drawing.Point(720, 445);
-            this.btnWarehouseNameUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnWarehouseNameUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnWarehouseNameUpdate.Name = "btnWarehouseNameUpdate";
             this.btnWarehouseNameUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnWarehouseNameUpdate.TabIndex = 116;
@@ -894,7 +894,7 @@
             // btnWarehouseProductIDUpdate
             // 
             this.btnWarehouseProductIDUpdate.Location = new System.Drawing.Point(721, 367);
-            this.btnWarehouseProductIDUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnWarehouseProductIDUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnWarehouseProductIDUpdate.Name = "btnWarehouseProductIDUpdate";
             this.btnWarehouseProductIDUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnWarehouseProductIDUpdate.TabIndex = 113;
@@ -993,7 +993,7 @@
             // btnWarehouseInsert
             // 
             this.btnWarehouseInsert.Location = new System.Drawing.Point(486, 477);
-            this.btnWarehouseInsert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnWarehouseInsert.Margin = new System.Windows.Forms.Padding(2);
             this.btnWarehouseInsert.Name = "btnWarehouseInsert";
             this.btnWarehouseInsert.Size = new System.Drawing.Size(56, 19);
             this.btnWarehouseInsert.TabIndex = 95;
@@ -1004,7 +1004,7 @@
             // btnTransportVehicleIDUpdate
             // 
             this.btnTransportVehicleIDUpdate.Location = new System.Drawing.Point(1122, 339);
-            this.btnTransportVehicleIDUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTransportVehicleIDUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnTransportVehicleIDUpdate.Name = "btnTransportVehicleIDUpdate";
             this.btnTransportVehicleIDUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnTransportVehicleIDUpdate.TabIndex = 144;
@@ -1014,7 +1014,7 @@
             // btnTransportVehicleDelete
             // 
             this.btnTransportVehicleDelete.Location = new System.Drawing.Point(1000, 423);
-            this.btnTransportVehicleDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTransportVehicleDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnTransportVehicleDelete.Name = "btnTransportVehicleDelete";
             this.btnTransportVehicleDelete.Size = new System.Drawing.Size(56, 19);
             this.btnTransportVehicleDelete.TabIndex = 143;
@@ -1024,7 +1024,7 @@
             // btnTransportVehicleCarPlateNumberUpdate
             // 
             this.btnTransportVehicleCarPlateNumberUpdate.Location = new System.Drawing.Point(1122, 367);
-            this.btnTransportVehicleCarPlateNumberUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTransportVehicleCarPlateNumberUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnTransportVehicleCarPlateNumberUpdate.Name = "btnTransportVehicleCarPlateNumberUpdate";
             this.btnTransportVehicleCarPlateNumberUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnTransportVehicleCarPlateNumberUpdate.TabIndex = 140;
@@ -1034,7 +1034,7 @@
             // btnTransportVehicleStorageWarehouseIDUpdate
             // 
             this.btnTransportVehicleStorageWarehouseIDUpdate.Location = new System.Drawing.Point(1122, 390);
-            this.btnTransportVehicleStorageWarehouseIDUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTransportVehicleStorageWarehouseIDUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnTransportVehicleStorageWarehouseIDUpdate.Name = "btnTransportVehicleStorageWarehouseIDUpdate";
             this.btnTransportVehicleStorageWarehouseIDUpdate.Size = new System.Drawing.Size(56, 20);
             this.btnTransportVehicleStorageWarehouseIDUpdate.TabIndex = 139;
@@ -1101,7 +1101,7 @@
             // btnTransportVehicleInsert
             // 
             this.btnTransportVehicleInsert.Location = new System.Drawing.Point(857, 423);
-            this.btnTransportVehicleInsert.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTransportVehicleInsert.Margin = new System.Windows.Forms.Padding(2);
             this.btnTransportVehicleInsert.Name = "btnTransportVehicleInsert";
             this.btnTransportVehicleInsert.Size = new System.Drawing.Size(56, 19);
             this.btnTransportVehicleInsert.TabIndex = 120;
@@ -1112,7 +1112,7 @@
             // btnWarehouseQuntityUpdate
             // 
             this.btnWarehouseQuntityUpdate.Location = new System.Drawing.Point(720, 395);
-            this.btnWarehouseQuntityUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnWarehouseQuntityUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnWarehouseQuntityUpdate.Name = "btnWarehouseQuntityUpdate";
             this.btnWarehouseQuntityUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnWarehouseQuntityUpdate.TabIndex = 146;
@@ -1122,7 +1122,7 @@
             // btnClientDOBUpdate
             // 
             this.btnClientDOBUpdate.Location = new System.Drawing.Point(329, 104);
-            this.btnClientDOBUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClientDOBUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnClientDOBUpdate.Name = "btnClientDOBUpdate";
             this.btnClientDOBUpdate.Size = new System.Drawing.Size(56, 19);
             this.btnClientDOBUpdate.TabIndex = 148;
@@ -1132,22 +1132,12 @@
             // btnAccountCreationDateUpdate
             // 
             this.btnAccountCreationDateUpdate.Location = new System.Drawing.Point(329, 236);
-            this.btnAccountCreationDateUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAccountCreationDateUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnAccountCreationDateUpdate.Name = "btnAccountCreationDateUpdate";
             this.btnAccountCreationDateUpdate.Size = new System.Drawing.Size(56, 20);
             this.btnAccountCreationDateUpdate.TabIndex = 149;
             this.btnAccountCreationDateUpdate.Text = "Update";
             this.btnAccountCreationDateUpdate.UseVisualStyleBackColor = true;
-            // 
-            // picExample
-            // 
-            this.picExample.Location = new System.Drawing.Point(408, 237);
-            this.picExample.Name = "picExample";
-            this.picExample.Size = new System.Drawing.Size(89, 48);
-            this.picExample.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picExample.TabIndex = 150;
-            this.picExample.TabStop = false;
-            
             // 
             // txtOrderDeliveryPrice
             // 
@@ -1184,12 +1174,21 @@
             // btnOrderDeliveryDate
             // 
             this.btnOrderDeliveryDate.Location = new System.Drawing.Point(1112, 226);
-            this.btnOrderDeliveryDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOrderDeliveryDate.Margin = new System.Windows.Forms.Padding(2);
             this.btnOrderDeliveryDate.Name = "btnOrderDeliveryDate";
             this.btnOrderDeliveryDate.Size = new System.Drawing.Size(56, 19);
             this.btnOrderDeliveryDate.TabIndex = 155;
             this.btnOrderDeliveryDate.Text = "Update";
             this.btnOrderDeliveryDate.UseVisualStyleBackColor = true;
+            // 
+            // picExample
+            // 
+            this.picExample.Location = new System.Drawing.Point(408, 237);
+            this.picExample.Name = "picExample";
+            this.picExample.Size = new System.Drawing.Size(89, 48);
+            this.picExample.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picExample.TabIndex = 150;
+            this.picExample.TabStop = false;
             // 
             // HelpDeveloper
             // 
@@ -1314,7 +1313,7 @@
             this.Controls.Add(this.txtClientName);
             this.Controls.Add(this.txtClientID);
             this.Controls.Add(this.btnClientInsert);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "HelpDeveloper";
             this.Text = "HelpDeveloper";
             this.Load += new System.EventHandler(this.HelpDeveloper_Load);

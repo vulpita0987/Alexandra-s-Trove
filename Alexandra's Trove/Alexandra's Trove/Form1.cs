@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Alexandra_s_Trove.Resources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -82,6 +83,7 @@ namespace Alexandra_s_Trove
             if (txtPassword.Text == "Password")
             {
                 txtPassword.Text = "";
+                txtPassword.UseSystemPasswordChar = true;
             }
         }
 
@@ -90,6 +92,7 @@ namespace Alexandra_s_Trove
             if (txtPassword.Text == "")
             {
                 txtPassword.Text = "Password";
+                txtPassword.UseSystemPasswordChar = false;
             }
         }
 
@@ -98,6 +101,7 @@ namespace Alexandra_s_Trove
             if (txtReEnterPassword.Text == "Re-Enter Password")
             {
                 txtReEnterPassword.Text = "";
+                txtReEnterPassword.UseSystemPasswordChar = true;
             }
         }
 
@@ -106,7 +110,47 @@ namespace Alexandra_s_Trove
             if (txtReEnterPassword.Text == "")
             {
                 txtReEnterPassword.Text = "Re-Enter Password";
+                txtReEnterPassword.UseSystemPasswordChar = false;
             }
+        }
+
+        private void btnGuest_Click(object sender, EventArgs e)
+        {
+            GuestPage gp = new GuestPage(); gp.Show();
+            Hide();
+        }
+       
+        private void btnCreateAccount_Click(object sender, EventArgs e)
+        {
+            if (txtEmailAddress.Text == "Email Address")
+            {
+                MessageBox.Show("You must input an email address in order to create an account");
+            }
+            else
+            {
+                if (txtPassword.Text == txtReEnterPassword.Text)
+                {
+
+                    if (rbtnTermsConditions.Checked == true)
+                    {
+                        DatabaseHandler.InsertNewClient("", "", "", "", txtPassword.Text, "", txtEmailAddress.Text);
+                    }
+                    else
+                    {
+                        MessageBox.Show("You must accept the terms and conditions of this application before creating an account");
+
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("The passwords do not match. Please try again");
+                    txtReEnterPassword.Text = "Re-Enter Password"; txtPassword.Text = "Password";
+                    txtReEnterPassword.UseSystemPasswordChar = false;
+                    txtPassword.UseSystemPasswordChar = false;
+                }
+            }
+            
         }
     }
 }

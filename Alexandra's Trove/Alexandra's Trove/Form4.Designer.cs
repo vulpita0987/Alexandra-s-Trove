@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignInPage));
-            this.lblTermsCond = new System.Windows.Forms.Label();
-            this.lblUserGuide = new System.Windows.Forms.Label();
-            this.lblFeedbackSurvey = new System.Windows.Forms.Label();
-            this.lblTermsConditions = new System.Windows.Forms.Label();
             this.btnGuest = new System.Windows.Forms.Button();
-            this.btnLogIn = new System.Windows.Forms.Button();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.txtEmailAddress = new System.Windows.Forms.TextBox();
             this.btnSignIn = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
+            this.DeveloperHelp = new System.Windows.Forms.Button();
+            this.lblTermsCond = new System.Windows.Forms.Label();
+            this.lblUserGuide = new System.Windows.Forms.Label();
+            this.lblFeedbackSurvey = new System.Windows.Forms.Label();
+            this.lblTermsConditions = new System.Windows.Forms.Label();
+            this.btnLogIn = new System.Windows.Forms.Button();
             this.picMainBox = new System.Windows.Forms.PictureBox();
             this.picBottomLine = new System.Windows.Forms.PictureBox();
             this.picAlex = new System.Windows.Forms.PictureBox();
             this.picTrove = new System.Windows.Forms.PictureBox();
-            this.DeveloperHelp = new System.Windows.Forms.Button();
             this.picFiller = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picMainBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBottomLine)).BeginInit();
@@ -51,6 +51,76 @@
             ((System.ComponentModel.ISupportInitialize)(this.picTrove)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picFiller)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnGuest
+            // 
+            this.btnGuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuest.Location = new System.Drawing.Point(369, 424);
+            this.btnGuest.Name = "btnGuest";
+            this.btnGuest.Size = new System.Drawing.Size(190, 29);
+            this.btnGuest.TabIndex = 37;
+            this.btnGuest.Text = "Continue As Guest";
+            this.btnGuest.UseVisualStyleBackColor = true;
+            this.btnGuest.Click += new System.EventHandler(this.btnGuest_Click);
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(320, 290);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(283, 31);
+            this.txtPassword.TabIndex = 33;
+            this.txtPassword.Text = "Password";
+            
+            this.txtPassword.MouseEnter += new System.EventHandler(this.txtPassword_MouseEnter);
+            this.txtPassword.MouseLeave += new System.EventHandler(this.txtPassword_MouseLeave);
+            // 
+            // txtEmailAddress
+            // 
+            this.txtEmailAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmailAddress.Location = new System.Drawing.Point(320, 244);
+            this.txtEmailAddress.Name = "txtEmailAddress";
+            this.txtEmailAddress.Size = new System.Drawing.Size(283, 31);
+            this.txtEmailAddress.TabIndex = 32;
+            this.txtEmailAddress.Text = "Email Address";
+            this.txtEmailAddress.MouseEnter += new System.EventHandler(this.txtEmailAddress_MouseEnter);
+            this.txtEmailAddress.MouseLeave += new System.EventHandler(this.txtEmailAddress_MouseLeave);
+            // 
+            // btnSignIn
+            // 
+            this.btnSignIn.BackColor = System.Drawing.Color.White;
+            this.btnSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignIn.Location = new System.Drawing.Point(633, 141);
+            this.btnSignIn.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSignIn.Name = "btnSignIn";
+            this.btnSignIn.Size = new System.Drawing.Size(92, 33);
+            this.btnSignIn.TabIndex = 31;
+            this.btnSignIn.Text = "Sign In";
+            this.btnSignIn.UseVisualStyleBackColor = false;
+            // 
+            // btnRegister
+            // 
+            this.btnRegister.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.Location = new System.Drawing.Point(178, 141);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(101, 33);
+            this.btnRegister.TabIndex = 30;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
+            // DeveloperHelp
+            // 
+            this.DeveloperHelp.Location = new System.Drawing.Point(9, 204);
+            this.DeveloperHelp.Margin = new System.Windows.Forms.Padding(2);
+            this.DeveloperHelp.Name = "DeveloperHelp";
+            this.DeveloperHelp.Size = new System.Drawing.Size(126, 31);
+            this.DeveloperHelp.TabIndex = 24;
+            this.DeveloperHelp.Text = "DeveloperHelp4Forms";
+            this.DeveloperHelp.UseVisualStyleBackColor = true;
+            this.DeveloperHelp.Click += new System.EventHandler(this.DeveloperHelp_Click);
             // 
             // lblTermsCond
             // 
@@ -102,16 +172,6 @@
             this.lblTermsConditions.Text = "Terms And Conditions";
             this.lblTermsConditions.Click += new System.EventHandler(this.lblTermsConditions_Click);
             // 
-            // btnGuest
-            // 
-            this.btnGuest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuest.Location = new System.Drawing.Point(369, 424);
-            this.btnGuest.Name = "btnGuest";
-            this.btnGuest.Size = new System.Drawing.Size(190, 29);
-            this.btnGuest.TabIndex = 37;
-            this.btnGuest.Text = "Continue As Guest";
-            this.btnGuest.UseVisualStyleBackColor = true;
-            // 
             // btnLogIn
             // 
             this.btnLogIn.BackColor = System.Drawing.Color.White;
@@ -126,53 +186,6 @@
             this.btnLogIn.Text = "Log In";
             this.btnLogIn.UseVisualStyleBackColor = false;
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(320, 290);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(283, 31);
-            this.txtPassword.TabIndex = 33;
-            this.txtPassword.Text = "Password";
-            this.txtPassword.MouseEnter += new System.EventHandler(this.txtPassword_MouseEnter);
-            this.txtPassword.MouseLeave += new System.EventHandler(this.txtPassword_MouseLeave);
-            // 
-            // txtEmailAddress
-            // 
-            this.txtEmailAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmailAddress.Location = new System.Drawing.Point(320, 244);
-            this.txtEmailAddress.Name = "txtEmailAddress";
-            this.txtEmailAddress.Size = new System.Drawing.Size(283, 31);
-            this.txtEmailAddress.TabIndex = 32;
-            this.txtEmailAddress.Text = "Email Address";
-            this.txtEmailAddress.MouseEnter += new System.EventHandler(this.txtEmailAddress_MouseEnter);
-            this.txtEmailAddress.MouseLeave += new System.EventHandler(this.txtEmailAddress_MouseLeave);
-            // 
-            // btnSignIn
-            // 
-            this.btnSignIn.BackColor = System.Drawing.Color.White;
-            this.btnSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignIn.Location = new System.Drawing.Point(633, 141);
-            this.btnSignIn.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSignIn.Name = "btnSignIn";
-            this.btnSignIn.Size = new System.Drawing.Size(92, 33);
-            this.btnSignIn.TabIndex = 31;
-            this.btnSignIn.Text = "Sign In";
-            this.btnSignIn.UseVisualStyleBackColor = false;
-            // 
-            // btnRegister
-            // 
-            this.btnRegister.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.Location = new System.Drawing.Point(178, 141);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(101, 33);
-            this.btnRegister.TabIndex = 30;
-            this.btnRegister.Text = "Register";
-            this.btnRegister.UseVisualStyleBackColor = false;
-            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // picMainBox
             // 
@@ -217,17 +230,6 @@
             this.picTrove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picTrove.TabIndex = 26;
             this.picTrove.TabStop = false;
-            // 
-            // DeveloperHelp
-            // 
-            this.DeveloperHelp.Location = new System.Drawing.Point(9, 204);
-            this.DeveloperHelp.Margin = new System.Windows.Forms.Padding(2);
-            this.DeveloperHelp.Name = "DeveloperHelp";
-            this.DeveloperHelp.Size = new System.Drawing.Size(126, 31);
-            this.DeveloperHelp.TabIndex = 24;
-            this.DeveloperHelp.Text = "DeveloperHelp4Forms";
-            this.DeveloperHelp.UseVisualStyleBackColor = true;
-            this.DeveloperHelp.Click += new System.EventHandler(this.DeveloperHelp_Click);
             // 
             // picFiller
             // 

@@ -143,6 +143,8 @@ namespace Alexandra_s_Trove
             else
             {
                 MessageBox.Show("Email Address or Password Inccorect");
+                txtEmailAddress.Text = "Email Address";
+                txtPassword.Text = "Password";
 
             }
         }
@@ -180,5 +182,13 @@ namespace Alexandra_s_Trove
                 txtPassword.UseSystemPasswordChar = false;
             }
         }
+
+        private void btnGuest_Click(object sender, EventArgs e)
+        {
+            GuestPage gp = new GuestPage(); gp.Show();
+            Hide();
+        }
+
+       
     }
 }
