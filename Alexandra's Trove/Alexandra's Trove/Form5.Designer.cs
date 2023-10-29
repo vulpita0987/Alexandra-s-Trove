@@ -58,14 +58,14 @@
             this.lblDesserts = new System.Windows.Forms.Label();
             this.lblCathegoryLeft = new System.Windows.Forms.Label();
             this.lblCathegoryRight = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.picCath1Left = new System.Windows.Forms.PictureBox();
+            this.picCath2Left = new System.Windows.Forms.PictureBox();
+            this.picCath1Right = new System.Windows.Forms.PictureBox();
+            this.picCath2Right = new System.Windows.Forms.PictureBox();
+            this.lblCath1Left = new System.Windows.Forms.Label();
+            this.lblCath2Left = new System.Windows.Forms.Label();
+            this.lblCath1Right = new System.Windows.Forms.Label();
+            this.lblCath2Right = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBottomLine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAlex)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTrove)).BeginInit();
@@ -82,10 +82,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.picGreyRibbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCathegoryLeft)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCathegoryRight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCath1Left)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCath2Left)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCath1Right)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCath2Right)).BeginInit();
             this.SuspendLayout();
             // 
             // lblUserGuide
@@ -397,9 +397,9 @@
             this.lblCathegoryLeft.Image = ((System.Drawing.Image)(resources.GetObject("lblCathegoryLeft.Image")));
             this.lblCathegoryLeft.Location = new System.Drawing.Point(41, 360);
             this.lblCathegoryLeft.Name = "lblCathegoryLeft";
-            this.lblCathegoryLeft.Size = new System.Drawing.Size(55, 20);
+            this.lblCathegoryLeft.Size = new System.Drawing.Size(81, 20);
             this.lblCathegoryLeft.TabIndex = 52;
-            this.lblCathegoryLeft.Text = "Fruits";
+            this.lblCathegoryLeft.Text = "Desserts";
             // 
             // lblCathegoryRight
             // 
@@ -412,97 +412,97 @@
             this.lblCathegoryRight.TabIndex = 53;
             this.lblCathegoryRight.Text = "Fruits";
             // 
-            // pictureBox1
+            // picCath1Left
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(45, 401);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(164, 113);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 54;
-            this.pictureBox1.TabStop = false;
+            this.picCath1Left.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picCath1Left.Image = ((System.Drawing.Image)(resources.GetObject("picCath1Left.Image")));
+            this.picCath1Left.Location = new System.Drawing.Point(45, 401);
+            this.picCath1Left.Margin = new System.Windows.Forms.Padding(2);
+            this.picCath1Left.Name = "picCath1Left";
+            this.picCath1Left.Size = new System.Drawing.Size(164, 113);
+            this.picCath1Left.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCath1Left.TabIndex = 54;
+            this.picCath1Left.TabStop = false;
             // 
-            // pictureBox2
+            // picCath2Left
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(481, 401);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(164, 113);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 55;
-            this.pictureBox2.TabStop = false;
+            this.picCath2Left.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picCath2Left.Image = ((System.Drawing.Image)(resources.GetObject("picCath2Left.Image")));
+            this.picCath2Left.Location = new System.Drawing.Point(481, 401);
+            this.picCath2Left.Margin = new System.Windows.Forms.Padding(2);
+            this.picCath2Left.Name = "picCath2Left";
+            this.picCath2Left.Size = new System.Drawing.Size(164, 113);
+            this.picCath2Left.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCath2Left.TabIndex = 55;
+            this.picCath2Left.TabStop = false;
             // 
-            // pictureBox3
+            // picCath1Right
             // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(239, 401);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(164, 113);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 56;
-            this.pictureBox3.TabStop = false;
+            this.picCath1Right.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picCath1Right.Image = ((System.Drawing.Image)(resources.GetObject("picCath1Right.Image")));
+            this.picCath1Right.Location = new System.Drawing.Point(239, 401);
+            this.picCath1Right.Margin = new System.Windows.Forms.Padding(2);
+            this.picCath1Right.Name = "picCath1Right";
+            this.picCath1Right.Size = new System.Drawing.Size(164, 113);
+            this.picCath1Right.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCath1Right.TabIndex = 56;
+            this.picCath1Right.TabStop = false;
             // 
-            // pictureBox4
+            // picCath2Right
             // 
-            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(676, 401);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(164, 113);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 57;
-            this.pictureBox4.TabStop = false;
+            this.picCath2Right.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picCath2Right.Image = ((System.Drawing.Image)(resources.GetObject("picCath2Right.Image")));
+            this.picCath2Right.Location = new System.Drawing.Point(676, 401);
+            this.picCath2Right.Margin = new System.Windows.Forms.Padding(2);
+            this.picCath2Right.Name = "picCath2Right";
+            this.picCath2Right.Size = new System.Drawing.Size(164, 113);
+            this.picCath2Right.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCath2Right.TabIndex = 57;
+            this.picCath2Right.TabStop = false;
             // 
-            // label1
+            // lblCath1Left
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(41, 516);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 20);
-            this.label1.TabIndex = 58;
-            this.label1.Text = "Fruits";
+            this.lblCath1Left.AutoSize = true;
+            this.lblCath1Left.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCath1Left.Image = ((System.Drawing.Image)(resources.GetObject("lblCath1Left.Image")));
+            this.lblCath1Left.Location = new System.Drawing.Point(41, 516);
+            this.lblCath1Left.Name = "lblCath1Left";
+            this.lblCath1Left.Size = new System.Drawing.Size(192, 20);
+            this.lblCath1Left.TabIndex = 58;
+            this.lblCath1Left.Text = "Dark Chocolate Yogurt";
             // 
-            // label2
+            // lblCath2Left
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(477, 516);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 20);
-            this.label2.TabIndex = 59;
-            this.label2.Text = "Fruits";
+            this.lblCath2Left.AutoSize = true;
+            this.lblCath2Left.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCath2Left.Image = ((System.Drawing.Image)(resources.GetObject("lblCath2Left.Image")));
+            this.lblCath2Left.Location = new System.Drawing.Point(477, 516);
+            this.lblCath2Left.Name = "lblCath2Left";
+            this.lblCath2Left.Size = new System.Drawing.Size(76, 20);
+            this.lblCath2Left.TabIndex = 59;
+            this.lblCath2Left.Text = "Cherries";
             // 
-            // label3
+            // lblCath1Right
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
-            this.label3.Location = new System.Drawing.Point(235, 516);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 20);
-            this.label3.TabIndex = 60;
-            this.label3.Text = "Fruits";
+            this.lblCath1Right.AutoSize = true;
+            this.lblCath1Right.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCath1Right.Image = ((System.Drawing.Image)(resources.GetObject("lblCath1Right.Image")));
+            this.lblCath1Right.Location = new System.Drawing.Point(235, 516);
+            this.lblCath1Right.Name = "lblCath1Right";
+            this.lblCath1Right.Size = new System.Drawing.Size(123, 20);
+            this.lblCath1Right.TabIndex = 60;
+            this.lblCath1Right.Text = "Nectarine Tart";
             // 
-            // label4
+            // lblCath2Right
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
-            this.label4.Location = new System.Drawing.Point(672, 516);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 20);
-            this.label4.TabIndex = 61;
-            this.label4.Text = "Fruits";
+            this.lblCath2Right.AutoSize = true;
+            this.lblCath2Right.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCath2Right.Image = ((System.Drawing.Image)(resources.GetObject("lblCath2Right.Image")));
+            this.lblCath2Right.Location = new System.Drawing.Point(672, 516);
+            this.lblCath2Right.Name = "lblCath2Right";
+            this.lblCath2Right.Size = new System.Drawing.Size(102, 20);
+            this.lblCath2Right.TabIndex = 61;
+            this.lblCath2Right.Text = "Red Apples";
             // 
             // GuestPage
             // 
@@ -510,14 +510,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 612);
             this.Controls.Add(this.picImage2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lblCath2Right);
+            this.Controls.Add(this.lblCath1Right);
+            this.Controls.Add(this.lblCath2Left);
+            this.Controls.Add(this.lblCath1Left);
+            this.Controls.Add(this.picCath2Right);
+            this.Controls.Add(this.picCath1Right);
+            this.Controls.Add(this.picCath2Left);
+            this.Controls.Add(this.picCath1Left);
             this.Controls.Add(this.lblCathegoryRight);
             this.Controls.Add(this.lblCathegoryLeft);
             this.Controls.Add(this.lblDesserts);
@@ -565,10 +565,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.picGreyRibbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCathegoryLeft)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCathegoryRight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCath1Left)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCath2Left)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCath1Right)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCath2Right)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -605,13 +605,13 @@
         private System.Windows.Forms.Label lblDesserts;
         private System.Windows.Forms.Label lblCathegoryLeft;
         private System.Windows.Forms.Label lblCathegoryRight;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox picCath1Left;
+        private System.Windows.Forms.PictureBox picCath2Left;
+        private System.Windows.Forms.PictureBox picCath1Right;
+        private System.Windows.Forms.PictureBox picCath2Right;
+        private System.Windows.Forms.Label lblCath1Left;
+        private System.Windows.Forms.Label lblCath2Left;
+        private System.Windows.Forms.Label lblCath1Right;
+        private System.Windows.Forms.Label lblCath2Right;
     }
 }
