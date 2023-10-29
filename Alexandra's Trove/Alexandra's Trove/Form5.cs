@@ -300,7 +300,12 @@ namespace Alexandra_s_Trove
 
         private void picArrowLeft_Click(object sender, EventArgs e)
         {
-            AdjustPictures();
+            //AdjustPictures();
+            //string picture = "Cherries1"; // Make sure "ImageName" is the actual name of your image in resources.
+            //picCath1Left.Image = (Image)Properties.Resources.ResourceManager.GetObject(picture);
+
+            string picture = "Cherries1"; // Make sure "ImageName" is the actual name of your image in resources.
+            picCath1Left.Image = Properties.Resources.ResourceManager.GetObject(picture) as Image;
 
         }
     }
