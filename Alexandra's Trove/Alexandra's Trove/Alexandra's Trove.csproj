@@ -245,6 +245,7 @@
     <Compile Include="Resources\ClientAccountAccess.cs" />
     <Compile Include="Resources\DatabaseHandler.cs" />
     <Compile Include="Resources\EncryptDecrypt.cs" />
+    <Compile Include="Resources\GetImages.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -270,7 +271,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Resource.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="libmongocrypt.dylib" />

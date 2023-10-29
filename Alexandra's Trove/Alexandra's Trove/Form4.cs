@@ -133,7 +133,7 @@ namespace Alexandra_s_Trove
             if (IDExists == true)
             {
                 ClientAccountAccess.SetID(ID);
-                MessageBox.Show(ClientAccountAccess.GetID());
+                //MessageBox.Show(ClientAccountAccess.GetID());
                 LoggedInPage log = new LoggedInPage(); log.Show();
                 Hide();
 

@@ -1,9 +1,18 @@
-﻿using System;
+﻿using Alexandra_s_Trove.Properties;
+using Alexandra_s_Trove.Resources;
+using Amazon.Auth.AccessControlPolicy;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Configuration;
+using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Resources;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,9 +33,70 @@ namespace Alexandra_s_Trove
 
         private void GuestPage_Load(object sender, EventArgs e)
         {
-            picImage1.Image = Resource.Cherries4;
-            picImage2.Image = Resource.NectarineTart1;
-            picImage3.Image = Resource.DarkChYo4;
+            picImage1.Image = Resource.Cherries3; 
+            picImage2.Image = Resource.Cherries4;
+            picImage3.Image = Resource.DarkChYo4; 
+
+
+
+
+        }
+
+        int arrowRight = 0;
+        int arrowLeft = 0;
+        private void picArrowRight_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (arrowRight % 2 == 0) 
+            {
+                picImage1.Image = Resource.Blueberries4;
+                picImage2.Image = Resource.Blueberries1;
+                picImage3.Image = Resource.Blueberries2;
+            }
+                
+
+            if (arrowRight % 2 == 0)
+            {
+                picImage1.Image = Resource.Jalapenoes1;
+                picImage2.Image = Resource.Jalapenoes3;
+                picImage3.Image = Resource.Jalapenoes4;
+            }
+            else
+            {
+                picImage1.Image = Resource.Peas1;
+                picImage2.Image = Resource.Peas2;
+                picImage3.Image = Resource.Peas3;
+
+            }
+
+            arrowRight++;
+
+        }
+
+        private void picArrowLeft_Click(object sender, EventArgs e)
+        {
+            if (arrowLeft == 0)
+            {
+                picImage1.Image = Resource.Raspberries1;
+                picImage2.Image = Resource.Raspberries3;
+                picImage3.Image = Resource.Raspberries2;
+            }
+                
+
+            if (arrowLeft % 2 == 0)
+            {
+                picImage1.Image = Resource.FlatPeaches1;
+                picImage2.Image = Resource.FlatPeaches3;
+                picImage3.Image = Resource.FlatPeaches4;
+            }
+            else
+            {
+                picImage1.Image = Resource.NectarineTart3;
+                picImage2.Image = Resource.NectarineTart4;
+                picImage3.Image = Resource.NectarineTart1;
+
+            }
+
+            arrowLeft++;
 
         }
     }
