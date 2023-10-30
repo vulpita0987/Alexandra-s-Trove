@@ -308,5 +308,27 @@ namespace Alexandra_s_Trove
             picCath1Left.Image = Properties.Resources.ResourceManager.GetObject(picture) as Image;
 
         }
+
+        private void lblSignIn_Click(object sender, EventArgs e)
+        {
+            SignInPage sip = new SignInPage(); sip.Show();
+            Hide();
+        }
+
+        private void picAlex_Click(object sender, EventArgs e)
+        {
+            RegisterPage reg = new RegisterPage(); reg.Show();
+            //Form.Close();
+            Hide();// rp = new RegisterPage(); rp.Close();#
+        }
+
+        private void picTrove_Click(object sender, EventArgs e)
+        {
+            RegisterPage reg = new RegisterPage(); reg.Show();
+            //Form.Close();
+            Hide();// rp = new RegisterPage(); rp.Close();#
+        }
+
+       
     }
 }

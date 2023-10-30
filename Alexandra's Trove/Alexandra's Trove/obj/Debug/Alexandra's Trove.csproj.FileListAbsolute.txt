@@ -26,7 +26,6 @@ C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's 
 C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra's Trove.csproj.CopyComplete
 C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra's Trove.exe
 C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra's Trove.pdb
-C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.UserLoggedIn.resources
 C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.HelpDeveloper.resources
 C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Alexandra's Trove.exe.config
 C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Alexandra's Trove.exe
@@ -199,3 +198,5 @@ C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's 
 C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.Resource.resources
 C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.LoggedInPage.resources
 C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.GuestPage.resources
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.LoggedInPage.resources
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.GuestPage.resources

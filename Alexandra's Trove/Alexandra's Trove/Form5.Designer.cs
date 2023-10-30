@@ -93,9 +93,10 @@
             this.lblUserGuide.AutoSize = true;
             this.lblUserGuide.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserGuide.Image = ((System.Drawing.Image)(resources.GetObject("lblUserGuide.Image")));
-            this.lblUserGuide.Location = new System.Drawing.Point(409, 588);
+            this.lblUserGuide.Location = new System.Drawing.Point(545, 724);
+            this.lblUserGuide.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUserGuide.Name = "lblUserGuide";
-            this.lblUserGuide.Size = new System.Drawing.Size(75, 16);
+            this.lblUserGuide.Size = new System.Drawing.Size(94, 20);
             this.lblUserGuide.TabIndex = 26;
             this.lblUserGuide.Text = "User Guide";
             // 
@@ -105,9 +106,10 @@
             this.lblFeedbackSurvey.BackColor = System.Drawing.Color.Transparent;
             this.lblFeedbackSurvey.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFeedbackSurvey.Image = ((System.Drawing.Image)(resources.GetObject("lblFeedbackSurvey.Image")));
-            this.lblFeedbackSurvey.Location = new System.Drawing.Point(11, 588);
+            this.lblFeedbackSurvey.Location = new System.Drawing.Point(15, 724);
+            this.lblFeedbackSurvey.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFeedbackSurvey.Name = "lblFeedbackSurvey";
-            this.lblFeedbackSurvey.Size = new System.Drawing.Size(114, 16);
+            this.lblFeedbackSurvey.Size = new System.Drawing.Size(137, 20);
             this.lblFeedbackSurvey.TabIndex = 25;
             this.lblFeedbackSurvey.Text = "Feedback Survey";
             // 
@@ -117,9 +119,10 @@
             this.lblTermsConditions.BackColor = System.Drawing.Color.Transparent;
             this.lblTermsConditions.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTermsConditions.Image = ((System.Drawing.Image)(resources.GetObject("lblTermsConditions.Image")));
-            this.lblTermsConditions.Location = new System.Drawing.Point(734, 588);
+            this.lblTermsConditions.Location = new System.Drawing.Point(979, 724);
+            this.lblTermsConditions.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTermsConditions.Name = "lblTermsConditions";
-            this.lblTermsConditions.Size = new System.Drawing.Size(139, 16);
+            this.lblTermsConditions.Size = new System.Drawing.Size(175, 20);
             this.lblTermsConditions.TabIndex = 24;
             this.lblTermsConditions.Text = "Terms And Conditions";
             this.lblTermsConditions.Click += new System.EventHandler(this.lblTermsConditions_Click);
@@ -127,10 +130,10 @@
             // picBottomLine
             // 
             this.picBottomLine.Image = ((System.Drawing.Image)(resources.GetObject("picBottomLine.Image")));
-            this.picBottomLine.Location = new System.Drawing.Point(-3, 579);
-            this.picBottomLine.Margin = new System.Windows.Forms.Padding(2);
+            this.picBottomLine.Location = new System.Drawing.Point(-4, 713);
+            this.picBottomLine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picBottomLine.Name = "picBottomLine";
-            this.picBottomLine.Size = new System.Drawing.Size(891, 35);
+            this.picBottomLine.Size = new System.Drawing.Size(1188, 43);
             this.picBottomLine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBottomLine.TabIndex = 23;
             this.picBottomLine.TabStop = false;
@@ -138,32 +141,34 @@
             // picAlex
             // 
             this.picAlex.Image = ((System.Drawing.Image)(resources.GetObject("picAlex.Image")));
-            this.picAlex.Location = new System.Drawing.Point(-3, 9);
-            this.picAlex.Margin = new System.Windows.Forms.Padding(2);
+            this.picAlex.Location = new System.Drawing.Point(-4, 11);
+            this.picAlex.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picAlex.Name = "picAlex";
-            this.picAlex.Size = new System.Drawing.Size(146, 30);
+            this.picAlex.Size = new System.Drawing.Size(195, 37);
             this.picAlex.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAlex.TabIndex = 27;
             this.picAlex.TabStop = false;
+            this.picAlex.Click += new System.EventHandler(this.picAlex_Click);
             // 
             // picTrove
             // 
             this.picTrove.Image = ((System.Drawing.Image)(resources.GetObject("picTrove.Image")));
-            this.picTrove.Location = new System.Drawing.Point(128, 9);
-            this.picTrove.Margin = new System.Windows.Forms.Padding(2);
+            this.picTrove.Location = new System.Drawing.Point(171, 11);
+            this.picTrove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picTrove.Name = "picTrove";
-            this.picTrove.Size = new System.Drawing.Size(152, 32);
+            this.picTrove.Size = new System.Drawing.Size(203, 39);
             this.picTrove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picTrove.TabIndex = 28;
             this.picTrove.TabStop = false;
+            this.picTrove.Click += new System.EventHandler(this.picTrove_Click);
             // 
             // picFiller
             // 
             this.picFiller.Image = ((System.Drawing.Image)(resources.GetObject("picFiller.Image")));
-            this.picFiller.Location = new System.Drawing.Point(-3, -1);
-            this.picFiller.Margin = new System.Windows.Forms.Padding(2);
+            this.picFiller.Location = new System.Drawing.Point(-4, -1);
+            this.picFiller.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picFiller.Name = "picFiller";
-            this.picFiller.Size = new System.Drawing.Size(891, 55);
+            this.picFiller.Size = new System.Drawing.Size(1188, 68);
             this.picFiller.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picFiller.TabIndex = 29;
             this.picFiller.TabStop = false;
@@ -171,10 +176,10 @@
             // picSearchLoop
             // 
             this.picSearchLoop.Image = ((System.Drawing.Image)(resources.GetObject("picSearchLoop.Image")));
-            this.picSearchLoop.Location = new System.Drawing.Point(504, 12);
-            this.picSearchLoop.Margin = new System.Windows.Forms.Padding(2);
+            this.picSearchLoop.Location = new System.Drawing.Point(672, 15);
+            this.picSearchLoop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picSearchLoop.Name = "picSearchLoop";
-            this.picSearchLoop.Size = new System.Drawing.Size(37, 29);
+            this.picSearchLoop.Size = new System.Drawing.Size(49, 36);
             this.picSearchLoop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSearchLoop.TabIndex = 30;
             this.picSearchLoop.TabStop = false;
@@ -182,10 +187,10 @@
             // picBasket
             // 
             this.picBasket.Image = ((System.Drawing.Image)(resources.GetObject("picBasket.Image")));
-            this.picBasket.Location = new System.Drawing.Point(830, 9);
-            this.picBasket.Margin = new System.Windows.Forms.Padding(2);
+            this.picBasket.Location = new System.Drawing.Point(1107, 11);
+            this.picBasket.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picBasket.Name = "picBasket";
-            this.picBasket.Size = new System.Drawing.Size(43, 36);
+            this.picBasket.Size = new System.Drawing.Size(57, 44);
             this.picBasket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBasket.TabIndex = 31;
             this.picBasket.TabStop = false;
@@ -195,29 +200,33 @@
             this.lblSignIn.AutoSize = true;
             this.lblSignIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSignIn.Image = ((System.Drawing.Image)(resources.GetObject("lblSignIn.Image")));
-            this.lblSignIn.Location = new System.Drawing.Point(672, 17);
+            this.lblSignIn.Location = new System.Drawing.Point(896, 21);
+            this.lblSignIn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSignIn.Name = "lblSignIn";
-            this.lblSignIn.Size = new System.Drawing.Size(66, 20);
+            this.lblSignIn.Size = new System.Drawing.Size(80, 25);
             this.lblSignIn.TabIndex = 32;
             this.lblSignIn.Text = "Sign In";
+            this.lblSignIn.Click += new System.EventHandler(this.lblSignIn_Click);
             // 
             // lblOrders
             // 
             this.lblOrders.AutoSize = true;
             this.lblOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOrders.Image = ((System.Drawing.Image)(resources.GetObject("lblOrders.Image")));
-            this.lblOrders.Location = new System.Drawing.Point(754, 17);
+            this.lblOrders.Location = new System.Drawing.Point(1005, 21);
+            this.lblOrders.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOrders.Name = "lblOrders";
-            this.lblOrders.Size = new System.Drawing.Size(63, 20);
+            this.lblOrders.Size = new System.Drawing.Size(78, 25);
             this.lblOrders.TabIndex = 33;
             this.lblOrders.Text = "Orders";
             // 
             // cboxSearchBar
             // 
             this.cboxSearchBar.FormattingEnabled = true;
-            this.cboxSearchBar.Location = new System.Drawing.Point(263, 16);
+            this.cboxSearchBar.Location = new System.Drawing.Point(351, 20);
+            this.cboxSearchBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboxSearchBar.Name = "cboxSearchBar";
-            this.cboxSearchBar.Size = new System.Drawing.Size(236, 21);
+            this.cboxSearchBar.Size = new System.Drawing.Size(313, 24);
             this.cboxSearchBar.TabIndex = 35;
             // 
             // lblSelectLanguage
@@ -225,19 +234,20 @@
             this.lblSelectLanguage.AutoSize = true;
             this.lblSelectLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSelectLanguage.Image = ((System.Drawing.Image)(resources.GetObject("lblSelectLanguage.Image")));
-            this.lblSelectLanguage.Location = new System.Drawing.Point(566, 8);
+            this.lblSelectLanguage.Location = new System.Drawing.Point(755, 10);
+            this.lblSelectLanguage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSelectLanguage.Name = "lblSelectLanguage";
-            this.lblSelectLanguage.Size = new System.Drawing.Size(89, 20);
+            this.lblSelectLanguage.Size = new System.Drawing.Size(108, 25);
             this.lblSelectLanguage.TabIndex = 36;
             this.lblSelectLanguage.Text = "Language";
             // 
             // picArrowDown
             // 
             this.picArrowDown.Image = ((System.Drawing.Image)(resources.GetObject("picArrowDown.Image")));
-            this.picArrowDown.Location = new System.Drawing.Point(570, 27);
-            this.picArrowDown.Margin = new System.Windows.Forms.Padding(2);
+            this.picArrowDown.Location = new System.Drawing.Point(760, 33);
+            this.picArrowDown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picArrowDown.Name = "picArrowDown";
-            this.picArrowDown.Size = new System.Drawing.Size(21, 14);
+            this.picArrowDown.Size = new System.Drawing.Size(28, 17);
             this.picArrowDown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picArrowDown.TabIndex = 37;
             this.picArrowDown.TabStop = false;
@@ -246,10 +256,10 @@
             // 
             this.picImage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picImage1.Image = ((System.Drawing.Image)(resources.GetObject("picImage1.Image")));
-            this.picImage1.Location = new System.Drawing.Point(68, 134);
-            this.picImage1.Margin = new System.Windows.Forms.Padding(2);
+            this.picImage1.Location = new System.Drawing.Point(91, 165);
+            this.picImage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picImage1.Name = "picImage1";
-            this.picImage1.Size = new System.Drawing.Size(247, 156);
+            this.picImage1.Size = new System.Drawing.Size(329, 192);
             this.picImage1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picImage1.TabIndex = 38;
             this.picImage1.TabStop = false;
@@ -258,10 +268,10 @@
             // 
             this.picImage2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picImage2.Image = ((System.Drawing.Image)(resources.GetObject("picImage2.Image")));
-            this.picImage2.Location = new System.Drawing.Point(570, 134);
-            this.picImage2.Margin = new System.Windows.Forms.Padding(2);
+            this.picImage2.Location = new System.Drawing.Point(760, 165);
+            this.picImage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picImage2.Name = "picImage2";
-            this.picImage2.Size = new System.Drawing.Size(247, 156);
+            this.picImage2.Size = new System.Drawing.Size(329, 192);
             this.picImage2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picImage2.TabIndex = 39;
             this.picImage2.TabStop = false;
@@ -270,10 +280,10 @@
             // 
             this.picImage3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picImage3.Image = ((System.Drawing.Image)(resources.GetObject("picImage3.Image")));
-            this.picImage3.Location = new System.Drawing.Point(319, 134);
-            this.picImage3.Margin = new System.Windows.Forms.Padding(2);
+            this.picImage3.Location = new System.Drawing.Point(425, 165);
+            this.picImage3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picImage3.Name = "picImage3";
-            this.picImage3.Size = new System.Drawing.Size(247, 156);
+            this.picImage3.Size = new System.Drawing.Size(329, 192);
             this.picImage3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picImage3.TabIndex = 40;
             this.picImage3.TabStop = false;
@@ -281,10 +291,10 @@
             // picPicturesBackground
             // 
             this.picPicturesBackground.Image = ((System.Drawing.Image)(resources.GetObject("picPicturesBackground.Image")));
-            this.picPicturesBackground.Location = new System.Drawing.Point(14, 112);
-            this.picPicturesBackground.Margin = new System.Windows.Forms.Padding(2);
+            this.picPicturesBackground.Location = new System.Drawing.Point(19, 138);
+            this.picPicturesBackground.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picPicturesBackground.Name = "picPicturesBackground";
-            this.picPicturesBackground.Size = new System.Drawing.Size(862, 205);
+            this.picPicturesBackground.Size = new System.Drawing.Size(1149, 252);
             this.picPicturesBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picPicturesBackground.TabIndex = 41;
             this.picPicturesBackground.TabStop = false;
@@ -292,10 +302,10 @@
             // picArrowLeft
             // 
             this.picArrowLeft.Image = ((System.Drawing.Image)(resources.GetObject("picArrowLeft.Image")));
-            this.picArrowLeft.Location = new System.Drawing.Point(17, 167);
-            this.picArrowLeft.Margin = new System.Windows.Forms.Padding(2);
+            this.picArrowLeft.Location = new System.Drawing.Point(23, 206);
+            this.picArrowLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picArrowLeft.Name = "picArrowLeft";
-            this.picArrowLeft.Size = new System.Drawing.Size(51, 93);
+            this.picArrowLeft.Size = new System.Drawing.Size(68, 114);
             this.picArrowLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picArrowLeft.TabIndex = 43;
             this.picArrowLeft.TabStop = false;
@@ -304,22 +314,23 @@
             // picArrowRight
             // 
             this.picArrowRight.Image = ((System.Drawing.Image)(resources.GetObject("picArrowRight.Image")));
-            this.picArrowRight.Location = new System.Drawing.Point(816, 167);
-            this.picArrowRight.Margin = new System.Windows.Forms.Padding(2);
+            this.picArrowRight.Location = new System.Drawing.Point(1088, 206);
+            this.picArrowRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picArrowRight.Name = "picArrowRight";
-            this.picArrowRight.Size = new System.Drawing.Size(51, 93);
+            this.picArrowRight.Size = new System.Drawing.Size(68, 114);
             this.picArrowRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picArrowRight.TabIndex = 44;
             this.picArrowRight.TabStop = false;
+            
             this.picArrowRight.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picArrowRight_MouseClick);
             // 
             // picGreyRibbon
             // 
             this.picGreyRibbon.Image = ((System.Drawing.Image)(resources.GetObject("picGreyRibbon.Image")));
-            this.picGreyRibbon.Location = new System.Drawing.Point(-3, 49);
-            this.picGreyRibbon.Margin = new System.Windows.Forms.Padding(2);
+            this.picGreyRibbon.Location = new System.Drawing.Point(-4, 60);
+            this.picGreyRibbon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picGreyRibbon.Name = "picGreyRibbon";
-            this.picGreyRibbon.Size = new System.Drawing.Size(897, 33);
+            this.picGreyRibbon.Size = new System.Drawing.Size(1196, 41);
             this.picGreyRibbon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picGreyRibbon.TabIndex = 45;
             this.picGreyRibbon.TabStop = false;
@@ -327,10 +338,10 @@
             // picCathegoryLeft
             // 
             this.picCathegoryLeft.Image = ((System.Drawing.Image)(resources.GetObject("picCathegoryLeft.Image")));
-            this.picCathegoryLeft.Location = new System.Drawing.Point(14, 343);
-            this.picCathegoryLeft.Margin = new System.Windows.Forms.Padding(2);
+            this.picCathegoryLeft.Location = new System.Drawing.Point(19, 422);
+            this.picCathegoryLeft.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picCathegoryLeft.Name = "picCathegoryLeft";
-            this.picCathegoryLeft.Size = new System.Drawing.Size(421, 215);
+            this.picCathegoryLeft.Size = new System.Drawing.Size(561, 265);
             this.picCathegoryLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCathegoryLeft.TabIndex = 46;
             this.picCathegoryLeft.TabStop = false;
@@ -338,10 +349,10 @@
             // picCathegoryRight
             // 
             this.picCathegoryRight.Image = ((System.Drawing.Image)(resources.GetObject("picCathegoryRight.Image")));
-            this.picCathegoryRight.Location = new System.Drawing.Point(449, 343);
-            this.picCathegoryRight.Margin = new System.Windows.Forms.Padding(2);
+            this.picCathegoryRight.Location = new System.Drawing.Point(599, 422);
+            this.picCathegoryRight.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picCathegoryRight.Name = "picCathegoryRight";
-            this.picCathegoryRight.Size = new System.Drawing.Size(424, 215);
+            this.picCathegoryRight.Size = new System.Drawing.Size(565, 265);
             this.picCathegoryRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCathegoryRight.TabIndex = 47;
             this.picCathegoryRight.TabStop = false;
@@ -351,9 +362,10 @@
             this.lblVegetables.AutoSize = true;
             this.lblVegetables.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVegetables.Image = ((System.Drawing.Image)(resources.GetObject("lblVegetables.Image")));
-            this.lblVegetables.Location = new System.Drawing.Point(10, 56);
+            this.lblVegetables.Location = new System.Drawing.Point(13, 69);
+            this.lblVegetables.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVegetables.Name = "lblVegetables";
-            this.lblVegetables.Size = new System.Drawing.Size(100, 20);
+            this.lblVegetables.Size = new System.Drawing.Size(121, 25);
             this.lblVegetables.TabIndex = 48;
             this.lblVegetables.Text = "Vegetables";
             // 
@@ -362,9 +374,10 @@
             this.lblFruits.AutoSize = true;
             this.lblFruits.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFruits.Image = ((System.Drawing.Image)(resources.GetObject("lblFruits.Image")));
-            this.lblFruits.Location = new System.Drawing.Point(174, 56);
+            this.lblFruits.Location = new System.Drawing.Point(232, 69);
+            this.lblFruits.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFruits.Name = "lblFruits";
-            this.lblFruits.Size = new System.Drawing.Size(55, 20);
+            this.lblFruits.Size = new System.Drawing.Size(66, 25);
             this.lblFruits.TabIndex = 49;
             this.lblFruits.Text = "Fruits";
             // 
@@ -373,9 +386,10 @@
             this.lblMore.AutoSize = true;
             this.lblMore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMore.Image = ((System.Drawing.Image)(resources.GetObject("lblMore.Image")));
-            this.lblMore.Location = new System.Drawing.Point(610, 56);
+            this.lblMore.Location = new System.Drawing.Point(813, 69);
+            this.lblMore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMore.Name = "lblMore";
-            this.lblMore.Size = new System.Drawing.Size(278, 20);
+            this.lblMore.Size = new System.Drawing.Size(339, 25);
             this.lblMore.TabIndex = 50;
             this.lblMore.Text = "More Cathegories Coming Soon...";
             // 
@@ -384,9 +398,10 @@
             this.lblDesserts.AutoSize = true;
             this.lblDesserts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDesserts.Image = ((System.Drawing.Image)(resources.GetObject("lblDesserts.Image")));
-            this.lblDesserts.Location = new System.Drawing.Point(294, 56);
+            this.lblDesserts.Location = new System.Drawing.Point(392, 69);
+            this.lblDesserts.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDesserts.Name = "lblDesserts";
-            this.lblDesserts.Size = new System.Drawing.Size(81, 20);
+            this.lblDesserts.Size = new System.Drawing.Size(97, 25);
             this.lblDesserts.TabIndex = 51;
             this.lblDesserts.Text = "Desserts";
             // 
@@ -395,9 +410,10 @@
             this.lblCathegoryLeft.AutoSize = true;
             this.lblCathegoryLeft.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCathegoryLeft.Image = ((System.Drawing.Image)(resources.GetObject("lblCathegoryLeft.Image")));
-            this.lblCathegoryLeft.Location = new System.Drawing.Point(41, 360);
+            this.lblCathegoryLeft.Location = new System.Drawing.Point(55, 443);
+            this.lblCathegoryLeft.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCathegoryLeft.Name = "lblCathegoryLeft";
-            this.lblCathegoryLeft.Size = new System.Drawing.Size(81, 20);
+            this.lblCathegoryLeft.Size = new System.Drawing.Size(97, 25);
             this.lblCathegoryLeft.TabIndex = 52;
             this.lblCathegoryLeft.Text = "Desserts";
             // 
@@ -406,9 +422,10 @@
             this.lblCathegoryRight.AutoSize = true;
             this.lblCathegoryRight.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCathegoryRight.Image = ((System.Drawing.Image)(resources.GetObject("lblCathegoryRight.Image")));
-            this.lblCathegoryRight.Location = new System.Drawing.Point(477, 360);
+            this.lblCathegoryRight.Location = new System.Drawing.Point(636, 443);
+            this.lblCathegoryRight.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCathegoryRight.Name = "lblCathegoryRight";
-            this.lblCathegoryRight.Size = new System.Drawing.Size(55, 20);
+            this.lblCathegoryRight.Size = new System.Drawing.Size(66, 25);
             this.lblCathegoryRight.TabIndex = 53;
             this.lblCathegoryRight.Text = "Fruits";
             // 
@@ -416,10 +433,10 @@
             // 
             this.picCath1Left.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picCath1Left.Image = ((System.Drawing.Image)(resources.GetObject("picCath1Left.Image")));
-            this.picCath1Left.Location = new System.Drawing.Point(45, 401);
-            this.picCath1Left.Margin = new System.Windows.Forms.Padding(2);
+            this.picCath1Left.Location = new System.Drawing.Point(60, 494);
+            this.picCath1Left.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picCath1Left.Name = "picCath1Left";
-            this.picCath1Left.Size = new System.Drawing.Size(164, 113);
+            this.picCath1Left.Size = new System.Drawing.Size(218, 139);
             this.picCath1Left.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCath1Left.TabIndex = 54;
             this.picCath1Left.TabStop = false;
@@ -428,10 +445,10 @@
             // 
             this.picCath2Left.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picCath2Left.Image = ((System.Drawing.Image)(resources.GetObject("picCath2Left.Image")));
-            this.picCath2Left.Location = new System.Drawing.Point(481, 401);
-            this.picCath2Left.Margin = new System.Windows.Forms.Padding(2);
+            this.picCath2Left.Location = new System.Drawing.Point(641, 494);
+            this.picCath2Left.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picCath2Left.Name = "picCath2Left";
-            this.picCath2Left.Size = new System.Drawing.Size(164, 113);
+            this.picCath2Left.Size = new System.Drawing.Size(218, 139);
             this.picCath2Left.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCath2Left.TabIndex = 55;
             this.picCath2Left.TabStop = false;
@@ -440,10 +457,10 @@
             // 
             this.picCath1Right.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picCath1Right.Image = ((System.Drawing.Image)(resources.GetObject("picCath1Right.Image")));
-            this.picCath1Right.Location = new System.Drawing.Point(239, 401);
-            this.picCath1Right.Margin = new System.Windows.Forms.Padding(2);
+            this.picCath1Right.Location = new System.Drawing.Point(319, 494);
+            this.picCath1Right.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picCath1Right.Name = "picCath1Right";
-            this.picCath1Right.Size = new System.Drawing.Size(164, 113);
+            this.picCath1Right.Size = new System.Drawing.Size(218, 139);
             this.picCath1Right.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCath1Right.TabIndex = 56;
             this.picCath1Right.TabStop = false;
@@ -452,10 +469,10 @@
             // 
             this.picCath2Right.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picCath2Right.Image = ((System.Drawing.Image)(resources.GetObject("picCath2Right.Image")));
-            this.picCath2Right.Location = new System.Drawing.Point(676, 401);
-            this.picCath2Right.Margin = new System.Windows.Forms.Padding(2);
+            this.picCath2Right.Location = new System.Drawing.Point(901, 494);
+            this.picCath2Right.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picCath2Right.Name = "picCath2Right";
-            this.picCath2Right.Size = new System.Drawing.Size(164, 113);
+            this.picCath2Right.Size = new System.Drawing.Size(218, 139);
             this.picCath2Right.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCath2Right.TabIndex = 57;
             this.picCath2Right.TabStop = false;
@@ -465,9 +482,10 @@
             this.lblCath1Left.AutoSize = true;
             this.lblCath1Left.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCath1Left.Image = ((System.Drawing.Image)(resources.GetObject("lblCath1Left.Image")));
-            this.lblCath1Left.Location = new System.Drawing.Point(41, 516);
+            this.lblCath1Left.Location = new System.Drawing.Point(55, 635);
+            this.lblCath1Left.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCath1Left.Name = "lblCath1Left";
-            this.lblCath1Left.Size = new System.Drawing.Size(192, 20);
+            this.lblCath1Left.Size = new System.Drawing.Size(230, 25);
             this.lblCath1Left.TabIndex = 58;
             this.lblCath1Left.Text = "Dark Chocolate Yogurt";
             // 
@@ -476,9 +494,10 @@
             this.lblCath2Left.AutoSize = true;
             this.lblCath2Left.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCath2Left.Image = ((System.Drawing.Image)(resources.GetObject("lblCath2Left.Image")));
-            this.lblCath2Left.Location = new System.Drawing.Point(477, 516);
+            this.lblCath2Left.Location = new System.Drawing.Point(636, 635);
+            this.lblCath2Left.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCath2Left.Name = "lblCath2Left";
-            this.lblCath2Left.Size = new System.Drawing.Size(76, 20);
+            this.lblCath2Left.Size = new System.Drawing.Size(94, 25);
             this.lblCath2Left.TabIndex = 59;
             this.lblCath2Left.Text = "Cherries";
             // 
@@ -487,9 +506,10 @@
             this.lblCath1Right.AutoSize = true;
             this.lblCath1Right.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCath1Right.Image = ((System.Drawing.Image)(resources.GetObject("lblCath1Right.Image")));
-            this.lblCath1Right.Location = new System.Drawing.Point(235, 516);
+            this.lblCath1Right.Location = new System.Drawing.Point(313, 635);
+            this.lblCath1Right.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCath1Right.Name = "lblCath1Right";
-            this.lblCath1Right.Size = new System.Drawing.Size(123, 20);
+            this.lblCath1Right.Size = new System.Drawing.Size(149, 25);
             this.lblCath1Right.TabIndex = 60;
             this.lblCath1Right.Text = "Nectarine Tart";
             // 
@@ -498,17 +518,18 @@
             this.lblCath2Right.AutoSize = true;
             this.lblCath2Right.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCath2Right.Image = ((System.Drawing.Image)(resources.GetObject("lblCath2Right.Image")));
-            this.lblCath2Right.Location = new System.Drawing.Point(672, 516);
+            this.lblCath2Right.Location = new System.Drawing.Point(896, 635);
+            this.lblCath2Right.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCath2Right.Name = "lblCath2Right";
-            this.lblCath2Right.Size = new System.Drawing.Size(102, 20);
+            this.lblCath2Right.Size = new System.Drawing.Size(123, 25);
             this.lblCath2Right.TabIndex = 61;
             this.lblCath2Right.Text = "Red Apples";
             // 
             // GuestPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 612);
+            this.ClientSize = new System.Drawing.Size(1181, 753);
             this.Controls.Add(this.picImage2);
             this.Controls.Add(this.lblCath2Right);
             this.Controls.Add(this.lblCath1Right);
@@ -546,8 +567,9 @@
             this.Controls.Add(this.picBottomLine);
             this.Controls.Add(this.picPicturesBackground);
             this.Controls.Add(this.picGreyRibbon);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "GuestPage";
-            this.Text = "GuestPage";
+            this.Text = "Guest Page";
             this.Load += new System.EventHandler(this.GuestPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBottomLine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAlex)).EndInit();
