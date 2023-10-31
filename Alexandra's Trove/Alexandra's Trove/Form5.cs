@@ -24,6 +24,7 @@ namespace Alexandra_s_Trove
         public GuestPage()
         {
             InitializeComponent();
+            
         }
 
         private void lblTermsConditions_Click(object sender, EventArgs e)

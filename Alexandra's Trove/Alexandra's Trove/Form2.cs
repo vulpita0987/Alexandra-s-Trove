@@ -17,6 +17,9 @@ namespace Alexandra_s_Trove
             InitializeComponent();
         }
 
-       
+        private void LoggedInPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

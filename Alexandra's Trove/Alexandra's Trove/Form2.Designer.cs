@@ -484,7 +484,6 @@
             this.picTrove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picTrove.TabIndex = 63;
             this.picTrove.TabStop = false;
-           
             // 
             // picFiller
             // 
@@ -564,6 +563,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "LoggedInPage";
             this.Text = "Logged In Page";
+            this.Load += new System.EventHandler(this.LoggedInPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBottomLine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picImage2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCath2Right)).EndInit();
