@@ -16,6 +16,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace Alexandra_s_Trove
 {
@@ -35,7 +36,7 @@ namespace Alexandra_s_Trove
 
         private void GuestPage_Load(object sender, EventArgs e)
         {
-            AdjustPictures();
+            AdjustPictures1();
             picCath1Left.Image = Resource.DarkChYo2;
             picCath1Right.Image = Resource.NectarineTart4;
             picCath2Left.Image = Resource.Cherries4;
@@ -48,23 +49,23 @@ namespace Alexandra_s_Trove
             List <int> Numbers = new List<int>();
 
             Random rnd = new Random();
-            int number1 = rnd.Next(0,50);
-            int number2 = rnd.Next(0,50);
-            int number3 = rnd.Next(0, 50);
+            int number1 = rnd.Next(0,49);
+            int number2 = rnd.Next(0,49);
+            int number3 = rnd.Next(0, 49);
 
             while ((number1 == number2)||(number1 == number3)||(number3 == number2)) 
             {
                 if (number1 == number2) 
                 {
-                    number2 = rnd.Next(0, 50);
+                    number2 = rnd.Next(0, 49);
                 }
                 if (number1 == number3) 
                 {
-                    number3 = rnd.Next(0, 50);
+                    number3 = rnd.Next(0, 49);
                 }
                 if (number3 == number2) 
                 {
-                    number3 = rnd.Next(0, 50);
+                    number3 = rnd.Next(0, 49);
                 }
 
 
@@ -76,14 +77,15 @@ namespace Alexandra_s_Trove
             return Numbers; 
         
         }
-        private void AdjustPictures()
+        /*private void AdjustPictures()
         {
             List<int> Numbers = new List<int>();
             Numbers = GetRandomNumbers();
 
             List<string> ImageNames = new List<string>();
-            ImageNames = GetImages.GetImageNames();
-
+            GetImages obj = new GetImages();
+            ImageNames = obj.GetImageNamesList();
+            
             string random1 = "";
             string random2 = "";
             string random3 = "";
@@ -97,7 +99,7 @@ namespace Alexandra_s_Trove
 
             }
 
-           
+            
             if (random1 == "Blueberries1") { picImage1.Image = Resource.Blueberries1; }
             if (random1 == "Blueberries2") { picImage1.Image = Resource.Blueberries2; }
             if (random1 == "Blueberries3") { picImage1.Image = Resource.Blueberries3; }
@@ -291,22 +293,63 @@ namespace Alexandra_s_Trove
             if (random3 == "Tomatoes4") { picImage3.Image = Resource.Tomatoes4; }
 
 
+        }*/
+
+        private void AdjustPictures1()
+        {
+            List<int> Numbers = new List<int>();
+            Numbers = GetRandomNumbers();
+
+            Dictionary<int, Image> Images = new Dictionary<int, Image>();
+            GetImages obj = new GetImages();
+            Images = obj.GetImageNamesDictionary();
+
+            
+
+            for (int i = 0; i < Images.Count; i++)
+            {
+
+                if (i == Numbers[0]) { picImage1.Image = Images.ContainsKey(i) ? Images[i] : null; }
+                if (i == Numbers[1]) { picImage2.Image = Images.ContainsKey(i) ? Images[i] : null; }
+                if (i == Numbers[2]) { picImage3.Image = Images.ContainsKey(i) ? Images[i] : null; }
+
+            }
+        }
+        public Image stringToImage(string inputString)
+        {
+            byte[] imageBytes = Encoding.Unicode.GetBytes(inputString);
+
+            // Don't need to use the constructor that takes the starting offset and length
+            // as we're using the whole byte array.
+            MemoryStream ms = new MemoryStream(imageBytes);
+
+            Image image = Image.FromStream(ms, true, true);
+
+            return image;
         }
 
+       
         private void picArrowRight_MouseClick(object sender, MouseEventArgs e)
         {
-            AdjustPictures();
+            AdjustPictures1();
+            //ImageList Temp = new ImageList();
 
+            //picCath2Left.Image = GetMarkerIcons();
+
+            //picCath2Left.Image = Image.FromFile(image);
+            //AdjustPictures();
+            //picCath2Left.Image = stringToImage("Tomatoes4");
         }
 
         private void picArrowLeft_Click(object sender, EventArgs e)
         {
+            AdjustPictures1();
             //AdjustPictures();
             //string picture = "Cherries1"; // Make sure "ImageName" is the actual name of your image in resources.
             //picCath1Left.Image = (Image)Properties.Resources.ResourceManager.GetObject(picture);
-
-            string picture = "Cherries1"; // Make sure "ImageName" is the actual name of your image in resources.
-            picCath1Left.Image = Properties.Resources.ResourceManager.GetObject(picture) as Image;
+            //AdjustPictures();
+            //string picture = "Cherries1"; // Make sure "ImageName" is the actual name of your image in resources.
+            //picCath1Left.Image = Properties.Resources.ResourceManager.GetObject(picture) as Image;
 
         }
 

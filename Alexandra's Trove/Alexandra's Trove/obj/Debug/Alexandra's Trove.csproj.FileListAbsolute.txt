@@ -110,3 +110,93 @@ C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's 
 C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.Resource.resources
 C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra's Trove.csproj.GenerateResource.cache
 C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra's Trove.csproj.CoreCompileInputs.cache
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\mongocrypt.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Alexandra's Trove.exe.config
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Alexandra's Trove.exe
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Alexandra's Trove.pdb
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\AWSSDK.Core.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\AWSSDK.SecurityToken.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\DnsClient.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\EntityFramework.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\GMap.NET.Core.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\GMap.NET.WindowsForms.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\GMap.NET.WindowsPresentation.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Hangfire.Core.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Hangfire.Mongo.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\MongoDB.Bson.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\MongoDb.Bson.NodaTime.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\MongoDB.Driver.Core.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\MongoDB.Driver.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\MongoDB.Driver.GridFS.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\MongoDB.Libmongocrypt.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\MongoDbGenericRepository.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Newtonsoft.Json.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\NodaTime.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Owin.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\SharpCompress.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Snappier.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Buffers.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Data.SqlClient.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Data.SQLite.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Memory.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Security.AccessControl.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\ZstdSharp.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\AWSSDK.Core.pdb
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\AWSSDK.Core.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\AWSSDK.SecurityToken.pdb
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\AWSSDK.SecurityToken.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\DnsClient.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\EntityFramework.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Hangfire.Core.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Hangfire.Mongo.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\MongoDB.Bson.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\MongoDB.Driver.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\MongoDB.Driver.Core.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\MongoDB.Driver.GridFS.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\MongoDbGenericRepository.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Newtonsoft.Json.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\NodaTime.pdb
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\NodaTime.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\Snappier.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Buffers.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Data.SqlClient.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Data.SQLite.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Memory.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Security.AccessControl.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\ca\Hangfire.Core.resources.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\de\Hangfire.Core.resources.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\es\Hangfire.Core.resources.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\fa\Hangfire.Core.resources.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\fr\Hangfire.Core.resources.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\nb\Hangfire.Core.resources.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\nl\Hangfire.Core.resources.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\pt\Hangfire.Core.resources.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\pt-BR\Hangfire.Core.resources.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\pt-PT\Hangfire.Core.resources.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\sv\Hangfire.Core.resources.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\tr-TR\Hangfire.Core.resources.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\zh\Hangfire.Core.resources.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\bin\Debug\zh-TW\Hangfire.Core.resources.dll
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra's Trove.csproj.CopyComplete
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra's Trove.exe
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra's Trove.pdb
