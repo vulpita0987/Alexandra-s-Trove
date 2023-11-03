@@ -36,7 +36,7 @@ namespace Alexandra_s_Trove
 
         private void GuestPage_Load(object sender, EventArgs e)
         {
-            AdjustPictures1();
+            AdjustPictures();
             picCath1Left.Image = Resource.DarkChYo2;
             picCath1Right.Image = Resource.NectarineTart4;
             picCath2Left.Image = Resource.Cherries4;
@@ -295,7 +295,7 @@ namespace Alexandra_s_Trove
 
         }*/
 
-        private void AdjustPictures1()
+        private void AdjustPictures()
         {
             List<int> Numbers = new List<int>();
             Numbers = GetRandomNumbers();
@@ -315,41 +315,19 @@ namespace Alexandra_s_Trove
 
             }
         }
-        public Image stringToImage(string inputString)
-        {
-            byte[] imageBytes = Encoding.Unicode.GetBytes(inputString);
-
-            // Don't need to use the constructor that takes the starting offset and length
-            // as we're using the whole byte array.
-            MemoryStream ms = new MemoryStream(imageBytes);
-
-            Image image = Image.FromStream(ms, true, true);
-
-            return image;
-        }
+      
 
        
         private void picArrowRight_MouseClick(object sender, MouseEventArgs e)
         {
-            AdjustPictures1();
-            //ImageList Temp = new ImageList();
-
-            //picCath2Left.Image = GetMarkerIcons();
-
-            //picCath2Left.Image = Image.FromFile(image);
-            //AdjustPictures();
-            //picCath2Left.Image = stringToImage("Tomatoes4");
+            AdjustPictures();
+            
         }
 
         private void picArrowLeft_Click(object sender, EventArgs e)
         {
-            AdjustPictures1();
-            //AdjustPictures();
-            //string picture = "Cherries1"; // Make sure "ImageName" is the actual name of your image in resources.
-            //picCath1Left.Image = (Image)Properties.Resources.ResourceManager.GetObject(picture);
-            //AdjustPictures();
-            //string picture = "Cherries1"; // Make sure "ImageName" is the actual name of your image in resources.
-            //picCath1Left.Image = Properties.Resources.ResourceManager.GetObject(picture) as Image;
+            AdjustPictures();
+            
 
         }
 
@@ -359,19 +337,7 @@ namespace Alexandra_s_Trove
             Hide();
         }
 
-        private void picAlex_Click(object sender, EventArgs e)
-        {
-            RegisterPage reg = new RegisterPage(); reg.Show();
-            //Form.Close();
-            Hide();// rp = new RegisterPage(); rp.Close();#
-        }
-
-        private void picTrove_Click(object sender, EventArgs e)
-        {
-            RegisterPage reg = new RegisterPage(); reg.Show();
-            //Form.Close();
-            Hide();// rp = new RegisterPage(); rp.Close();#
-        }
+     
 
        
     }

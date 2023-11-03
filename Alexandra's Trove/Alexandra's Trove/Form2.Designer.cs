@@ -125,6 +125,7 @@
             this.lblTermsConditions.Size = new System.Drawing.Size(175, 20);
             this.lblTermsConditions.TabIndex = 28;
             this.lblTermsConditions.Text = "Terms And Conditions";
+            this.lblTermsConditions.Click += new System.EventHandler(this.lblTermsConditions_Click);
             // 
             // picBottomLine
             // 
@@ -349,6 +350,7 @@
             this.picArrowRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picArrowRight.TabIndex = 77;
             this.picArrowRight.TabStop = false;
+            this.picArrowRight.Click += new System.EventHandler(this.picArrowRight_Click);
             // 
             // picArrowLeft
             // 
@@ -360,6 +362,7 @@
             this.picArrowLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picArrowLeft.TabIndex = 76;
             this.picArrowLeft.TabStop = false;
+            this.picArrowLeft.Click += new System.EventHandler(this.picArrowLeft_Click);
             // 
             // picImage3
             // 

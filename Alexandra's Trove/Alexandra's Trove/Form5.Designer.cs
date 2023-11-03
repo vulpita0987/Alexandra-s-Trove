@@ -148,7 +148,7 @@
             this.picAlex.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAlex.TabIndex = 27;
             this.picAlex.TabStop = false;
-            this.picAlex.Click += new System.EventHandler(this.picAlex_Click);
+          
             // 
             // picTrove
             // 
@@ -160,7 +160,7 @@
             this.picTrove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picTrove.TabIndex = 28;
             this.picTrove.TabStop = false;
-            this.picTrove.Click += new System.EventHandler(this.picTrove_Click);
+           
             // 
             // picFiller
             // 
