@@ -25,6 +25,88 @@ namespace Alexandra_s_Trove.Resources
         }
 
 
+        List<string> ProductIDs1 = new List<string>();
+
+        public void StoreIDs(string ID)
+        {
+            ProductIDs1.Add(ID);
+
+        }
+
+        public List<string> ReturnListOfProductIDs()
+        {
+            GetClientIDS();
+
+            return ProductIDs1;
+        }
+
+        public async void GetClientIDS()
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Product";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Product>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            List<string> ProductIDs = new List<string>();
+
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ProductIDs.Add(datas.ID);
+
+
+                }
+            }
+
+            for (int i = 0; i < ProductIDs.Count; i++)
+            {
+                StoreIDs(ProductIDs[i]);
+                
+            }
+
+        }
+
+        public async static void AddIDsToList()
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Product";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Product>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            List<string> ProductIDs = new List<string>();
+            List<string> Names = new List<string>();
+            List<string> Descriptions = new List<string>();
+            List<string> Prices = new List<string>();
+            List<string> Specifications = new List<string>();
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ProductIDs.Add(datas.ID);
+                    Names.Add(datas.Name);
+                    Descriptions.Add(datas.Description);
+                    Prices.Add(datas.Price);
+                    Specifications.Add(datas.Specifications);
+
+                }
+            }
+
+            for (int i = 0; i < ProductIDs.Count; i++)
+            {
+                MessageBox.Show(ProductIDs[i] + "/" + Names[i] + "/" + Descriptions[i] + "/" + Prices[i] + "/" + Specifications[i]);
+            }
+        }
 
         public async static void InsertNewClient(string ClientName, string ClientDOB, string ClientAddress, string ClientPhoneNumber, string ClientPassword, string ClientCardDetails, string ClientEmailAddress)
         {
@@ -698,7 +780,7 @@ namespace Alexandra_s_Trove.Resources
             {
                 MessageBox.Show(OrderIDs[i] + "/" + ClientIDs[i] + "/" + ProductsIDs[i] + "/" + Totals[i] + "/" + DeliveryPrices[i] + "/" + DatesOrdered[i] + "/" + EstimatedDeliveries[i]);
             }
-
+           
 
         }
 
