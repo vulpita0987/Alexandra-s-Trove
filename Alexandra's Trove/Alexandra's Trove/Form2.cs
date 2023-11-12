@@ -90,30 +90,41 @@ namespace Alexandra_s_Trove
             }
             if (IDExists == true)
             {
-               
+                //loggedInUser;
 
                 MessageBox.Show(string.Join(", ", ProductsIDs1));
-                List<string> ProductIDs2 = new List<string>();
+                List<int> CountIDs = new List<int>();
+
                 string products = "";
-                for (int i = 0; i < ProductsIDs1.Count; i++) 
+                for (int i = 0; i < ProductsIDs1.Count; i++)
                 {
+
                     products = products + ProductsIDs1[i] + " ";
 
                 }
-                MessageBox.Show(products);
-
-                string count =  CountStringOccurrences(products, "P9").ToString();
-                MessageBox.Show("count " + count);
-
-                DatabaseHandler dh = new DatabaseHandler();
-                ProductIDs2 = dh.ReturnListOfProductIDs();
-                string ids = "";
-                for (int i = 0; i < ProductIDs2.Count; i++)
+                string products1 = products;
+                int count = CountStringOccurrences(products, " ") + 1;
+                ProductsIDs1.Clear();
+                string[] ids = products.Split(' ');
+                
+                for (int i = 0; i < ids.Length; i++) 
                 {
-                    ids = ids + ProductIDs2[i] + " ";
-                    MessageBox.Show("hello");
+                    ProductsIDs1.Add(ids[i]);//ids in list - each as their own element
+                    
                 }
-                MessageBox.Show(ids);
+                MessageBox.Show(string.Join(", ", ProductsIDs1));
+
+
+                //
+                for (int i = 0; i < ProductsIDs1.Count; i++)
+                {
+
+                    CountIDs.Add(CountStringOccurrences(products1, ProductsIDs1[i]));
+
+                }
+                MessageBox.Show(string.Join(", ", CountIDs));
+
+          
             }
             else
             {

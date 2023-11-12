@@ -13,6 +13,7 @@ using Hangfire.Common;
 using static GMap.NET.Entity.OpenStreetMapGeocodeEntity;
 using System.Xml.Linq;
 using System.Net;
+using System.Threading;
 
 namespace Alexandra_s_Trove.Resources
 {
@@ -24,19 +25,49 @@ namespace Alexandra_s_Trove.Resources
             //Debug.WriteLine("Hello World");
         }
 
-
-        List<string> ProductIDs1 = new List<string>();
-
-        public void StoreIDs(string ID)
+        /*public List<string> GetProductIDs(int count = 0) 
         {
-            ProductIDs1.Add(ID);
+            //GetClientIDS();
+            //if (count == 0) { GetClientIDS(); }
+            List<string> ProductIDs = new List<string>();
+            ProductIDs.Add("P1");
+            ProductIDs.Add("P2");
+            ProductIDs.Add("P3");
+            ProductIDs.Add("P4");
+            ProductIDs.Add("P5");
+            ProductIDs.Add("P6");
+            ProductIDs.Add("P7");
+            ProductIDs.Add("P8");
+            ProductIDs.Add("P9");
+            ProductIDs.Add("P10");
+            ProductIDs.Add("P11");
+            ProductIDs.Add("P12");
+            ProductIDs.Add("P13");
+            //string IDs = "P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P11 P12 P13";
+            //for(int i = 0; i < count; i++) 
+            //{
+            // IDs = IDs + "P" + i.ToString() + " ";
+            // }
+            return ProductIDs;
+        }
+
+       /* List<string> ProductIDs1 = new List<string>();
+
+        public List<string> StoreIDs(int count = 0, ref List<string> ProductsID)
+        {
+            if (ProductsID.Count == 0) { GetClientIDS(); }
+            if (ProductsID.Count == count) { return ProductsID; }
+            //Thread.Sleep(300);
+            return ProductsID;
+            //Thread.Sleep(30);
+
 
         }
 
         public List<string> ReturnListOfProductIDs()
         {
             GetClientIDS();
-
+            MessageBox.Show(ProductIDs1.Count.ToString());
             return ProductIDs1;
         }
 
@@ -64,13 +95,13 @@ namespace Alexandra_s_Trove.Resources
                 }
             }
 
-            for (int i = 0; i < ProductIDs.Count; i++)
-            {
-                StoreIDs(ProductIDs[i]);
-                
-            }
+            MessageBox.Show("d");
 
-        }
+            GetProductIDs(ProductIDs.Count);
+                
+            
+
+        }*/
 
         public async static void AddIDsToList()
         {
