@@ -102,6 +102,7 @@ namespace Alexandra_s_Trove.Resources
             
 
         }*/
+        //Task<List<string>> -- add function AsyncStuff().Result;
 
         public async static void AddIDsToList()
         {
