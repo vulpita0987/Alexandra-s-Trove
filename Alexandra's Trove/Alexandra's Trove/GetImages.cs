@@ -145,77 +145,78 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        public Dictionary<int, Image> GetImageNamesDictionaryStrings()
+        
+        public Dictionary<string, Image> GetImageNamesDictionaryStrings()
         {
 
 
 
-            Dictionary<int, Image> Images = new Dictionary<int, Image>();
+            Dictionary<string, Image> Images = new Dictionary<string, Image>();
 
-            Images.Add(1, Resource.Blueberries1);
-            Images.Add(1, Resource.Blueberries2);
-            Images.Add(1, Resource.Blueberries3);
-            Images.Add(1, Resource.Blueberries4);
+            Images.Add("1a", Resource.Blueberries1);
+            Images.Add("1b", Resource.Blueberries2);
+            Images.Add("1c", Resource.Blueberries3);
+            Images.Add("1d", Resource.Blueberries4);
 
-            Images.Add(2, Resource.Cherries3);
-            Images.Add(2, Resource.Cherries4);
-            Images.Add(2, Resource.Cherries3);
-            Images.Add(2, Resource.Cherries4);
+            Images.Add("2a", Resource.Cherries3);
+            Images.Add("2b", Resource.Cherries4);
+            Images.Add("2c", Resource.Cherries3);
+            Images.Add("2d", Resource.Cherries4);
 
-            Images.Add(9, Resource.Cucumber1);
-            Images.Add(9, Resource.Cucumber2);
-            Images.Add(9, Resource.Cucumber3);
-            Images.Add(9, Resource.Cucumber4);
+            Images.Add("9a", Resource.Cucumber1);
+            Images.Add("9b", Resource.Cucumber2);
+            Images.Add("9c", Resource.Cucumber3);
+            Images.Add("9d", Resource.Cucumber4);
 
-            Images.Add(13, Resource.DarkChYo1);
-            Images.Add(13, Resource.DarkChYo2);
-            Images.Add(13, Resource.DarkChYo3);
-            Images.Add(13, Resource.DarkChYo4);
+            Images.Add("13a", Resource.DarkChYo1);
+            Images.Add("13b", Resource.DarkChYo2);
+            Images.Add("13c", Resource.DarkChYo3);
+            Images.Add("13d", Resource.DarkChYo4);
 
-            Images.Add(3, Resource.FlatPeaches1);
-            Images.Add(3, Resource.FlatPeaches2);
-            Images.Add(3, Resource.FlatPeaches3);
-            Images.Add(3, Resource.FlatPeaches4);
+            Images.Add("3a", Resource.FlatPeaches1);
+            Images.Add("3b", Resource.FlatPeaches2);
+            Images.Add("3c", Resource.FlatPeaches3);
+            Images.Add("3d", Resource.FlatPeaches4);
 
-            Images.Add(10, Resource.Jalapenoes1);
-            Images.Add(10, Resource.Jalapenoes2);
-            Images.Add(10, Resource.Jalapenoes3);
-            Images.Add(10, Resource.Jalapenoes4);
+            Images.Add("10a", Resource.Jalapenoes1);
+            Images.Add("10b", Resource.Jalapenoes2);
+            Images.Add("10c", Resource.Jalapenoes3);
+            Images.Add("10d", Resource.Jalapenoes4);
 
-            Images.Add(8, Resource.NectarineTart1);
-            Images.Add(8, Resource.NectarineTart2);
-            Images.Add(8, Resource.NectarineTart3);
-            Images.Add(8, Resource.NectarineTart4);
+            Images.Add("8a", Resource.NectarineTart1);
+            Images.Add("8b", Resource.NectarineTart2);
+            Images.Add("8c", Resource.NectarineTart3);
+            Images.Add("8d", Resource.NectarineTart4);
 
-            Images.Add(4, Resource.Peaches1);
-            Images.Add(4, Resource.Peaches2);
-            Images.Add(4, Resource.Peaches3);
-            Images.Add(4, Resource.Peaches4);
+            Images.Add("4a", Resource.Peaches1);
+            Images.Add("4b", Resource.Peaches2);
+            Images.Add("4c", Resource.Peaches3);
+            Images.Add("4d", Resource.Peaches4);
 
-            Images.Add(5, Resource.Peas1);
-            Images.Add(5, Resource.Peas2);
-            Images.Add(5, Resource.Peas3);
-            Images.Add(5, Resource.Peas4);
+            Images.Add("5a", Resource.Peas1);
+            Images.Add("5b", Resource.Peas2);
+            Images.Add("5c", Resource.Peas3);
+            Images.Add("5d", Resource.Peas4);
 
-            Images.Add(6, Resource.Raspberries1);
-            Images.Add(6, Resource.Raspberries2);
-            Images.Add(6, Resource.Raspberries3);
-            Images.Add(6, Resource.Raspberries4);
+            Images.Add("6a", Resource.Raspberries1);
+            Images.Add("6b", Resource.Raspberries2);
+            Images.Add("6c", Resource.Raspberries3);
+            Images.Add("6d", Resource.Raspberries4);
 
-            Images.Add(7, Resource.RedApple1);
-            Images.Add(7, Resource.RedApple2);
-            Images.Add(7, Resource.RedApple3);
-            Images.Add(7, Resource.RedApple4);
+            Images.Add("7a", Resource.RedApple1);
+            Images.Add("7b", Resource.RedApple2);
+            Images.Add("7c", Resource.RedApple3);
+            Images.Add("7d", Resource.RedApple4);
 
-            Images.Add(11, Resource.SpringOnions1);
-            Images.Add(11, Resource.SpringOnions2);
-            Images.Add(11, Resource.SpringOnions3);
-            Images.Add(11, Resource.SpringOnions4);
+            Images.Add("11a", Resource.SpringOnions1);
+            Images.Add("11b", Resource.SpringOnions2);
+            Images.Add("11c", Resource.SpringOnions3);
+            Images.Add("11d", Resource.SpringOnions4);
 
-            Images.Add(12, Resource.Tomatoes1);
-            Images.Add(12, Resource.Tomatoes2);
-            Images.Add(12, Resource.Tomatoes3);
-            Images.Add(12, Resource.Tomatoes4);
+            Images.Add("12a", Resource.Tomatoes1);
+            Images.Add("12b", Resource.Tomatoes2);
+            Images.Add("12c", Resource.Tomatoes3);
+            Images.Add("12d", Resource.Tomatoes4);
 
             return Images;
 

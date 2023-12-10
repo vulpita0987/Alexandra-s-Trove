@@ -71,7 +71,6 @@
             this.txtPassword.Size = new System.Drawing.Size(283, 31);
             this.txtPassword.TabIndex = 33;
             this.txtPassword.Text = "Password";
-            
             this.txtPassword.MouseEnter += new System.EventHandler(this.txtPassword_MouseEnter);
             this.txtPassword.MouseLeave += new System.EventHandler(this.txtPassword_MouseLeave);
             // 
@@ -265,6 +264,7 @@
             this.Controls.Add(this.picFiller);
             this.Name = "SignInPage";
             this.Text = "Sign In Page";
+            this.Load += new System.EventHandler(this.SignInPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picMainBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBottomLine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picAlex)).EndInit();

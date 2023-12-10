@@ -19,7 +19,7 @@ namespace Alexandra_s_Trove.Resources
 {
     public class DatabaseHandler
     {
-       
+
         public static void Example()
         {
             //Debug.WriteLine("Hello World");
@@ -104,6 +104,10 @@ namespace Alexandra_s_Trove.Resources
         }*/
         //Task<List<string>> -- add function AsyncStuff().Result;
 
+
+
+
+
         public async static void AddIDsToList()
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
@@ -179,10 +183,10 @@ namespace Alexandra_s_Trove.Resources
                 EmailAddress = ClientEmailAddress
             };
             await Coll.InsertOneAsync(NewClient);
-  
+
         }
-       
-        public async static void DeleteClient (string ClientIDForDeletion) 
+
+        public async static void DeleteClient(string ClientIDForDeletion)
         {
 
             List<string> ClientID = new List<string>();
@@ -224,7 +228,7 @@ namespace Alexandra_s_Trove.Resources
             }
 
         }
-        public async static void UpdateClientName(string ClientIDForUpdate, string newName) 
+        public async static void UpdateClientName(string ClientIDForUpdate, string newName)
         {
             List<string> ClientIDs = new List<string>();
 
@@ -372,7 +376,7 @@ namespace Alexandra_s_Trove.Resources
 
             }
         }
-        public async static void UpdateClientAddress(string ClientIDForUpdate, string newAddress) 
+        public async static void UpdateClientAddress(string ClientIDForUpdate, string newAddress)
         {
             List<string> ClientIDs = new List<string>();
 
@@ -420,7 +424,7 @@ namespace Alexandra_s_Trove.Resources
 
             }
         }
-        public async static void UpdateClientPhoneNumber(string ClientIDForUpdate, string newPhoneNymber) 
+        public async static void UpdateClientPhoneNumber(string ClientIDForUpdate, string newPhoneNymber)
         {
             List<string> ClientIDs = new List<string>();
 
@@ -470,7 +474,7 @@ namespace Alexandra_s_Trove.Resources
 
 
         }
-        public async static void UpdateClientPassword(string ClientIDForUpdate, string newPassword) 
+        public async static void UpdateClientPassword(string ClientIDForUpdate, string newPassword)
         {
 
             newPassword = EncryptDecrypt.Encrypt(newPassword);
@@ -521,7 +525,7 @@ namespace Alexandra_s_Trove.Resources
 
             }
         }
-        public async static void UpdateClientCardDetails(string ClientIDForUpdate, string newCardDetails) 
+        public async static void UpdateClientCardDetails(string ClientIDForUpdate, string newCardDetails)
         {
 
             newCardDetails = EncryptDecrypt.Encrypt(newCardDetails);
@@ -573,7 +577,7 @@ namespace Alexandra_s_Trove.Resources
             }
 
         }
-      
+
         public async static void GetClient(string ClientIDToGet)//for later use
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
@@ -624,20 +628,20 @@ namespace Alexandra_s_Trove.Resources
 
             for (int i = 0; i < ClientIDs.Count; i++)
             {
-                if (ClientIDs[i] == ClientIDToGet) 
+                if (ClientIDs[i] == ClientIDToGet)
                 {
 
-                     name1 = names[i];
-                     DOB1 = DOBs[i];
-                     address1 = addresses[i];
-                     phoneNumber1 = phoneNumbers[i];
-                     password1 = passwords[i];
-                     creaditCardDetails1 = creaditCardDetailsAll[i];
-                     accountCreationDate1 = accountCreationDates[i];
+                    name1 = names[i];
+                    DOB1 = DOBs[i];
+                    address1 = addresses[i];
+                    phoneNumber1 = phoneNumbers[i];
+                    password1 = passwords[i];
+                    creaditCardDetails1 = creaditCardDetailsAll[i];
+                    accountCreationDate1 = accountCreationDates[i];
                     emailAddress1 = emailAddresses[i];
 
-                     password1 = EncryptDecrypt.Decrypt(password1);
-                     creaditCardDetails1 = EncryptDecrypt.Decrypt(creaditCardDetails1);
+                    password1 = EncryptDecrypt.Decrypt(password1);
+                    creaditCardDetails1 = EncryptDecrypt.Decrypt(creaditCardDetails1);
 
 
                     IDExists = true;
@@ -682,7 +686,7 @@ namespace Alexandra_s_Trove.Resources
 
             DateTime d1 = (DateTime.Now).AddDays(1);
             string date = d1.ToString();
-          
+
             var NewOrder = new Order
             {
                 ID = OrderID,
@@ -692,13 +696,13 @@ namespace Alexandra_s_Trove.Resources
                 DeliveryPrice = OrderDeliveryPrice,
                 DateOrdered = DateTime.Now.ToString("d/M/yyyy"),
                 EstimatedDelivery = date
-               
+
             };
             await Coll.InsertOneAsync(NewOrder);
 
 
         }
-        
+
         public async static void GetOrder(string OrderIDToGet)//for later use
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
@@ -717,14 +721,14 @@ namespace Alexandra_s_Trove.Resources
             List<string> DeliveryPrices = new List<string>();
             List<string> DatesOrdered = new List<string>();
             List<string> EstimatedDeliveries = new List<string>();
-            
+
             string clientID = "";
             string productIDs = "";
             string total = "";
             string deliveryPrice = "";
             string dateOrdered = "";
             string estimatedDelivery = "";
-           
+
 
             foreach (var datas in data.ToList())
             {
@@ -737,7 +741,7 @@ namespace Alexandra_s_Trove.Resources
                     DeliveryPrices.Add(datas.DeliveryPrice);
                     DatesOrdered.Add(datas.DateOrdered);
                     EstimatedDeliveries.Add(datas.EstimatedDelivery);
-                    
+
                 }
             }
 
@@ -754,7 +758,7 @@ namespace Alexandra_s_Trove.Resources
                     deliveryPrice = DeliveryPrices[i];
                     dateOrdered = DatesOrdered[i];
                     estimatedDelivery = EstimatedDeliveries[i];
-                    
+
 
 
                     IDExists = true;
@@ -812,11 +816,11 @@ namespace Alexandra_s_Trove.Resources
             {
                 MessageBox.Show(OrderIDs[i] + "/" + ClientIDs[i] + "/" + ProductsIDs[i] + "/" + Totals[i] + "/" + DeliveryPrices[i] + "/" + DatesOrdered[i] + "/" + EstimatedDeliveries[i]);
             }
-           
+
 
         }
 
-        public async static void InsertNewProduct(string ProductID, string ProductName, 
+        public async static void InsertNewProduct(string ProductID, string ProductName,
             string ProductDescription, string ProductPrice, string ProductSpecification)
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
@@ -839,8 +843,10 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        public async static void GetProduct(string ProductIDToGet)//for later use
+        public async static void GetProduct(string ProductIDToGet)//
         {
+
+            List<string> details = new List<string>();
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
             string CollectionName = "Product";
@@ -855,7 +861,7 @@ namespace Alexandra_s_Trove.Resources
             List<string> Descriptions = new List<string>();
             List<string> Prices = new List<string>();
             List<string> Specifications = new List<string>();
-          
+
             string name = "";
             string description = "";
             string price = "";
@@ -871,7 +877,7 @@ namespace Alexandra_s_Trove.Resources
                     Descriptions.Add(datas.Description);
                     Prices.Add(datas.Price);
                     Specifications.Add(datas.Specifications);
-                    
+
                 }
             }
 
@@ -894,6 +900,8 @@ namespace Alexandra_s_Trove.Resources
             if (IDExists == true)
             {
                 MessageBox.Show(name + "/" + description + "/" + price + "/" + specification);
+
+                
                 //do bunch of stuff
             }
             else
@@ -903,6 +911,8 @@ namespace Alexandra_s_Trove.Resources
             }
 
         }
+        
+
 
         public async static void GetProducts()//for later use
         {

@@ -189,6 +189,9 @@ namespace Alexandra_s_Trove
             Hide();
         }
 
-       
+        private void SignInPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
