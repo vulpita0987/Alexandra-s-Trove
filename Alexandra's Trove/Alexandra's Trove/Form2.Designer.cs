@@ -163,6 +163,7 @@
             this.picCath2Right.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCath2Right.TabIndex = 90;
             this.picCath2Right.TabStop = false;
+            this.picCath2Right.Click += new System.EventHandler(this.picCath2Right_Click);
             // 
             // picCath1Right
             // 
@@ -188,6 +189,7 @@
             this.picCath2Left.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picCath2Left.TabIndex = 88;
             this.picCath2Left.TabStop = false;
+            this.picCath2Left.Click += new System.EventHandler(this.picCath2Left_Click);
             // 
             // picCath1Left
             // 

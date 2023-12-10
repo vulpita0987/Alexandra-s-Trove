@@ -22,6 +22,9 @@ namespace Alexandra_s_Trove
 
         private void ProductPage_Load(object sender, EventArgs e)
         {
+            
+            string clientId = ClientAccountAccess.GetID();
+            if (clientId == "C0") { lblAccount.Text = "Sign In"; }
             detailsInsertion.PerformClick();
 
             //https://www.youtube.com/watch?v=6sTQhmZTiXY
@@ -115,6 +118,7 @@ namespace Alexandra_s_Trove
                 //MessageBox.Show(name + "/" + description + "/" + price + "/" + specification);
                 
                 rtboxDetails.Text = name + "\nPrice: £" + price + "\nDetails:\n" + description + "\n" + specification;
+                lblPrice.Text = price;
                 //do bunch of stuff
             }
             else
@@ -131,16 +135,65 @@ namespace Alexandra_s_Trove
 
         private void picAlex_Click(object sender, EventArgs e)
         {
-            LoggedInPage lip = new LoggedInPage(); lip.Show();
-            //Form.Close();
-            Hide();// rp = new RegisterPage(); rp.Close();#
+            string clientId = ClientAccountAccess.GetID();
+            if (clientId == "C0")
+            {
+                GuestPage lip = new GuestPage(); lip.Show();
+                //Form.Close();
+                Hide();// rp = new RegisterPage(); rp.Close();#
+            }
+            else 
+            {
+                LoggedInPage lip = new LoggedInPage(); lip.Show();
+                //Form.Close();
+                Hide();// rp = new RegisterPage(); rp.Close();#
+            }
+            
         }
 
         private void picTrove_Click(object sender, EventArgs e)
         {
-            LoggedInPage lip = new LoggedInPage(); lip.Show();
-            //Form.Close();
-            Hide();// rp = new RegisterPage(); rp.Close();#
+            string clientId = ClientAccountAccess.GetID();
+            if (clientId == "C0")
+            {
+                GuestPage lip = new GuestPage(); lip.Show();
+                //Form.Close();
+                Hide();// rp = new RegisterPage(); rp.Close();#
+            }
+            else
+            {
+                LoggedInPage lip = new LoggedInPage(); lip.Show();
+                //Form.Close();
+                Hide();// rp = new RegisterPage(); rp.Close();#
+            }
+        }
+
+        private void pboxArrowU_Click(object sender, EventArgs e)
+        {
+            string quantity = lblQuantity.Text;
+            int quantity1 = Int32.Parse(quantity);
+            quantity1 = quantity1 + 1;
+            lblQuantity.Text = quantity1.ToString();
+            double pricePerUnit = Convert.ToDouble(lblPrice.Text);
+            double total = pricePerUnit* quantity1;
+            lblTotal.Text = total.ToString();   
+        }
+
+        private void pboxArrowD_Click(object sender, EventArgs e)
+        {
+            
+            string quantity = lblQuantity.Text;
+            int quantity1 = Int32.Parse(quantity);
+            if (quantity1 > 0) 
+            {
+                quantity1 = quantity1 - 1;
+                lblQuantity.Text = quantity1.ToString();
+            }
+            else { MessageBox.Show("Quantity can not be negative"); }
+            double pricePerUnit = Convert.ToDouble(lblPrice.Text);
+            double total = pricePerUnit * quantity1;
+            lblTotal.Text = total.ToString();
+
         }
     }
 }

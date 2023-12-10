@@ -240,5 +240,23 @@ namespace Alexandra_s_Trove
             //Form.Close();
             Hide();// rp = new RegisterPage(); rp.Close();#
         }
+
+        private void picCath2Left_Click(object sender, EventArgs e)
+        {
+            ProductHandling.SetID("P2");
+            //MessageBox.Show(ProductHandling.GetID());
+            ProductPage pp = new ProductPage(); pp.Show();
+            //Form.Close();
+            Hide();// rp = new RegisterPage(); rp.Close();#
+        }
+
+        private void picCath2Right_Click(object sender, EventArgs e)
+        {
+            ProductHandling.SetID("P7");
+            //MessageBox.Show(ProductHandling.GetID());
+            ProductPage pp = new ProductPage(); pp.Show();
+            //Form.Close();
+            Hide();// rp = new RegisterPage(); rp.Close();#
+        }
     }
 }
