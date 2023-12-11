@@ -27,12 +27,10 @@ namespace Alexandra_s_Trove
             if (clientId == "C0") { lblAccount.Text = "Sign In"; }
             detailsInsertion.PerformClick();
 
+            //how to add scroll bar
             //https://www.youtube.com/watch?v=6sTQhmZTiXY
-            picMainImage.Image = Resource.DarkChYo1;
-            picSmallImage2.Image = Resource.DarkChYo2;
-            picSmallImage3.Image = Resource.DarkChYo3;
-            picSmallImage1.Image = Resource.DarkChYo4;
-            //picMainImage.Image = Resource.DarkChYo2;
+
+            
             
             string productID = ProductHandling.GetID();
             
@@ -151,22 +149,7 @@ namespace Alexandra_s_Trove
             
         }
 
-        private void picTrove_Click(object sender, EventArgs e)
-        {
-            string clientId = ClientAccountAccess.GetID();
-            if (clientId == "C0")
-            {
-                GuestPage lip = new GuestPage(); lip.Show();
-                //Form.Close();
-                Hide();// rp = new RegisterPage(); rp.Close();#
-            }
-            else
-            {
-                LoggedInPage lip = new LoggedInPage(); lip.Show();
-                //Form.Close();
-                Hide();// rp = new RegisterPage(); rp.Close();#
-            }
-        }
+      
 
         private void pboxArrowU_Click(object sender, EventArgs e)
         {
