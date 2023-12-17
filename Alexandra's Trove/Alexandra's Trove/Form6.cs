@@ -26,12 +26,12 @@ namespace Alexandra_s_Trove
             string clientId = ClientAccountAccess.GetID();
             if (clientId == "C0") { lblAccount.Text = "Sign In"; }
             detailsInsertion.PerformClick();
-
+            btnReviewsInsert.PerformClick();
             //how to add scroll bar
             //https://www.youtube.com/watch?v=6sTQhmZTiXY
 
-            
-            
+
+
             string productID = ProductHandling.GetID();
             
             productID = productID.Substring(1);
@@ -177,6 +177,225 @@ namespace Alexandra_s_Trove
             double total = pricePerUnit * quantity1;
             lblTotal.Text = total.ToString();
 
+        }
+
+       
+
+        private async void btnReviewsInsert_Click(object sender, EventArgs e)
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Review";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Review>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            List<string> ReviewIDs = new List<string>();
+            List<string> ClientIDs = new List<string>();
+            List<string> ProductIDs = new List<string>();
+            List<string> NoOfStartsAll = new List<string>();
+            List<string> DescriptionAll = new List<string>();
+            List<string> Dates = new List<string>();
+            List<string> Times = new List<string>();
+            List<string> Nicknames = new List<string>();
+
+
+            string productID = ProductHandling.GetID();
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    if(datas.ProductID == productID)
+                    {
+                        ReviewIDs.Add(datas.ID);
+                        ClientIDs.Add(datas.ClientID);
+                        ProductIDs.Add(datas.ProductID);
+                        NoOfStartsAll.Add(datas.NoOfStars);
+                        DescriptionAll.Add(datas.Description);
+                        Dates.Add(datas.Date);
+                        Times.Add(datas.Time);
+                        Nicknames.Add(datas.ChosenNickname);
+                    }
+                    
+
+                }
+            }
+
+            if(ClientIDs.Count > 0) 
+            {
+                lblDate.Text = "Date: " + Dates[0];
+                lblTime.Text = "Time: " + Times[0];
+                lblCName.Text = "Review left by: " + Nicknames[0];
+                lblNoOfStars.Text = "Number of Stars: " + NoOfStartsAll[0] + " (out of 5)";
+                richTBoxComment.Text = "Comment:" + DescriptionAll[0];
+                lblReviewID.Text = ReviewIDs[0];
+            }
+            else 
+            {
+                lblReviews.Text = "There are no reviews to display yet";
+
+            }
+
+
+        }
+
+        private async void pboxArrowRight_Click(object sender, EventArgs e)
+        {
+
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Review";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Review>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            List<string> ReviewIDs = new List<string>();
+            List<string> ClientIDs = new List<string>();
+            List<string> ProductIDs = new List<string>();
+            List<string> NoOfStartsAll = new List<string>();
+            List<string> DescriptionAll = new List<string>();
+            List<string> Dates = new List<string>();
+            List<string> Times = new List<string>();
+            List<string> Nicknames = new List<string>();
+
+
+            string productID = ProductHandling.GetID();
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    if (datas.ProductID == productID)
+                    {
+                        ReviewIDs.Add(datas.ID);
+                        ClientIDs.Add(datas.ClientID);
+                        ProductIDs.Add(datas.ProductID);
+                        NoOfStartsAll.Add(datas.NoOfStars);
+                        DescriptionAll.Add(datas.Description);
+                        Dates.Add(datas.Date);
+                        Times.Add(datas.Time);
+                        Nicknames.Add(datas.ChosenNickname);
+                    }
+
+
+                }
+            }
+
+            if (ClientIDs.Count > 0)
+            {
+                for(int i = 0; i < ClientIDs.Count; i++) 
+                {
+                    if (lblReviewID.Text == ReviewIDs[i]) 
+                    {
+                        if(lblReviewID.Text == ReviewIDs[(ReviewIDs.Count)-1])
+                        {
+                            lblReviews.Text = "Reviews";
+                        }
+                        else 
+                        {
+                            lblDate.Text = "Date: " + Dates[i + 1];
+                            lblTime.Text = "Time: " + Times[i + 1];
+                            lblCName.Text = "Review left by: " + Nicknames[i + 1];
+                            lblNoOfStars.Text = "Number of Stars: " + NoOfStartsAll[i + 1] + " (out of 5)";
+                            richTBoxComment.Text = "Comment:" + DescriptionAll[i + 1];
+                            lblReviewID.Text = ReviewIDs[i + 1];
+                            break;
+                        }
+                        
+                    }
+                    
+                }
+                
+
+                
+            }
+            else
+            {
+                lblReviews.Text = "There are no reviews to display yet";
+
+            }
+        }
+
+        private async void pboxArrowLeft_Click(object sender, EventArgs e)
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Review";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Review>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            List<string> ReviewIDs = new List<string>();
+            List<string> ClientIDs = new List<string>();
+            List<string> ProductIDs = new List<string>();
+            List<string> NoOfStartsAll = new List<string>();
+            List<string> DescriptionAll = new List<string>();
+            List<string> Dates = new List<string>();
+            List<string> Times = new List<string>();
+            List<string> Nicknames = new List<string>();
+
+
+            string productID = ProductHandling.GetID();
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    if (datas.ProductID == productID)
+                    {
+                        ReviewIDs.Add(datas.ID);
+                        ClientIDs.Add(datas.ClientID);
+                        ProductIDs.Add(datas.ProductID);
+                        NoOfStartsAll.Add(datas.NoOfStars);
+                        DescriptionAll.Add(datas.Description);
+                        Dates.Add(datas.Date);
+                        Times.Add(datas.Time);
+                        Nicknames.Add(datas.ChosenNickname);
+                    }
+
+
+                }
+            }
+
+            if (ClientIDs.Count > 0)
+            {
+                for (int i = 0; i < ClientIDs.Count; i++)
+                {
+                    if (lblReviewID.Text == ReviewIDs[i])
+                    {
+                        if (lblReviewID.Text == ReviewIDs[0])
+                        {
+                            lblReviews.Text = "Reviews";
+                        }
+                        else
+                        {
+                            lblDate.Text = "Date: " + Dates[i - 1];
+                            lblTime.Text = "Time: " + Times[i - 1];
+                            lblCName.Text = "Review left by: " + Nicknames[i - 1];
+                            lblNoOfStars.Text = "Number of Stars: " + NoOfStartsAll[i - 1] + " (out of 5)";
+                            richTBoxComment.Text = "Comment:" + DescriptionAll[i - 1];
+                            lblReviewID.Text = ReviewIDs[i - 1];
+                        }
+
+                    }
+
+                }
+
+
+
+            }
+            else
+            {
+                lblReviews.Text = "There are no reviews to display yet";
+
+            }
         }
     }
 }

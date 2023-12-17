@@ -28,8 +28,9 @@ namespace Alexandra_s_Trove
             picCath1Right.Image = Resource.NectarineTart4;
             picCath2Left.Image = Resource.Cherries4;
             picCath2Right.Image = Resource.RedApple3;
+            
             /*string loggedInUser = ClientAccountAccess.GetID();
-
+           
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
             string CollectionName = "Order";

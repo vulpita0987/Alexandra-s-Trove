@@ -954,7 +954,7 @@ namespace Alexandra_s_Trove.Resources
 
 
         public async static void InsertNewReview(string ReviewClientID, string ReviewProductID, 
-            string ReviewNoOfStars, string ReviewDescription, string ReviewDate, string ReviewTime)
+            string ReviewNoOfStars, string ReviewDescription, string ReviewDate, string ReviewTime, string Nickname)
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -984,7 +984,8 @@ namespace Alexandra_s_Trove.Resources
                 NoOfStars = ReviewNoOfStars,
                 Description = ReviewDescription,
                 Date = DateTime.Now.ToString("d/M/yyyy"),
-                Time = DateTime.Now.ToString("h:mm:ss tt")
+                Time = DateTime.Now.ToString("h:mm:ss tt"),
+                ChosenNickname = Nickname
 
             };
             await Coll.InsertOneAsync(NewReview);
@@ -1133,6 +1134,56 @@ namespace Alexandra_s_Trove.Resources
             }
 
         }
+
+        public async static void UpdateReviewNickname(string ReviewIDForUpdate, string newNickname)
+        {
+            List<string> ReviewsID = new List<string>();
+
+
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Review";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Review>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ReviewsID.Add(datas.ID);
+                }
+            }
+
+            bool IDExists = false;
+
+            for (int i = 0; i < ReviewsID.Count; i++)
+            {
+                if (ReviewsID[i] == ReviewIDForUpdate) { IDExists = true; }
+
+            }
+            if (IDExists == true)
+            {
+
+                var filter = Builders<Review>
+                   .Filter
+                   .Eq(a => a.ID, ReviewIDForUpdate);
+
+                var update = Builders<Review>
+                     .Update
+                     .Set(a => a.ChosenNickname, newNickname);
+
+                var result = Coll.UpdateOne(filter, update);
+            }
+            else
+            {
+                MessageBox.Show("ID " + ReviewIDForUpdate + " does not exist");
+
+            }
+
+        }
         public async static void UpdateReviewDate(string ReviewIDForUpdate) 
         {
             List<string> ReviewsID = new List<string>();
@@ -1248,6 +1299,7 @@ namespace Alexandra_s_Trove.Resources
             List<string> DescriptionAll = new List<string>();
             List<string> Dates = new List<string>();
             List<string> Times = new List<string>();
+            List<string> Nicknames = new List<string>();
 
             foreach (var datas in data.ToList())
             {
@@ -1260,15 +1312,16 @@ namespace Alexandra_s_Trove.Resources
                     DescriptionAll.Add(datas.Description);
                     Dates.Add(datas.Date);
                     Times.Add(datas.Time);
+                    Nicknames.Add(datas.ChosenNickname);
 
                 }
             }
 
-            for (int i = 0; i < ReviewIDs.Count; i++)
+            /*for (int i = 0; i < ReviewIDs.Count; i++)
             {
                 MessageBox.Show(ReviewIDs[i] + "/" + ClientIDs[i] + "/" + ProductIDs[i] + "/" + NoOfStartsAll[i] + "/" + DescriptionAll[i] + "/" + Dates[i] + "/" + Times[i]);
-            }
-
+            }*/
+           
 
         }
 
@@ -1364,9 +1417,10 @@ namespace Alexandra_s_Trove.Resources
         public string Description { get; set; }
         public string Date { get; set; }
         public string Time { get; set; }
+        public string ChosenNickname { get; set; }
 
 
-    }
+        }
 
     [BsonIgnoreExtraElements]
     public class Product

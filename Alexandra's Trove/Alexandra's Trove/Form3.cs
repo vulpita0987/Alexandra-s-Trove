@@ -89,8 +89,8 @@ namespace Alexandra_s_Trove
         private void btnReviewInsert_Click(object sender, EventArgs e)
         {
 
-            DatabaseHandler.InsertNewReview(txtReviewClientID.Text, txtReviewProductID.Text, txtReviewNoOfStars.Text,
-            txtReviewDescription.Text, txtReviewDate.Text, txtReviewTime.Text);
+            //DatabaseHandler.InsertNewReview(txtReviewClientID.Text, txtReviewProductID.Text, txtReviewNoOfStars.Text,
+            //txtReviewDescription.Text, txtReviewDate.Text, txtReviewTime.Text);
 
             txtReviewID.Text = "";
             txtReviewClientID.Text = "";
