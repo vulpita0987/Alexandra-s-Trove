@@ -128,7 +128,7 @@
             // 
             this.picBottomLine.Image = ((System.Drawing.Image)(resources.GetObject("picBottomLine.Image")));
             this.picBottomLine.Location = new System.Drawing.Point(-3, 579);
-            this.picBottomLine.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBottomLine.Margin = new System.Windows.Forms.Padding(2);
             this.picBottomLine.Name = "picBottomLine";
             this.picBottomLine.Size = new System.Drawing.Size(891, 35);
             this.picBottomLine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -139,7 +139,7 @@
             // 
             this.picAlex.Image = ((System.Drawing.Image)(resources.GetObject("picAlex.Image")));
             this.picAlex.Location = new System.Drawing.Point(-3, 9);
-            this.picAlex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picAlex.Margin = new System.Windows.Forms.Padding(2);
             this.picAlex.Name = "picAlex";
             this.picAlex.Size = new System.Drawing.Size(146, 30);
             this.picAlex.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -150,7 +150,7 @@
             // 
             this.picTrove.Image = ((System.Drawing.Image)(resources.GetObject("picTrove.Image")));
             this.picTrove.Location = new System.Drawing.Point(128, 9);
-            this.picTrove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picTrove.Margin = new System.Windows.Forms.Padding(2);
             this.picTrove.Name = "picTrove";
             this.picTrove.Size = new System.Drawing.Size(152, 32);
             this.picTrove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -161,7 +161,7 @@
             // 
             this.picFiller.Image = ((System.Drawing.Image)(resources.GetObject("picFiller.Image")));
             this.picFiller.Location = new System.Drawing.Point(-3, -1);
-            this.picFiller.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picFiller.Margin = new System.Windows.Forms.Padding(2);
             this.picFiller.Name = "picFiller";
             this.picFiller.Size = new System.Drawing.Size(891, 55);
             this.picFiller.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -172,7 +172,7 @@
             // 
             this.picSearchLoop.Image = ((System.Drawing.Image)(resources.GetObject("picSearchLoop.Image")));
             this.picSearchLoop.Location = new System.Drawing.Point(504, 12);
-            this.picSearchLoop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picSearchLoop.Margin = new System.Windows.Forms.Padding(2);
             this.picSearchLoop.Name = "picSearchLoop";
             this.picSearchLoop.Size = new System.Drawing.Size(37, 29);
             this.picSearchLoop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -183,12 +183,13 @@
             // 
             this.picBasket.Image = ((System.Drawing.Image)(resources.GetObject("picBasket.Image")));
             this.picBasket.Location = new System.Drawing.Point(830, 9);
-            this.picBasket.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBasket.Margin = new System.Windows.Forms.Padding(2);
             this.picBasket.Name = "picBasket";
             this.picBasket.Size = new System.Drawing.Size(43, 36);
             this.picBasket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBasket.TabIndex = 31;
             this.picBasket.TabStop = false;
+            this.picBasket.Click += new System.EventHandler(this.picBasket_Click);
             // 
             // lblSignIn
             // 
@@ -236,7 +237,7 @@
             // 
             this.picArrowDown.Image = ((System.Drawing.Image)(resources.GetObject("picArrowDown.Image")));
             this.picArrowDown.Location = new System.Drawing.Point(570, 27);
-            this.picArrowDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picArrowDown.Margin = new System.Windows.Forms.Padding(2);
             this.picArrowDown.Name = "picArrowDown";
             this.picArrowDown.Size = new System.Drawing.Size(21, 14);
             this.picArrowDown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -248,7 +249,7 @@
             this.picImage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picImage1.Image = ((System.Drawing.Image)(resources.GetObject("picImage1.Image")));
             this.picImage1.Location = new System.Drawing.Point(68, 134);
-            this.picImage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picImage1.Margin = new System.Windows.Forms.Padding(2);
             this.picImage1.Name = "picImage1";
             this.picImage1.Size = new System.Drawing.Size(247, 156);
             this.picImage1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -260,7 +261,7 @@
             this.picImage2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picImage2.Image = ((System.Drawing.Image)(resources.GetObject("picImage2.Image")));
             this.picImage2.Location = new System.Drawing.Point(570, 134);
-            this.picImage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picImage2.Margin = new System.Windows.Forms.Padding(2);
             this.picImage2.Name = "picImage2";
             this.picImage2.Size = new System.Drawing.Size(247, 156);
             this.picImage2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -272,7 +273,7 @@
             this.picImage3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picImage3.Image = ((System.Drawing.Image)(resources.GetObject("picImage3.Image")));
             this.picImage3.Location = new System.Drawing.Point(319, 134);
-            this.picImage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picImage3.Margin = new System.Windows.Forms.Padding(2);
             this.picImage3.Name = "picImage3";
             this.picImage3.Size = new System.Drawing.Size(247, 156);
             this.picImage3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -283,7 +284,7 @@
             // 
             this.picPicturesBackground.Image = ((System.Drawing.Image)(resources.GetObject("picPicturesBackground.Image")));
             this.picPicturesBackground.Location = new System.Drawing.Point(14, 112);
-            this.picPicturesBackground.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picPicturesBackground.Margin = new System.Windows.Forms.Padding(2);
             this.picPicturesBackground.Name = "picPicturesBackground";
             this.picPicturesBackground.Size = new System.Drawing.Size(862, 205);
             this.picPicturesBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -294,7 +295,7 @@
             // 
             this.picArrowLeft.Image = ((System.Drawing.Image)(resources.GetObject("picArrowLeft.Image")));
             this.picArrowLeft.Location = new System.Drawing.Point(17, 167);
-            this.picArrowLeft.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picArrowLeft.Margin = new System.Windows.Forms.Padding(2);
             this.picArrowLeft.Name = "picArrowLeft";
             this.picArrowLeft.Size = new System.Drawing.Size(51, 93);
             this.picArrowLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -306,7 +307,7 @@
             // 
             this.picArrowRight.Image = ((System.Drawing.Image)(resources.GetObject("picArrowRight.Image")));
             this.picArrowRight.Location = new System.Drawing.Point(816, 167);
-            this.picArrowRight.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picArrowRight.Margin = new System.Windows.Forms.Padding(2);
             this.picArrowRight.Name = "picArrowRight";
             this.picArrowRight.Size = new System.Drawing.Size(51, 93);
             this.picArrowRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -318,7 +319,7 @@
             // 
             this.picGreyRibbon.Image = ((System.Drawing.Image)(resources.GetObject("picGreyRibbon.Image")));
             this.picGreyRibbon.Location = new System.Drawing.Point(-3, 49);
-            this.picGreyRibbon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picGreyRibbon.Margin = new System.Windows.Forms.Padding(2);
             this.picGreyRibbon.Name = "picGreyRibbon";
             this.picGreyRibbon.Size = new System.Drawing.Size(897, 33);
             this.picGreyRibbon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -329,7 +330,7 @@
             // 
             this.picCathegoryLeft.Image = ((System.Drawing.Image)(resources.GetObject("picCathegoryLeft.Image")));
             this.picCathegoryLeft.Location = new System.Drawing.Point(14, 343);
-            this.picCathegoryLeft.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picCathegoryLeft.Margin = new System.Windows.Forms.Padding(2);
             this.picCathegoryLeft.Name = "picCathegoryLeft";
             this.picCathegoryLeft.Size = new System.Drawing.Size(421, 215);
             this.picCathegoryLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -340,7 +341,7 @@
             // 
             this.picCathegoryRight.Image = ((System.Drawing.Image)(resources.GetObject("picCathegoryRight.Image")));
             this.picCathegoryRight.Location = new System.Drawing.Point(449, 343);
-            this.picCathegoryRight.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picCathegoryRight.Margin = new System.Windows.Forms.Padding(2);
             this.picCathegoryRight.Name = "picCathegoryRight";
             this.picCathegoryRight.Size = new System.Drawing.Size(424, 215);
             this.picCathegoryRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -418,7 +419,7 @@
             this.picCath1Left.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picCath1Left.Image = ((System.Drawing.Image)(resources.GetObject("picCath1Left.Image")));
             this.picCath1Left.Location = new System.Drawing.Point(45, 401);
-            this.picCath1Left.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picCath1Left.Margin = new System.Windows.Forms.Padding(2);
             this.picCath1Left.Name = "picCath1Left";
             this.picCath1Left.Size = new System.Drawing.Size(164, 113);
             this.picCath1Left.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -431,7 +432,7 @@
             this.picCath2Left.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picCath2Left.Image = ((System.Drawing.Image)(resources.GetObject("picCath2Left.Image")));
             this.picCath2Left.Location = new System.Drawing.Point(481, 401);
-            this.picCath2Left.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picCath2Left.Margin = new System.Windows.Forms.Padding(2);
             this.picCath2Left.Name = "picCath2Left";
             this.picCath2Left.Size = new System.Drawing.Size(164, 113);
             this.picCath2Left.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -444,7 +445,7 @@
             this.picCath1Right.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picCath1Right.Image = ((System.Drawing.Image)(resources.GetObject("picCath1Right.Image")));
             this.picCath1Right.Location = new System.Drawing.Point(239, 401);
-            this.picCath1Right.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picCath1Right.Margin = new System.Windows.Forms.Padding(2);
             this.picCath1Right.Name = "picCath1Right";
             this.picCath1Right.Size = new System.Drawing.Size(164, 113);
             this.picCath1Right.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -457,7 +458,7 @@
             this.picCath2Right.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picCath2Right.Image = ((System.Drawing.Image)(resources.GetObject("picCath2Right.Image")));
             this.picCath2Right.Location = new System.Drawing.Point(676, 401);
-            this.picCath2Right.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picCath2Right.Margin = new System.Windows.Forms.Padding(2);
             this.picCath2Right.Name = "picCath2Right";
             this.picCath2Right.Size = new System.Drawing.Size(164, 113);
             this.picCath2Right.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

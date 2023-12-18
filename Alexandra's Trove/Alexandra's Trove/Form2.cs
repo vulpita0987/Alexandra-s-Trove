@@ -21,7 +21,7 @@ namespace Alexandra_s_Trove
             InitializeComponent();
         }
 
-        private async void LoggedInPage_Load(object sender, EventArgs e)
+        private void LoggedInPage_Load(object sender, EventArgs e)
         {
             AdjustPictures();
             picCath1Left.Image = Resource.DarkChYo2;
@@ -258,6 +258,28 @@ namespace Alexandra_s_Trove
             ProductPage pp = new ProductPage(); pp.Show();
             //Form.Close();
             Hide();// rp = new RegisterPage(); rp.Close();#
+        }
+
+        private void lblFeedbackSurvey_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblUserGuide_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picBottomLine_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void picBasket_Click(object sender, EventArgs e)
+        {
+            BasketPage b = new BasketPage(); b.Show();
+
+            Hide();
         }
     }
 }

@@ -394,6 +394,7 @@
             this.picBasket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBasket.TabIndex = 66;
             this.picBasket.TabStop = false;
+            this.picBasket.Click += new System.EventHandler(this.picBasket_Click);
             // 
             // picSearchLoop
             // 
@@ -471,6 +472,7 @@
             this.lblUserGuide.Size = new System.Drawing.Size(75, 16);
             this.lblUserGuide.TabIndex = 30;
             this.lblUserGuide.Text = "User Guide";
+            this.lblUserGuide.Click += new System.EventHandler(this.lblUserGuide_Click);
             // 
             // lblFeedbackSurvey
             // 
@@ -483,6 +485,7 @@
             this.lblFeedbackSurvey.Size = new System.Drawing.Size(114, 16);
             this.lblFeedbackSurvey.TabIndex = 29;
             this.lblFeedbackSurvey.Text = "Feedback Survey";
+            this.lblFeedbackSurvey.Click += new System.EventHandler(this.lblFeedbackSurvey_Click);
             // 
             // lblTermsConditions
             // 
@@ -507,6 +510,7 @@
             this.picBottomLine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBottomLine.TabIndex = 27;
             this.picBottomLine.TabStop = false;
+            this.picBottomLine.Click += new System.EventHandler(this.picBottomLine_Click);
             // 
             // LoggedInPage
             // 

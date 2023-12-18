@@ -372,5 +372,12 @@ namespace Alexandra_s_Trove
             //Form.Close();
             Hide();// rp = new RegisterPage(); rp.Close();#
         }
+
+        private void picBasket_Click(object sender, EventArgs e)
+        {
+            BasketPage b = new BasketPage(); b.Show();
+
+            Hide();
+        }
     }
 }
