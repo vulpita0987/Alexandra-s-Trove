@@ -64,19 +64,19 @@
             this.pboxAddButtonBackground = new System.Windows.Forms.PictureBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.pMain = new System.Windows.Forms.Panel();
+            this.lblAddReview = new System.Windows.Forms.Label();
+            this.richTBoxComment = new System.Windows.Forms.RichTextBox();
+            this.pboxArrowRight = new System.Windows.Forms.PictureBox();
+            this.pboxArrowLeft = new System.Windows.Forms.PictureBox();
+            this.lblDate = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
+            this.lblNoOfStars = new System.Windows.Forms.Label();
+            this.lblCName = new System.Windows.Forms.Label();
             this.lblReviews = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.lblCName = new System.Windows.Forms.Label();
-            this.lblNoOfStars = new System.Windows.Forms.Label();
-            this.lblTime = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.pboxArrowLeft = new System.Windows.Forms.PictureBox();
-            this.pboxArrowRight = new System.Windows.Forms.PictureBox();
-            this.richTBoxComment = new System.Windows.Forms.RichTextBox();
             this.btnReviewsInsert = new System.Windows.Forms.Button();
             this.lblReviewID = new System.Windows.Forms.Label();
-            this.lblAddReview = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picArrowDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBasket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSearchLoop)).BeginInit();
@@ -93,10 +93,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pboxArrowU)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxAddButtonBackground)).BeginInit();
             this.pMain.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxArrowRight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxArrowLeft)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxArrowLeft)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxArrowRight)).BeginInit();
             this.SuspendLayout();
             // 
             // cboxSearchBar
@@ -155,7 +155,7 @@
             // 
             this.picArrowDown.Image = ((System.Drawing.Image)(resources.GetObject("picArrowDown.Image")));
             this.picArrowDown.Location = new System.Drawing.Point(569, 28);
-            this.picArrowDown.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picArrowDown.Margin = new System.Windows.Forms.Padding(2);
             this.picArrowDown.Name = "picArrowDown";
             this.picArrowDown.Size = new System.Drawing.Size(21, 14);
             this.picArrowDown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -199,7 +199,7 @@
             // 
             this.picBasket.Image = ((System.Drawing.Image)(resources.GetObject("picBasket.Image")));
             this.picBasket.Location = new System.Drawing.Point(829, 10);
-            this.picBasket.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBasket.Margin = new System.Windows.Forms.Padding(2);
             this.picBasket.Name = "picBasket";
             this.picBasket.Size = new System.Drawing.Size(43, 36);
             this.picBasket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -210,7 +210,7 @@
             // 
             this.picSearchLoop.Image = ((System.Drawing.Image)(resources.GetObject("picSearchLoop.Image")));
             this.picSearchLoop.Location = new System.Drawing.Point(503, 13);
-            this.picSearchLoop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picSearchLoop.Margin = new System.Windows.Forms.Padding(2);
             this.picSearchLoop.Name = "picSearchLoop";
             this.picSearchLoop.Size = new System.Drawing.Size(37, 29);
             this.picSearchLoop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -221,7 +221,7 @@
             // 
             this.picAlex.Image = ((System.Drawing.Image)(resources.GetObject("picAlex.Image")));
             this.picAlex.Location = new System.Drawing.Point(-5, 10);
-            this.picAlex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picAlex.Margin = new System.Windows.Forms.Padding(2);
             this.picAlex.Name = "picAlex";
             this.picAlex.Size = new System.Drawing.Size(146, 30);
             this.picAlex.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -233,7 +233,7 @@
             // 
             this.picTrove.Image = ((System.Drawing.Image)(resources.GetObject("picTrove.Image")));
             this.picTrove.Location = new System.Drawing.Point(127, 10);
-            this.picTrove.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picTrove.Margin = new System.Windows.Forms.Padding(2);
             this.picTrove.Name = "picTrove";
             this.picTrove.Size = new System.Drawing.Size(152, 32);
             this.picTrove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -245,7 +245,7 @@
             // 
             this.picFiller.Image = ((System.Drawing.Image)(resources.GetObject("picFiller.Image")));
             this.picFiller.Location = new System.Drawing.Point(-5, 0);
-            this.picFiller.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picFiller.Margin = new System.Windows.Forms.Padding(2);
             this.picFiller.Name = "picFiller";
             this.picFiller.Size = new System.Drawing.Size(891, 55);
             this.picFiller.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -256,7 +256,7 @@
             // 
             this.picGreyRibbon.Image = ((System.Drawing.Image)(resources.GetObject("picGreyRibbon.Image")));
             this.picGreyRibbon.Location = new System.Drawing.Point(-5, 50);
-            this.picGreyRibbon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picGreyRibbon.Margin = new System.Windows.Forms.Padding(2);
             this.picGreyRibbon.Name = "picGreyRibbon";
             this.picGreyRibbon.Size = new System.Drawing.Size(897, 33);
             this.picGreyRibbon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -303,7 +303,7 @@
             // 
             this.picBottomLine.Image = ((System.Drawing.Image)(resources.GetObject("picBottomLine.Image")));
             this.picBottomLine.Location = new System.Drawing.Point(-5, 578);
-            this.picBottomLine.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBottomLine.Margin = new System.Windows.Forms.Padding(2);
             this.picBottomLine.Name = "picBottomLine";
             this.picBottomLine.Size = new System.Drawing.Size(891, 35);
             this.picBottomLine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -407,7 +407,7 @@
             // 
             this.pboxArrowD.Image = ((System.Drawing.Image)(resources.GetObject("pboxArrowD.Image")));
             this.pboxArrowD.Location = new System.Drawing.Point(775, 116);
-            this.pboxArrowD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pboxArrowD.Margin = new System.Windows.Forms.Padding(2);
             this.pboxArrowD.Name = "pboxArrowD";
             this.pboxArrowD.Size = new System.Drawing.Size(23, 21);
             this.pboxArrowD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -419,7 +419,7 @@
             // 
             this.pboxArrowU.Image = ((System.Drawing.Image)(resources.GetObject("pboxArrowU.Image")));
             this.pboxArrowU.Location = new System.Drawing.Point(775, 68);
-            this.pboxArrowU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pboxArrowU.Margin = new System.Windows.Forms.Padding(2);
             this.pboxArrowU.Name = "pboxArrowU";
             this.pboxArrowU.Size = new System.Drawing.Size(23, 20);
             this.pboxArrowU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -453,7 +453,7 @@
             // 
             this.pboxAddButtonBackground.Image = ((System.Drawing.Image)(resources.GetObject("pboxAddButtonBackground.Image")));
             this.pboxAddButtonBackground.Location = new System.Drawing.Point(680, 35);
-            this.pboxAddButtonBackground.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pboxAddButtonBackground.Margin = new System.Windows.Forms.Padding(2);
             this.pboxAddButtonBackground.Name = "pboxAddButtonBackground";
             this.pboxAddButtonBackground.Size = new System.Drawing.Size(165, 262);
             this.pboxAddButtonBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -507,6 +507,96 @@
             this.pMain.Size = new System.Drawing.Size(891, 504);
             this.pMain.TabIndex = 145;
             // 
+            // lblAddReview
+            // 
+            this.lblAddReview.AutoSize = true;
+            this.lblAddReview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddReview.Image = ((System.Drawing.Image)(resources.GetObject("lblAddReview.Image")));
+            this.lblAddReview.Location = new System.Drawing.Point(401, 657);
+            this.lblAddReview.Name = "lblAddReview";
+            this.lblAddReview.Size = new System.Drawing.Size(120, 20);
+            this.lblAddReview.TabIndex = 158;
+            this.lblAddReview.Text = "Add A Review";
+            this.lblAddReview.Click += new System.EventHandler(this.lblAddReview_Click);
+            // 
+            // richTBoxComment
+            // 
+            this.richTBoxComment.Enabled = false;
+            this.richTBoxComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTBoxComment.Location = new System.Drawing.Point(212, 545);
+            this.richTBoxComment.Name = "richTBoxComment";
+            this.richTBoxComment.Size = new System.Drawing.Size(481, 94);
+            this.richTBoxComment.TabIndex = 154;
+            this.richTBoxComment.Text = "Comment";
+            // 
+            // pboxArrowRight
+            // 
+            this.pboxArrowRight.Image = ((System.Drawing.Image)(resources.GetObject("pboxArrowRight.Image")));
+            this.pboxArrowRight.Location = new System.Drawing.Point(776, 477);
+            this.pboxArrowRight.Margin = new System.Windows.Forms.Padding(2);
+            this.pboxArrowRight.Name = "pboxArrowRight";
+            this.pboxArrowRight.Size = new System.Drawing.Size(51, 87);
+            this.pboxArrowRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxArrowRight.TabIndex = 153;
+            this.pboxArrowRight.TabStop = false;
+            this.pboxArrowRight.Click += new System.EventHandler(this.pboxArrowRight_Click);
+            // 
+            // pboxArrowLeft
+            // 
+            this.pboxArrowLeft.Image = ((System.Drawing.Image)(resources.GetObject("pboxArrowLeft.Image")));
+            this.pboxArrowLeft.Location = new System.Drawing.Point(62, 477);
+            this.pboxArrowLeft.Margin = new System.Windows.Forms.Padding(2);
+            this.pboxArrowLeft.Name = "pboxArrowLeft";
+            this.pboxArrowLeft.Size = new System.Drawing.Size(51, 77);
+            this.pboxArrowLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxArrowLeft.TabIndex = 146;
+            this.pboxArrowLeft.TabStop = false;
+            this.pboxArrowLeft.Click += new System.EventHandler(this.pboxArrowLeft_Click);
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Image = ((System.Drawing.Image)(resources.GetObject("lblDate.Image")));
+            this.lblDate.Location = new System.Drawing.Point(208, 428);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(53, 20);
+            this.lblDate.TabIndex = 152;
+            this.lblDate.Text = "Date:";
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Image = ((System.Drawing.Image)(resources.GetObject("lblTime.Image")));
+            this.lblTime.Location = new System.Drawing.Point(424, 428);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(52, 20);
+            this.lblTime.TabIndex = 151;
+            this.lblTime.Text = "Time:";
+            // 
+            // lblNoOfStars
+            // 
+            this.lblNoOfStars.AutoSize = true;
+            this.lblNoOfStars.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoOfStars.Image = ((System.Drawing.Image)(resources.GetObject("lblNoOfStars.Image")));
+            this.lblNoOfStars.Location = new System.Drawing.Point(208, 507);
+            this.lblNoOfStars.Name = "lblNoOfStars";
+            this.lblNoOfStars.Size = new System.Drawing.Size(145, 20);
+            this.lblNoOfStars.TabIndex = 150;
+            this.lblNoOfStars.Text = "Number of Stars:";
+            // 
+            // lblCName
+            // 
+            this.lblCName.AutoSize = true;
+            this.lblCName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCName.Image = ((System.Drawing.Image)(resources.GetObject("lblCName.Image")));
+            this.lblCName.Location = new System.Drawing.Point(208, 467);
+            this.lblCName.Name = "lblCName";
+            this.lblCName.Size = new System.Drawing.Size(142, 20);
+            this.lblCName.TabIndex = 148;
+            this.lblCName.Text = "Customer Name:";
+            // 
             // lblReviews
             // 
             this.lblReviews.AutoSize = true;
@@ -522,7 +612,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(50, 349);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(795, 342);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -532,90 +622,12 @@
             // pictureBox2
             // 
             this.pictureBox2.Location = new System.Drawing.Point(50, 428);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(795, 301);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 147;
             this.pictureBox2.TabStop = false;
-            // 
-            // lblCName
-            // 
-            this.lblCName.AutoSize = true;
-            this.lblCName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCName.Image = ((System.Drawing.Image)(resources.GetObject("lblCName.Image")));
-            this.lblCName.Location = new System.Drawing.Point(208, 467);
-            this.lblCName.Name = "lblCName";
-            this.lblCName.Size = new System.Drawing.Size(142, 20);
-            this.lblCName.TabIndex = 148;
-            this.lblCName.Text = "Customer Name:";
-            // 
-            // lblNoOfStars
-            // 
-            this.lblNoOfStars.AutoSize = true;
-            this.lblNoOfStars.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoOfStars.Image = ((System.Drawing.Image)(resources.GetObject("lblNoOfStars.Image")));
-            this.lblNoOfStars.Location = new System.Drawing.Point(208, 507);
-            this.lblNoOfStars.Name = "lblNoOfStars";
-            this.lblNoOfStars.Size = new System.Drawing.Size(145, 20);
-            this.lblNoOfStars.TabIndex = 150;
-            this.lblNoOfStars.Text = "Number of Stars:";
-            // 
-            // lblTime
-            // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Image = ((System.Drawing.Image)(resources.GetObject("lblTime.Image")));
-            this.lblTime.Location = new System.Drawing.Point(424, 428);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(52, 20);
-            this.lblTime.TabIndex = 151;
-            this.lblTime.Text = "Time:";
-            // 
-            // lblDate
-            // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Image = ((System.Drawing.Image)(resources.GetObject("lblDate.Image")));
-            this.lblDate.Location = new System.Drawing.Point(208, 428);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(53, 20);
-            this.lblDate.TabIndex = 152;
-            this.lblDate.Text = "Date:";
-            // 
-            // pboxArrowLeft
-            // 
-            this.pboxArrowLeft.Image = ((System.Drawing.Image)(resources.GetObject("pboxArrowLeft.Image")));
-            this.pboxArrowLeft.Location = new System.Drawing.Point(62, 477);
-            this.pboxArrowLeft.Margin = new System.Windows.Forms.Padding(2);
-            this.pboxArrowLeft.Name = "pboxArrowLeft";
-            this.pboxArrowLeft.Size = new System.Drawing.Size(51, 77);
-            this.pboxArrowLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pboxArrowLeft.TabIndex = 146;
-            this.pboxArrowLeft.TabStop = false;
-            this.pboxArrowLeft.Click += new System.EventHandler(this.pboxArrowLeft_Click);
-            // 
-            // pboxArrowRight
-            // 
-            this.pboxArrowRight.Image = ((System.Drawing.Image)(resources.GetObject("pboxArrowRight.Image")));
-            this.pboxArrowRight.Location = new System.Drawing.Point(776, 477);
-            this.pboxArrowRight.Margin = new System.Windows.Forms.Padding(2);
-            this.pboxArrowRight.Name = "pboxArrowRight";
-            this.pboxArrowRight.Size = new System.Drawing.Size(51, 87);
-            this.pboxArrowRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pboxArrowRight.TabIndex = 153;
-            this.pboxArrowRight.TabStop = false;
-            this.pboxArrowRight.Click += new System.EventHandler(this.pboxArrowRight_Click);
-            // 
-            // richTBoxComment
-            // 
-            this.richTBoxComment.Enabled = false;
-            this.richTBoxComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTBoxComment.Location = new System.Drawing.Point(212, 545);
-            this.richTBoxComment.Name = "richTBoxComment";
-            this.richTBoxComment.Size = new System.Drawing.Size(481, 94);
-            this.richTBoxComment.TabIndex = 154;
-            this.richTBoxComment.Text = "Comment";
             // 
             // btnReviewsInsert
             // 
@@ -637,17 +649,6 @@
             this.lblReviewID.Size = new System.Drawing.Size(85, 20);
             this.lblReviewID.TabIndex = 156;
             this.lblReviewID.Text = "ReviewID";
-            // 
-            // lblAddReview
-            // 
-            this.lblAddReview.AutoSize = true;
-            this.lblAddReview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddReview.Image = ((System.Drawing.Image)(resources.GetObject("lblAddReview.Image")));
-            this.lblAddReview.Location = new System.Drawing.Point(401, 657);
-            this.lblAddReview.Name = "lblAddReview";
-            this.lblAddReview.Size = new System.Drawing.Size(120, 20);
-            this.lblAddReview.TabIndex = 158;
-            this.lblAddReview.Text = "Add A Review";
             // 
             // ProductPage
             // 
@@ -694,10 +695,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pboxAddButtonBackground)).EndInit();
             this.pMain.ResumeLayout(false);
             this.pMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxArrowRight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxArrowLeft)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxArrowLeft)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pboxArrowRight)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

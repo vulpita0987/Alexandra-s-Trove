@@ -24,7 +24,10 @@ namespace Alexandra_s_Trove
         {
             
             string clientId = ClientAccountAccess.GetID();
-            if (clientId == "C0") { lblAccount.Text = "Sign In"; }
+            if (clientId == "C0") { lblAccount.Text = "Sign In";
+                lblAddReview.Enabled = false;
+                lblAddReview.Text = "Log In To Add A Review";
+            }
             detailsInsertion.PerformClick();
             btnReviewsInsert.PerformClick();
             //how to add scroll bar
@@ -396,6 +399,13 @@ namespace Alexandra_s_Trove
                 lblReviews.Text = "There are no reviews to display yet";
 
             }
+        }
+
+        private void lblAddReview_Click(object sender, EventArgs e)
+        {
+            ReviewPage rp = new ReviewPage(); rp.Show();
+           
+            //Hide();
         }
     }
 }

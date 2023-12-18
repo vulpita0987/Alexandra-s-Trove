@@ -954,7 +954,7 @@ namespace Alexandra_s_Trove.Resources
 
 
         public async static void InsertNewReview(string ReviewClientID, string ReviewProductID, 
-            string ReviewNoOfStars, string ReviewDescription, string ReviewDate, string ReviewTime, string Nickname)
+            string ReviewNoOfStars, string ReviewDescription, string Nickname)
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
