@@ -33,27 +33,8 @@
             this.detailsInsertion = new System.Windows.Forms.Button();
             this.rtboxDetails = new System.Windows.Forms.RichTextBox();
             this.pMain = new System.Windows.Forms.Panel();
-            this.richTBoxComment = new System.Windows.Forms.RichTextBox();
-            this.btnReviewsInsert = new System.Windows.Forms.Button();
-            this.lblDesserts = new System.Windows.Forms.Label();
-            this.lblMore = new System.Windows.Forms.Label();
-            this.lblFruits = new System.Windows.Forms.Label();
-            this.lblVegetables = new System.Windows.Forms.Label();
-            this.picArrowDown = new System.Windows.Forms.PictureBox();
-            this.lblSelectLanguage = new System.Windows.Forms.Label();
-            this.lblOrders = new System.Windows.Forms.Label();
-            this.lblAccount = new System.Windows.Forms.Label();
-            this.picBasket = new System.Windows.Forms.PictureBox();
-            this.picSearchLoop = new System.Windows.Forms.PictureBox();
-            this.picAlex = new System.Windows.Forms.PictureBox();
-            this.picTrove = new System.Windows.Forms.PictureBox();
-            this.picFiller = new System.Windows.Forms.PictureBox();
-            this.picGreyRibbon = new System.Windows.Forms.PictureBox();
-            this.lblUserGuide = new System.Windows.Forms.Label();
-            this.lblFeedbackSurvey = new System.Windows.Forms.Label();
-            this.lblTermsConditions = new System.Windows.Forms.Label();
-            this.picBottomLine = new System.Windows.Forms.PictureBox();
             this.lblAddReview = new System.Windows.Forms.Label();
+            this.richTBoxComment = new System.Windows.Forms.RichTextBox();
             this.pboxArrowRight = new System.Windows.Forms.PictureBox();
             this.pboxArrowLeft = new System.Windows.Forms.PictureBox();
             this.lblDate = new System.Windows.Forms.Label();
@@ -76,16 +57,28 @@
             this.lblPrice = new System.Windows.Forms.Label();
             this.picSmallImage3 = new System.Windows.Forms.PictureBox();
             this.picMainImage = new System.Windows.Forms.PictureBox();
+            this.btnReviewsInsert = new System.Windows.Forms.Button();
             this.lblReviewID = new System.Windows.Forms.Label();
+            this.lblDesserts = new System.Windows.Forms.Label();
+            this.lblMore = new System.Windows.Forms.Label();
+            this.lblFruits = new System.Windows.Forms.Label();
+            this.lblVegetables = new System.Windows.Forms.Label();
+            this.picArrowDown = new System.Windows.Forms.PictureBox();
+            this.lblSelectLanguage = new System.Windows.Forms.Label();
+            this.lblOrders = new System.Windows.Forms.Label();
+            this.lblAccount = new System.Windows.Forms.Label();
+            this.picBasket = new System.Windows.Forms.PictureBox();
+            this.picSearchLoop = new System.Windows.Forms.PictureBox();
+            this.picAlex = new System.Windows.Forms.PictureBox();
+            this.picTrove = new System.Windows.Forms.PictureBox();
+            this.picFiller = new System.Windows.Forms.PictureBox();
+            this.picGreyRibbon = new System.Windows.Forms.PictureBox();
+            this.lblUserGuide = new System.Windows.Forms.Label();
+            this.lblFeedbackSurvey = new System.Windows.Forms.Label();
+            this.lblTermsConditions = new System.Windows.Forms.Label();
+            this.picBottomLine = new System.Windows.Forms.PictureBox();
+            this.lblName = new System.Windows.Forms.Label();
             this.pMain.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picArrowDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBasket)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSearchLoop)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAlex)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTrove)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFiller)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGreyRibbon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBottomLine)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxArrowRight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxArrowLeft)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -97,6 +90,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.picSmallImage2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSmallImage3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMainImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picArrowDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBasket)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSearchLoop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAlex)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTrove)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFiller)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGreyRibbon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBottomLine)).BeginInit();
             this.SuspendLayout();
             // 
             // cboxSearchBar
@@ -163,6 +164,18 @@
             this.pMain.Size = new System.Drawing.Size(891, 504);
             this.pMain.TabIndex = 145;
             // 
+            // lblAddReview
+            // 
+            this.lblAddReview.AutoSize = true;
+            this.lblAddReview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddReview.Image = ((System.Drawing.Image)(resources.GetObject("lblAddReview.Image")));
+            this.lblAddReview.Location = new System.Drawing.Point(401, 657);
+            this.lblAddReview.Name = "lblAddReview";
+            this.lblAddReview.Size = new System.Drawing.Size(120, 20);
+            this.lblAddReview.TabIndex = 158;
+            this.lblAddReview.Text = "Add A Review";
+            this.lblAddReview.Click += new System.EventHandler(this.lblAddReview_Click);
+            // 
             // richTBoxComment
             // 
             this.richTBoxComment.Enabled = false;
@@ -173,6 +186,248 @@
             this.richTBoxComment.TabIndex = 154;
             this.richTBoxComment.Text = "Comment";
             // 
+            // pboxArrowRight
+            // 
+            this.pboxArrowRight.Image = ((System.Drawing.Image)(resources.GetObject("pboxArrowRight.Image")));
+            this.pboxArrowRight.Location = new System.Drawing.Point(776, 477);
+            this.pboxArrowRight.Margin = new System.Windows.Forms.Padding(2);
+            this.pboxArrowRight.Name = "pboxArrowRight";
+            this.pboxArrowRight.Size = new System.Drawing.Size(51, 87);
+            this.pboxArrowRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxArrowRight.TabIndex = 153;
+            this.pboxArrowRight.TabStop = false;
+            this.pboxArrowRight.Click += new System.EventHandler(this.pboxArrowRight_Click);
+            // 
+            // pboxArrowLeft
+            // 
+            this.pboxArrowLeft.Image = ((System.Drawing.Image)(resources.GetObject("pboxArrowLeft.Image")));
+            this.pboxArrowLeft.Location = new System.Drawing.Point(62, 477);
+            this.pboxArrowLeft.Margin = new System.Windows.Forms.Padding(2);
+            this.pboxArrowLeft.Name = "pboxArrowLeft";
+            this.pboxArrowLeft.Size = new System.Drawing.Size(51, 77);
+            this.pboxArrowLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxArrowLeft.TabIndex = 146;
+            this.pboxArrowLeft.TabStop = false;
+            this.pboxArrowLeft.Click += new System.EventHandler(this.pboxArrowLeft_Click);
+            // 
+            // lblDate
+            // 
+            this.lblDate.AutoSize = true;
+            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.Image = ((System.Drawing.Image)(resources.GetObject("lblDate.Image")));
+            this.lblDate.Location = new System.Drawing.Point(208, 428);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(53, 20);
+            this.lblDate.TabIndex = 152;
+            this.lblDate.Text = "Date:";
+            // 
+            // lblTime
+            // 
+            this.lblTime.AutoSize = true;
+            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime.Image = ((System.Drawing.Image)(resources.GetObject("lblTime.Image")));
+            this.lblTime.Location = new System.Drawing.Point(424, 428);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(52, 20);
+            this.lblTime.TabIndex = 151;
+            this.lblTime.Text = "Time:";
+            // 
+            // lblNoOfStars
+            // 
+            this.lblNoOfStars.AutoSize = true;
+            this.lblNoOfStars.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoOfStars.Image = ((System.Drawing.Image)(resources.GetObject("lblNoOfStars.Image")));
+            this.lblNoOfStars.Location = new System.Drawing.Point(208, 507);
+            this.lblNoOfStars.Name = "lblNoOfStars";
+            this.lblNoOfStars.Size = new System.Drawing.Size(145, 20);
+            this.lblNoOfStars.TabIndex = 150;
+            this.lblNoOfStars.Text = "Number of Stars:";
+            // 
+            // lblCName
+            // 
+            this.lblCName.AutoSize = true;
+            this.lblCName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCName.Image = ((System.Drawing.Image)(resources.GetObject("lblCName.Image")));
+            this.lblCName.Location = new System.Drawing.Point(208, 467);
+            this.lblCName.Name = "lblCName";
+            this.lblCName.Size = new System.Drawing.Size(142, 20);
+            this.lblCName.TabIndex = 148;
+            this.lblCName.Text = "Customer Name:";
+            // 
+            // lblReviews
+            // 
+            this.lblReviews.AutoSize = true;
+            this.lblReviews.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReviews.Image = ((System.Drawing.Image)(resources.GetObject("lblReviews.Image")));
+            this.lblReviews.Location = new System.Drawing.Point(208, 375);
+            this.lblReviews.Name = "lblReviews";
+            this.lblReviews.Size = new System.Drawing.Size(75, 20);
+            this.lblReviews.TabIndex = 146;
+            this.lblReviews.Text = "Reviews";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(50, 349);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(795, 342);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 146;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(50, 428);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(795, 301);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 147;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lblQuantity
+            // 
+            this.lblQuantity.AutoSize = true;
+            this.lblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantity.Image = ((System.Drawing.Image)(resources.GetObject("lblQuantity.Image")));
+            this.lblQuantity.Location = new System.Drawing.Point(778, 90);
+            this.lblQuantity.Name = "lblQuantity";
+            this.lblQuantity.Size = new System.Drawing.Size(20, 24);
+            this.lblQuantity.TabIndex = 143;
+            this.lblQuantity.Text = "0";
+            // 
+            // pboxArrowU
+            // 
+            this.pboxArrowU.Image = ((System.Drawing.Image)(resources.GetObject("pboxArrowU.Image")));
+            this.pboxArrowU.Location = new System.Drawing.Point(775, 68);
+            this.pboxArrowU.Margin = new System.Windows.Forms.Padding(2);
+            this.pboxArrowU.Name = "pboxArrowU";
+            this.pboxArrowU.Size = new System.Drawing.Size(23, 20);
+            this.pboxArrowU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxArrowU.TabIndex = 141;
+            this.pboxArrowU.TabStop = false;
+            this.pboxArrowU.Click += new System.EventHandler(this.pboxArrowU_Click);
+            // 
+            // lblQuantity1
+            // 
+            this.lblQuantity1.AutoSize = true;
+            this.lblQuantity1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuantity1.Image = ((System.Drawing.Image)(resources.GetObject("lblQuantity1.Image")));
+            this.lblQuantity1.Location = new System.Drawing.Point(700, 90);
+            this.lblQuantity1.Name = "lblQuantity1";
+            this.lblQuantity1.Size = new System.Drawing.Size(88, 24);
+            this.lblQuantity1.TabIndex = 139;
+            this.lblQuantity1.Text = "Quantity: ";
+            // 
+            // pboxArrowD
+            // 
+            this.pboxArrowD.Image = ((System.Drawing.Image)(resources.GetObject("pboxArrowD.Image")));
+            this.pboxArrowD.Location = new System.Drawing.Point(775, 116);
+            this.pboxArrowD.Margin = new System.Windows.Forms.Padding(2);
+            this.pboxArrowD.Name = "pboxArrowD";
+            this.pboxArrowD.Size = new System.Drawing.Size(23, 21);
+            this.pboxArrowD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxArrowD.TabIndex = 140;
+            this.pboxArrowD.TabStop = false;
+            this.pboxArrowD.Click += new System.EventHandler(this.pboxArrowD_Click);
+            // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Image = ((System.Drawing.Image)(resources.GetObject("lblTotal.Image")));
+            this.lblTotal.Location = new System.Drawing.Point(771, 171);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(20, 24);
+            this.lblTotal.TabIndex = 144;
+            this.lblTotal.Text = "0";
+            // 
+            // lblAddToBasket
+            // 
+            this.lblAddToBasket.AutoSize = true;
+            this.lblAddToBasket.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddToBasket.Image = ((System.Drawing.Image)(resources.GetObject("lblAddToBasket.Image")));
+            this.lblAddToBasket.Location = new System.Drawing.Point(700, 268);
+            this.lblAddToBasket.Name = "lblAddToBasket";
+            this.lblAddToBasket.Size = new System.Drawing.Size(127, 20);
+            this.lblAddToBasket.TabIndex = 137;
+            this.lblAddToBasket.Text = "Add To Basket";
+            this.lblAddToBasket.Click += new System.EventHandler(this.lblAddToBasket_Click);
+            // 
+            // lblTotal1
+            // 
+            this.lblTotal1.AutoSize = true;
+            this.lblTotal1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal1.Image = ((System.Drawing.Image)(resources.GetObject("lblTotal1.Image")));
+            this.lblTotal1.Location = new System.Drawing.Point(700, 171);
+            this.lblTotal1.Name = "lblTotal1";
+            this.lblTotal1.Size = new System.Drawing.Size(71, 24);
+            this.lblTotal1.TabIndex = 138;
+            this.lblTotal1.Text = "Total: £";
+            // 
+            // pboxAddButtonBackground
+            // 
+            this.pboxAddButtonBackground.Image = ((System.Drawing.Image)(resources.GetObject("pboxAddButtonBackground.Image")));
+            this.pboxAddButtonBackground.Location = new System.Drawing.Point(680, 35);
+            this.pboxAddButtonBackground.Margin = new System.Windows.Forms.Padding(2);
+            this.pboxAddButtonBackground.Name = "pboxAddButtonBackground";
+            this.pboxAddButtonBackground.Size = new System.Drawing.Size(165, 262);
+            this.pboxAddButtonBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxAddButtonBackground.TabIndex = 128;
+            this.pboxAddButtonBackground.TabStop = false;
+            // 
+            // picSmallImage1
+            // 
+            this.picSmallImage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picSmallImage1.Location = new System.Drawing.Point(50, 237);
+            this.picSmallImage1.Name = "picSmallImage1";
+            this.picSmallImage1.Size = new System.Drawing.Size(100, 60);
+            this.picSmallImage1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSmallImage1.TabIndex = 123;
+            this.picSmallImage1.TabStop = false;
+            // 
+            // picSmallImage2
+            // 
+            this.picSmallImage2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picSmallImage2.Location = new System.Drawing.Point(156, 237);
+            this.picSmallImage2.Name = "picSmallImage2";
+            this.picSmallImage2.Size = new System.Drawing.Size(100, 60);
+            this.picSmallImage2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSmallImage2.TabIndex = 126;
+            this.picSmallImage2.TabStop = false;
+            // 
+            // lblPrice
+            // 
+            this.lblPrice.AutoSize = true;
+            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrice.Image = ((System.Drawing.Image)(resources.GetObject("lblPrice.Image")));
+            this.lblPrice.Location = new System.Drawing.Point(426, 158);
+            this.lblPrice.Name = "lblPrice";
+            this.lblPrice.Size = new System.Drawing.Size(19, 20);
+            this.lblPrice.TabIndex = 142;
+            this.lblPrice.Text = "0";
+            // 
+            // picSmallImage3
+            // 
+            this.picSmallImage3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picSmallImage3.Location = new System.Drawing.Point(262, 237);
+            this.picSmallImage3.Name = "picSmallImage3";
+            this.picSmallImage3.Size = new System.Drawing.Size(100, 60);
+            this.picSmallImage3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSmallImage3.TabIndex = 125;
+            this.picSmallImage3.TabStop = false;
+            // 
+            // picMainImage
+            // 
+            this.picMainImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picMainImage.Location = new System.Drawing.Point(50, 35);
+            this.picMainImage.Name = "picMainImage";
+            this.picMainImage.Size = new System.Drawing.Size(312, 196);
+            this.picMainImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picMainImage.TabIndex = 122;
+            this.picMainImage.TabStop = false;
+            // 
             // btnReviewsInsert
             // 
             this.btnReviewsInsert.Location = new System.Drawing.Point(486, 409);
@@ -182,6 +437,17 @@
             this.btnReviewsInsert.Text = "DisplyFirstReview";
             this.btnReviewsInsert.UseVisualStyleBackColor = true;
             this.btnReviewsInsert.Click += new System.EventHandler(this.btnReviewsInsert_Click);
+            // 
+            // lblReviewID
+            // 
+            this.lblReviewID.AutoSize = true;
+            this.lblReviewID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblReviewID.Image = ((System.Drawing.Image)(resources.GetObject("lblReviewID.Image")));
+            this.lblReviewID.Location = new System.Drawing.Point(570, 428);
+            this.lblReviewID.Name = "lblReviewID";
+            this.lblReviewID.Size = new System.Drawing.Size(85, 20);
+            this.lblReviewID.TabIndex = 156;
+            this.lblReviewID.Text = "ReviewID";
             // 
             // lblDesserts
             // 
@@ -387,269 +653,14 @@
             this.picBottomLine.TabIndex = 95;
             this.picBottomLine.TabStop = false;
             // 
-            // lblAddReview
+            // lblName
             // 
-            this.lblAddReview.AutoSize = true;
-            this.lblAddReview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddReview.Image = ((System.Drawing.Image)(resources.GetObject("lblAddReview.Image")));
-            this.lblAddReview.Location = new System.Drawing.Point(401, 657);
-            this.lblAddReview.Name = "lblAddReview";
-            this.lblAddReview.Size = new System.Drawing.Size(120, 20);
-            this.lblAddReview.TabIndex = 158;
-            this.lblAddReview.Text = "Add A Review";
-            this.lblAddReview.Click += new System.EventHandler(this.lblAddReview_Click);
-            // 
-            // pboxArrowRight
-            // 
-            this.pboxArrowRight.Image = ((System.Drawing.Image)(resources.GetObject("pboxArrowRight.Image")));
-            this.pboxArrowRight.Location = new System.Drawing.Point(776, 477);
-            this.pboxArrowRight.Margin = new System.Windows.Forms.Padding(2);
-            this.pboxArrowRight.Name = "pboxArrowRight";
-            this.pboxArrowRight.Size = new System.Drawing.Size(51, 87);
-            this.pboxArrowRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pboxArrowRight.TabIndex = 153;
-            this.pboxArrowRight.TabStop = false;
-            this.pboxArrowRight.Click += new System.EventHandler(this.pboxArrowRight_Click);
-            // 
-            // pboxArrowLeft
-            // 
-            this.pboxArrowLeft.Image = ((System.Drawing.Image)(resources.GetObject("pboxArrowLeft.Image")));
-            this.pboxArrowLeft.Location = new System.Drawing.Point(62, 477);
-            this.pboxArrowLeft.Margin = new System.Windows.Forms.Padding(2);
-            this.pboxArrowLeft.Name = "pboxArrowLeft";
-            this.pboxArrowLeft.Size = new System.Drawing.Size(51, 77);
-            this.pboxArrowLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pboxArrowLeft.TabIndex = 146;
-            this.pboxArrowLeft.TabStop = false;
-            this.pboxArrowLeft.Click += new System.EventHandler(this.pboxArrowLeft_Click);
-            // 
-            // lblDate
-            // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.Image = ((System.Drawing.Image)(resources.GetObject("lblDate.Image")));
-            this.lblDate.Location = new System.Drawing.Point(208, 428);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(53, 20);
-            this.lblDate.TabIndex = 152;
-            this.lblDate.Text = "Date:";
-            // 
-            // lblTime
-            // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTime.Image = ((System.Drawing.Image)(resources.GetObject("lblTime.Image")));
-            this.lblTime.Location = new System.Drawing.Point(424, 428);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(52, 20);
-            this.lblTime.TabIndex = 151;
-            this.lblTime.Text = "Time:";
-            // 
-            // lblNoOfStars
-            // 
-            this.lblNoOfStars.AutoSize = true;
-            this.lblNoOfStars.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoOfStars.Image = ((System.Drawing.Image)(resources.GetObject("lblNoOfStars.Image")));
-            this.lblNoOfStars.Location = new System.Drawing.Point(208, 507);
-            this.lblNoOfStars.Name = "lblNoOfStars";
-            this.lblNoOfStars.Size = new System.Drawing.Size(145, 20);
-            this.lblNoOfStars.TabIndex = 150;
-            this.lblNoOfStars.Text = "Number of Stars:";
-            // 
-            // lblCName
-            // 
-            this.lblCName.AutoSize = true;
-            this.lblCName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCName.Image = ((System.Drawing.Image)(resources.GetObject("lblCName.Image")));
-            this.lblCName.Location = new System.Drawing.Point(208, 467);
-            this.lblCName.Name = "lblCName";
-            this.lblCName.Size = new System.Drawing.Size(142, 20);
-            this.lblCName.TabIndex = 148;
-            this.lblCName.Text = "Customer Name:";
-            // 
-            // lblReviews
-            // 
-            this.lblReviews.AutoSize = true;
-            this.lblReviews.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReviews.Image = ((System.Drawing.Image)(resources.GetObject("lblReviews.Image")));
-            this.lblReviews.Location = new System.Drawing.Point(208, 375);
-            this.lblReviews.Name = "lblReviews";
-            this.lblReviews.Size = new System.Drawing.Size(75, 20);
-            this.lblReviews.TabIndex = 146;
-            this.lblReviews.Text = "Reviews";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(50, 349);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(795, 342);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 146;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(50, 428);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(795, 301);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 147;
-            this.pictureBox2.TabStop = false;
-            // 
-            // lblQuantity
-            // 
-            this.lblQuantity.AutoSize = true;
-            this.lblQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantity.Image = ((System.Drawing.Image)(resources.GetObject("lblQuantity.Image")));
-            this.lblQuantity.Location = new System.Drawing.Point(778, 90);
-            this.lblQuantity.Name = "lblQuantity";
-            this.lblQuantity.Size = new System.Drawing.Size(20, 24);
-            this.lblQuantity.TabIndex = 143;
-            this.lblQuantity.Text = "0";
-            // 
-            // pboxArrowU
-            // 
-            this.pboxArrowU.Image = ((System.Drawing.Image)(resources.GetObject("pboxArrowU.Image")));
-            this.pboxArrowU.Location = new System.Drawing.Point(775, 68);
-            this.pboxArrowU.Margin = new System.Windows.Forms.Padding(2);
-            this.pboxArrowU.Name = "pboxArrowU";
-            this.pboxArrowU.Size = new System.Drawing.Size(23, 20);
-            this.pboxArrowU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pboxArrowU.TabIndex = 141;
-            this.pboxArrowU.TabStop = false;
-            this.pboxArrowU.Click += new System.EventHandler(this.pboxArrowU_Click);
-            // 
-            // lblQuantity1
-            // 
-            this.lblQuantity1.AutoSize = true;
-            this.lblQuantity1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblQuantity1.Image = ((System.Drawing.Image)(resources.GetObject("lblQuantity1.Image")));
-            this.lblQuantity1.Location = new System.Drawing.Point(700, 90);
-            this.lblQuantity1.Name = "lblQuantity1";
-            this.lblQuantity1.Size = new System.Drawing.Size(88, 24);
-            this.lblQuantity1.TabIndex = 139;
-            this.lblQuantity1.Text = "Quantity: ";
-            // 
-            // pboxArrowD
-            // 
-            this.pboxArrowD.Image = ((System.Drawing.Image)(resources.GetObject("pboxArrowD.Image")));
-            this.pboxArrowD.Location = new System.Drawing.Point(775, 116);
-            this.pboxArrowD.Margin = new System.Windows.Forms.Padding(2);
-            this.pboxArrowD.Name = "pboxArrowD";
-            this.pboxArrowD.Size = new System.Drawing.Size(23, 21);
-            this.pboxArrowD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pboxArrowD.TabIndex = 140;
-            this.pboxArrowD.TabStop = false;
-            this.pboxArrowD.Click += new System.EventHandler(this.pboxArrowD_Click);
-            // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal.Image = ((System.Drawing.Image)(resources.GetObject("lblTotal.Image")));
-            this.lblTotal.Location = new System.Drawing.Point(771, 171);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(20, 24);
-            this.lblTotal.TabIndex = 144;
-            this.lblTotal.Text = "0";
-            // 
-            // lblAddToBasket
-            // 
-            this.lblAddToBasket.AutoSize = true;
-            this.lblAddToBasket.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddToBasket.Image = ((System.Drawing.Image)(resources.GetObject("lblAddToBasket.Image")));
-            this.lblAddToBasket.Location = new System.Drawing.Point(700, 268);
-            this.lblAddToBasket.Name = "lblAddToBasket";
-            this.lblAddToBasket.Size = new System.Drawing.Size(127, 20);
-            this.lblAddToBasket.TabIndex = 137;
-            this.lblAddToBasket.Text = "Add To Basket";
-            // 
-            // lblTotal1
-            // 
-            this.lblTotal1.AutoSize = true;
-            this.lblTotal1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotal1.Image = ((System.Drawing.Image)(resources.GetObject("lblTotal1.Image")));
-            this.lblTotal1.Location = new System.Drawing.Point(700, 171);
-            this.lblTotal1.Name = "lblTotal1";
-            this.lblTotal1.Size = new System.Drawing.Size(71, 24);
-            this.lblTotal1.TabIndex = 138;
-            this.lblTotal1.Text = "Total: £";
-            // 
-            // pboxAddButtonBackground
-            // 
-            this.pboxAddButtonBackground.Image = ((System.Drawing.Image)(resources.GetObject("pboxAddButtonBackground.Image")));
-            this.pboxAddButtonBackground.Location = new System.Drawing.Point(680, 35);
-            this.pboxAddButtonBackground.Margin = new System.Windows.Forms.Padding(2);
-            this.pboxAddButtonBackground.Name = "pboxAddButtonBackground";
-            this.pboxAddButtonBackground.Size = new System.Drawing.Size(165, 262);
-            this.pboxAddButtonBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pboxAddButtonBackground.TabIndex = 128;
-            this.pboxAddButtonBackground.TabStop = false;
-            // 
-            // picSmallImage1
-            // 
-            this.picSmallImage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picSmallImage1.Location = new System.Drawing.Point(50, 237);
-            this.picSmallImage1.Name = "picSmallImage1";
-            this.picSmallImage1.Size = new System.Drawing.Size(100, 60);
-            this.picSmallImage1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picSmallImage1.TabIndex = 123;
-            this.picSmallImage1.TabStop = false;
-            // 
-            // picSmallImage2
-            // 
-            this.picSmallImage2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picSmallImage2.Location = new System.Drawing.Point(156, 237);
-            this.picSmallImage2.Name = "picSmallImage2";
-            this.picSmallImage2.Size = new System.Drawing.Size(100, 60);
-            this.picSmallImage2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picSmallImage2.TabIndex = 126;
-            this.picSmallImage2.TabStop = false;
-            // 
-            // lblPrice
-            // 
-            this.lblPrice.AutoSize = true;
-            this.lblPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrice.Image = ((System.Drawing.Image)(resources.GetObject("lblPrice.Image")));
-            this.lblPrice.Location = new System.Drawing.Point(426, 158);
-            this.lblPrice.Name = "lblPrice";
-            this.lblPrice.Size = new System.Drawing.Size(19, 20);
-            this.lblPrice.TabIndex = 142;
-            this.lblPrice.Text = "0";
-            // 
-            // picSmallImage3
-            // 
-            this.picSmallImage3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picSmallImage3.Location = new System.Drawing.Point(262, 237);
-            this.picSmallImage3.Name = "picSmallImage3";
-            this.picSmallImage3.Size = new System.Drawing.Size(100, 60);
-            this.picSmallImage3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picSmallImage3.TabIndex = 125;
-            this.picSmallImage3.TabStop = false;
-            // 
-            // picMainImage
-            // 
-            this.picMainImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picMainImage.Location = new System.Drawing.Point(50, 35);
-            this.picMainImage.Name = "picMainImage";
-            this.picMainImage.Size = new System.Drawing.Size(312, 196);
-            this.picMainImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picMainImage.TabIndex = 122;
-            this.picMainImage.TabStop = false;
-            // 
-            // lblReviewID
-            // 
-            this.lblReviewID.AutoSize = true;
-            this.lblReviewID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReviewID.Image = ((System.Drawing.Image)(resources.GetObject("lblReviewID.Image")));
-            this.lblReviewID.Location = new System.Drawing.Point(570, 428);
-            this.lblReviewID.Name = "lblReviewID";
-            this.lblReviewID.Size = new System.Drawing.Size(85, 20);
-            this.lblReviewID.TabIndex = 156;
-            this.lblReviewID.Text = "ReviewID";
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(504, 41);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(35, 13);
+            this.lblName.TabIndex = 146;
+            this.lblName.Text = "label1";
             // 
             // ProductPage
             // 
@@ -676,19 +687,12 @@
             this.Controls.Add(this.lblTermsConditions);
             this.Controls.Add(this.picBottomLine);
             this.Controls.Add(this.pMain);
+            this.Controls.Add(this.lblName);
             this.Name = "ProductPage";
             this.Text = "Product Page";
             this.Load += new System.EventHandler(this.ProductPage_Load);
             this.pMain.ResumeLayout(false);
             this.pMain.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picArrowDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBasket)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picSearchLoop)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAlex)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picTrove)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picFiller)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picGreyRibbon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBottomLine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxArrowRight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxArrowLeft)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -700,6 +704,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.picSmallImage2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSmallImage3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picMainImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picArrowDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBasket)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSearchLoop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAlex)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picTrove)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picFiller)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGreyRibbon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBottomLine)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -754,5 +766,6 @@
         private System.Windows.Forms.Button btnReviewsInsert;
         private System.Windows.Forms.Label lblReviewID;
         private System.Windows.Forms.Label lblAddReview;
+        private System.Windows.Forms.Label lblName;
     }
 }

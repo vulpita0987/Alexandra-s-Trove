@@ -120,6 +120,7 @@ namespace Alexandra_s_Trove
                 
                 rtboxDetails.Text = name + "\nPrice: £" + price + "\nDetails:\n" + description + "\n" + specification;
                 lblPrice.Text = price;
+                lblName.Text = name;
                 //do bunch of stuff
             }
             else
@@ -411,8 +412,25 @@ namespace Alexandra_s_Trove
         private void picBasket_Click(object sender, EventArgs e)
         {
             BasketPage b = new BasketPage(); b.Show();
-
             Hide();
+        }
+
+        private void lblAddToBasket_Click(object sender, EventArgs e)
+        {
+            if (lblQuantity.Text != "0")
+            {
+                List<int> NoOfItems = new List<int>();
+                List<double> Totals = new List<double>();
+                List<string> ProductID = new List<string>();
+                int noOfItems = Int32.Parse(lblQuantity.Text);
+                double total = Convert.ToDouble(lblTotal.Text);
+                string ProductIDToGet = ProductHandling.GetID();
+
+                lblQuantity.Text = "0";
+                lblTotal.Text = "0";
+                MessageBox.Show("Your item/items have been added to the basket");
+                BasketHandler.AddItemToBasket(ProductIDToGet, noOfItems, total, lblName.Text);
+            }
         }
     }
 }

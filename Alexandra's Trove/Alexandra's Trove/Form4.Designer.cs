@@ -119,6 +119,7 @@
             this.DeveloperHelp.TabIndex = 24;
             this.DeveloperHelp.Text = "DeveloperHelp4Forms";
             this.DeveloperHelp.UseVisualStyleBackColor = true;
+            this.DeveloperHelp.Visible = false;
             this.DeveloperHelp.Click += new System.EventHandler(this.DeveloperHelp_Click);
             // 
             // lblTermsCond

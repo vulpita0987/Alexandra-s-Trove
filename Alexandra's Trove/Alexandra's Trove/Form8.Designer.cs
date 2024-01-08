@@ -84,6 +84,10 @@
             this.lblTotalTwoNumber = new System.Windows.Forms.Label();
             this.lblTotalThreeNumber = new System.Windows.Forms.Label();
             this.lblTotalFourNumber = new System.Windows.Forms.Label();
+            this.lblQuntity1 = new System.Windows.Forms.Label();
+            this.lblQuntity2 = new System.Windows.Forms.Label();
+            this.lblQuntity4 = new System.Windows.Forms.Label();
+            this.lblQuntity3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picArrowDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBasket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSearchLoop)).BeginInit();
@@ -210,6 +214,7 @@
             this.picBasket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBasket.TabIndex = 89;
             this.picBasket.TabStop = false;
+            this.picBasket.Click += new System.EventHandler(this.picBasket_Click);
             // 
             // picSearchLoop
             // 
@@ -656,11 +661,12 @@
             this.lblPay.AutoSize = true;
             this.lblPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPay.Image = ((System.Drawing.Image)(resources.GetObject("lblPay.Image")));
-            this.lblPay.Location = new System.Drawing.Point(654, 266);
+            this.lblPay.Location = new System.Drawing.Point(675, 265);
             this.lblPay.Name = "lblPay";
-            this.lblPay.Size = new System.Drawing.Size(180, 20);
+            this.lblPay.Size = new System.Drawing.Size(127, 20);
             this.lblPay.TabIndex = 181;
-            this.lblPay.Text = "Procced To Checkout";
+            this.lblPay.Text = "Add To Basket";
+            this.lblPay.Click += new System.EventHandler(this.lblPay_Click);
             // 
             // lblTotalOneNumber
             // 
@@ -702,11 +708,55 @@
             this.lblTotalFourNumber.TabIndex = 185;
             this.lblTotalFourNumber.Text = "0";
             // 
+            // lblQuntity1
+            // 
+            this.lblQuntity1.AutoSize = true;
+            this.lblQuntity1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuntity1.Location = new System.Drawing.Point(262, 155);
+            this.lblQuntity1.Name = "lblQuntity1";
+            this.lblQuntity1.Size = new System.Drawing.Size(18, 20);
+            this.lblQuntity1.TabIndex = 186;
+            this.lblQuntity1.Text = "0";
+            // 
+            // lblQuntity2
+            // 
+            this.lblQuntity2.AutoSize = true;
+            this.lblQuntity2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuntity2.Location = new System.Drawing.Point(262, 250);
+            this.lblQuntity2.Name = "lblQuntity2";
+            this.lblQuntity2.Size = new System.Drawing.Size(18, 20);
+            this.lblQuntity2.TabIndex = 187;
+            this.lblQuntity2.Text = "0";
+            // 
+            // lblQuntity4
+            // 
+            this.lblQuntity4.AutoSize = true;
+            this.lblQuntity4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuntity4.Location = new System.Drawing.Point(262, 435);
+            this.lblQuntity4.Name = "lblQuntity4";
+            this.lblQuntity4.Size = new System.Drawing.Size(18, 20);
+            this.lblQuntity4.TabIndex = 188;
+            this.lblQuntity4.Text = "0";
+            // 
+            // lblQuntity3
+            // 
+            this.lblQuntity3.AutoSize = true;
+            this.lblQuntity3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuntity3.Location = new System.Drawing.Point(265, 345);
+            this.lblQuntity3.Name = "lblQuntity3";
+            this.lblQuntity3.Size = new System.Drawing.Size(18, 20);
+            this.lblQuntity3.TabIndex = 189;
+            this.lblQuntity3.Text = "0";
+            // 
             // BasketPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 612);
+            this.Controls.Add(this.lblQuntity3);
+            this.Controls.Add(this.lblQuntity4);
+            this.Controls.Add(this.lblQuntity2);
+            this.Controls.Add(this.lblQuntity1);
             this.Controls.Add(this.lblTotalFourNumber);
             this.Controls.Add(this.lblTotalThreeNumber);
             this.Controls.Add(this.lblTotalTwoNumber);
@@ -845,5 +895,9 @@
         private System.Windows.Forms.Label lblTotalTwoNumber;
         private System.Windows.Forms.Label lblTotalThreeNumber;
         private System.Windows.Forms.Label lblTotalFourNumber;
+        private System.Windows.Forms.Label lblQuntity1;
+        private System.Windows.Forms.Label lblQuntity2;
+        private System.Windows.Forms.Label lblQuntity4;
+        private System.Windows.Forms.Label lblQuntity3;
     }
 }

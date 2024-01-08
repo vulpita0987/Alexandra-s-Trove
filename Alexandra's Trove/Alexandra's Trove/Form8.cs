@@ -27,6 +27,90 @@ namespace Alexandra_s_Trove
         {
             pboxOneTry.Image = Resource.Jalapenoes3;
             pboxTwoTry.Image = Resource.Cucumber3;
+
+            /* List<int> NoOfItems = new List<int>();
+             List<double> Totals = new List<double>();
+             List<string> ProductID = new List<string>();
+            NoOfItems = BasketHandler.RetriveValuesNoOfItems();
+            Totals = BasketHandler.RetriveValuesTotals();
+            ProductID = BasketHandler.RetriveValuesProductIDs();
+
+            for (int i = 0; NoOfItems.Count > i; i++ ) 
+            {
+                MessageBox.Show(ProductID[i]);
+            }*/
+
+            List<int> NoOfItems = new List<int>();
+            List<double> Totals = new List<double>();
+            List<string> ProductID = new List<string>();
+            List<string> ProductName = new List<string>();
+            NoOfItems = BasketHandler.RetriveValuesNoOfItems();
+            Totals = BasketHandler.RetriveValuesTotals();
+            ProductID = BasketHandler.RetriveValuesProductIDs();
+            ProductName = BasketHandler.RetriveValuesProductNames();
+
+            if (ProductID.Count > 0)
+            {
+                
+                Dictionary<string, Image> Images = new Dictionary<string, Image>();
+                GetImages obj = new GetImages();
+                Images = obj.GetImageNamesByOneNumberDictionary();
+
+                
+                for (int i = 0; ProductID.Count > i; i++)
+                {
+                    if (i == 0) 
+                    {
+                        for(int j = 0; j <= Images.Count; j++) 
+                        {
+                            if ("P" + j.ToString() == ProductID[0]) { pboxOne.Image = Images.ContainsKey("P" + j.ToString()) ? Images["P" + j.ToString()] : null; }
+                        }
+                        //pboxOne.Image = Resource.Jalapenoes3;
+                        lblNameOne.Text = ProductName[0];
+                        lblQuntity1.Text = NoOfItems[0].ToString();
+                        lblTotalOneNumber.Text = Totals[0].ToString();
+                    }
+                    if (i == 1) 
+                    {
+
+                        for (int j = 0; j <= Images.Count; j++)
+                        {
+                            if ("P" + j.ToString() == ProductID[1]) { pboxTwo.Image = Images.ContainsKey("P" + j.ToString()) ? Images["P" + j.ToString()] : null; }
+                        }
+                        //pboxTwo.Image = Resource.Jalapenoes3;
+                        lblNameTwo.Text = ProductName[1];
+                        lblQuntity2.Text = NoOfItems[1].ToString();
+                        lblTotalTwoNumber.Text = Totals[1].ToString();
+                    }
+                    if (i == 2)
+                    {
+
+                        for (int j = 0; j <= Images.Count; j++)
+                        {
+                            if ("P" + j.ToString() == ProductID[2]) { pboxThree.Image = Images.ContainsKey("P" + j.ToString()) ? Images["P" + j.ToString()] : null; }
+                        }
+                        //pboxThree.Image = Resource.Jalapenoes3;
+                        lblNameThree.Text = ProductName[2];
+                        lblQuntity3.Text = NoOfItems[2].ToString();
+                        lblTotalThreeNumber.Text = Totals[2].ToString();
+                    }
+                    if (i == 3) 
+                    {
+
+                        for (int j = 0; j <= Images.Count; j++)
+                        {
+                            if ("P" + j.ToString() == ProductID[3]) { pboxFour.Image = Images.ContainsKey("P" + j.ToString()) ? Images["P" + j.ToString()] : null; }
+                        }
+                        //pboxFour.Image = Resource.Jalapenoes3;
+                        lblNameFour.Text = ProductName[3];
+                        lblQuntity4.Text = NoOfItems[3].ToString();
+                        lblTotalFourNumber.Text = Totals[3].ToString();
+                    }
+
+                }
+            }
+
+
         }
 
         private void pboxOneTry_Click(object sender, EventArgs e)
@@ -81,6 +165,22 @@ namespace Alexandra_s_Trove
                 //Form.Close();
                 Hide();// rp = new RegisterPage(); rp.Close();#
             }
+        }
+
+        private void picBasket_Click(object sender, EventArgs e)
+        {
+            string clientId = ClientAccountAccess.GetID();
+
+
+            BasketPage b = new BasketPage(); b.Show();
+            //Form.Close();
+            Hide();// rp = new RegisterPage(); rp.Close();#
+
+        }
+
+        private void lblPay_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
