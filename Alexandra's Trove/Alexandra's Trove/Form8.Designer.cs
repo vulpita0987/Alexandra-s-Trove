@@ -88,6 +88,14 @@
             this.lblQuntity2 = new System.Windows.Forms.Label();
             this.lblQuntity4 = new System.Windows.Forms.Label();
             this.lblQuntity3 = new System.Windows.Forms.Label();
+            this.lblBinSelection1 = new System.Windows.Forms.Label();
+            this.lblBinSelection2 = new System.Windows.Forms.Label();
+            this.lblBinSelection3 = new System.Windows.Forms.Label();
+            this.lblBinSelection4 = new System.Windows.Forms.Label();
+            this.lblProduct1ID = new System.Windows.Forms.Label();
+            this.lblProduct2ID = new System.Windows.Forms.Label();
+            this.lblProduct3ID = new System.Windows.Forms.Label();
+            this.lblProduct4ID = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picArrowDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBasket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSearchLoop)).BeginInit();
@@ -342,6 +350,8 @@
             this.pboxOne.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pboxOne.TabIndex = 148;
             this.pboxOne.TabStop = false;
+            this.pboxOne.Visible = false;
+            this.pboxOne.Click += new System.EventHandler(this.pboxOne_Click);
             // 
             // pboxTwo
             // 
@@ -354,6 +364,8 @@
             this.pboxTwo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pboxTwo.TabIndex = 149;
             this.pboxTwo.TabStop = false;
+            this.pboxTwo.Visible = false;
+            this.pboxTwo.Click += new System.EventHandler(this.pboxTwo_Click);
             // 
             // pboxThree
             // 
@@ -366,6 +378,8 @@
             this.pboxThree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pboxThree.TabIndex = 150;
             this.pboxThree.TabStop = false;
+            this.pboxThree.Visible = false;
+            this.pboxThree.Click += new System.EventHandler(this.pboxThree_Click);
             // 
             // pboxArrowRight
             // 
@@ -377,6 +391,7 @@
             this.pboxArrowRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pboxArrowRight.TabIndex = 154;
             this.pboxArrowRight.TabStop = false;
+            this.pboxArrowRight.Click += new System.EventHandler(this.pboxArrowRight_Click);
             // 
             // pboxArrowLeft
             // 
@@ -388,6 +403,7 @@
             this.pboxArrowLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pboxArrowLeft.TabIndex = 155;
             this.pboxArrowLeft.TabStop = false;
+            this.pboxArrowLeft.Visible = false;
             // 
             // pboxFour
             // 
@@ -400,6 +416,8 @@
             this.pboxFour.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pboxFour.TabIndex = 156;
             this.pboxFour.TabStop = false;
+            this.pboxFour.Visible = false;
+            this.pboxFour.Click += new System.EventHandler(this.pboxFour_Click);
             // 
             // lblNameOne
             // 
@@ -410,6 +428,7 @@
             this.lblNameOne.Size = new System.Drawing.Size(51, 20);
             this.lblNameOne.TabIndex = 157;
             this.lblNameOne.Text = "Name";
+            this.lblNameOne.Visible = false;
             // 
             // pictureBox2
             // 
@@ -443,6 +462,7 @@
             this.lblPrevious.Size = new System.Drawing.Size(77, 20);
             this.lblPrevious.TabIndex = 160;
             this.lblPrevious.Text = "Previous";
+            this.lblPrevious.Visible = false;
             // 
             // lblNameTwo
             // 
@@ -453,6 +473,7 @@
             this.lblNameTwo.Size = new System.Drawing.Size(51, 20);
             this.lblNameTwo.TabIndex = 161;
             this.lblNameTwo.Text = "Name";
+            this.lblNameTwo.Visible = false;
             // 
             // lblNameThree
             // 
@@ -463,6 +484,7 @@
             this.lblNameThree.Size = new System.Drawing.Size(51, 20);
             this.lblNameThree.TabIndex = 162;
             this.lblNameThree.Text = "Name";
+            this.lblNameThree.Visible = false;
             // 
             // lblNameFour
             // 
@@ -473,6 +495,7 @@
             this.lblNameFour.Size = new System.Drawing.Size(51, 20);
             this.lblNameFour.TabIndex = 163;
             this.lblNameFour.Text = "Name";
+            this.lblNameFour.Visible = false;
             // 
             // lblQuantityOne
             // 
@@ -483,6 +506,7 @@
             this.lblQuantityOne.Size = new System.Drawing.Size(68, 20);
             this.lblQuantityOne.TabIndex = 164;
             this.lblQuantityOne.Text = "Quantity";
+            this.lblQuantityOne.Visible = false;
             // 
             // lblQuantityTwo
             // 
@@ -493,6 +517,7 @@
             this.lblQuantityTwo.Size = new System.Drawing.Size(68, 20);
             this.lblQuantityTwo.TabIndex = 165;
             this.lblQuantityTwo.Text = "Quantity";
+            this.lblQuantityTwo.Visible = false;
             // 
             // lblQuantityThree
             // 
@@ -503,6 +528,7 @@
             this.lblQuantityThree.Size = new System.Drawing.Size(68, 20);
             this.lblQuantityThree.TabIndex = 166;
             this.lblQuantityThree.Text = "Quantity";
+            this.lblQuantityThree.Visible = false;
             // 
             // lblQuantityFour
             // 
@@ -513,6 +539,7 @@
             this.lblQuantityFour.Size = new System.Drawing.Size(68, 20);
             this.lblQuantityFour.TabIndex = 167;
             this.lblQuantityFour.Text = "Quantity";
+            this.lblQuantityFour.Visible = false;
             // 
             // lblTotalOne
             // 
@@ -523,6 +550,7 @@
             this.lblTotalOne.Size = new System.Drawing.Size(61, 20);
             this.lblTotalOne.TabIndex = 168;
             this.lblTotalOne.Text = "Total: £";
+            this.lblTotalOne.Visible = false;
             // 
             // lblTotalTwo
             // 
@@ -533,6 +561,7 @@
             this.lblTotalTwo.Size = new System.Drawing.Size(61, 20);
             this.lblTotalTwo.TabIndex = 169;
             this.lblTotalTwo.Text = "Total: £";
+            this.lblTotalTwo.Visible = false;
             // 
             // lblTotalThree
             // 
@@ -543,6 +572,7 @@
             this.lblTotalThree.Size = new System.Drawing.Size(61, 20);
             this.lblTotalThree.TabIndex = 170;
             this.lblTotalThree.Text = "Total: £";
+            this.lblTotalThree.Visible = false;
             // 
             // lblTotalFour
             // 
@@ -553,6 +583,7 @@
             this.lblTotalFour.Size = new System.Drawing.Size(61, 20);
             this.lblTotalFour.TabIndex = 171;
             this.lblTotalFour.Text = "Total: £";
+            this.lblTotalFour.Visible = false;
             // 
             // lblProductsTotal
             // 
@@ -661,11 +692,11 @@
             this.lblPay.AutoSize = true;
             this.lblPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPay.Image = ((System.Drawing.Image)(resources.GetObject("lblPay.Image")));
-            this.lblPay.Location = new System.Drawing.Point(675, 265);
+            this.lblPay.Location = new System.Drawing.Point(651, 269);
             this.lblPay.Name = "lblPay";
-            this.lblPay.Size = new System.Drawing.Size(127, 20);
+            this.lblPay.Size = new System.Drawing.Size(181, 20);
             this.lblPay.TabIndex = 181;
-            this.lblPay.Text = "Add To Basket";
+            this.lblPay.Text = "Proceed To Checkout";
             this.lblPay.Click += new System.EventHandler(this.lblPay_Click);
             // 
             // lblTotalOneNumber
@@ -677,6 +708,7 @@
             this.lblTotalOneNumber.Size = new System.Drawing.Size(18, 20);
             this.lblTotalOneNumber.TabIndex = 182;
             this.lblTotalOneNumber.Text = "0";
+            this.lblTotalOneNumber.Visible = false;
             // 
             // lblTotalTwoNumber
             // 
@@ -687,6 +719,7 @@
             this.lblTotalTwoNumber.Size = new System.Drawing.Size(18, 20);
             this.lblTotalTwoNumber.TabIndex = 183;
             this.lblTotalTwoNumber.Text = "0";
+            this.lblTotalTwoNumber.Visible = false;
             // 
             // lblTotalThreeNumber
             // 
@@ -697,6 +730,7 @@
             this.lblTotalThreeNumber.Size = new System.Drawing.Size(18, 20);
             this.lblTotalThreeNumber.TabIndex = 184;
             this.lblTotalThreeNumber.Text = "0";
+            this.lblTotalThreeNumber.Visible = false;
             // 
             // lblTotalFourNumber
             // 
@@ -707,6 +741,7 @@
             this.lblTotalFourNumber.Size = new System.Drawing.Size(18, 20);
             this.lblTotalFourNumber.TabIndex = 185;
             this.lblTotalFourNumber.Text = "0";
+            this.lblTotalFourNumber.Visible = false;
             // 
             // lblQuntity1
             // 
@@ -717,6 +752,7 @@
             this.lblQuntity1.Size = new System.Drawing.Size(18, 20);
             this.lblQuntity1.TabIndex = 186;
             this.lblQuntity1.Text = "0";
+            this.lblQuntity1.Visible = false;
             // 
             // lblQuntity2
             // 
@@ -727,6 +763,7 @@
             this.lblQuntity2.Size = new System.Drawing.Size(18, 20);
             this.lblQuntity2.TabIndex = 187;
             this.lblQuntity2.Text = "0";
+            this.lblQuntity2.Visible = false;
             // 
             // lblQuntity4
             // 
@@ -737,6 +774,7 @@
             this.lblQuntity4.Size = new System.Drawing.Size(18, 20);
             this.lblQuntity4.TabIndex = 188;
             this.lblQuntity4.Text = "0";
+            this.lblQuntity4.Visible = false;
             // 
             // lblQuntity3
             // 
@@ -747,12 +785,113 @@
             this.lblQuntity3.Size = new System.Drawing.Size(18, 20);
             this.lblQuntity3.TabIndex = 189;
             this.lblQuntity3.Text = "0";
+            this.lblQuntity3.Visible = false;
+            // 
+            // lblBinSelection1
+            // 
+            this.lblBinSelection1.AutoSize = true;
+            this.lblBinSelection1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBinSelection1.Location = new System.Drawing.Point(503, 115);
+            this.lblBinSelection1.Name = "lblBinSelection1";
+            this.lblBinSelection1.Size = new System.Drawing.Size(68, 20);
+            this.lblBinSelection1.TabIndex = 190;
+            this.lblBinSelection1.Text = "Bin Item";
+            this.lblBinSelection1.Visible = false;
+            this.lblBinSelection1.Click += new System.EventHandler(this.lblBinSelection1_Click);
+            // 
+            // lblBinSelection2
+            // 
+            this.lblBinSelection2.AutoSize = true;
+            this.lblBinSelection2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBinSelection2.Location = new System.Drawing.Point(503, 209);
+            this.lblBinSelection2.Name = "lblBinSelection2";
+            this.lblBinSelection2.Size = new System.Drawing.Size(68, 20);
+            this.lblBinSelection2.TabIndex = 191;
+            this.lblBinSelection2.Text = "Bin Item";
+            this.lblBinSelection2.Visible = false;
+            this.lblBinSelection2.Click += new System.EventHandler(this.lblBinSelection2_Click);
+            // 
+            // lblBinSelection3
+            // 
+            this.lblBinSelection3.AutoSize = true;
+            this.lblBinSelection3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBinSelection3.Location = new System.Drawing.Point(503, 303);
+            this.lblBinSelection3.Name = "lblBinSelection3";
+            this.lblBinSelection3.Size = new System.Drawing.Size(68, 20);
+            this.lblBinSelection3.TabIndex = 192;
+            this.lblBinSelection3.Text = "Bin Item";
+            this.lblBinSelection3.Visible = false;
+            this.lblBinSelection3.Click += new System.EventHandler(this.lblBinSelection3_Click);
+            // 
+            // lblBinSelection4
+            // 
+            this.lblBinSelection4.AutoSize = true;
+            this.lblBinSelection4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBinSelection4.Location = new System.Drawing.Point(503, 397);
+            this.lblBinSelection4.Name = "lblBinSelection4";
+            this.lblBinSelection4.Size = new System.Drawing.Size(68, 20);
+            this.lblBinSelection4.TabIndex = 193;
+            this.lblBinSelection4.Text = "Bin Item";
+            this.lblBinSelection4.Visible = false;
+            this.lblBinSelection4.Click += new System.EventHandler(this.lblBinSelection4_Click);
+            // 
+            // lblProduct1ID
+            // 
+            this.lblProduct1ID.AutoSize = true;
+            this.lblProduct1ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProduct1ID.Location = new System.Drawing.Point(503, 137);
+            this.lblProduct1ID.Name = "lblProduct1ID";
+            this.lblProduct1ID.Size = new System.Drawing.Size(35, 20);
+            this.lblProduct1ID.TabIndex = 194;
+            this.lblProduct1ID.Text = "ID1";
+            this.lblProduct1ID.Visible = false;
+            // 
+            // lblProduct2ID
+            // 
+            this.lblProduct2ID.AutoSize = true;
+            this.lblProduct2ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProduct2ID.Location = new System.Drawing.Point(503, 231);
+            this.lblProduct2ID.Name = "lblProduct2ID";
+            this.lblProduct2ID.Size = new System.Drawing.Size(35, 20);
+            this.lblProduct2ID.TabIndex = 195;
+            this.lblProduct2ID.Text = "ID2";
+            this.lblProduct2ID.Visible = false;
+            // 
+            // lblProduct3ID
+            // 
+            this.lblProduct3ID.AutoSize = true;
+            this.lblProduct3ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProduct3ID.Location = new System.Drawing.Point(503, 323);
+            this.lblProduct3ID.Name = "lblProduct3ID";
+            this.lblProduct3ID.Size = new System.Drawing.Size(35, 20);
+            this.lblProduct3ID.TabIndex = 196;
+            this.lblProduct3ID.Text = "ID3";
+            this.lblProduct3ID.Visible = false;
+            // 
+            // lblProduct4ID
+            // 
+            this.lblProduct4ID.AutoSize = true;
+            this.lblProduct4ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProduct4ID.Location = new System.Drawing.Point(503, 417);
+            this.lblProduct4ID.Name = "lblProduct4ID";
+            this.lblProduct4ID.Size = new System.Drawing.Size(35, 20);
+            this.lblProduct4ID.TabIndex = 197;
+            this.lblProduct4ID.Text = "ID4";
+            this.lblProduct4ID.Visible = false;
             // 
             // BasketPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 612);
+            this.Controls.Add(this.lblProduct4ID);
+            this.Controls.Add(this.lblProduct3ID);
+            this.Controls.Add(this.lblProduct2ID);
+            this.Controls.Add(this.lblProduct1ID);
+            this.Controls.Add(this.lblBinSelection4);
+            this.Controls.Add(this.lblBinSelection3);
+            this.Controls.Add(this.lblBinSelection2);
+            this.Controls.Add(this.lblBinSelection1);
             this.Controls.Add(this.lblQuntity3);
             this.Controls.Add(this.lblQuntity4);
             this.Controls.Add(this.lblQuntity2);
@@ -899,5 +1038,13 @@
         private System.Windows.Forms.Label lblQuntity2;
         private System.Windows.Forms.Label lblQuntity4;
         private System.Windows.Forms.Label lblQuntity3;
+        private System.Windows.Forms.Label lblBinSelection1;
+        private System.Windows.Forms.Label lblBinSelection2;
+        private System.Windows.Forms.Label lblBinSelection3;
+        private System.Windows.Forms.Label lblBinSelection4;
+        private System.Windows.Forms.Label lblProduct1ID;
+        private System.Windows.Forms.Label lblProduct2ID;
+        private System.Windows.Forms.Label lblProduct3ID;
+        private System.Windows.Forms.Label lblProduct4ID;
     }
 }

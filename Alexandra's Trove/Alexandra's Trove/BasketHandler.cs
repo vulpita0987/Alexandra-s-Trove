@@ -16,31 +16,31 @@ namespace Alexandra_s_Trove
 
         public static void AddItemToBasket(string productID, int numberOfItems, double total, string productName)
         {
-            /*if (Totals.Count > 0)
+           
+            bool idExists = false;
+            int position = 0;
+            for (int i = 0; i < Totals.Count; i++)
             {
-                for (int i = 0; i < Totals.Count; i++) 
+                if (ProductID[i] == productID)
                 {
-                    if (ProductID[i] == productID) 
-                    {
-                        NoOfItems[i] = NoOfItems[i] + numberOfItems;
-                        Totals[i] = Totals[i] + total;
-
-                    }
-                    
+                    idExists = true;
+                    position = i;
                 }
-                    
+
+            }
+
+            if(idExists == true) 
+            {
+                NoOfItems[position] = NoOfItems[position] + numberOfItems;
+                Totals[position] = Totals[position] + total;
             } 
             else 
             {
                 NoOfItems.Add(numberOfItems);
                 Totals.Add(total);
                 ProductID.Add(productID);
-            }*/
-
-            NoOfItems.Add(numberOfItems);
-            Totals.Add(total);
-            ProductID.Add(productID);
-            ProductName.Add(productName);
+                ProductName.Add(productName);
+            }
         }
 
         public static void RemoveItemFromBasket(string productID)
