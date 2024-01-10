@@ -206,3 +206,4 @@ C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's 
 C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.BasketPage.resources
 C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.ReviewPage.resources
 C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.BasketPage.resources
+C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.CathegoryPage.resources

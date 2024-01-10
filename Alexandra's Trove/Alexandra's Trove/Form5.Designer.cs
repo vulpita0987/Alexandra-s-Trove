@@ -358,6 +358,7 @@
             this.lblVegetables.Size = new System.Drawing.Size(100, 20);
             this.lblVegetables.TabIndex = 48;
             this.lblVegetables.Text = "Vegetables";
+            this.lblVegetables.Click += new System.EventHandler(this.lblVegetables_Click);
             // 
             // lblFruits
             // 
@@ -369,6 +370,7 @@
             this.lblFruits.Size = new System.Drawing.Size(55, 20);
             this.lblFruits.TabIndex = 49;
             this.lblFruits.Text = "Fruits";
+            this.lblFruits.Click += new System.EventHandler(this.lblFruits_Click);
             // 
             // lblMore
             // 
@@ -391,6 +393,7 @@
             this.lblDesserts.Size = new System.Drawing.Size(81, 20);
             this.lblDesserts.TabIndex = 51;
             this.lblDesserts.Text = "Desserts";
+            this.lblDesserts.Click += new System.EventHandler(this.lblDesserts_Click);
             // 
             // lblCathegoryLeft
             // 

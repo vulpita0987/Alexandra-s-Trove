@@ -379,5 +379,35 @@ namespace Alexandra_s_Trove
 
             Hide();
         }
+
+        private void lblVegetables_Click(object sender, EventArgs e)
+        {
+            string chategory = lblVegetables.Text;
+            ChategoryHandling.SetChategory(chategory);
+
+            CathegoryPage cp = new CathegoryPage(); cp.Show();
+
+            Hide();
+        }
+
+        private void lblFruits_Click(object sender, EventArgs e)
+        {
+            string chategory = lblFruits.Text;
+            ChategoryHandling.SetChategory(chategory);
+
+            CathegoryPage cp = new CathegoryPage(); cp.Show();
+
+            Hide();
+        }
+
+        private void lblDesserts_Click(object sender, EventArgs e)
+        {
+            string chategory = lblDesserts.Text;
+            ChategoryHandling.SetChategory(chategory);
+
+            CathegoryPage cp = new CathegoryPage(); cp.Show();
+
+            Hide();
+        }
     }
 }
