@@ -1,6 +1,7 @@
 ﻿using Alexandra_s_Trove.Properties;
 using Alexandra_s_Trove.Resources;
 using Amazon.Auth.AccessControlPolicy;
+using MongoDB.Driver;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -17,6 +18,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using static Alexandra_s_Trove.Resources.DatabaseHandler;
 
 namespace Alexandra_s_Trove
 {
@@ -34,8 +36,39 @@ namespace Alexandra_s_Trove
         }
 
 
-        private void GuestPage_Load(object sender, EventArgs e)
+        private async void GuestPage_Load(object sender, EventArgs e)
         {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Product";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Product>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            List<string> ProductIDs = new List<string>();
+            List<string> Names = new List<string>();
+            List<string> Descriptions = new List<string>();
+            List<string> Prices = new List<string>();
+            List<string> Specifications = new List<string>();
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ProductIDs.Add(datas.ID);
+                    Names.Add(datas.Name);
+                    Descriptions.Add(datas.Description);
+                    Prices.Add(datas.Price);
+                    Specifications.Add(datas.Specifications);
+
+                }
+            }
+
+            for(int i = 0; i < ProductIDs.Count; i++) 
+            { cboxSearchBar.Items.Insert(0, Names[i]); }
+            
             AdjustPictures();
             picCath1Left.Image = Resource.DarkChYo2;
             picCath1Right.Image = Resource.NectarineTart4;
@@ -408,6 +441,66 @@ namespace Alexandra_s_Trove
             CathegoryPage cp = new CathegoryPage(); cp.Show();
 
             Hide();
+        }
+
+        private void cboxSearchBar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cboxSearchBar.Items.Add("Fruit");
+            
+        }
+
+        private async void picSearchLoop_Click(object sender, EventArgs e)
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Product";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Product>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            List<string> ProductIDs = new List<string>();
+            List<string> Names = new List<string>();
+            List<string> Descriptions = new List<string>();
+            List<string> Prices = new List<string>();
+            List<string> Specifications = new List<string>();
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ProductIDs.Add(datas.ID);
+                    Names.Add(datas.Name);
+                    Descriptions.Add(datas.Description);
+                    Prices.Add(datas.Price);
+                    Specifications.Add(datas.Specifications);
+
+                }
+            }
+
+            string product = cboxSearchBar.Text;
+            bool productExists = false;
+            for(int i = 0; i < Names.Count; i++)
+            {
+                if (Names[i] == product) 
+                {
+                    ProductHandling.SetID(ProductIDs[i]);
+                    
+                    ProductPage pp = new ProductPage(); pp.Show();
+                    productExists = true;
+                    Hide();
+                    
+                    break;
+                }
+            }
+            if (productExists == false) 
+            {
+                MessageBox.Show("Product Does NOT Exist. Please Try Again");
+                cboxSearchBar.Text = ""; 
+            }
+
+
         }
     }
 }

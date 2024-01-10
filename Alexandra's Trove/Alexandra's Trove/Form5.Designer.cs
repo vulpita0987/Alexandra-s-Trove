@@ -178,6 +178,7 @@
             this.picSearchLoop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSearchLoop.TabIndex = 30;
             this.picSearchLoop.TabStop = false;
+            this.picSearchLoop.Click += new System.EventHandler(this.picSearchLoop_Click);
             // 
             // picBasket
             // 
@@ -221,6 +222,7 @@
             this.cboxSearchBar.Name = "cboxSearchBar";
             this.cboxSearchBar.Size = new System.Drawing.Size(236, 21);
             this.cboxSearchBar.TabIndex = 35;
+            this.cboxSearchBar.SelectedIndexChanged += new System.EventHandler(this.cboxSearchBar_SelectedIndexChanged);
             // 
             // lblSelectLanguage
             // 
