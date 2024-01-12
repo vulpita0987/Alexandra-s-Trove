@@ -48,19 +48,33 @@
             this.lblFeedbackSurvey = new System.Windows.Forms.Label();
             this.lblTermsConditions = new System.Windows.Forms.Label();
             this.picBottomLine = new System.Windows.Forms.PictureBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.lboxProducts = new System.Windows.Forms.ListBox();
+            this.pboxBackground1 = new System.Windows.Forms.PictureBox();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.lblCardDetails = new System.Windows.Forms.Label();
+            this.pboxAd2 = new System.Windows.Forms.PictureBox();
+            this.pboxAd3 = new System.Windows.Forms.PictureBox();
+            this.pboxBackground3 = new System.Windows.Forms.PictureBox();
+            this.btnPlaceOrder = new System.Windows.Forms.Button();
+            this.pboxAd1 = new System.Windows.Forms.PictureBox();
+            this.lblAdvertisment = new System.Windows.Forms.Label();
+            this.lblTotal = new System.Windows.Forms.Label();
+            this.lblDevileryCharge = new System.Windows.Forms.Label();
+            this.pboxBackground2 = new System.Windows.Forms.PictureBox();
+            this.lblTotalNumber = new System.Windows.Forms.Label();
+            this.lblDeliveryChargeNumber = new System.Windows.Forms.Label();
+            this.tboxAddressLine1 = new System.Windows.Forms.TextBox();
+            this.tboxAddressLine2 = new System.Windows.Forms.TextBox();
+            this.tboxAddressLine3 = new System.Windows.Forms.TextBox();
+            this.tboxAddressLine4 = new System.Windows.Forms.TextBox();
+            this.tboxCardNumber = new System.Windows.Forms.TextBox();
+            this.tboxNameOnCard = new System.Windows.Forms.TextBox();
+            this.tboxExpirationDate = new System.Windows.Forms.TextBox();
+            this.tboxSecurityCode = new System.Windows.Forms.TextBox();
+            this.tboxSecurityCode1 = new System.Windows.Forms.TextBox();
+            this.dtPicker = new System.Windows.Forms.DateTimePicker();
+            this.cboxCardDetails = new System.Windows.Forms.CheckBox();
+            this.cboxAddress = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.picArrowDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBasket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSearchLoop)).BeginInit();
@@ -69,12 +83,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.picFiller)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGreyRibbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBottomLine)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxBackground1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxAd2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxAd3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxBackground3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxAd1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxBackground2)).BeginInit();
             this.SuspendLayout();
             // 
             // cboxSearchBar
@@ -285,152 +299,334 @@
             this.picBottomLine.TabIndex = 115;
             this.picBottomLine.TabStop = false;
             // 
-            // listBox1
+            // lboxProducts
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(310, 424);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(330, 134);
-            this.listBox1.TabIndex = 119;
+            this.lboxProducts.Enabled = false;
+            this.lboxProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lboxProducts.FormattingEnabled = true;
+            this.lboxProducts.ItemHeight = 20;
+            this.lboxProducts.Location = new System.Drawing.Point(262, 424);
+            this.lboxProducts.Name = "lboxProducts";
+            this.lboxProducts.Size = new System.Drawing.Size(378, 144);
+            this.lboxProducts.TabIndex = 119;
             // 
-            // pictureBox1
+            // pboxBackground1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(24, 106);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(616, 313);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 121;
-            this.pictureBox1.TabStop = false;
+            this.pboxBackground1.Image = ((System.Drawing.Image)(resources.GetObject("pboxBackground1.Image")));
+            this.pboxBackground1.Location = new System.Drawing.Point(24, 106);
+            this.pboxBackground1.Margin = new System.Windows.Forms.Padding(2);
+            this.pboxBackground1.Name = "pboxBackground1";
+            this.pboxBackground1.Size = new System.Drawing.Size(616, 313);
+            this.pboxBackground1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxBackground1.TabIndex = 121;
+            this.pboxBackground1.TabStop = false;
             // 
-            // label1
+            // lblAddress
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(42, 124);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 20);
-            this.label1.TabIndex = 122;
-            this.label1.Text = "Address";
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.Image = ((System.Drawing.Image)(resources.GetObject("lblAddress.Image")));
+            this.lblAddress.Location = new System.Drawing.Point(42, 125);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(75, 20);
+            this.lblAddress.TabIndex = 122;
+            this.lblAddress.Text = "Address";
             // 
-            // label2
+            // lblCardDetails
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(42, 266);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 20);
-            this.label2.TabIndex = 123;
-            this.label2.Text = "Card Details";
+            this.lblCardDetails.AutoSize = true;
+            this.lblCardDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCardDetails.Image = ((System.Drawing.Image)(resources.GetObject("lblCardDetails.Image")));
+            this.lblCardDetails.Location = new System.Drawing.Point(42, 255);
+            this.lblCardDetails.Name = "lblCardDetails";
+            this.lblCardDetails.Size = new System.Drawing.Size(108, 20);
+            this.lblCardDetails.TabIndex = 123;
+            this.lblCardDetails.Text = "Card Details";
             // 
-            // pictureBox2
+            // pboxAd2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(675, 292);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(170, 113);
-            this.pictureBox2.TabIndex = 125;
-            this.pictureBox2.TabStop = false;
+            this.pboxAd2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pboxAd2.Location = new System.Drawing.Point(675, 292);
+            this.pboxAd2.Name = "pboxAd2";
+            this.pboxAd2.Size = new System.Drawing.Size(170, 113);
+            this.pboxAd2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxAd2.TabIndex = 125;
+            this.pboxAd2.TabStop = false;
+            this.pboxAd2.Click += new System.EventHandler(this.pboxAd2_Click);
             // 
-            // pictureBox3
+            // pboxAd3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(675, 424);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(170, 113);
-            this.pictureBox3.TabIndex = 126;
-            this.pictureBox3.TabStop = false;
+            this.pboxAd3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pboxAd3.Location = new System.Drawing.Point(675, 424);
+            this.pboxAd3.Name = "pboxAd3";
+            this.pboxAd3.Size = new System.Drawing.Size(170, 113);
+            this.pboxAd3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxAd3.TabIndex = 126;
+            this.pboxAd3.TabStop = false;
+            this.pboxAd3.Click += new System.EventHandler(this.pboxAd3_Click);
             // 
-            // pictureBox4
+            // pboxBackground3
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(661, 106);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(201, 454);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 128;
-            this.pictureBox4.TabStop = false;
+            this.pboxBackground3.Image = ((System.Drawing.Image)(resources.GetObject("pboxBackground3.Image")));
+            this.pboxBackground3.Location = new System.Drawing.Point(661, 106);
+            this.pboxBackground3.Margin = new System.Windows.Forms.Padding(2);
+            this.pboxBackground3.Name = "pboxBackground3";
+            this.pboxBackground3.Size = new System.Drawing.Size(201, 462);
+            this.pboxBackground3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxBackground3.TabIndex = 128;
+            this.pboxBackground3.TabStop = false;
             // 
-            // button1
+            // btnPlaceOrder
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(92, 518);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(149, 29);
-            this.button1.TabIndex = 129;
-            this.button1.Text = "Place Order";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnPlaceOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPlaceOrder.Location = new System.Drawing.Point(68, 524);
+            this.btnPlaceOrder.Name = "btnPlaceOrder";
+            this.btnPlaceOrder.Size = new System.Drawing.Size(149, 29);
+            this.btnPlaceOrder.TabIndex = 129;
+            this.btnPlaceOrder.Text = "Place Order";
+            this.btnPlaceOrder.UseVisualStyleBackColor = true;
+            this.btnPlaceOrder.Click += new System.EventHandler(this.btnPlaceOrder_Click);
             // 
-            // pictureBox5
+            // pboxAd1
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(675, 162);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(170, 113);
-            this.pictureBox5.TabIndex = 130;
-            this.pictureBox5.TabStop = false;
+            this.pboxAd1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pboxAd1.Location = new System.Drawing.Point(675, 162);
+            this.pboxAd1.Name = "pboxAd1";
+            this.pboxAd1.Size = new System.Drawing.Size(170, 113);
+            this.pboxAd1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxAd1.TabIndex = 130;
+            this.pboxAd1.TabStop = false;
+            this.pboxAd1.Click += new System.EventHandler(this.pboxAd1_Click);
             // 
-            // label4
+            // lblAdvertisment
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
-            this.label4.Location = new System.Drawing.Point(671, 125);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 20);
-            this.label4.TabIndex = 131;
-            this.label4.Text = "Try Me...";
+            this.lblAdvertisment.AutoSize = true;
+            this.lblAdvertisment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdvertisment.Image = ((System.Drawing.Image)(resources.GetObject("lblAdvertisment.Image")));
+            this.lblAdvertisment.Location = new System.Drawing.Point(671, 125);
+            this.lblAdvertisment.Name = "lblAdvertisment";
+            this.lblAdvertisment.Size = new System.Drawing.Size(77, 20);
+            this.lblAdvertisment.TabIndex = 131;
+            this.lblAdvertisment.Text = "Try Me...";
             // 
-            // label3
+            // lblTotal
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Image = ((System.Drawing.Image)(resources.GetObject("label3.Image")));
-            this.label3.Location = new System.Drawing.Point(42, 472);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 20);
-            this.label3.TabIndex = 132;
-            this.label3.Text = "Total";
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotal.Image = ((System.Drawing.Image)(resources.GetObject("lblTotal.Image")));
+            this.lblTotal.Location = new System.Drawing.Point(42, 472);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(64, 20);
+            this.lblTotal.TabIndex = 132;
+            this.lblTotal.Text = "Total £";
             // 
-            // label5
+            // lblDevileryCharge
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Image = ((System.Drawing.Image)(resources.GetObject("label5.Image")));
-            this.label5.Location = new System.Drawing.Point(42, 436);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(135, 20);
-            this.label5.TabIndex = 133;
-            this.label5.Text = "Delivery Charge";
+            this.lblDevileryCharge.AutoSize = true;
+            this.lblDevileryCharge.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDevileryCharge.Image = ((System.Drawing.Image)(resources.GetObject("lblDevileryCharge.Image")));
+            this.lblDevileryCharge.Location = new System.Drawing.Point(42, 436);
+            this.lblDevileryCharge.Name = "lblDevileryCharge";
+            this.lblDevileryCharge.Size = new System.Drawing.Size(150, 20);
+            this.lblDevileryCharge.TabIndex = 133;
+            this.lblDevileryCharge.Text = "Delivery Charge £";
             // 
-            // pictureBox6
+            // pboxBackground2
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(24, 316);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(281, 244);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 134;
-            this.pictureBox6.TabStop = false;
+            this.pboxBackground2.Image = ((System.Drawing.Image)(resources.GetObject("pboxBackground2.Image")));
+            this.pboxBackground2.Location = new System.Drawing.Point(24, 316);
+            this.pboxBackground2.Margin = new System.Windows.Forms.Padding(2);
+            this.pboxBackground2.Name = "pboxBackground2";
+            this.pboxBackground2.Size = new System.Drawing.Size(233, 252);
+            this.pboxBackground2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pboxBackground2.TabIndex = 134;
+            this.pboxBackground2.TabStop = false;
+            // 
+            // lblTotalNumber
+            // 
+            this.lblTotalNumber.AutoSize = true;
+            this.lblTotalNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalNumber.Image = ((System.Drawing.Image)(resources.GetObject("lblTotalNumber.Image")));
+            this.lblTotalNumber.Location = new System.Drawing.Point(98, 472);
+            this.lblTotalNumber.Name = "lblTotalNumber";
+            this.lblTotalNumber.Size = new System.Drawing.Size(19, 20);
+            this.lblTotalNumber.TabIndex = 135;
+            this.lblTotalNumber.Text = "0";
+            // 
+            // lblDeliveryChargeNumber
+            // 
+            this.lblDeliveryChargeNumber.AutoSize = true;
+            this.lblDeliveryChargeNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeliveryChargeNumber.Image = ((System.Drawing.Image)(resources.GetObject("lblDeliveryChargeNumber.Image")));
+            this.lblDeliveryChargeNumber.Location = new System.Drawing.Point(183, 436);
+            this.lblDeliveryChargeNumber.Name = "lblDeliveryChargeNumber";
+            this.lblDeliveryChargeNumber.Size = new System.Drawing.Size(19, 20);
+            this.lblDeliveryChargeNumber.TabIndex = 136;
+            this.lblDeliveryChargeNumber.Text = "0";
+            // 
+            // tboxAddressLine1
+            // 
+            this.tboxAddressLine1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxAddressLine1.Location = new System.Drawing.Point(123, 122);
+            this.tboxAddressLine1.Name = "tboxAddressLine1";
+            this.tboxAddressLine1.Size = new System.Drawing.Size(491, 26);
+            this.tboxAddressLine1.TabIndex = 137;
+            this.tboxAddressLine1.Text = "First Line Of Address";
+            this.tboxAddressLine1.Enter += new System.EventHandler(this.tboxAddressLine1_Enter);
+            this.tboxAddressLine1.Leave += new System.EventHandler(this.tboxAddressLine1_Leave);
+            // 
+            // tboxAddressLine2
+            // 
+            this.tboxAddressLine2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxAddressLine2.Location = new System.Drawing.Point(123, 154);
+            this.tboxAddressLine2.Name = "tboxAddressLine2";
+            this.tboxAddressLine2.Size = new System.Drawing.Size(491, 26);
+            this.tboxAddressLine2.TabIndex = 138;
+            this.tboxAddressLine2.Text = "Second Line Of Address";
+            this.tboxAddressLine2.Enter += new System.EventHandler(this.tboxAddressLine2_Enter);
+            this.tboxAddressLine2.Leave += new System.EventHandler(this.tboxAddressLine2_Leave);
+            // 
+            // tboxAddressLine3
+            // 
+            this.tboxAddressLine3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxAddressLine3.Location = new System.Drawing.Point(123, 186);
+            this.tboxAddressLine3.Name = "tboxAddressLine3";
+            this.tboxAddressLine3.Size = new System.Drawing.Size(491, 26);
+            this.tboxAddressLine3.TabIndex = 139;
+            this.tboxAddressLine3.Text = "Third Line Of Address";
+            this.tboxAddressLine3.Enter += new System.EventHandler(this.tboxAddressLine3_Enter);
+            this.tboxAddressLine3.Leave += new System.EventHandler(this.tboxAddressLine3_Leave);
+            // 
+            // tboxAddressLine4
+            // 
+            this.tboxAddressLine4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxAddressLine4.Location = new System.Drawing.Point(123, 218);
+            this.tboxAddressLine4.Name = "tboxAddressLine4";
+            this.tboxAddressLine4.Size = new System.Drawing.Size(491, 26);
+            this.tboxAddressLine4.TabIndex = 140;
+            this.tboxAddressLine4.Text = "Forth Line Of Address";
+            this.tboxAddressLine4.Enter += new System.EventHandler(this.tboxAddressLine4_Enter);
+            this.tboxAddressLine4.Leave += new System.EventHandler(this.tboxAddressLine4_Leave);
+            // 
+            // tboxCardNumber
+            // 
+            this.tboxCardNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxCardNumber.Location = new System.Drawing.Point(149, 252);
+            this.tboxCardNumber.Name = "tboxCardNumber";
+            this.tboxCardNumber.Size = new System.Drawing.Size(465, 26);
+            this.tboxCardNumber.TabIndex = 141;
+            this.tboxCardNumber.Text = "Card Number";
+            this.tboxCardNumber.Enter += new System.EventHandler(this.tboxCardNumber_Enter);
+            this.tboxCardNumber.Leave += new System.EventHandler(this.tboxCardNumber_Leave);
+            // 
+            // tboxNameOnCard
+            // 
+            this.tboxNameOnCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxNameOnCard.Location = new System.Drawing.Point(149, 284);
+            this.tboxNameOnCard.Name = "tboxNameOnCard";
+            this.tboxNameOnCard.Size = new System.Drawing.Size(465, 26);
+            this.tboxNameOnCard.TabIndex = 142;
+            this.tboxNameOnCard.Text = "Name On Card";
+            this.tboxNameOnCard.Enter += new System.EventHandler(this.tboxNameOnCard_Enter);
+            this.tboxNameOnCard.Leave += new System.EventHandler(this.tboxNameOnCard_Leave);
+            // 
+            // tboxExpirationDate
+            // 
+            this.tboxExpirationDate.Enabled = false;
+            this.tboxExpirationDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxExpirationDate.Location = new System.Drawing.Point(149, 316);
+            this.tboxExpirationDate.Name = "tboxExpirationDate";
+            this.tboxExpirationDate.Size = new System.Drawing.Size(162, 26);
+            this.tboxExpirationDate.TabIndex = 143;
+            this.tboxExpirationDate.Text = "Expiration Date";
+            this.tboxExpirationDate.Enter += new System.EventHandler(this.tboxExpirationDate_Enter);
+            this.tboxExpirationDate.Leave += new System.EventHandler(this.tboxExpirationDate_Leave);
+            // 
+            // tboxSecurityCode
+            // 
+            this.tboxSecurityCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxSecurityCode.Location = new System.Drawing.Point(149, 348);
+            this.tboxSecurityCode.Name = "tboxSecurityCode";
+            this.tboxSecurityCode.Size = new System.Drawing.Size(465, 26);
+            this.tboxSecurityCode.TabIndex = 144;
+            this.tboxSecurityCode.Text = "Security Code";
+            this.tboxSecurityCode.Enter += new System.EventHandler(this.tboxSecurityCode_Enter);
+            this.tboxSecurityCode.Leave += new System.EventHandler(this.tboxSecurityCode_Leave);
+            // 
+            // tboxSecurityCode1
+            // 
+            this.tboxSecurityCode1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tboxSecurityCode1.Location = new System.Drawing.Point(198, 380);
+            this.tboxSecurityCode1.Name = "tboxSecurityCode1";
+            this.tboxSecurityCode1.Size = new System.Drawing.Size(115, 26);
+            this.tboxSecurityCode1.TabIndex = 147;
+            this.tboxSecurityCode1.Text = "Security Code";
+            this.tboxSecurityCode1.Enter += new System.EventHandler(this.tboxSecurityCode1_Enter);
+            this.tboxSecurityCode1.Leave += new System.EventHandler(this.tboxSecurityCode1_Leave);
+            // 
+            // dtPicker
+            // 
+            this.dtPicker.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtPicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtPicker.Location = new System.Drawing.Point(280, 316);
+            this.dtPicker.Name = "dtPicker";
+            this.dtPicker.Size = new System.Drawing.Size(202, 26);
+            this.dtPicker.TabIndex = 150;
+            // 
+            // cboxCardDetails
+            // 
+            this.cboxCardDetails.AutoSize = true;
+            this.cboxCardDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboxCardDetails.Location = new System.Drawing.Point(41, 381);
+            this.cboxCardDetails.Name = "cboxCardDetails";
+            this.cboxCardDetails.Size = new System.Drawing.Size(151, 24);
+            this.cboxCardDetails.TabIndex = 151;
+            this.cboxCardDetails.Text = "Use Default Card";
+            this.cboxCardDetails.UseVisualStyleBackColor = true;
+            this.cboxCardDetails.CheckedChanged += new System.EventHandler(this.cboxCardDetails_CheckedChanged);
+            // 
+            // cboxAddress
+            // 
+            this.cboxAddress.AutoSize = true;
+            this.cboxAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboxAddress.Location = new System.Drawing.Point(438, 380);
+            this.cboxAddress.Name = "cboxAddress";
+            this.cboxAddress.Size = new System.Drawing.Size(176, 24);
+            this.cboxAddress.TabIndex = 152;
+            this.cboxAddress.Text = "Use Default Address";
+            this.cboxAddress.UseVisualStyleBackColor = true;
+            this.cboxAddress.CheckedChanged += new System.EventHandler(this.cboxAddress_CheckedChanged);
             // 
             // CheckoutPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 612);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.cboxAddress);
+            this.Controls.Add(this.cboxCardDetails);
+            this.Controls.Add(this.dtPicker);
+            this.Controls.Add(this.tboxSecurityCode1);
+            this.Controls.Add(this.tboxSecurityCode);
+            this.Controls.Add(this.tboxExpirationDate);
+            this.Controls.Add(this.tboxNameOnCard);
+            this.Controls.Add(this.tboxCardNumber);
+            this.Controls.Add(this.tboxAddressLine4);
+            this.Controls.Add(this.tboxAddressLine3);
+            this.Controls.Add(this.tboxAddressLine2);
+            this.Controls.Add(this.tboxAddressLine1);
+            this.Controls.Add(this.lblDeliveryChargeNumber);
+            this.Controls.Add(this.lblTotalNumber);
+            this.Controls.Add(this.lblDevileryCharge);
+            this.Controls.Add(this.lblTotal);
+            this.Controls.Add(this.lblAdvertisment);
+            this.Controls.Add(this.pboxAd1);
+            this.Controls.Add(this.btnPlaceOrder);
+            this.Controls.Add(this.pboxAd3);
+            this.Controls.Add(this.pboxAd2);
+            this.Controls.Add(this.lblCardDetails);
+            this.Controls.Add(this.lblAddress);
+            this.Controls.Add(this.pboxBackground1);
+            this.Controls.Add(this.lboxProducts);
             this.Controls.Add(this.lblUserGuide);
             this.Controls.Add(this.lblFeedbackSurvey);
             this.Controls.Add(this.lblTermsConditions);
@@ -450,10 +646,11 @@
             this.Controls.Add(this.picTrove);
             this.Controls.Add(this.picFiller);
             this.Controls.Add(this.picGreyRibbon);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.pboxBackground3);
+            this.Controls.Add(this.pboxBackground2);
             this.Name = "CheckoutPage";
             this.Text = "Checkout";
+            this.Load += new System.EventHandler(this.CheckoutPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picArrowDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBasket)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSearchLoop)).EndInit();
@@ -462,12 +659,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.picFiller)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picGreyRibbon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBottomLine)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxBackground1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxAd2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxAd3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxBackground3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxAd1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pboxBackground2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -494,18 +691,32 @@
         private System.Windows.Forms.Label lblFeedbackSurvey;
         private System.Windows.Forms.Label lblTermsConditions;
         private System.Windows.Forms.PictureBox picBottomLine;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.ListBox lboxProducts;
+        private System.Windows.Forms.PictureBox pboxBackground1;
+        private System.Windows.Forms.Label lblAddress;
+        private System.Windows.Forms.Label lblCardDetails;
+        private System.Windows.Forms.PictureBox pboxAd2;
+        private System.Windows.Forms.PictureBox pboxAd3;
+        private System.Windows.Forms.PictureBox pboxBackground3;
+        private System.Windows.Forms.Button btnPlaceOrder;
+        private System.Windows.Forms.PictureBox pboxAd1;
+        private System.Windows.Forms.Label lblAdvertisment;
+        private System.Windows.Forms.Label lblTotal;
+        private System.Windows.Forms.Label lblDevileryCharge;
+        private System.Windows.Forms.PictureBox pboxBackground2;
+        private System.Windows.Forms.Label lblTotalNumber;
+        private System.Windows.Forms.Label lblDeliveryChargeNumber;
+        private System.Windows.Forms.TextBox tboxAddressLine1;
+        private System.Windows.Forms.TextBox tboxAddressLine2;
+        private System.Windows.Forms.TextBox tboxAddressLine3;
+        private System.Windows.Forms.TextBox tboxAddressLine4;
+        private System.Windows.Forms.TextBox tboxCardNumber;
+        private System.Windows.Forms.TextBox tboxNameOnCard;
+        private System.Windows.Forms.TextBox tboxExpirationDate;
+        private System.Windows.Forms.TextBox tboxSecurityCode;
+        private System.Windows.Forms.TextBox tboxSecurityCode1;
+        private System.Windows.Forms.DateTimePicker dtPicker;
+        private System.Windows.Forms.CheckBox cboxCardDetails;
+        private System.Windows.Forms.CheckBox cboxAddress;
     }
 }

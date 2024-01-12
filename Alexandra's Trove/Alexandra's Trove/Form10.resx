@@ -1981,7 +1981,7 @@
         RK5CYII=
 </value>
   </data>
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pboxBackground1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAK0AAAC2CAYAAACrvg0bAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
         cQAAEnEB89x6jgAAAiNJREFUeF7t2LENwjAURVHmh2QkzDZewyyQIkhRpCtOcZrn9jbfj/dzLigRLTmi
@@ -1996,7 +1996,7 @@
         oiVHtOSIlhzRkiNackRLjmiJmesL2vM0qYAkpFwAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="label1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="lblAddress.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAATkAAABRCAYAAACpMdFyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAARtJREFUeF7t1DERACAMADH04wk7tVF8/GWIhZx3ZwGqJAekSQ5IkxyQJjkgTXJA
@@ -2007,7 +2007,7 @@
         88DCJOQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="label2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="lblCardDetails.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAATkAAABRCAYAAACpMdFyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAARtJREFUeF7t1DERACAMADH04wk7tVF8/GWIhZx3ZwGqJAekSQ5IkxyQJjkgTXJA
@@ -2018,7 +2018,7 @@
         88DCJOQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pboxBackground3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAATYAAAIZCAYAAAAsrhPXAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAABq1JREFUeF7t1DERACAMADH8C6oFNiwVH38ZYiHn3VmAErEBOWIDcsQG5IgNyBEb
@@ -2053,7 +2053,7 @@
         QmCC
 </value>
   </data>
-  <data name="label4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="lblAdvertisment.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAATYAAAIZCAYAAAAsrhPXAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAABq1JREFUeF7t1DERACAMADH8C6oFNiwVH38ZYiHn3VmAErEBOWIDcsQG5IgNyBEb
@@ -2088,7 +2088,7 @@
         QmCC
 </value>
   </data>
-  <data name="label3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="lblTotal.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAATkAAABRCAYAAACpMdFyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAARtJREFUeF7t1DERACAMADH04wk7tVF8/GWIhZx3ZwGqJAekSQ5IkxyQJjkgTXJA
@@ -2099,7 +2099,7 @@
         88DCJOQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="label5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="lblDevileryCharge.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAATkAAABRCAYAAACpMdFyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         vAAADrwBlbxySQAAARtJREFUeF7t1DERACAMADH04wk7tVF8/GWIhZx3ZwGqJAekSQ5IkxyQJjkgTXJA
@@ -2110,7 +2110,7 @@
         88DCJOQAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pboxBackground2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAK0AAAC2CAYAAACrvg0bAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAS
         cQAAEnEB89x6jgAAAiNJREFUeF7t2LENwjAURVHmh2QkzDZewyyQIkhRpCtOcZrn9jbfj/dzLigRLTmi
@@ -2123,6 +2123,28 @@
         sP1AtNxuiJaasR3vZ4mW24mWnLEf72eJltuJlhzRkiNachxi9Pin5d+IlhzRkiNackRLjmjJES05oiVH
         tOSIlhzRkiNackRLjmjJES05oiVHtOSIlhzRkiNackRLjmjJES05oiVHtOSIlhzRkiNackRLjmjJES05
         oiVHtOSIlhzRkiNackRLjmiJmesL2vM0qYAkpFwAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="lblTotalNumber.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAATkAAABRCAYAAACpMdFyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAARtJREFUeF7t1DERACAMADH04wk7tVF8/GWIhZx3ZwGqJAekSQ5IkxyQJjkgTXJA
+        muSANMkBaZID0iQHpEkOSJMckCY5IE1yQJrkgDTJAWmSA9IkB6RJDkiTHJAmOSBNckCa5IA0yQFpkgPS
+        JAekSQ5IkxyQJjkgTXJAmuSANMkBaZID0iQHpEkOSJMckCY5IE1yQJrkgDTJAWmSA9IkB6RJDkiTHJAm
+        OSBNckCa5IA0yQFpkgPSJAekSQ5IkxyQJjkgTXJAmuSANMkBaZID0iQHpEkOSJMckCY5IE1yQJrkgDTJ
+        AWmSA9IkB6RJDkiTHJAmOSBNckCa5IA0yQFpkgPSJAekSQ5IkxyQJjkgTXJAmuSANMkBaZIDwmY/kUsy
+        88DCJOQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="lblDeliveryChargeNumber.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAATkAAABRCAYAAACpMdFyAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAARtJREFUeF7t1DERACAMADH04wk7tVF8/GWIhZx3ZwGqJAekSQ5IkxyQJjkgTXJA
+        muSANMkBaZID0iQHpEkOSJMckCY5IE1yQJrkgDTJAWmSA9IkB6RJDkiTHJAmOSBNckCa5IA0yQFpkgPS
+        JAekSQ5IkxyQJjkgTXJAmuSANMkBaZID0iQHpEkOSJMckCY5IE1yQJrkgDTJAWmSA9IkB6RJDkiTHJAm
+        OSBNckCa5IA0yQFpkgPSJAekSQ5IkxyQJjkgTXJAmuSANMkBaZID0iQHpEkOSJMckCY5IE1yQJrkgDTJ
+        AWmSA9IkB6RJDkiTHJAmOSBNckCa5IA0yQFpkgPSJAekSQ5IkxyQJjkgTXJAmuSANMkBaZIDwmY/kUsy
+        88DCJOQAAAAASUVORK5CYII=
 </value>
   </data>
 </root>

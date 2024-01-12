@@ -661,7 +661,7 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        public async static void InsertNewOrder(string OrderClientID, string OrderProductID, string OrderTotal, string OrderDeliveryPrice)
+        public async static void InsertNewOrder(string OrderClientID, string OrderProductID, string OrderTotal, string OrderDeliveryPrice, string DeliveryAddress)
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -695,7 +695,8 @@ namespace Alexandra_s_Trove.Resources
                 Total = OrderTotal,
                 DeliveryPrice = OrderDeliveryPrice,
                 DateOrdered = DateTime.Now.ToString("d/M/yyyy"),
-                EstimatedDelivery = date
+                EstimatedDelivery = date,
+                Address = DeliveryAddress
 
             };
             await Coll.InsertOneAsync(NewOrder);
@@ -721,6 +722,7 @@ namespace Alexandra_s_Trove.Resources
             List<string> DeliveryPrices = new List<string>();
             List<string> DatesOrdered = new List<string>();
             List<string> EstimatedDeliveries = new List<string>();
+            List<string> Addresses = new List<string>();
 
             string clientID = "";
             string productIDs = "";
@@ -728,6 +730,7 @@ namespace Alexandra_s_Trove.Resources
             string deliveryPrice = "";
             string dateOrdered = "";
             string estimatedDelivery = "";
+            string address = "";
 
 
             foreach (var datas in data.ToList())
@@ -741,7 +744,7 @@ namespace Alexandra_s_Trove.Resources
                     DeliveryPrices.Add(datas.DeliveryPrice);
                     DatesOrdered.Add(datas.DateOrdered);
                     EstimatedDeliveries.Add(datas.EstimatedDelivery);
-
+                    Addresses.Add(datas.Address);
                 }
             }
 
@@ -758,7 +761,7 @@ namespace Alexandra_s_Trove.Resources
                     deliveryPrice = DeliveryPrices[i];
                     dateOrdered = DatesOrdered[i];
                     estimatedDelivery = EstimatedDeliveries[i];
-
+                    address = Addresses[i];
 
 
                     IDExists = true;
@@ -796,6 +799,7 @@ namespace Alexandra_s_Trove.Resources
             List<string> DeliveryPrices = new List<string>();
             List<string> DatesOrdered = new List<string>();
             List<string> EstimatedDeliveries = new List<string>();
+            List<string> Addresses = new List<string>();
 
             foreach (var datas in data.ToList())
             {
@@ -808,14 +812,15 @@ namespace Alexandra_s_Trove.Resources
                     DeliveryPrices.Add(datas.DeliveryPrice);
                     DatesOrdered.Add(datas.DateOrdered);
                     EstimatedDeliveries.Add(datas.EstimatedDelivery);
+                    Addresses.Add(datas.Address);
 
                 }
             }
 
-            for (int i = 0; i < OrderIDs.Count; i++)
+            /*for (int i = 0; i < OrderIDs.Count; i++)
             {
                 MessageBox.Show(OrderIDs[i] + "/" + ClientIDs[i] + "/" + ProductsIDs[i] + "/" + Totals[i] + "/" + DeliveryPrices[i] + "/" + DatesOrdered[i] + "/" + EstimatedDeliveries[i]);
-            }
+            }*/
 
 
         }
@@ -1452,9 +1457,11 @@ namespace Alexandra_s_Trove.Resources
         public string DateOrdered { get; set; }
         public string EstimatedDelivery { get; set; }
 
+        public string Address { get; set; }
 
 
-    }
+
+        }
 
     [BsonIgnoreExtraElements]
     public class Client

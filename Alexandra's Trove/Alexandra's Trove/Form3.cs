@@ -75,8 +75,8 @@ namespace Alexandra_s_Trove
         private void btnOrderInsert_Click(object sender, EventArgs e)
         {
             
-            DatabaseHandler.InsertNewOrder(txtOrderClientID.Text, txtOrderProductID.Text, txtOrderTotal.Text,
-             txtOrderDeliveryPrice.Text);
+           // DatabaseHandler.InsertNewOrder(txtOrderClientID.Text, txtOrderProductID.Text, txtOrderTotal.Text,
+            // txtOrderDeliveryPrice.Text);
 
             txtOrderID.Text = "";
             txtOrderClientID.Text = "";

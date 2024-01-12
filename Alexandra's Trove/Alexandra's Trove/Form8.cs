@@ -139,7 +139,7 @@ namespace Alexandra_s_Trove
 
 
             lblProductsTotalNumber.Text = price.ToString();
-            if(price < 40) { lblTransportFeeNumber.Text = "2.50"; }
+            if(price < 40 && price > 0) { lblTransportFeeNumber.Text = "2.50"; }
             double total = Convert.ToDouble(lblTransportFeeNumber.Text) + Convert.ToDouble(lblProductsTotalNumber.Text);
             lblTotalNumber.Text = total.ToString();
             if (lblNameOne.Visible == false) { lblNameOne.Visible = true;  lblNameOne.Text = "No Products To Display"; }
@@ -212,7 +212,18 @@ namespace Alexandra_s_Trove
 
         private void lblPay_Click(object sender, EventArgs e)
         {
+            if (lblTotalNumber.Text == "0") 
+            {
+                MessageBox.Show("There are no products in the basket");
+            }
+            else 
+            {
+                CheckoutPage bp = new CheckoutPage(); bp.Show();
 
+                Hide();
+            }
+
+            
         }
 
         private void lblBinSelection1_Click(object sender, EventArgs e)
