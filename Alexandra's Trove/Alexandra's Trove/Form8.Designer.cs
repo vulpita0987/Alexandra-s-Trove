@@ -96,6 +96,7 @@
             this.lblProduct2ID = new System.Windows.Forms.Label();
             this.lblProduct3ID = new System.Windows.Forms.Label();
             this.lblProduct4ID = new System.Windows.Forms.Label();
+            this.lblNoMoreProducts = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picArrowDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBasket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSearchLoop)).BeginInit();
@@ -433,10 +434,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(49, 490);
+            this.pictureBox2.Location = new System.Drawing.Point(31, 490);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(537, 55);
+            this.pictureBox2.Size = new System.Drawing.Size(555, 55);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 158;
             this.pictureBox2.TabStop = false;
@@ -879,11 +880,24 @@
             this.lblProduct4ID.Text = "ID4";
             this.lblProduct4ID.Visible = false;
             // 
+            // lblNoMoreProducts
+            // 
+            this.lblNoMoreProducts.AutoSize = true;
+            this.lblNoMoreProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoMoreProducts.Image = ((System.Drawing.Image)(resources.GetObject("lblNoMoreProducts.Image")));
+            this.lblNoMoreProducts.Location = new System.Drawing.Point(165, 507);
+            this.lblNoMoreProducts.Name = "lblNoMoreProducts";
+            this.lblNoMoreProducts.Size = new System.Drawing.Size(312, 20);
+            this.lblNoMoreProducts.TabIndex = 198;
+            this.lblNoMoreProducts.Text = "There are no more products to display";
+            this.lblNoMoreProducts.Visible = false;
+            // 
             // BasketPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 612);
+            this.Controls.Add(this.lblNoMoreProducts);
             this.Controls.Add(this.lblProduct4ID);
             this.Controls.Add(this.lblProduct3ID);
             this.Controls.Add(this.lblProduct2ID);
@@ -1046,5 +1060,6 @@
         private System.Windows.Forms.Label lblProduct2ID;
         private System.Windows.Forms.Label lblProduct3ID;
         private System.Windows.Forms.Label lblProduct4ID;
+        private System.Windows.Forms.Label lblNoMoreProducts;
     }
 }

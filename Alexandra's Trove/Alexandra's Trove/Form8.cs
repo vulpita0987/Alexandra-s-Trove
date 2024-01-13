@@ -42,7 +42,14 @@ namespace Alexandra_s_Trove
             ProductName = BasketHandler.RetriveValuesProductNames();
             double price = 0;
 
+            if (ProductID.Count <= 4) 
+            {
+                lblNext.Visible = false;
+                pboxArrowRight.Visible = false;
+                lblNoMoreProducts.Visible = true;
+            }
 
+            if (ProductID.Count == 0) { lblNoMoreProducts.Visible = false; }
 
 
                 if (ProductID.Count > 0)
@@ -215,6 +222,7 @@ namespace Alexandra_s_Trove
             if (lblTotalNumber.Text == "0") 
             {
                 MessageBox.Show("There are no products in the basket");
+                
             }
             else 
             {

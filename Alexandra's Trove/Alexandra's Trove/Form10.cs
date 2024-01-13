@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Alexandra_s_Trove.Resources.DatabaseHandler;
+using static MongoDB.Bson.Serialization.Serializers.SerializerHelper;
 
 namespace Alexandra_s_Trove
 {
@@ -30,9 +31,9 @@ namespace Alexandra_s_Trove
             Totals = BasketHandler.RetriveValuesTotals();
             ProductID = BasketHandler.RetriveValuesProductIDs();
             ProductName = BasketHandler.RetriveValuesProductNames();
-
+            tboxSecurityCode1.Enabled = false;
             double total = 0;
-            for(int i = 0; i < ProductID.Count; i++) 
+            for (int i = 0; i < ProductID.Count; i++)
             {
                 string text = "Product: " + ProductName[i] + ". Quantity: " + NoOfItems[i].ToString() + ". Price:£" + Totals[i].ToString() + ".";
                 lboxProducts.Items.Add(text);
@@ -48,7 +49,7 @@ namespace Alexandra_s_Trove
             pboxAd3.Image = Resource.Raspberries3;
 
             string ID = ClientAccountAccess.GetID();
-            if(ID == "C0") 
+            if (ID == "C0")
             {
                 cboxCardDetails.Enabled = false;
                 tboxSecurityCode1.Enabled = false;
@@ -163,8 +164,9 @@ namespace Alexandra_s_Trove
 
         private void tboxAddressLine1_Enter(object sender, EventArgs e)
         {
+            tboxAddressLine1.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
             string ID = ClientAccountAccess.GetID();
-            if (ID == "C0")
+            if (ID == "C0" || cboxAddress.Checked == false)
             {
                 tboxAddressLine1.Text = "";
             }
@@ -173,8 +175,9 @@ namespace Alexandra_s_Trove
 
         private void tboxAddressLine2_Enter(object sender, EventArgs e)
         {
+            tboxAddressLine2.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
             string ID = ClientAccountAccess.GetID();
-            if (ID == "C0")
+            if (ID == "C0" || cboxAddress.Checked == false)
             {
                 tboxAddressLine2.Text = "";
             }
@@ -183,8 +186,10 @@ namespace Alexandra_s_Trove
 
         private void tboxAddressLine3_Enter(object sender, EventArgs e)
         {
+            tboxAddressLine3.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
+
             string ID = ClientAccountAccess.GetID();
-            if (ID == "C0")
+            if (ID == "C0" || cboxAddress.Checked == false)
             {
                 tboxAddressLine3.Text = "";
             }
@@ -192,8 +197,10 @@ namespace Alexandra_s_Trove
 
         private void tboxAddressLine4_Enter(object sender, EventArgs e)
         {
+            tboxAddressLine4.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
+
             string ID = ClientAccountAccess.GetID();
-            if (ID == "C0")
+            if (ID == "C0" || cboxAddress.Checked == false)
             {
                 tboxAddressLine4.Text = "";
             }
@@ -201,10 +208,10 @@ namespace Alexandra_s_Trove
 
         private void tboxAddressLine1_Leave(object sender, EventArgs e)
         {
-            
-            if(tboxAddressLine1.Text == "") { tboxAddressLine1.Text = "First Line Of Address"; }
-                
-            
+
+            if (tboxAddressLine1.Text == "") { tboxAddressLine1.Text = "First Line Of Address"; }
+
+
         }
 
         private void tboxAddressLine2_Leave(object sender, EventArgs e)
@@ -224,11 +231,10 @@ namespace Alexandra_s_Trove
 
         private void tboxCardNumber_Enter(object sender, EventArgs e)
         {
-            string ID = ClientAccountAccess.GetID();
-            if (ID == "C0")
-            {
-                tboxCardNumber.Text = "";
-            }
+            tboxCardNumber.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
+
+            tboxCardNumber.Text = "";
+
         }
 
         private void tboxCardNumber_Leave(object sender, EventArgs e)
@@ -238,11 +244,10 @@ namespace Alexandra_s_Trove
 
         private void tboxNameOnCard_Enter(object sender, EventArgs e)
         {
-            string ID = ClientAccountAccess.GetID();
-            if (ID == "C0")
-            {
-                tboxNameOnCard.Text = "";
-            }
+            tboxNameOnCard.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
+
+            tboxNameOnCard.Text = "";
+
         }
 
         private void tboxNameOnCard_Leave(object sender, EventArgs e)
@@ -252,11 +257,10 @@ namespace Alexandra_s_Trove
 
         private void tboxExpirationDate_Enter(object sender, EventArgs e)
         {
-            string ID = ClientAccountAccess.GetID();
-            if (ID == "C0")
-            {
-                tboxExpirationDate.Text = "";
-            }
+            tboxExpirationDate.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
+
+            tboxExpirationDate.Text = "";
+
         }
 
         private void tboxExpirationDate_Leave(object sender, EventArgs e)
@@ -266,11 +270,10 @@ namespace Alexandra_s_Trove
 
         private void tboxSecurityCode_Enter(object sender, EventArgs e)
         {
-            string ID = ClientAccountAccess.GetID();
-            if (ID == "C0")
-            {
-                tboxSecurityCode.Text = "";
-            }
+            tboxSecurityCode.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
+
+            tboxSecurityCode.Text = "";
+
         }
 
         private void tboxSecurityCode_Leave(object sender, EventArgs e)
@@ -280,6 +283,8 @@ namespace Alexandra_s_Trove
 
         private void tboxSecurityCode1_Enter(object sender, EventArgs e)
         {
+            tboxSecurityCode1.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
+
             tboxSecurityCode1.Text = "";
         }
 
@@ -364,13 +369,13 @@ namespace Alexandra_s_Trove
                 }
 
 
-                tboxSecurityCode1.Enabled = false;
+                // tboxSecurityCode1.Enabled = false;
                 tboxCardNumber.Enabled = false;
                 tboxNameOnCard.Enabled = false;
                 tboxSecurityCode.Enabled = false;
                 dtPicker.Enabled = false;
+                tboxSecurityCode1.Enabled = true;
 
-                
                 MessageBox.Show("Please Enter Security Code To Enable Using The Default Card");
                 //dtPicker.Value = new DateTime(2008, 01, 24);//year/month/day
             }
@@ -382,14 +387,15 @@ namespace Alexandra_s_Trove
                 tboxSecurityCode.Text = "Security Code";
                 dtPicker.Value = new DateTime(2008, 01, 24);
 
-                tboxSecurityCode1.Enabled = true;
+                tboxSecurityCode1.Enabled = false;
+                //tboxSecurityCode1.Enabled = true;
                 tboxCardNumber.Enabled = true;
                 tboxNameOnCard.Enabled = true;
                 tboxSecurityCode.Enabled = true;
                 dtPicker.Enabled = true;
             }
-            
-            
+
+
         }
 
         private async void cboxAddress_CheckedChanged(object sender, EventArgs e)
@@ -441,7 +447,7 @@ namespace Alexandra_s_Trove
                     }
                 }
 
-                
+
 
                 for (int i = 0; i < ClientIDs.Count; i++)
                 {
@@ -461,7 +467,7 @@ namespace Alexandra_s_Trove
                         creaditCardDetails1 = EncryptDecrypt.Decrypt(creaditCardDetails1);
 
 
-                        
+
                     }
                 }
 
@@ -503,7 +509,7 @@ namespace Alexandra_s_Trove
                 tboxAddressLine2.Enabled = false;
                 tboxAddressLine3.Enabled = false;
                 tboxAddressLine4.Enabled = false;
-              
+
 
             }
             else
@@ -524,77 +530,75 @@ namespace Alexandra_s_Trove
         {
             string ID = ClientAccountAccess.GetID();
 
-            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
-            string DatabaseName = "Assignment";
-            string CollectionName = "Client";
-            var Connection = new MongoClient(ConnectionString);
-            var db = Connection.GetDatabase(DatabaseName);
-            var Coll = db.GetCollection<Client>(CollectionName);
-
-            var data = await Coll.FindAsync(_ => true);
-
-            List<string> ClientIDs = new List<string>();
-            List<string> names = new List<string>();
-            List<string> DOBs = new List<string>();
-            List<string> addresses = new List<string>();
-            List<string> phoneNumbers = new List<string>();
-            List<string> passwords = new List<string>();
-            List<string> creaditCardDetailsAll = new List<string>();
-            List<string> accountCreationDates = new List<string>();
-            List<string> emailAddresses = new List<string>();
-            string name1 = "";
-            string DOB1 = "";
-            string address1 = "";
-            string phoneNumber1 = "";
-            string password1 = "";
-            string creaditCardDetails1 = "";
-            string accountCreationDate1 = "";
-            string emailAddress1 = "";
-
-
-            foreach (var datas in data.ToList())
+            if (ID != "C0")
             {
-                if (data != null)
+                string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+                string DatabaseName = "Assignment";
+                string CollectionName = "Client";
+                var Connection = new MongoClient(ConnectionString);
+                var db = Connection.GetDatabase(DatabaseName);
+                var Coll = db.GetCollection<Client>(CollectionName);
+
+                var data = await Coll.FindAsync(_ => true);
+
+                List<string> ClientIDs = new List<string>();
+                List<string> names = new List<string>();
+                List<string> DOBs = new List<string>();
+                List<string> addresses = new List<string>();
+                List<string> phoneNumbers = new List<string>();
+                List<string> passwords = new List<string>();
+                List<string> creaditCardDetailsAll = new List<string>();
+                List<string> accountCreationDates = new List<string>();
+                List<string> emailAddresses = new List<string>();
+                string name1 = "";
+                string DOB1 = "";
+                string address1 = "";
+                string phoneNumber1 = "";
+                string password1 = "";
+                string creaditCardDetails1 = "";
+                string accountCreationDate1 = "";
+                string emailAddress1 = "";
+
+
+                foreach (var datas in data.ToList())
                 {
-                    ClientIDs.Add(datas.ID);
-                    names.Add(datas.Name);
-                    DOBs.Add(datas.DOB);
-                    addresses.Add(datas.Address);
-                    phoneNumbers.Add(datas.PhoneNumber);
-                    passwords.Add(datas.Password);
-                    creaditCardDetailsAll.Add(datas.CardDetails);
-                    accountCreationDates.Add(datas.AccountCreationDate);
-                    emailAddresses.Add(datas.EmailAddress);
+                    if (data != null)
+                    {
+                        ClientIDs.Add(datas.ID);
+                        names.Add(datas.Name);
+                        DOBs.Add(datas.DOB);
+                        addresses.Add(datas.Address);
+                        phoneNumbers.Add(datas.PhoneNumber);
+                        passwords.Add(datas.Password);
+                        creaditCardDetailsAll.Add(datas.CardDetails);
+                        accountCreationDates.Add(datas.AccountCreationDate);
+                        emailAddresses.Add(datas.EmailAddress);
+                    }
                 }
-            }
 
 
 
-            for (int i = 0; i < ClientIDs.Count; i++)
-            {
-                if (ClientIDs[i] == ID)
+                for (int i = 0; i < ClientIDs.Count; i++)
                 {
+                    if (ClientIDs[i] == ID)
+                    {
 
-                    name1 = names[i];
-                    DOB1 = DOBs[i];
-                    address1 = addresses[i];
-                    phoneNumber1 = phoneNumbers[i];
-                    password1 = passwords[i];
-                    creaditCardDetails1 = creaditCardDetailsAll[i];
-                    accountCreationDate1 = accountCreationDates[i];
-                    emailAddress1 = emailAddresses[i];
+                        name1 = names[i];
+                        DOB1 = DOBs[i];
+                        address1 = addresses[i];
+                        phoneNumber1 = phoneNumbers[i];
+                        password1 = passwords[i];
+                        creaditCardDetails1 = creaditCardDetailsAll[i];
+                        accountCreationDate1 = accountCreationDates[i];
+                        emailAddress1 = emailAddresses[i];
 
-                    password1 = EncryptDecrypt.Decrypt(password1);
-                    creaditCardDetails1 = EncryptDecrypt.Decrypt(creaditCardDetails1);
+                        password1 = EncryptDecrypt.Decrypt(password1);
+                        creaditCardDetails1 = EncryptDecrypt.Decrypt(creaditCardDetails1);
 
 
 
+                    }
                 }
-            }
-
-            if (creaditCardDetails1.ToLower().IndexOf(",") != -1)
-            {
-                creaditCardDetails1 = creaditCardDetails1.Substring(creaditCardDetails1.IndexOf(",") + 2);
 
                 if (creaditCardDetails1.ToLower().IndexOf(",") != -1)
                 {
@@ -603,18 +607,168 @@ namespace Alexandra_s_Trove
                     if (creaditCardDetails1.ToLower().IndexOf(",") != -1)
                     {
                         creaditCardDetails1 = creaditCardDetails1.Substring(creaditCardDetails1.IndexOf(",") + 2);
-                        
+
+                        if (creaditCardDetails1.ToLower().IndexOf(",") != -1)
+                        {
+                            creaditCardDetails1 = creaditCardDetails1.Substring(creaditCardDetails1.IndexOf(",") + 2);
+
+                        }
+
                     }
-                    
+
+
                 }
                 
 
+                bool allDetailsHaveBeenAdded = true;
+                if (cboxCardDetails.Checked == true)
+                {
+
+                    if (creaditCardDetails1 != tboxSecurityCode1.Text)
+                    {
+                        //MessageBox.Show("Wrong Security Code - Please Try again");
+                        cboxCardDetails.Checked = false;
+                        tboxSecurityCode1.Enabled = false;
+                        //tboxSecurityCode1.Enabled = true;
+                        tboxCardNumber.Enabled = true;
+                        tboxNameOnCard.Enabled = true;
+                        tboxSecurityCode.Enabled = true;
+                        dtPicker.Enabled = true;
+
+                        allDetailsHaveBeenAdded = false;
+                    }
+
+                    if (creaditCardDetails1 == tboxSecurityCode1.Text)
+                    {
+                        //correct security code - do nothing
+                    }
+
+                }
+                else
+                {
+
+                    if (tboxCardNumber.Text == "" || tboxCardNumber.Text == "Card Number")
+                    {
+                        //tboxCardNumber.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
+                        //MessageBox.Show("Card Number Required For Payment");
+                        tboxCardNumber.Text = "Card Number";
+                        tboxCardNumber.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
+                        allDetailsHaveBeenAdded = false;
+                    }
+
+                    if (tboxNameOnCard.Text == "" || tboxNameOnCard.Text == "Name On Card")
+                    {
+                        //MessageBox.Show("Name On Card Required For Payment");
+                        tboxNameOnCard.Text = "Name On Card";
+                        tboxNameOnCard.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
+                        allDetailsHaveBeenAdded = false;
+                    }
+
+                    if (tboxSecurityCode.Text == "" || tboxSecurityCode.Text == "Security Code")
+                    {
+                        //MessageBox.Show("Security Code Required For Payment");
+                        tboxSecurityCode.Text = "Security Code";
+                        tboxSecurityCode.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
+                        allDetailsHaveBeenAdded = false;
+                    }
+
+                }
+
+                if (cboxAddress.Checked == true)
+                {
+
+                    //do nothing - correct address
+
+                }
+                else
+                {
+                    if (tboxAddressLine1.Text == "" || tboxAddressLine1.Text == "First Line Of Address")
+                    {
+                        //MessageBox.Show("First Line Of Address Required For Transport");
+                        tboxAddressLine1.Text = "First Line Of Address";
+                        tboxAddressLine1.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
+                        allDetailsHaveBeenAdded = false;
+                    }
+
+                    if (tboxAddressLine2.Text == "" || tboxAddressLine2.Text == "Second Line Of Address")
+                    {
+                        //MessageBox.Show("Second Line Of Address Required For Transport");
+                        tboxAddressLine2.Text = "Second Line Of Address";
+                        tboxAddressLine2.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
+                        allDetailsHaveBeenAdded = false;
+                    }
+
+
+                }
+
+                if(allDetailsHaveBeenAdded == true) 
+                {
+                    //show order comfirmation page
+                    MessageBox.Show("Made It!");
+                }
+                else 
+                {
+                    MessageBox.Show("Please Recheck Your Information");
+                }
+
+
+
             }
-            //MessageBox.Show(creaditCardDetails1);
-            if(creaditCardDetails1 != tboxSecurityCode1.Text)
+            else 
             {
-                MessageBox.Show("Wrong Security Code - Please Try again");
-                cboxCardDetails.Checked = false;
+                bool allDetailsHaveBeenAdded = true;
+
+                if (tboxCardNumber.Text == "" || tboxCardNumber.Text == "Card Number")
+                {
+                    //tboxCardNumber.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
+                    //MessageBox.Show("Card Number Required For Payment");
+                    tboxCardNumber.Text = "Card Number";
+                    tboxCardNumber.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
+                    allDetailsHaveBeenAdded = false;
+                }
+
+                if (tboxNameOnCard.Text == "" || tboxNameOnCard.Text == "Name On Card")
+                {
+                    //MessageBox.Show("Name On Card Required For Payment");
+                    tboxNameOnCard.Text = "Name On Card";
+                    tboxNameOnCard.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
+                    allDetailsHaveBeenAdded = false;
+                }
+
+                if (tboxSecurityCode.Text == "" || tboxSecurityCode.Text == "Security Code")
+                {
+                    //MessageBox.Show("Security Code Required For Payment");
+                    tboxSecurityCode.Text = "Security Code";
+                    tboxSecurityCode.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
+                    allDetailsHaveBeenAdded = false;
+                }
+
+                if (tboxAddressLine1.Text == "" || tboxAddressLine1.Text == "First Line Of Address")
+                {
+                    //MessageBox.Show("First Line Of Address Required For Transport");
+                    tboxAddressLine1.Text = "First Line Of Address";
+                    tboxAddressLine1.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
+                    allDetailsHaveBeenAdded = false;
+                }
+
+                if (tboxAddressLine2.Text == "" || tboxAddressLine2.Text == "Second Line Of Address")
+                {
+                    //MessageBox.Show("Second Line Of Address Required For Transport");
+                    tboxAddressLine2.Text = "Second Line Of Address";
+                    tboxAddressLine2.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
+                    allDetailsHaveBeenAdded = false;
+                }
+
+
+                if (allDetailsHaveBeenAdded == true)
+                {
+                    //show order comfirmation page
+                    MessageBox.Show("Made It!");
+                }
+                else
+                {
+                    MessageBox.Show("Please Recheck Your Information");
+                }
             }
         }
     }
