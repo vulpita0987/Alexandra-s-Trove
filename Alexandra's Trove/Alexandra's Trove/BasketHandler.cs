@@ -14,6 +14,13 @@ namespace Alexandra_s_Trove
         static List<string>ProductID = new List<string>();
         static List<string> ProductName = new List<string>();
 
+        public static void ClearBasket()
+        {
+            NoOfItems.Clear();
+            Totals.Clear();
+            ProductID.Clear();
+            ProductName.Clear();
+        }
         public static void AddItemToBasket(string productID, int numberOfItems, double total, string productName)
         {
            

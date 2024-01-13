@@ -701,10 +701,58 @@ namespace Alexandra_s_Trove
 
                 }
 
-                if(allDetailsHaveBeenAdded == true) 
+                
+
+                if (allDetailsHaveBeenAdded == true) 
                 {
+                    List<int> NoOfItems = new List<int>();
+                    List<double> Totals = new List<double>();
+                    List<string> ProductID = new List<string>();
+                    List<string> ProductName = new List<string>();
+                    NoOfItems = BasketHandler.RetriveValuesNoOfItems();
+                    Totals = BasketHandler.RetriveValuesTotals();
+                    ProductID = BasketHandler.RetriveValuesProductIDs();
+                    ProductName = BasketHandler.RetriveValuesProductNames();
                     //show order comfirmation page
-                    MessageBox.Show("Made It!");
+                    string address = tboxAddressLine1.Text + ", " + tboxAddressLine2.Text + ", " + tboxAddressLine3.Text + ", " + tboxAddressLine4.Text;
+
+                    string productsIDs = "";
+                    string total = lblTotalNumber.Text;
+                    string deliveryCharge = lblDeliveryChargeNumber.Text;
+                    for (int i = 0; i < NoOfItems.Count; i++)
+                    {
+                        for (int j = 0; j < NoOfItems[i]; j++)
+                        {
+                            productsIDs = productsIDs + ProductID[i];
+                            productsIDs = productsIDs + " ";
+                        }
+
+                    }
+
+                    //InsertNewOrder(string OrderClientID, string OrderProductID, string OrderTotal, string OrderDeliveryPrice, string DeliveryAddress)
+                    //show order comfirmation page
+                    DatabaseHandler.InsertNewOrder(ID, productsIDs, total, deliveryCharge, address);
+                    //MessageBox.Show("Made It!");
+
+
+
+                    OrderConfirmationPage ocp = new OrderConfirmationPage();
+                    ocp.Show();
+                    Hide();
+                    if (ID == "C0")
+                    {
+                        GuestPage gp = new GuestPage();
+                        gp.Show();
+                    }
+                    else
+                    {
+                        LoggedInPage lip = new LoggedInPage();
+                        lip.Show();
+                    }
+
+                    BasketHandler.ClearBasket();
+
+
                 }
                 else 
                 {
@@ -762,8 +810,48 @@ namespace Alexandra_s_Trove
 
                 if (allDetailsHaveBeenAdded == true)
                 {
+                    List<int> NoOfItems = new List<int>();
+                    List<double> Totals = new List<double>();
+                    List<string> ProductID = new List<string>();
+                    List<string> ProductName = new List<string>();
+                    NoOfItems = BasketHandler.RetriveValuesNoOfItems();
+                    Totals = BasketHandler.RetriveValuesTotals();
+                    ProductID = BasketHandler.RetriveValuesProductIDs();
+                    ProductName = BasketHandler.RetriveValuesProductNames();
                     //show order comfirmation page
-                    MessageBox.Show("Made It!");
+                    string address = tboxAddressLine1.Text + ", " + tboxAddressLine2.Text + ", " + tboxAddressLine3.Text + ", " + tboxAddressLine4.Text;
+
+                    string productsIDs = "";
+                    string total = lblTotalNumber.Text;
+                    string deliveryCharge = lblDeliveryChargeNumber.Text;
+                    for (int i = 0; i < NoOfItems.Count; i++)
+                    {
+                        for (int j = 0; j < NoOfItems[i]; j++)
+                        {
+                            productsIDs = productsIDs + ProductID[i];
+                            productsIDs = productsIDs + " ";
+                        }
+
+                    }
+
+                    //InsertNewOrder(string OrderClientID, string OrderProductID, string OrderTotal, string OrderDeliveryPrice, string DeliveryAddress)
+                    //show order comfirmation page
+                    DatabaseHandler.InsertNewOrder(ID, productsIDs, total, deliveryCharge, address);
+                    //MessageBox.Show("Made It!");
+                    OrderConfirmationPage ocp = new OrderConfirmationPage();
+                    ocp.Show();
+                    Hide();
+                    if (ID == "C0")
+                    {
+                        GuestPage gp = new GuestPage();
+                        gp.Show();
+                    }
+                    else
+                    {
+                        LoggedInPage lip = new LoggedInPage();
+                        lip.Show();
+                    }
+                    BasketHandler.ClearBasket();
                 }
                 else
                 {
