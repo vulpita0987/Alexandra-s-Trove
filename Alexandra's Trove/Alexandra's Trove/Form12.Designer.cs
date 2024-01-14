@@ -490,9 +490,9 @@
             // tboxNewPassword2
             // 
             this.tboxNewPassword2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxNewPassword2.Location = new System.Drawing.Point(527, 436);
+            this.tboxNewPassword2.Location = new System.Drawing.Point(536, 436);
             this.tboxNewPassword2.Name = "tboxNewPassword2";
-            this.tboxNewPassword2.Size = new System.Drawing.Size(291, 26);
+            this.tboxNewPassword2.Size = new System.Drawing.Size(282, 26);
             this.tboxNewPassword2.TabIndex = 168;
             this.tboxNewPassword2.Text = "Please Reintroduce Password";
             this.tboxNewPassword2.Enter += new System.EventHandler(this.tboxNewPassword2_Enter);

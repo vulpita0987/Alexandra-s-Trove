@@ -345,7 +345,7 @@ namespace Alexandra_s_Trove
                 }
 
 
-
+                
                 for (int i = 0; i < ClientIDs.Count; i++)
                 {
                     if (ClientIDs[i] == ID)
@@ -363,11 +363,13 @@ namespace Alexandra_s_Trove
                         password1 = EncryptDecrypt.Decrypt(password1);
                         creaditCardDetails1 = EncryptDecrypt.Decrypt(creaditCardDetails1);
 
-
+                       
 
                     }
                 }
-
+                
+                
+               
 
                 // tboxSecurityCode1.Enabled = false;
                 tboxCardNumber.Enabled = false;
@@ -599,32 +601,31 @@ namespace Alexandra_s_Trove
 
                     }
                 }
-
-                if (creaditCardDetails1.ToLower().IndexOf(",") != -1)
+                //MessageBox.Show(password1);
+                //MessageBox.Show(EncryptDecrypt.Decrypt(creaditCardDetails1));
+                string decryptedCardDetails = EncryptDecrypt.Decrypt(creaditCardDetails1);
+                if (decryptedCardDetails.ToLower().IndexOf(",") != -1)
                 {
-                    creaditCardDetails1 = creaditCardDetails1.Substring(creaditCardDetails1.IndexOf(",") + 2);
+                    decryptedCardDetails = decryptedCardDetails.Substring(decryptedCardDetails.IndexOf(",") + 2);
 
-                    if (creaditCardDetails1.ToLower().IndexOf(",") != -1)
+                    if (decryptedCardDetails.ToLower().IndexOf(",") != -1)
                     {
-                        creaditCardDetails1 = creaditCardDetails1.Substring(creaditCardDetails1.IndexOf(",") + 2);
-
-                        if (creaditCardDetails1.ToLower().IndexOf(",") != -1)
-                        {
-                            creaditCardDetails1 = creaditCardDetails1.Substring(creaditCardDetails1.IndexOf(",") + 2);
-
-                        }
+                        decryptedCardDetails = decryptedCardDetails.Substring(decryptedCardDetails.IndexOf(",") + 2);
+                        
+                        
 
                     }
 
 
                 }
-                
+
+                //MessageBox.Show(decryptedCardDetails);
 
                 bool allDetailsHaveBeenAdded = true;
                 if (cboxCardDetails.Checked == true)
                 {
 
-                    if (creaditCardDetails1 != tboxSecurityCode1.Text)
+                    if (decryptedCardDetails != tboxSecurityCode1.Text)
                     {
                         //MessageBox.Show("Wrong Security Code - Please Try again");
                         cboxCardDetails.Checked = false;

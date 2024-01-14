@@ -22,9 +22,13 @@ namespace Alexandra_s_Trove
 
         private async void AccountPage_Load(object sender, EventArgs e)
         {
+            
             string ID = ClientAccountAccess.GetID();
             if (ID != "C0")
             {
+                /*string now = EncryptDecrypt.Encrypt("5645 3567 3577 3673, Miss Ioana Bucur, 887");
+                DatabaseHandler.UpdateClientName(ID, "Ioana Alexandra Bucur");
+                DatabaseHandler.UpdateClientCardDetails(ID, now);*/
                 string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
                 string DatabaseName = "Assignment";
                 string CollectionName = "Client";
@@ -92,10 +96,6 @@ namespace Alexandra_s_Trove
 
                     }
                 }
-
-
-
-
 
 
                 if (address1.ToLower().IndexOf(",") != -1)
@@ -301,9 +301,91 @@ namespace Alexandra_s_Trove
 
                     }
                 }
+                bool changedDetails = false;
+                if(password1 == tboxOldPassword.Text)
+                {
+                    if (tBoxName.Text != "" && tBoxName.Text != "Name" && tBoxName.Text != name1) 
+                    { DatabaseHandler.UpdateClientName(ID, tBoxName.Text);
+                        changedDetails = true;
+                    }
+
+                    DateTime date = dtpDOB.Value;
+                    string date1 = "";
+                    date1 = date.ToString().Substring(0, date.ToString().IndexOf(" "));
+                    if (DOB1 != date1)
+                    { DatabaseHandler.UpdateClientDOB(ID, date1);
+                        changedDetails = true;
+                    }
+
+                    if (tboxPhoneNumber.Text != "" && tboxPhoneNumber.Text != "Phone Number" && tboxPhoneNumber.Text != phoneNumber1)
+                    { DatabaseHandler.UpdateClientPhoneNumber(ID, tboxPhoneNumber.Text); changedDetails = true; }
+
+                    string address = "";
+                    if (tboxAddressLine1.Text != "" && tboxAddressLine1.Text != "First Line Of Address")
+                    { 
+                        address = address + tboxAddressLine1.Text;
+                        if (tboxAddressLine2.Text != "" && tboxAddressLine2.Text != "Second Line Of Address")
+                        { 
+                            address = address + ", " + tboxAddressLine2.Text;
+
+                            if (tboxAddressLine3.Text != "" && tboxAddressLine3.Text != "Third Line Of Address")
+                            {
+                                address = address + ", " + tboxAddressLine3.Text;
+
+                                if (tboxAddressLine4.Text != "" && tboxAddressLine4.Text != "Forth Line Of Address")
+                                {
+                                    address = address + ", " + tboxAddressLine4.Text;
+
+                                }
+                            }
+                        }
+
+                    }
+
+                    if (address != address1) { DatabaseHandler.UpdateClientAddress(ID, address); changedDetails = true; }
 
 
-            }
+                    
+                    if (tboxNameOnCard.Text != "" && tboxNameOnCard.Text != "Name On Card"
+                        && tboxCardNumber.Text != "" && tboxCardNumber.Text != "Card Number"
+                        && tboxSecurityCode.Text != "" && tboxSecurityCode.Text != "Security Code")
+                    {
+                        string cardDetails = tboxCardNumber.Text + ", " + tboxNameOnCard.Text + ", " + tboxSecurityCode;
+                        DatabaseHandler.UpdateClientName(ID, cardDetails); changedDetails = true;
+
+                    }
+
+                    if (tboxNewPassword1.Text != "" && tboxNewPassword1.Text != "Password" && tboxNewPassword2.Text != ""
+                        && tboxNewPassword2.Text != "Please Reintroduce Password")
+                    {
+                        if (tboxNewPassword1.Text != tboxNewPassword1.Text) 
+                        {
+                            MessageBox.Show("Passwords Need To Match In Order To Be Saved");
+                            tboxNewPassword1.Text = "Password";
+                            tboxNewPassword2.Text = "Please Reintroduce Password";
+                            tboxNewPassword1.UseSystemPasswordChar = false;
+                            tboxNewPassword2.UseSystemPasswordChar = false;
+
+                        }
+                        else { DatabaseHandler.UpdateClientPassword(ID, tboxNewPassword2.Text); changedDetails = true; }
+                    
+                    }
+
+                    if(changedDetails == true) 
+                    { 
+                        
+                        MessageBox.Show("Your Details Have Been Updated"); 
+                        AccountPage ap = new AccountPage();
+                        Hide();
+                        ap.Show();
+                    }
+                    
+                }
+                else 
+                { 
+                    MessageBox.Show("Inccorect Password");
+                    tboxOldPassword.UseSystemPasswordChar = false; tboxOldPassword.Text = "Current Password";  }
+                }
 
             }
         }
