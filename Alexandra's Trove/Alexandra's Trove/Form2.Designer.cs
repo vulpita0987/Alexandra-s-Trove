@@ -383,6 +383,7 @@
             this.lblAccount.Size = new System.Drawing.Size(75, 20);
             this.lblAccount.TabIndex = 67;
             this.lblAccount.Text = "Account";
+            this.lblAccount.Click += new System.EventHandler(this.lblAccount_Click);
             // 
             // picBasket
             // 

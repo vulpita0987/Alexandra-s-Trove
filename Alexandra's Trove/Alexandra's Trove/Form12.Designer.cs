@@ -424,6 +424,8 @@
             this.tboxOldPassword.Size = new System.Drawing.Size(195, 26);
             this.tboxOldPassword.TabIndex = 160;
             this.tboxOldPassword.Text = "Current Password";
+            this.tboxOldPassword.Enter += new System.EventHandler(this.tboxOldPassword_Enter);
+            this.tboxOldPassword.Leave += new System.EventHandler(this.tboxOldPassword_Leave);
             // 
             // tBoxName
             // 
@@ -460,6 +462,8 @@
             this.tboxNameOnCard.Size = new System.Drawing.Size(247, 26);
             this.tboxNameOnCard.TabIndex = 165;
             this.tboxNameOnCard.Text = "Name On Card";
+            this.tboxNameOnCard.Enter += new System.EventHandler(this.tboxNameOnCard_Enter);
+            this.tboxNameOnCard.Leave += new System.EventHandler(this.tboxNameOnCard_Leave);
             // 
             // tboxCardNumber
             // 
@@ -469,6 +473,8 @@
             this.tboxCardNumber.Size = new System.Drawing.Size(237, 26);
             this.tboxCardNumber.TabIndex = 166;
             this.tboxCardNumber.Text = "Card Number";
+            this.tboxCardNumber.Enter += new System.EventHandler(this.tboxCardNumber_Enter);
+            this.tboxCardNumber.Leave += new System.EventHandler(this.tboxCardNumber_Leave);
             // 
             // tboxNewPassword1
             // 
@@ -478,6 +484,8 @@
             this.tboxNewPassword1.Size = new System.Drawing.Size(295, 26);
             this.tboxNewPassword1.TabIndex = 167;
             this.tboxNewPassword1.Text = "Password";
+            this.tboxNewPassword1.Enter += new System.EventHandler(this.tboxNewPassword1_Enter);
+            this.tboxNewPassword1.Leave += new System.EventHandler(this.tboxNewPassword1_Leave);
             // 
             // tboxNewPassword2
             // 
@@ -487,6 +495,8 @@
             this.tboxNewPassword2.Size = new System.Drawing.Size(291, 26);
             this.tboxNewPassword2.TabIndex = 168;
             this.tboxNewPassword2.Text = "Please Reintroduce Password";
+            this.tboxNewPassword2.Enter += new System.EventHandler(this.tboxNewPassword2_Enter);
+            this.tboxNewPassword2.Leave += new System.EventHandler(this.tboxNewPassword2_Leave);
             // 
             // tboxExpirationDate
             // 
@@ -516,6 +526,7 @@
             this.btnSaveChanges.TabIndex = 171;
             this.btnSaveChanges.Text = "Save Changes";
             this.btnSaveChanges.UseVisualStyleBackColor = true;
+            this.btnSaveChanges.Click += new System.EventHandler(this.btnSaveChanges_Click);
             // 
             // tboxSecurityCode
             // 
@@ -525,6 +536,8 @@
             this.tboxSecurityCode.Size = new System.Drawing.Size(237, 26);
             this.tboxSecurityCode.TabIndex = 172;
             this.tboxSecurityCode.Text = "Security Code";
+            this.tboxSecurityCode.Enter += new System.EventHandler(this.tboxSecurityCode_Enter);
+            this.tboxSecurityCode.Leave += new System.EventHandler(this.tboxSecurityCode_Leave);
             // 
             // lblWarning
             // 
@@ -589,6 +602,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "AccountPage";
             this.Text = "Account";
+            this.Load += new System.EventHandler(this.AccountPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picArrowDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBasket)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSearchLoop)).EndInit();

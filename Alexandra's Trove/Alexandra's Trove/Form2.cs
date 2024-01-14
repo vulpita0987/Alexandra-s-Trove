@@ -281,5 +281,17 @@ namespace Alexandra_s_Trove
 
             Hide();
         }
+
+        private void lblAccount_Click(object sender, EventArgs e)
+        {
+            string ID = ClientAccountAccess.GetID();
+            if (ID != "C0") 
+            {
+                AccountPage ap = new AccountPage(); ap.Show();
+
+                Hide();
+            }
+                
+        }
     }
 }

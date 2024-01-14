@@ -859,5 +859,10 @@ namespace Alexandra_s_Trove
                 }
             }
         }
+
+        private void lblAccount_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
