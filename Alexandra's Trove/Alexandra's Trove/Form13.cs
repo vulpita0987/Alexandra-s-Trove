@@ -109,18 +109,30 @@ namespace Alexandra_s_Trove
                     CountIDs = ProductHandling.CountHowManyProductsBasedOnIDS(ProductsIDs2);
                     //MessageBox.Show(string.Join("* ", ProductsIDs2);
 
-                   /* foreach (KeyValuePair<string, int> element in CountIDs)
+                    /* foreach (KeyValuePair<string, int> element in CountIDs)
+                     {
+                         Console.WriteLine("Key: {0}, Value: {1}",
+                             element.Key, element.Value);
+                     }*/
+
+                    string productNamesHowMany = "Products bought: ";
+                    for (int j = 0; j < CountIDs.Count ; j++)
                     {
-                        Console.WriteLine("Key: {0}, Value: {1}",
-                            element.Key, element.Value);
-                    }*/
+
+                        for (int k = 0; k < GetNames.Count; k++) 
+                        {
+                            if (GetNames.ElementAt(k).Key == CountIDs.ElementAt(j).Key) 
+                            { productNamesHowMany = productNamesHowMany + GetNames.ElementAt(k).Value +"*"+ CountIDs.ElementAt(j).Value + " "; }
+                        }
+                            
+                    }
 
 
-                    rtbMain.AppendText("Order ID: " + OrderIDs1[i] + ". Total:£" + Totals1[i] + ".Delivered On: " 
-                        + EstimatedDeliveries1[i] + CountIDs[ProductsIDs2[i]]);
+                    rtbMain.AppendText("Order ID: " + OrderIDs1[i] + ". Total:£" + Totals1[i] + ". Delivered On: " 
+                        + EstimatedDeliveries1[i] + ". "+ productNamesHowMany);
+                    rtbMain.AppendText(".\n");
 
 
-                  
                     //show product and how many - then move on to next line 
                     //finally - make it look tidy
 
