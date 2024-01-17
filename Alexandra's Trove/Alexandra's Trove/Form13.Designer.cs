@@ -272,6 +272,7 @@
             // 
             // rtbMain
             // 
+            this.rtbMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtbMain.Location = new System.Drawing.Point(109, 171);
             this.rtbMain.Name = "rtbMain";
             this.rtbMain.Size = new System.Drawing.Size(670, 346);

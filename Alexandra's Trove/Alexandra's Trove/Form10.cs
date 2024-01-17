@@ -625,7 +625,7 @@ namespace Alexandra_s_Trove
                 if (cboxCardDetails.Checked == true)
                 {
 
-                    if (decryptedCardDetails != tboxSecurityCode1.Text)
+                    if ((decryptedCardDetails != tboxSecurityCode1.Text) || (tboxSecurityCode1.Text == ""))
                     {
                         //MessageBox.Show("Wrong Security Code - Please Try again");
                         cboxCardDetails.Checked = false;
@@ -678,7 +678,21 @@ namespace Alexandra_s_Trove
                 if (cboxAddress.Checked == true)
                 {
 
-                    //do nothing - correct address
+                    if (tboxAddressLine1.Text == "" || tboxAddressLine1.Text == "First Line Of Address")
+                    {
+                        //MessageBox.Show("First Line Of Address Required For Transport");
+                        tboxAddressLine1.Text = "First Line Of Address";
+                        tboxAddressLine1.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
+                        allDetailsHaveBeenAdded = false;
+                    }
+
+                    if (tboxAddressLine2.Text == "" || tboxAddressLine2.Text == "Second Line Of Address")
+                    {
+                        //MessageBox.Show("Second Line Of Address Required For Transport");
+                        tboxAddressLine2.Text = "Second Line Of Address";
+                        tboxAddressLine2.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
+                        allDetailsHaveBeenAdded = false;
+                    }
 
                 }
                 else

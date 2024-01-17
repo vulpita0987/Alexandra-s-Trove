@@ -296,7 +296,7 @@ namespace Alexandra_s_Trove
 
         private void lblOrders_Click(object sender, EventArgs e)
         {
-
+            OrdersPage op = new OrdersPage(); op.Show(); Hide();
         }
     }
 }

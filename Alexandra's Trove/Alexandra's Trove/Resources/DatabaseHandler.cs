@@ -781,6 +781,71 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
+        public async static void GetOrderBasedOnCustomerID(string CustomerID)//for later use
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Order";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Order>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            List<string> OrderIDs = new List<string>();
+            List<string> ClientIDs = new List<string>();
+            List<string> ProductsIDs = new List<string>();
+            List<string> Totals = new List<string>();
+            List<string> DeliveryPrices = new List<string>();
+            List<string> DatesOrdered = new List<string>();
+            List<string> EstimatedDeliveries = new List<string>();
+            List<string> Addresses = new List<string>();
+
+           
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    //all orders
+                    OrderIDs.Add(datas.ID);
+                    ClientIDs.Add(datas.ClientID);
+                    ProductsIDs.Add(datas.ProductIDs);
+                    Totals.Add(datas.Total);
+                    DeliveryPrices.Add(datas.DeliveryPrice);
+                    DatesOrdered.Add(datas.DateOrdered);
+                    EstimatedDeliveries.Add(datas.EstimatedDelivery);
+                    
+                }
+            }
+
+            //orders for specific Customer ID
+            List<string> OrderIDs1 = new List<string>();
+            List<string> ClientIDs1 = new List<string>();
+            List<string> ProductsIDs1 = new List<string>();
+            List<string> Totals1 = new List<string>();
+            List<string> DeliveryPrices1 = new List<string>();
+            List<string> DatesOrdered1 = new List<string>();
+            List<string> EstimatedDeliveries1 = new List<string>();
+
+            for (int i = 0; i < OrderIDs.Count; i++)
+            {
+                if (ClientIDs[i] == CustomerID) 
+                {
+                    OrderIDs1.Add(OrderIDs[i]);
+                    ClientIDs1.Add(ClientIDs[i]);
+                    ProductsIDs1.Add(ProductsIDs[i]);
+                    Totals1.Add(Totals[i]);
+                    DeliveryPrices1.Add(DeliveryPrices[i]);
+                    DatesOrdered1.Add(DatesOrdered[i]);
+                    EstimatedDeliveries1.Add(EstimatedDeliveries[i]);
+                }
+
+            }
+
+            
+        }
+
         public async static void GetOrders()//for later use
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
