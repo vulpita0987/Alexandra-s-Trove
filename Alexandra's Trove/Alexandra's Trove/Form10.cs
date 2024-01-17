@@ -595,7 +595,7 @@ namespace Alexandra_s_Trove
                         emailAddress1 = emailAddresses[i];
 
                         password1 = EncryptDecrypt.Decrypt(password1);
-                        creaditCardDetails1 = EncryptDecrypt.Decrypt(creaditCardDetails1);
+                        //creaditCardDetails1 = EncryptDecrypt.Decrypt(creaditCardDetails1);
 
 
 
@@ -611,8 +611,15 @@ namespace Alexandra_s_Trove
                     if (decryptedCardDetails.ToLower().IndexOf(",") != -1)
                     {
                         decryptedCardDetails = decryptedCardDetails.Substring(decryptedCardDetails.IndexOf(",") + 2);
-                        
-                        
+
+                        if (decryptedCardDetails.ToLower().IndexOf(",") != -1)
+                        {
+                            decryptedCardDetails = decryptedCardDetails.Substring(decryptedCardDetails.IndexOf(",") + 2);
+
+
+
+                        }
+
 
                     }
 

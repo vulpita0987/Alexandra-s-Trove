@@ -1,4 +1,5 @@
 ﻿using Alexandra_s_Trove.Resources;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,6 +10,7 @@ using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Alexandra_s_Trove.Resources.DatabaseHandler;
 
 namespace Alexandra_s_Trove
 {
@@ -20,11 +22,10 @@ namespace Alexandra_s_Trove
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private async void Form1_Load(object sender, EventArgs e)
         {
             //first commit
-
-
+            
         }
 
         private void DeveloperHelp_Click(object sender, EventArgs e)
@@ -49,10 +50,7 @@ namespace Alexandra_s_Trove
             MessageBox.Show("Actual User Guide", "User Guide");
         }
 
-        private void lblFeedbackSurvey_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Actual Feedback Survey", "Feedback Survey");
-        }
+
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {

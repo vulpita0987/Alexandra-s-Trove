@@ -262,7 +262,7 @@ namespace Alexandra_s_Trove
 
         private void lblFeedbackSurvey_Click(object sender, EventArgs e)
         {
-
+            FeedbackSurveyPage fsp = new FeedbackSurveyPage(); fsp.Show();
         }
 
         private void lblUserGuide_Click(object sender, EventArgs e)

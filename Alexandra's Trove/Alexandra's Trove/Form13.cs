@@ -1,4 +1,5 @@
 ﻿using Alexandra_s_Trove.Resources;
+using MongoDB.Bson.IO;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -127,8 +128,8 @@ namespace Alexandra_s_Trove
                             
                     }
 
-
-                    rtbMain.AppendText("Order ID: " + OrderIDs1[i] + ". Total:£" + Totals1[i] + ". Delivered On: " 
+                    double total = Convert.ToDouble(Totals1[i]) + Convert.ToDouble(DeliveryPrices1[i]);
+                    rtbMain.AppendText("Order ID: " + OrderIDs1[i] + ". Total:£" + total.ToString() + ". Delivered On: " 
                         + EstimatedDeliveries1[i] + ". "+ productNamesHowMany);
                     rtbMain.AppendText(".\n");
 

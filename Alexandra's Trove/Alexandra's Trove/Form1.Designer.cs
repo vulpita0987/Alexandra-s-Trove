@@ -39,7 +39,6 @@
             this.btnGuest = new System.Windows.Forms.Button();
             this.lblTermsCond = new System.Windows.Forms.Label();
             this.lblUserGuide = new System.Windows.Forms.Label();
-            this.lblFeedbackSurvey = new System.Windows.Forms.Label();
             this.lblTermsConditions = new System.Windows.Forms.Label();
             this.btnCreateAccount = new System.Windows.Forms.Button();
             this.picMainBox = new System.Windows.Forms.PictureBox();
@@ -139,7 +138,6 @@
             this.rbtnTermsConditions.TabStop = true;
             this.rbtnTermsConditions.Text = "I have read and understood the Terms And Conditions ";
             this.rbtnTermsConditions.UseVisualStyleBackColor = true;
-            
             // 
             // btnGuest
             // 
@@ -175,19 +173,6 @@
             this.lblUserGuide.TabIndex = 22;
             this.lblUserGuide.Text = "User Guide";
             this.lblUserGuide.Click += new System.EventHandler(this.lblUserGuide_Click);
-            // 
-            // lblFeedbackSurvey
-            // 
-            this.lblFeedbackSurvey.AutoSize = true;
-            this.lblFeedbackSurvey.BackColor = System.Drawing.Color.Transparent;
-            this.lblFeedbackSurvey.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFeedbackSurvey.Image = ((System.Drawing.Image)(resources.GetObject("lblFeedbackSurvey.Image")));
-            this.lblFeedbackSurvey.Location = new System.Drawing.Point(12, 587);
-            this.lblFeedbackSurvey.Name = "lblFeedbackSurvey";
-            this.lblFeedbackSurvey.Size = new System.Drawing.Size(114, 16);
-            this.lblFeedbackSurvey.TabIndex = 21;
-            this.lblFeedbackSurvey.Text = "Feedback Survey";
-            this.lblFeedbackSurvey.Click += new System.EventHandler(this.lblFeedbackSurvey_Click);
             // 
             // lblTermsConditions
             // 
@@ -301,7 +286,6 @@
             this.ClientSize = new System.Drawing.Size(886, 612);
             this.Controls.Add(this.lblTermsCond);
             this.Controls.Add(this.lblUserGuide);
-            this.Controls.Add(this.lblFeedbackSurvey);
             this.Controls.Add(this.lblTermsConditions);
             this.Controls.Add(this.btnGuest);
             this.Controls.Add(this.btnCreateAccount);
@@ -352,7 +336,6 @@
         private System.Windows.Forms.Button btnCreateAccount;
         private System.Windows.Forms.PictureBox picTrove;
         private System.Windows.Forms.Label lblTermsConditions;
-        private System.Windows.Forms.Label lblFeedbackSurvey;
         private System.Windows.Forms.Label lblUserGuide;
         private System.Windows.Forms.Button btnGuest;
         private System.Windows.Forms.Label lblTermsCond;

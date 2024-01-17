@@ -69,7 +69,7 @@
             this.tboxNewPassword1 = new System.Windows.Forms.TextBox();
             this.tboxNewPassword2 = new System.Windows.Forms.TextBox();
             this.tboxExpirationDate = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpCardExpiryDate = new System.Windows.Forms.DateTimePicker();
             this.btnSaveChanges = new System.Windows.Forms.Button();
             this.tboxSecurityCode = new System.Windows.Forms.TextBox();
             this.lblWarning = new System.Windows.Forms.Label();
@@ -508,14 +508,14 @@
             this.tboxExpirationDate.TabIndex = 169;
             this.tboxExpirationDate.Text = "Expiration Date";
             // 
-            // dateTimePicker1
+            // dtpCardExpiryDate
             // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(192, 397);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(237, 26);
-            this.dateTimePicker1.TabIndex = 170;
+            this.dtpCardExpiryDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpCardExpiryDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpCardExpiryDate.Location = new System.Drawing.Point(192, 397);
+            this.dtpCardExpiryDate.Name = "dtpCardExpiryDate";
+            this.dtpCardExpiryDate.Size = new System.Drawing.Size(237, 26);
+            this.dtpCardExpiryDate.TabIndex = 170;
             // 
             // btnSaveChanges
             // 
@@ -559,7 +559,7 @@
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.tboxSecurityCode);
             this.Controls.Add(this.btnSaveChanges);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpCardExpiryDate);
             this.Controls.Add(this.tboxExpirationDate);
             this.Controls.Add(this.tboxNewPassword2);
             this.Controls.Add(this.tboxNewPassword1);
@@ -659,7 +659,7 @@
         private System.Windows.Forms.TextBox tboxNewPassword1;
         private System.Windows.Forms.TextBox tboxNewPassword2;
         private System.Windows.Forms.TextBox tboxExpirationDate;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpCardExpiryDate;
         private System.Windows.Forms.Button btnSaveChanges;
         private System.Windows.Forms.TextBox tboxSecurityCode;
         private System.Windows.Forms.Label lblWarning;

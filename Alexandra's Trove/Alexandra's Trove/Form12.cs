@@ -344,13 +344,15 @@ namespace Alexandra_s_Trove
 
                     if (address != address1) { DatabaseHandler.UpdateClientAddress(ID, address); changedDetails = true; }
 
+                    DateTime date3 = dtpCardExpiryDate.Value;
+                    string dateOne = "";
+                    dateOne = date3.ToString().Substring(0, date3.ToString().IndexOf(" "));
 
-                    
                     if (tboxNameOnCard.Text != "" && tboxNameOnCard.Text != "Name On Card"
                         && tboxCardNumber.Text != "" && tboxCardNumber.Text != "Card Number"
                         && tboxSecurityCode.Text != "" && tboxSecurityCode.Text != "Security Code")
                     {
-                        string cardDetails = tboxCardNumber.Text + ", " + tboxNameOnCard.Text + ", " + tboxSecurityCode;
+                        string cardDetails = dateOne + ", " + tboxCardNumber.Text + ", " + tboxNameOnCard.Text + ", " + tboxSecurityCode;
                         DatabaseHandler.UpdateClientName(ID, cardDetails); changedDetails = true;
 
                     }
