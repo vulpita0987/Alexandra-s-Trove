@@ -1044,7 +1044,7 @@ namespace Alexandra_s_Trove.Resources
                 }
             }
 
-            string ReviewID = "R" + idSuffix; idSuffix.ToString();
+            string ReviewID = "R" + idSuffix.ToString();
 
             var NewReview = new Review
             {
@@ -1446,9 +1446,63 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-    
+        public async static void InsertNewApplicationReview(string InsertClientID, string InsertQ1,
+           string InsertQ2, string InsertQ3, string InsertQ4, string InsertExtras)
+        {
 
-    [BsonIgnoreExtraElements]
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "ApplicationReview";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<ApplicationReview>(CollectionName);
+
+            int idSuffix = 1;
+            var data = await Coll.FindAsync(_ => true);
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    idSuffix = idSuffix + 1;
+                }
+            }
+
+            string ReviewID = "AR" + idSuffix; idSuffix.ToString();
+
+            var NewApplicationReview = new ApplicationReview
+            {
+                ID = ReviewID,
+                ClientID = InsertClientID,
+                Q1 = InsertQ1,
+                Q2 = InsertQ2,
+                Q3 = InsertQ3,
+                Q4 = InsertQ4,
+                Extras = InsertExtras
+
+
+            };
+            await Coll.InsertOneAsync(NewApplicationReview);
+
+        }
+
+        [BsonIgnoreExtraElements]
+        public class ApplicationReview
+        {
+            [BsonId]
+
+            public string ID { get; set; }
+            public string ClientID { get; set; }
+            public string Q1 { get; set; }
+            public string Q2 { get; set; }
+            public string Q3 { get; set; }
+            public string Q4 { get; set; }
+            public string Extras { get; set; }
+
+
+        }
+
+        [BsonIgnoreExtraElements]
     public class Warehouse
     {
         [BsonId]
@@ -1547,5 +1601,5 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-    }//client - order - product - review - transportVehicle - warehouse
+    }//client - order - product - review - transportVehicle - warehouse - applicationReview
 }
