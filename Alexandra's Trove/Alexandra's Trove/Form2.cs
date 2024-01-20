@@ -23,6 +23,12 @@ namespace Alexandra_s_Trove
 
         private void LoggedInPage_Load(object sender, EventArgs e)
         {
+            Dictionary<string, string> GetNames = new Dictionary<string, string>();
+            GetNames = ProductHandling.ReturnProductNamesBasedOnIDs();
+            for (int i = 0; i < GetNames.Count; i++)
+            { cboxSearchBar.Items.Insert(0, GetNames.ElementAt(i).Value); }
+
+
             AdjustPictures();
             picCath1Left.Image = Resource.DarkChYo2;
             picCath1Right.Image = Resource.NectarineTart4;
@@ -297,6 +303,88 @@ namespace Alexandra_s_Trove
         private void lblOrders_Click(object sender, EventArgs e)
         {
             OrdersPage op = new OrdersPage(); op.Show(); Hide();
+        }
+
+        private async void picSearchLoop_Click(object sender, EventArgs e)
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Product";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Product>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            List<string> ProductIDs = new List<string>();
+            List<string> Names = new List<string>();
+            List<string> Descriptions = new List<string>();
+            List<string> Prices = new List<string>();
+            List<string> Specifications = new List<string>();
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ProductIDs.Add(datas.ID);
+                    Names.Add(datas.Name);
+                    Descriptions.Add(datas.Description);
+                    Prices.Add(datas.Price);
+                    Specifications.Add(datas.Specifications);
+
+                }
+            }
+
+            string product = cboxSearchBar.Text;
+            bool productExists = false;
+            for (int i = 0; i < Names.Count; i++)
+            {
+                if (Names[i] == product)
+                {
+                    ProductHandling.SetID(ProductIDs[i]);
+
+                    ProductPage pp = new ProductPage(); pp.Show();
+                    productExists = true;
+                    Hide();
+
+                    break;
+                }
+            }
+            if (productExists == false)
+            {
+                MessageBox.Show("Product Does NOT Exist. Please Try Again");
+                cboxSearchBar.Text = "";
+            }
+        }
+
+        private void lblVegetables_Click(object sender, EventArgs e)
+        {
+            string chategory = lblVegetables.Text;
+            ChategoryHandling.SetChategory(chategory);
+
+            CathegoryPage cp = new CathegoryPage(); cp.Show();
+
+            Hide();
+        }
+
+        private void lblFruits_Click(object sender, EventArgs e)
+        {
+            string chategory = lblFruits.Text;
+            ChategoryHandling.SetChategory(chategory);
+
+            CathegoryPage cp = new CathegoryPage(); cp.Show();
+
+            Hide();
+        }
+
+        private void lblDesserts_Click(object sender, EventArgs e)
+        {
+            string chategory = lblDesserts.Text;
+            ChategoryHandling.SetChategory(chategory);
+
+            CathegoryPage cp = new CathegoryPage(); cp.Show();
+
+            Hide();
         }
     }
 }

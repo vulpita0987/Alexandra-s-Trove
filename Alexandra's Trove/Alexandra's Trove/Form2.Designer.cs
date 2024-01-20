@@ -236,6 +236,7 @@
             this.lblDesserts.Size = new System.Drawing.Size(81, 20);
             this.lblDesserts.TabIndex = 84;
             this.lblDesserts.Text = "Desserts";
+            this.lblDesserts.Click += new System.EventHandler(this.lblDesserts_Click);
             // 
             // lblMore
             // 
@@ -258,6 +259,7 @@
             this.lblFruits.Size = new System.Drawing.Size(55, 20);
             this.lblFruits.TabIndex = 82;
             this.lblFruits.Text = "Fruits";
+            this.lblFruits.Click += new System.EventHandler(this.lblFruits_Click);
             // 
             // lblVegetables
             // 
@@ -269,6 +271,7 @@
             this.lblVegetables.Size = new System.Drawing.Size(100, 20);
             this.lblVegetables.TabIndex = 81;
             this.lblVegetables.Text = "Vegetables";
+            this.lblVegetables.Click += new System.EventHandler(this.lblVegetables_Click);
             // 
             // picCathegoryRight
             // 
@@ -408,6 +411,7 @@
             this.picSearchLoop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSearchLoop.TabIndex = 65;
             this.picSearchLoop.TabStop = false;
+            this.picSearchLoop.Click += new System.EventHandler(this.picSearchLoop_Click);
             // 
             // picAlex
             // 

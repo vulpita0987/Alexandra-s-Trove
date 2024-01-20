@@ -54,5 +54,10 @@ namespace Alexandra_s_Trove
             MessageBox.Show("Your review has been added");
             Hide();
         }
+
+        private void lblFeedbackSurvey_Click(object sender, EventArgs e)
+        {
+            FeedbackSurveyPage feedbackSurveyPage = new FeedbackSurveyPage(); feedbackSurveyPage.Show();
+        }
     }
 }

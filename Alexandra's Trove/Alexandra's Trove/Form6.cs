@@ -22,12 +22,17 @@ namespace Alexandra_s_Trove
 
         private void ProductPage_Load(object sender, EventArgs e)
         {
-            
+            Dictionary<string, string> GetNames = new Dictionary<string, string>();
+            GetNames = ProductHandling.ReturnProductNamesBasedOnIDs();
+            for (int i = 0; i < GetNames.Count; i++)
+            { cboxSearchBar.Items.Insert(0, GetNames.ElementAt(i).Value); }
+
             string clientId = ClientAccountAccess.GetID();
-            if (clientId == "C0") { lblAccount.Text = "Sign In";
+            if (clientId == "C0") { lblAccount.Text = "Sign In"; lblOrders.Visible = false;
                 lblAddReview.Enabled = false;
                 lblAddReview.Text = "Log In To Add A Review";
             }
+            
             detailsInsertion.PerformClick();
             btnReviewsInsert.PerformClick();
             //how to add scroll bar
@@ -431,6 +436,117 @@ namespace Alexandra_s_Trove
                 MessageBox.Show("Your item/items have been added to the basket");
                 BasketHandler.AddItemToBasket(ProductIDToGet, noOfItems, total, lblName.Text);
             }
+        }
+
+        private void pMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private async void picSearchLoop_Click(object sender, EventArgs e)
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Product";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Product>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            List<string> ProductIDs = new List<string>();
+            List<string> Names = new List<string>();
+            List<string> Descriptions = new List<string>();
+            List<string> Prices = new List<string>();
+            List<string> Specifications = new List<string>();
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ProductIDs.Add(datas.ID);
+                    Names.Add(datas.Name);
+                    Descriptions.Add(datas.Description);
+                    Prices.Add(datas.Price);
+                    Specifications.Add(datas.Specifications);
+
+                }
+            }
+
+            string product = cboxSearchBar.Text;
+            bool productExists = false;
+            for (int i = 0; i < Names.Count; i++)
+            {
+                if (Names[i] == product)
+                {
+                    ProductHandling.SetID(ProductIDs[i]);
+
+                    ProductPage pp = new ProductPage(); pp.Show();
+                    productExists = true;
+                    Hide();
+
+                    break;
+                }
+            }
+            if (productExists == false)
+            {
+                MessageBox.Show("Product Does NOT Exist. Please Try Again");
+                cboxSearchBar.Text = "";
+            }
+        }
+
+        private void lblVegetables_Click(object sender, EventArgs e)
+        {
+            string chategory = lblVegetables.Text;
+            ChategoryHandling.SetChategory(chategory);
+
+            CathegoryPage cp = new CathegoryPage(); cp.Show();
+
+            Hide();
+        }
+
+        private void lblFruits_Click(object sender, EventArgs e)
+        {
+            string chategory = lblFruits.Text;
+            ChategoryHandling.SetChategory(chategory);
+
+            CathegoryPage cp = new CathegoryPage(); cp.Show();
+
+            Hide();
+        }
+
+        private void lblDesserts_Click(object sender, EventArgs e)
+        {
+            string chategory = lblDesserts.Text;
+            ChategoryHandling.SetChategory(chategory);
+
+            CathegoryPage cp = new CathegoryPage(); cp.Show();
+
+            Hide();
+        }
+
+        private void lblFeedbackSurvey_Click(object sender, EventArgs e)
+        {
+            FeedbackSurveyPage feedbackSurveyPage = new FeedbackSurveyPage(); feedbackSurveyPage.Show();
+        }
+
+        private void lblAccount_Click(object sender, EventArgs e)
+        {
+            string clientId = ClientAccountAccess.GetID();
+            if (clientId == "C0")
+            {
+                RegisterPage registerPage = new RegisterPage(); registerPage.Show(); Hide();
+
+            }
+            else 
+            {
+                AccountPage ap = new AccountPage(); ap.Show(); Hide();
+            }
+        }
+
+        private void lblOrders_Click(object sender, EventArgs e)
+        {
+            OrdersPage ordersPage = new OrdersPage(); ordersPage.Show(); Hide();
         }
     }
 }

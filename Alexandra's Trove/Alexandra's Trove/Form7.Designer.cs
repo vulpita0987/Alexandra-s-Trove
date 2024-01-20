@@ -96,6 +96,7 @@
             this.lblFeedbackSurvey.Size = new System.Drawing.Size(114, 16);
             this.lblFeedbackSurvey.TabIndex = 100;
             this.lblFeedbackSurvey.Text = "Feedback Survey";
+            this.lblFeedbackSurvey.Click += new System.EventHandler(this.lblFeedbackSurvey_Click);
             // 
             // pBoxBackground
             // 

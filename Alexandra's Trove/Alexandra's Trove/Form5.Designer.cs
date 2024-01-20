@@ -39,7 +39,6 @@
             this.picSearchLoop = new System.Windows.Forms.PictureBox();
             this.picBasket = new System.Windows.Forms.PictureBox();
             this.lblSignIn = new System.Windows.Forms.Label();
-            this.lblOrders = new System.Windows.Forms.Label();
             this.cboxSearchBar = new System.Windows.Forms.ComboBox();
             this.lblSelectLanguage = new System.Windows.Forms.Label();
             this.picArrowDown = new System.Windows.Forms.PictureBox();
@@ -110,6 +109,7 @@
             this.lblFeedbackSurvey.Size = new System.Drawing.Size(114, 16);
             this.lblFeedbackSurvey.TabIndex = 25;
             this.lblFeedbackSurvey.Text = "Feedback Survey";
+            this.lblFeedbackSurvey.Click += new System.EventHandler(this.lblFeedbackSurvey_Click);
             // 
             // lblTermsConditions
             // 
@@ -203,17 +203,6 @@
             this.lblSignIn.TabIndex = 32;
             this.lblSignIn.Text = "Sign In";
             this.lblSignIn.Click += new System.EventHandler(this.lblSignIn_Click);
-            // 
-            // lblOrders
-            // 
-            this.lblOrders.AutoSize = true;
-            this.lblOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOrders.Image = ((System.Drawing.Image)(resources.GetObject("lblOrders.Image")));
-            this.lblOrders.Location = new System.Drawing.Point(754, 17);
-            this.lblOrders.Name = "lblOrders";
-            this.lblOrders.Size = new System.Drawing.Size(63, 20);
-            this.lblOrders.TabIndex = 33;
-            this.lblOrders.Text = "Orders";
             // 
             // cboxSearchBar
             // 
@@ -544,7 +533,6 @@
             this.Controls.Add(this.picArrowDown);
             this.Controls.Add(this.lblSelectLanguage);
             this.Controls.Add(this.cboxSearchBar);
-            this.Controls.Add(this.lblOrders);
             this.Controls.Add(this.lblSignIn);
             this.Controls.Add(this.picBasket);
             this.Controls.Add(this.picSearchLoop);
@@ -597,7 +585,6 @@
         private System.Windows.Forms.PictureBox picSearchLoop;
         private System.Windows.Forms.PictureBox picBasket;
         private System.Windows.Forms.Label lblSignIn;
-        private System.Windows.Forms.Label lblOrders;
         private System.Windows.Forms.ComboBox cboxSearchBar;
         private System.Windows.Forms.Label lblSelectLanguage;
         private System.Windows.Forms.PictureBox picArrowDown;

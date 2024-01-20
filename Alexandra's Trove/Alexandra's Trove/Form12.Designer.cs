@@ -73,6 +73,7 @@
             this.btnSaveChanges = new System.Windows.Forms.Button();
             this.tboxSecurityCode = new System.Windows.Forms.TextBox();
             this.lblWarning = new System.Windows.Forms.Label();
+            this.btnSignOut = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picArrowDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBasket)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSearchLoop)).BeginInit();
@@ -102,6 +103,7 @@
             this.lblDesserts.Size = new System.Drawing.Size(81, 20);
             this.lblDesserts.TabIndex = 129;
             this.lblDesserts.Text = "Desserts";
+            this.lblDesserts.Click += new System.EventHandler(this.lblDesserts_Click);
             // 
             // lblMore
             // 
@@ -124,6 +126,7 @@
             this.lblFruits.Size = new System.Drawing.Size(55, 20);
             this.lblFruits.TabIndex = 127;
             this.lblFruits.Text = "Fruits";
+            this.lblFruits.Click += new System.EventHandler(this.lblFruits_Click);
             // 
             // lblVegetables
             // 
@@ -135,6 +138,7 @@
             this.lblVegetables.Size = new System.Drawing.Size(100, 20);
             this.lblVegetables.TabIndex = 126;
             this.lblVegetables.Text = "Vegetables";
+            this.lblVegetables.Click += new System.EventHandler(this.lblVegetables_Click);
             // 
             // picArrowDown
             // 
@@ -168,6 +172,7 @@
             this.lblOrders.Size = new System.Drawing.Size(63, 20);
             this.lblOrders.TabIndex = 121;
             this.lblOrders.Text = "Orders";
+            this.lblOrders.Click += new System.EventHandler(this.lblOrders_Click);
             // 
             // lblAccount
             // 
@@ -179,6 +184,7 @@
             this.lblAccount.Size = new System.Drawing.Size(75, 20);
             this.lblAccount.TabIndex = 120;
             this.lblAccount.Text = "Account";
+            this.lblAccount.Click += new System.EventHandler(this.lblAccount_Click);
             // 
             // picBasket
             // 
@@ -190,6 +196,7 @@
             this.picBasket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBasket.TabIndex = 119;
             this.picBasket.TabStop = false;
+            this.picBasket.Click += new System.EventHandler(this.picBasket_Click);
             // 
             // picSearchLoop
             // 
@@ -201,6 +208,7 @@
             this.picSearchLoop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSearchLoop.TabIndex = 118;
             this.picSearchLoop.TabStop = false;
+            this.picSearchLoop.Click += new System.EventHandler(this.picSearchLoop_Click);
             // 
             // picAlex
             // 
@@ -212,6 +220,7 @@
             this.picAlex.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAlex.TabIndex = 115;
             this.picAlex.TabStop = false;
+            this.picAlex.Click += new System.EventHandler(this.picAlex_Click);
             // 
             // picTrove
             // 
@@ -223,6 +232,7 @@
             this.picTrove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picTrove.TabIndex = 116;
             this.picTrove.TabStop = false;
+            this.picTrove.Click += new System.EventHandler(this.picTrove_Click);
             // 
             // picFiller
             // 
@@ -268,6 +278,7 @@
             this.lblFeedbackSurvey.Size = new System.Drawing.Size(114, 16);
             this.lblFeedbackSurvey.TabIndex = 132;
             this.lblFeedbackSurvey.Text = "Feedback Survey";
+            this.lblFeedbackSurvey.Click += new System.EventHandler(this.lblFeedbackSurvey_Click);
             // 
             // lblTermsConditions
             // 
@@ -280,6 +291,7 @@
             this.lblTermsConditions.Size = new System.Drawing.Size(139, 16);
             this.lblTermsConditions.TabIndex = 131;
             this.lblTermsConditions.Text = "Terms And Conditions";
+            this.lblTermsConditions.Click += new System.EventHandler(this.lblTermsConditions_Click);
             // 
             // picBottomLine
             // 
@@ -551,11 +563,23 @@
             this.lblWarning.Text = "*Credit Card Details And \r\nPassword Can Not Be Displayed\r\n*Any Saved Details Will" +
     " Override\r\nThe Currect Details";
             // 
+            // btnSignOut
+            // 
+            this.btnSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignOut.Location = new System.Drawing.Point(610, 260);
+            this.btnSignOut.Name = "btnSignOut";
+            this.btnSignOut.Size = new System.Drawing.Size(139, 32);
+            this.btnSignOut.TabIndex = 174;
+            this.btnSignOut.Text = "Sign Out";
+            this.btnSignOut.UseVisualStyleBackColor = true;
+            this.btnSignOut.Click += new System.EventHandler(this.btnSignOut_Click);
+            // 
             // AccountPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 612);
+            this.Controls.Add(this.btnSignOut);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.tboxSecurityCode);
             this.Controls.Add(this.btnSaveChanges);
@@ -663,5 +687,6 @@
         private System.Windows.Forms.Button btnSaveChanges;
         private System.Windows.Forms.TextBox tboxSecurityCode;
         private System.Windows.Forms.Label lblWarning;
+        private System.Windows.Forms.Button btnSignOut;
     }
 }

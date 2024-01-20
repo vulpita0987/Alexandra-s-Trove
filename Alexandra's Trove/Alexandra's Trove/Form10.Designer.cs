@@ -109,6 +109,7 @@
             this.lblDesserts.Size = new System.Drawing.Size(81, 20);
             this.lblDesserts.TabIndex = 114;
             this.lblDesserts.Text = "Desserts";
+            this.lblDesserts.Click += new System.EventHandler(this.lblDesserts_Click);
             // 
             // lblMore
             // 
@@ -131,6 +132,7 @@
             this.lblFruits.Size = new System.Drawing.Size(55, 20);
             this.lblFruits.TabIndex = 112;
             this.lblFruits.Text = "Fruits";
+            this.lblFruits.Click += new System.EventHandler(this.lblFruits_Click);
             // 
             // lblVegetables
             // 
@@ -142,6 +144,7 @@
             this.lblVegetables.Size = new System.Drawing.Size(100, 20);
             this.lblVegetables.TabIndex = 111;
             this.lblVegetables.Text = "Vegetables";
+            this.lblVegetables.Click += new System.EventHandler(this.lblVegetables_Click);
             // 
             // picArrowDown
             // 
@@ -175,6 +178,7 @@
             this.lblOrders.Size = new System.Drawing.Size(63, 20);
             this.lblOrders.TabIndex = 106;
             this.lblOrders.Text = "Orders";
+            this.lblOrders.Click += new System.EventHandler(this.lblOrders_Click);
             // 
             // lblAccount
             // 
@@ -198,6 +202,7 @@
             this.picBasket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBasket.TabIndex = 104;
             this.picBasket.TabStop = false;
+            this.picBasket.Click += new System.EventHandler(this.picBasket_Click);
             // 
             // picSearchLoop
             // 
@@ -209,6 +214,7 @@
             this.picSearchLoop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSearchLoop.TabIndex = 103;
             this.picSearchLoop.TabStop = false;
+            this.picSearchLoop.Click += new System.EventHandler(this.picSearchLoop_Click);
             // 
             // picAlex
             // 
@@ -220,6 +226,7 @@
             this.picAlex.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAlex.TabIndex = 100;
             this.picAlex.TabStop = false;
+            this.picAlex.Click += new System.EventHandler(this.picAlex_Click);
             // 
             // picTrove
             // 
@@ -231,6 +238,7 @@
             this.picTrove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picTrove.TabIndex = 101;
             this.picTrove.TabStop = false;
+            this.picTrove.Click += new System.EventHandler(this.picTrove_Click);
             // 
             // picFiller
             // 
@@ -276,6 +284,7 @@
             this.lblFeedbackSurvey.Size = new System.Drawing.Size(114, 16);
             this.lblFeedbackSurvey.TabIndex = 117;
             this.lblFeedbackSurvey.Text = "Feedback Survey";
+            this.lblFeedbackSurvey.Click += new System.EventHandler(this.lblFeedbackSurvey_Click);
             // 
             // lblTermsConditions
             // 
@@ -288,6 +297,7 @@
             this.lblTermsConditions.Size = new System.Drawing.Size(139, 16);
             this.lblTermsConditions.TabIndex = 116;
             this.lblTermsConditions.Text = "Terms And Conditions";
+            this.lblTermsConditions.Click += new System.EventHandler(this.lblTermsConditions_Click);
             // 
             // picBottomLine
             // 

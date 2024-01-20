@@ -1,4 +1,5 @@
 ﻿using Alexandra_s_Trove.Resources;
+using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,6 +29,19 @@ namespace Alexandra_s_Trove
 
         private void BasketPage_Load(object sender, EventArgs e)
         {
+            string clientId = ClientAccountAccess.GetID();
+            if (clientId == "C0")
+            {
+                lblAccount.Text = "Sign In"; lblOrders.Visible = false;
+
+            }
+
+
+            Dictionary<string, string> GetNames = new Dictionary<string, string>();
+            GetNames = ProductHandling.ReturnProductNamesBasedOnIDs();
+            for (int i = 0; i < GetNames.Count; i++)
+            { cboxSearchBar.Items.Insert(0, GetNames.ElementAt(i).Value); }
+
             pboxOneTry.Image = Resource.Jalapenoes3;
             pboxTwoTry.Image = Resource.Cucumber3;
 
@@ -42,7 +56,7 @@ namespace Alexandra_s_Trove
             ProductName = BasketHandler.RetriveValuesProductNames();
             double price = 0;
 
-            if (ProductID.Count <= 4) 
+            if (ProductID.Count <= 4)
             {
                 lblNext.Visible = false;
                 pboxArrowRight.Visible = false;
@@ -52,20 +66,20 @@ namespace Alexandra_s_Trove
             if (ProductID.Count == 0) { lblNoMoreProducts.Visible = false; }
 
 
-                if (ProductID.Count > 0)
+            if (ProductID.Count > 0)
             {
-                
+
                 Dictionary<string, Image> Images = new Dictionary<string, Image>();
                 GetImages obj = new GetImages();
                 Images = obj.GetImageNamesByOneNumberDictionary();
-                
-                
+
+
                 for (int i = 0; ProductID.Count > i; i++)
                 {
-                    if (i == 0) 
+                    if (i == 0)
                     {
-                        pboxOne.Visible = true; 
-                        for (int j = 0; j <= Images.Count; j++) 
+                        pboxOne.Visible = true;
+                        for (int j = 0; j <= Images.Count; j++)
                         {
                             if ("P" + j.ToString() == ProductID[0]) { pboxOne.Image = Images.ContainsKey("P" + j.ToString()) ? Images["P" + j.ToString()] : null; }
                         }
@@ -81,7 +95,7 @@ namespace Alexandra_s_Trove
                         lblTotalOneNumber.Text = Totals[0].ToString();
                         lblProduct1ID.Text = ProductID[0];
                     }
-                    if (i == 1) 
+                    if (i == 1)
                     {
                         pboxTwo.Visible = true;
                         for (int j = 0; j <= Images.Count; j++)
@@ -119,7 +133,7 @@ namespace Alexandra_s_Trove
                         lblTotalThreeNumber.Text = Totals[2].ToString();
                         lblProduct3ID.Text = ProductID[2];
                     }
-                    if (i == 3) 
+                    if (i == 3)
                     {
                         pboxFour.Visible = true;
                         for (int j = 0; j <= Images.Count; j++)
@@ -141,23 +155,23 @@ namespace Alexandra_s_Trove
                     price = price + Totals[i];
                 }
             }
-            
+
 
 
 
             lblProductsTotalNumber.Text = price.ToString();
-            if(price < 40 && price > 0) { lblTransportFeeNumber.Text = "2.50"; }
+            if (price < 40 && price > 0) { lblTransportFeeNumber.Text = "2.50"; }
             double total = Convert.ToDouble(lblTransportFeeNumber.Text) + Convert.ToDouble(lblProductsTotalNumber.Text);
             lblTotalNumber.Text = total.ToString();
-            if (lblNameOne.Visible == false) { lblNameOne.Visible = true;  lblNameOne.Text = "No Products To Display"; }
+            if (lblNameOne.Visible == false) { lblNameOne.Visible = true; lblNameOne.Text = "No Products To Display"; }
         }
 
         private void pboxOneTry_Click(object sender, EventArgs e)
         {
             ProductHandling.SetID("P10");
-            
+
             ProductPage pp = new ProductPage(); pp.Show();
-            
+
             Hide();
         }
 
@@ -170,7 +184,7 @@ namespace Alexandra_s_Trove
             Hide();
         }
 
-       
+
 
         private void picAlex_Click(object sender, EventArgs e)
         {
@@ -219,19 +233,19 @@ namespace Alexandra_s_Trove
 
         private void lblPay_Click(object sender, EventArgs e)
         {
-            if (lblTotalNumber.Text == "0") 
+            if (lblTotalNumber.Text == "0")
             {
                 MessageBox.Show("There are no products in the basket");
-                
+
             }
-            else 
+            else
             {
                 CheckoutPage bp = new CheckoutPage(); bp.Show();
 
                 Hide();
             }
 
-            
+
         }
 
         private void lblBinSelection1_Click(object sender, EventArgs e)
@@ -361,7 +375,7 @@ namespace Alexandra_s_Trove
                 lblTotalOne.Visible = false;
                 lblBinSelection1.Visible = false;*/
 
-                
+
 
                 Dictionary<string, Image> Images = new Dictionary<string, Image>();
                 GetImages obj = new GetImages();
@@ -451,10 +465,10 @@ namespace Alexandra_s_Trove
 
                     }
 
-                   
+
                 }
 
-                
+
             }
 
 
@@ -508,6 +522,113 @@ namespace Alexandra_s_Trove
 
 
 
+        }
+
+        private async void picSearchLoop_Click(object sender, EventArgs e)
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Product";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Product>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            List<string> ProductIDs = new List<string>();
+            List<string> Names = new List<string>();
+            List<string> Descriptions = new List<string>();
+            List<string> Prices = new List<string>();
+            List<string> Specifications = new List<string>();
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    ProductIDs.Add(datas.ID);
+                    Names.Add(datas.Name);
+                    Descriptions.Add(datas.Description);
+                    Prices.Add(datas.Price);
+                    Specifications.Add(datas.Specifications);
+
+                }
+            }
+
+            string product = cboxSearchBar.Text;
+            bool productExists = false;
+            for (int i = 0; i < Names.Count; i++)
+            {
+                if (Names[i] == product)
+                {
+                    ProductHandling.SetID(ProductIDs[i]);
+
+                    ProductPage pp = new ProductPage(); pp.Show();
+                    productExists = true;
+                    Hide();
+
+                    break;
+                }
+            }
+            if (productExists == false)
+            {
+                MessageBox.Show("Product Does NOT Exist. Please Try Again");
+                cboxSearchBar.Text = "";
+            }
+        }
+
+        private void lblVegetables_Click(object sender, EventArgs e)
+        {
+            string chategory = lblVegetables.Text;
+            ChategoryHandling.SetChategory(chategory);
+
+            CathegoryPage cp = new CathegoryPage(); cp.Show();
+
+            Hide();
+        }
+
+        private void lblFruits_Click(object sender, EventArgs e)
+        {
+            string chategory = lblFruits.Text;
+            ChategoryHandling.SetChategory(chategory);
+
+            CathegoryPage cp = new CathegoryPage(); cp.Show();
+
+            Hide();
+        }
+
+        private void lblDesserts_Click(object sender, EventArgs e)
+        {
+            string chategory = lblDesserts.Text;
+            ChategoryHandling.SetChategory(chategory);
+
+            CathegoryPage cp = new CathegoryPage(); cp.Show();
+
+            Hide();
+        }
+
+        private void lblFeedbackSurvey_Click(object sender, EventArgs e)
+        {
+            FeedbackSurveyPage feedbackSurveyPage = new FeedbackSurveyPage(); feedbackSurveyPage.Show();
+        }
+
+        private void lblAccount_Click(object sender, EventArgs e)
+        {
+            string clientId = ClientAccountAccess.GetID();
+            if (clientId == "C0")
+            {
+                RegisterPage registerPage = new RegisterPage(); registerPage.Show(); Hide();
+
+            }
+            else
+            {
+                AccountPage ap = new AccountPage(); ap.Show(); Hide();
+
+            }
+        }
+
+        private void lblOrders_Click(object sender, EventArgs e)
+        {
+            OrdersPage ordersPage = new OrdersPage(); ordersPage.Show(); Hide();
         }
     }
 }

@@ -445,7 +445,7 @@ namespace Alexandra_s_Trove
 
         private void cboxSearchBar_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cboxSearchBar.Items.Add("Fruit");
+           // cboxSearchBar.Items.Add("Fruit");
             
         }
 
@@ -501,6 +501,13 @@ namespace Alexandra_s_Trove
             }
 
 
+        }
+
+        private void lblFeedbackSurvey_Click(object sender, EventArgs e)
+        {
+            FeedbackSurveyPage fsp = new FeedbackSurveyPage();
+            fsp.Show();
+            
         }
     }
 }

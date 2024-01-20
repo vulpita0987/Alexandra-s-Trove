@@ -134,7 +134,7 @@ namespace Alexandra_s_Trove
             {
                 ClientAccountAccess.SetID(ID);
                 //MessageBox.Show(ClientAccountAccess.GetID());
-                LoggedInPage log = new LoggedInPage(); log.Show();
+                LoggedInPage log = new LoggedInPage(); log.Show(); BasketHandler.ClearBasket();
                 Hide();
 
                 //MessageBox.Show(name1 + "/" + DOB1 + "/" + address1 + "/" + phoneNumber1 + "/" + password1 + "/" + creaditCardDetails1 + "/" + accountCreationDate1 + "/" + emailAddress1);
