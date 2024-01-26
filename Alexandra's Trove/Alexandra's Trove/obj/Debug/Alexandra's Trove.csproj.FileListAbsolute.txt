@@ -214,3 +214,7 @@ C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's 
 C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.AccountPage.resources
 C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.OrdersPage.resources
 C:\Users\Admin\OneDrive\Desktop\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.FeedbackSurveyPage.resources
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.OrderConfirmationPage.resources
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.AccountPage.resources
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.OrdersPage.resources
+C:\Users\bucur\Documents\GitHub\Alexandra-s-Trove\Alexandra's Trove\Alexandra's Trove\obj\Debug\Alexandra_s_Trove.FeedbackSurveyPage.resources
