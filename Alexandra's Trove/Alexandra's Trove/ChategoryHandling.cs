@@ -8,22 +8,22 @@ using System.Threading.Tasks;
 
 namespace Alexandra_s_Trove
 {
-    internal class ChategoryHandling
+    internal class ChategoryHandling//used to handle different product categories
     {
 
-        public static string chategory = "none";
+        public static string chategory = "none";//set category to none
 
-        public static string GetChategory()
+        public static string GetChategory()//returns category
         {
             return chategory;
         }
 
-        public static void SetChategory(string newChategory)
+        public static void SetChategory(string newChategory)//sets category
         {
             chategory = newChategory;
         }
 
-        public static List<string> GetIDsForFruits()
+        public static List<string> GetIDsForFruits()//get IDS for fruits category as a list of strings
         {
             List<string> IDs = new List<string>();
             IDs.Add("P1");
@@ -35,7 +35,7 @@ namespace Alexandra_s_Trove
             return IDs;
         }
 
-        public static List<string> GetIDsForVeggies()
+        public static List<string> GetIDsForVeggies()//get IDS for veggies category as a list of strings
         {
             List<string> IDs = new List<string>();
             IDs.Add("P5");
@@ -46,7 +46,7 @@ namespace Alexandra_s_Trove
             return IDs;
         }
 
-        public static List<string> GetIDsForDesserts()
+        public static List<string> GetIDsForDesserts()//get IDS for desserts category as a list of strings
         {
             List<string> IDs = new List<string>();
             IDs.Add("P8");
@@ -54,7 +54,7 @@ namespace Alexandra_s_Trove
             return IDs;
         }
 
-        public Dictionary<string, Image> GetImageNamesByOneNumberDictionary()
+        public Dictionary<string, Image> GetImageNamesByOneNumberDictionary()//returns a distionary containing the id of the products as the key and an image that shows each product
         {
             Dictionary<string, Image> Images = new Dictionary<string, Image>();
 

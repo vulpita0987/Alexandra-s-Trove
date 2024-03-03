@@ -19,18 +19,10 @@ namespace Alexandra_s_Trove.Resources
 {
     public class DatabaseHandler
     {
-
-        public static void Example()
-        {
-            //Debug.WriteLine("Hello World");
-        }
-
        
 
 
-
-
-        public async static void AddIDsToList()
+        public async static void AddIDsToList()//used to display all products and their details
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -66,7 +58,7 @@ namespace Alexandra_s_Trove.Resources
             }
         }
 
-        public async static void InsertNewClient(string ClientName, string ClientDOB, string ClientAddress, string ClientPhoneNumber, string ClientPassword, string ClientCardDetails, string ClientEmailAddress)
+        public async static void InsertNewClient(string ClientName, string ClientDOB, string ClientAddress, string ClientPhoneNumber, string ClientPassword, string ClientCardDetails, string ClientEmailAddress)//inserts new client in the database
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -87,7 +79,7 @@ namespace Alexandra_s_Trove.Resources
                 }
             }
 
-            string ClientID = "C" + idSuffix; idSuffix.ToString();
+            string ClientID = "C" + idSuffix; idSuffix.ToString();//add C as a suffix - count the number of clients and create a unique ID (works if clients are not deleted.)
 
             ClientPassword = EncryptDecrypt.Encrypt(ClientPassword);
             ClientCardDetails = EncryptDecrypt.Encrypt(ClientCardDetails);
@@ -108,7 +100,7 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        public async static void DeleteClient(string ClientIDForDeletion)
+        public async static void DeleteClient(string ClientIDForDeletion)//deletes client from database based on ID
         {
 
             List<string> ClientID = new List<string>();
@@ -150,7 +142,7 @@ namespace Alexandra_s_Trove.Resources
             }
 
         }
-        public async static void UpdateClientName(string ClientIDForUpdate, string newName)
+        public async static void UpdateClientName(string ClientIDForUpdate, string newName)//updates client name in database based on id + it gets passed the id for update and new name
         {
             List<string> ClientIDs = new List<string>();
 
@@ -200,7 +192,7 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        public async static void UpdateClientEmail(string ClientIDForUpdate, string newEmail)
+        public async static void UpdateClientEmail(string ClientIDForUpdate, string newEmail)//updates client email address in database based on id + it gets passed the id for update and new email address
         {
             List<string> ClientIDs = new List<string>();
 
@@ -249,7 +241,7 @@ namespace Alexandra_s_Trove.Resources
             }
 
         }
-        public async static void UpdateClientDOB(string ClientIDForUpdate, string newDOB)
+        public async static void UpdateClientDOB(string ClientIDForUpdate, string newDOB)//updates client DOB in database based on id + it gets passed the id for update and new DOB
         {
 
             List<string> ClientIDs = new List<string>();
@@ -298,7 +290,7 @@ namespace Alexandra_s_Trove.Resources
 
             }
         }
-        public async static void UpdateClientAddress(string ClientIDForUpdate, string newAddress)
+        public async static void UpdateClientAddress(string ClientIDForUpdate, string newAddress)//updates client address in database based on id + it gets passed the id for update and new address
         {
             List<string> ClientIDs = new List<string>();
 
@@ -346,7 +338,7 @@ namespace Alexandra_s_Trove.Resources
 
             }
         }
-        public async static void UpdateClientPhoneNumber(string ClientIDForUpdate, string newPhoneNymber)
+        public async static void UpdateClientPhoneNumber(string ClientIDForUpdate, string newPhoneNymber)//updates client phone number in database based on id + it gets passed the id for update and new phone number
         {
             List<string> ClientIDs = new List<string>();
 
@@ -396,7 +388,7 @@ namespace Alexandra_s_Trove.Resources
 
 
         }
-        public async static void UpdateClientPassword(string ClientIDForUpdate, string newPassword)
+        public async static void UpdateClientPassword(string ClientIDForUpdate, string newPassword)//updates client password in database based on id + it gets passed the id for update and new password
         {
 
             newPassword = EncryptDecrypt.Encrypt(newPassword);
@@ -447,7 +439,7 @@ namespace Alexandra_s_Trove.Resources
 
             }
         }
-        public async static void UpdateClientCardDetails(string ClientIDForUpdate, string newCardDetails)
+        public async static void UpdateClientCardDetails(string ClientIDForUpdate, string newCardDetails)//updates client card details in database based on id + it gets passed the id for update and new  card details
         {
 
             newCardDetails = EncryptDecrypt.Encrypt(newCardDetails);
@@ -500,7 +492,7 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        public async static void GetClient(string ClientIDToGet)//for later use
+        public async static void GetClient(string ClientIDToGet)//display details of a client based on the id
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -583,7 +575,7 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        public async static void InsertNewOrder(string OrderClientID, string OrderProductID, string OrderTotal, string OrderDeliveryPrice, string DeliveryAddress)
+        public async static void InsertNewOrder(string OrderClientID, string OrderProductID, string OrderTotal, string OrderDeliveryPrice, string DeliveryAddress)//insert new order
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -616,7 +608,7 @@ namespace Alexandra_s_Trove.Resources
                 ProductIDs = OrderProductID,
                 Total = OrderTotal,
                 DeliveryPrice = OrderDeliveryPrice,
-                DateOrdered = DateTime.Now.ToString("d/M/yyyy"),
+                DateOrdered = DateTime.Now.ToString("d/M/yyyy"),//date is added usind the day's date
                 EstimatedDelivery = date,
                 Address = DeliveryAddress
 
@@ -626,7 +618,7 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        public async static void GetOrder(string OrderIDToGet)//for later use
+        public async static void GetOrder(string OrderIDToGet)//get order based on id
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -693,7 +685,7 @@ namespace Alexandra_s_Trove.Resources
             {
 
                 MessageBox.Show(clientID + "/" + productIDs + "/" + total + "/" + deliveryPrice + "/" + dateOrdered + "/" + estimatedDelivery);
-                //do bunch of stuff
+                
             }
             else
             {
@@ -703,7 +695,7 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        public async static void GetOrderBasedOnCustomerID(string CustomerID)//for later use
+        public async static void GetOrderBasedOnCustomerID(string CustomerID)//retrive order/orders from database using customer id
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -768,7 +760,7 @@ namespace Alexandra_s_Trove.Resources
             
         }
 
-        public async static void GetOrders()//for later use
+        public async static void GetOrders()//get all orders
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -804,16 +796,12 @@ namespace Alexandra_s_Trove.Resources
                 }
             }
 
-            /*for (int i = 0; i < OrderIDs.Count; i++)
-            {
-                MessageBox.Show(OrderIDs[i] + "/" + ClientIDs[i] + "/" + ProductsIDs[i] + "/" + Totals[i] + "/" + DeliveryPrices[i] + "/" + DatesOrdered[i] + "/" + EstimatedDeliveries[i]);
-            }*/
 
 
         }
 
         public async static void InsertNewProduct(string ProductID, string ProductName,
-            string ProductDescription, string ProductPrice, string ProductSpecification)
+            string ProductDescription, string ProductPrice, string ProductSpecification)//insert new product into database
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -835,7 +823,7 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        public async static void GetProduct(string ProductIDToGet)//
+        public async static void GetProduct(string ProductIDToGet)//display product details based on product id
         {
 
             List<string> details = new List<string>();
@@ -893,8 +881,6 @@ namespace Alexandra_s_Trove.Resources
             {
                 MessageBox.Show(name + "/" + description + "/" + price + "/" + specification);
 
-                
-                //do bunch of stuff
             }
             else
             {
@@ -906,7 +892,7 @@ namespace Alexandra_s_Trove.Resources
         
 
 
-        public async static void GetProducts()//for later use
+        public async static void GetProducts()//display all products' details
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -946,7 +932,7 @@ namespace Alexandra_s_Trove.Resources
 
 
         public async static void InsertNewReview(string ReviewClientID, string ReviewProductID, 
-            string ReviewNoOfStars, string ReviewDescription, string Nickname)
+            string ReviewNoOfStars, string ReviewDescription, string Nickname)//insert new review into the database
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -984,7 +970,7 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        public async static void DeleteReview(string ReviewIDForDeletion) 
+        public async static void DeleteReview(string ReviewIDForDeletion) //delete review from database
         {
 
             List<string> ReviewsID = new List<string>();
@@ -1027,7 +1013,7 @@ namespace Alexandra_s_Trove.Resources
 
 
         } 
-        public async static void UpdateReviewNoOfStars(string ReviewIDForUpdate, string newNoOfStars) 
+        public async static void UpdateReviewNoOfStars(string ReviewIDForUpdate, string newNoOfStars) //update the number of stars of a review using the id of the review
         {
 
             List<string> ReviewsID = new List<string>();
@@ -1077,7 +1063,7 @@ namespace Alexandra_s_Trove.Resources
             }
 
         }
-        public async static void UpdateReviewDescription(string ReviewIDForUpdate, string newDescription) 
+        public async static void UpdateReviewDescription(string ReviewIDForUpdate, string newDescription) //update the description of a review using the id of the review
         {
             List<string> ReviewsID = new List<string>();
 
@@ -1127,7 +1113,7 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        public async static void UpdateReviewNickname(string ReviewIDForUpdate, string newNickname)
+        public async static void UpdateReviewNickname(string ReviewIDForUpdate, string newNickname)//update the nickname associated with a review using the ID
         {
             List<string> ReviewsID = new List<string>();
 
@@ -1176,7 +1162,7 @@ namespace Alexandra_s_Trove.Resources
             }
 
         }
-        public async static void UpdateReviewDate(string ReviewIDForUpdate) 
+        public async static void UpdateReviewDate(string ReviewIDForUpdate) //update the date of a review using the ID of the review
         {
             List<string> ReviewsID = new List<string>();
 
@@ -1225,7 +1211,7 @@ namespace Alexandra_s_Trove.Resources
             }
 
         }
-        public async static void UpdateReviewTime(string ReviewIDForUpdate) 
+        public async static void UpdateReviewTime(string ReviewIDForUpdate) //update the time of a review using the ID of the review
         {
             List<string> ReviewsID = new List<string>();
 
@@ -1273,7 +1259,7 @@ namespace Alexandra_s_Trove.Resources
             }
         }
 
-        public async static void GetReviews()//for later use
+        public async static void GetReviews()//get data of all reviews
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -1317,7 +1303,7 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        public async static void InsertNewTransportVehicle(string TransportVehicleID, string TransportVehicleCarPlateNumber, string StorageWarehouseID)
+        public async static void InsertNewTransportVehicle(string TransportVehicleID, string TransportVehicleCarPlateNumber, string StorageWarehouseID)//insert new transport vehicle into the database
         {
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
@@ -1342,7 +1328,7 @@ namespace Alexandra_s_Trove.Resources
         }
 
         public async static void InsertNewWarehouse(string WarehouseID, string WarehouseProductID, string WarehouseQuantity,
-            string WarehouseLocation, string WarehouseName)
+            string WarehouseLocation, string WarehouseName)//insert new warehouse into the database
         {
 
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
@@ -1369,7 +1355,7 @@ namespace Alexandra_s_Trove.Resources
         }
 
         public async static void InsertNewApplicationReview(string InsertClientID, string InsertQ1,
-           string InsertQ2, string InsertQ3, string InsertQ4, string InsertExtras)
+           string InsertQ2, string InsertQ3, string InsertQ4, string InsertExtras)//insert new application review into the database
         {
 
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
@@ -1409,7 +1395,7 @@ namespace Alexandra_s_Trove.Resources
         }
 
         [BsonIgnoreExtraElements]
-        public class ApplicationReview
+        public class ApplicationReview//define Application Review contents (what will be stored in database - elements/details)
         {
             [BsonId]
 
@@ -1425,8 +1411,8 @@ namespace Alexandra_s_Trove.Resources
         }
 
         [BsonIgnoreExtraElements]
-    public class Warehouse
-    {
+    public class Warehouse//define Warehouse contents (what will be stored in database - elements/details)
+        {
         [BsonId]
 
         public string ID { get; set; }
@@ -1439,21 +1425,21 @@ namespace Alexandra_s_Trove.Resources
     }
 
     [BsonIgnoreExtraElements]
-    public class TransportVehicle
-    {
+    public class TransportVehicle//define Trnsport Vehicle contents (what will be stored in database - elements/details)
+        {
         [BsonId]
-        //[BsonRepresentation(MongoDB.Bson.BsonType.ObjectId)]
+        
         public string ID { get; set; }
         public string CarPlateNo { get; set; }
         public string StorageWarehouseID { get; set; }
-        //List<string> servers = new List<string>();
+        
     }
 
   
 
     [BsonIgnoreExtraElements]
-    public class Review
-    {
+    public class Review//define (Product) Review contents (what will be stored in database - elements/details)
+        {
         [BsonId]
         
         public string ID { get; set; }
@@ -1469,8 +1455,8 @@ namespace Alexandra_s_Trove.Resources
         }
 
     [BsonIgnoreExtraElements]
-    public class Product
-    {
+    public class Product//define Product contents (what will be stored in database - elements/details)
+        {
         [BsonId]
         
         public string ID { get; set; }
@@ -1486,8 +1472,8 @@ namespace Alexandra_s_Trove.Resources
 
 
     [BsonIgnoreExtraElements]
-    public class Order
-    {
+    public class Order//define Order contents (what will be stored in database - elements/details)
+        {
         [BsonId]
         
         public string ID { get; set; }
@@ -1505,8 +1491,8 @@ namespace Alexandra_s_Trove.Resources
         }
 
     [BsonIgnoreExtraElements]
-    public class Client
-    {
+    public class Client//define Client contents (what will be stored in database - elements/details)
+        {
         [BsonId]
        
         public string ID { get; set; }
