@@ -12,7 +12,7 @@ namespace Alexandra_s_Trove.Resources
     {
        
 
-        public List<string> GetImageNamesList()
+        public List<string> GetImageNamesList()//returns all Image names for Products - in a list
         {
             
             List<string> Pictures = new List<string>();
@@ -72,7 +72,7 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        public Dictionary<int, Image> GetImageNamesDictionary()
+        public Dictionary<int, Image> GetImageNamesDictionary()//returns all images in the form of a dictionary that has ascending keys (ints)
         {
             
             
@@ -147,7 +147,7 @@ namespace Alexandra_s_Trove.Resources
         }
 
         
-        public Dictionary<string, Image> GetImageNamesDictionaryStrings()
+        public Dictionary<string, Image> GetImageNamesDictionaryStrings()//returns images depending on the string key that is given - so that multiple images can be used for each product
         {
 
 
@@ -223,7 +223,7 @@ namespace Alexandra_s_Trove.Resources
 
         }
 
-        public Dictionary<string, Image> GetImageNamesByOneNumberDictionary()
+        public Dictionary<string, Image> GetImageNamesByOneNumberDictionary()//returns one image per product based on the ID(key) of the product - as a dictionary 
         {
             Dictionary<string, Image> Images = new Dictionary<string, Image>();
 
