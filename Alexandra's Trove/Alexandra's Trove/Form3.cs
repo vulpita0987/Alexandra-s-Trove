@@ -28,16 +28,16 @@ using static System.Net.Mime.MediaTypeNames;
 
 
 namespace Alexandra_s_Trove
-{
+{//this form in used to test the database along the way
     public partial class HelpDeveloper : Form
     {
         public HelpDeveloper()
         {
             InitializeComponent();
-            //DatabaseHandler.Example();//example
+            
         }
 
-        private void btnClientInsert_Click(object sender, EventArgs e)
+        private void btnClientInsert_Click(object sender, EventArgs e)//used to insert new client
         {
             DatabaseHandler.InsertNewClient(txtClientName.Text, txtClientDOB.Text, txtClientAddress.Text,
             txtClientPhoneNumber.Text, txtClientPassword.Text, txtClientCardDetails.Text, "email");//example
@@ -53,13 +53,13 @@ namespace Alexandra_s_Trove
         }
       
 
-        private void HelpDeveloper_Load(object sender, EventArgs e)
+        private void HelpDeveloper_Load(object sender, EventArgs e)//used to show picture in picture box
         {
-            picExample.Image = Resource.Cherries4; //example
+            picExample.Image = Resource.Cherries4;
             
         }
 
-        private void btnProductInsert_Click(object sender, EventArgs e)
+        private void btnProductInsert_Click(object sender, EventArgs e)//used to insert new product
         {
             DatabaseHandler.InsertNewProduct(txtProductID.Text, txtProductName.Text, txtProductDescription.Text,
               txtProductPrice.Text, txtProductSpecification.Text); 
@@ -72,7 +72,7 @@ namespace Alexandra_s_Trove
             
         }
 
-        private void btnOrderInsert_Click(object sender, EventArgs e)
+        private void btnOrderInsert_Click(object sender, EventArgs e)//used to insert new order
         {
             
            // DatabaseHandler.InsertNewOrder(txtOrderClientID.Text, txtOrderProductID.Text, txtOrderTotal.Text,
@@ -86,7 +86,7 @@ namespace Alexandra_s_Trove
 
         }
 
-        private void btnReviewInsert_Click(object sender, EventArgs e)
+        private void btnReviewInsert_Click(object sender, EventArgs e)//used to indert new review
         {
 
             //DatabaseHandler.InsertNewReview(txtReviewClientID.Text, txtReviewProductID.Text, txtReviewNoOfStars.Text,
@@ -101,13 +101,13 @@ namespace Alexandra_s_Trove
             txtReviewTime.Text = "";
         }
 
-        private void btnReviewDelete_Click(object sender, EventArgs e)
+        private void btnReviewDelete_Click(object sender, EventArgs e)//used to delete a review
         {
             DatabaseHandler.DeleteReview(txtReviewID.Text);
             txtReviewID.Text = "";
         }
 
-        private void btnReviewNoOfStarsUpdate_Click(object sender, EventArgs e)
+        private void btnReviewNoOfStarsUpdate_Click(object sender, EventArgs e)//used to update no of stars of review
         {
             DatabaseHandler.UpdateReviewNoOfStars(txtReviewID.Text, txtReviewNoOfStars.Text);
 
@@ -115,7 +115,7 @@ namespace Alexandra_s_Trove
             txtReviewNoOfStars.Text = "";
         }
 
-        private void btnReviewDescriptionUpdate_Click(object sender, EventArgs e)
+        private void btnReviewDescriptionUpdate_Click(object sender, EventArgs e)//used to update description of review
         {
             DatabaseHandler.UpdateReviewDescription(txtReviewID.Text, txtReviewDescription.Text);
 
@@ -123,7 +123,7 @@ namespace Alexandra_s_Trove
             txtReviewDescription.Text = "";
         }
 
-        private void btnReviewDateUpdate_Click(object sender, EventArgs e)
+        private void btnReviewDateUpdate_Click(object sender, EventArgs e)//used to update the date of a review
         {
             DatabaseHandler.UpdateReviewDate(txtReviewID.Text);
 
@@ -132,14 +132,14 @@ namespace Alexandra_s_Trove
 
         }
 
-        private void btnReviewTimeUpdate_Click(object sender, EventArgs e)
+        private void btnReviewTimeUpdate_Click(object sender, EventArgs e)//used to update time of review
         {
             DatabaseHandler.UpdateReviewTime(txtReviewID.Text);
 
             txtReviewID.Text = "";
         }
 
-        private void btnWarehouseInsert_Click(object sender, EventArgs e)
+        private void btnWarehouseInsert_Click(object sender, EventArgs e)//used to insert new warehouse
         {
 
             DatabaseHandler.InsertNewWarehouse(txtWarehouseID.Text, txtWarehouseProductID.Text,
@@ -154,7 +154,7 @@ namespace Alexandra_s_Trove
            
         }
 
-        private void btnTransportVehicleInsert_Click(object sender, EventArgs e)
+        private void btnTransportVehicleInsert_Click(object sender, EventArgs e)//used to insert a transport vehicle
         {
             DatabaseHandler.InsertNewTransportVehicle(txtTransportVehicleID.Text, txtTransportVehicleCarPlateNumber.Text,
                 txtTransportVehicleStorageWarehouseID.Text);
@@ -165,7 +165,7 @@ namespace Alexandra_s_Trove
 
         }
 
-        private void btnProductIDUpdate_Click(object sender, EventArgs e)
+        private void btnProductIDUpdate_Click(object sender, EventArgs e)//use to update the ID of a product
         {
             // MessageBox.Show(DateTime.Now.ToString("d/M/yyyy h:mm:ss tt"));//day/month/year hour/minute/second PM/AM
             // MessageBox.Show(DateTime.Now.ToString("h:mm:ss tt"));//hour/minute/second PM/AM

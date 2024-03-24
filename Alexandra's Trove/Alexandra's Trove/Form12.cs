@@ -556,7 +556,10 @@ namespace Alexandra_s_Trove
 
         private void btnSignOut_Click(object sender, EventArgs e)
         {
-            BasketHandler.ClearBasket();
+            List<int> NoOfItems = new List<int>();
+            NoOfItems = BasketHandler.RetriveValuesNoOfItems();
+            if (NoOfItems.Count() > 0) { BasketHandler.ClearBasket(); }
+            
             SignInPage signInPage = new SignInPage(); signInPage.Show(); Hide();
             ClientAccountAccess.SetID("C0");
         }

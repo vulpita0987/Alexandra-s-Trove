@@ -30,14 +30,15 @@ namespace Alexandra_s_Trove
             
         }
 
-        private void lblTermsConditions_Click(object sender, EventArgs e)
+        private void lblTermsConditions_Click(object sender, EventArgs e)//display terms and conditions
         {
             MessageBox.Show("Terms List\r\n1. ‘Terms’ refers to the rules listed in this agreement.\r\n2. ‘Contract’ refers to the entirety of this agreement.\r\n3. ‘Client’ refers to the buyer/customer/purchaser of goods/products through this shopping platform. \r\n4. ‘Product’ refers to each of the items/foods advertised on this shopping platform.\r\n5. ‘Seller’ refers to the individual/individuals that provides/provide the goods/products and advertises/sells them using this shopping platform. \r\n6. ’Company’ refers to the organisation that created the shopping platform. The company is also managing the shopping platform.\r\nThe ‘Company’ and ‘Seller’ exist as the same legal entity – they are differentiated by these two terms in this contract for clarity.\r\nTerms\r\nBy agreeing to this contract, the client understands that their information will be stored and used to improve the shopping platform therefore improving their shopping experience. \r\nThe company will strictly use the collected client information to improve the shopping platform. \r\nThe company will appropriately dispose of the client's information if the client decides to delete their account.\r\nThe company will not store any information of users that do not create accounts.\r\nThe client information will be disposed of in less than 1 year after the account closure. *The company may store the client’s information for longer if required by law/the authorities.\r\nClients understand that foul language will not be tolerated by the company. If any foul language is used by the client, the company may close the account. \r\nThe company will not use foul language. \r\nThe company will not share the client's information with any third parties unless required to do so by the client or because of legal reasons. \r\nThe client agrees to keep their password private for account security reasons.\r\nThe client understands that the seller does not take responsibility for any allergic reactions that the client might have to the products they purchase. \r\nThe client takes it upon themselves to read the specifications of the products and choose products that suit their specific needs/requirements.\r\nThe client agrees to never use the shopping platform for malicious purposes. If the company has reasonable beliefs that the client is using or has used to platform for malicious purposes, the company may report the client to the authorities or/and terminate the account.\r\nThe client understands that they may not resell the products purchased using this shopping platform. If the client resells/attempts to resell products that have been purchased using this platform, then the company may take legal action against them and/or terminate their account.\r\nThe client agrees to not use any of the content that is owned by the company. The content includes but is not limited to product pictures, product descriptions, company logos, company icons, and the company name.\r\nBy ticking the box, the client confirms that they have read and understood the terms and conditions of this contract.\r\n", "Terms And Conditions");
         }
 
 
-        private async void GuestPage_Load(object sender, EventArgs e)
+        private async void GuestPage_Load(object sender, EventArgs e)//when the page loads do this
         {
+            //connect to database + table
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
             string CollectionName = "Product";
@@ -47,6 +48,7 @@ namespace Alexandra_s_Trove
 
             var data = await Coll.FindAsync(_ => true);
 
+            //create containers for the data
             List<string> ProductIDs = new List<string>();
             List<string> Names = new List<string>();
             List<string> Descriptions = new List<string>();
@@ -57,6 +59,7 @@ namespace Alexandra_s_Trove
             {
                 if (data != null)
                 {
+                    //store data from database in containers
                     ProductIDs.Add(datas.ID);
                     Names.Add(datas.Name);
                     Descriptions.Add(datas.Description);
@@ -66,10 +69,13 @@ namespace Alexandra_s_Trove
                 }
             }
 
+            //add products to database
             for(int i = 0; i < ProductIDs.Count; i++) 
             { cboxSearchBar.Items.Insert(0, Names[i]); }
             
-            AdjustPictures();
+            AdjustPictures();//display random pictures
+
+            //display hard coded pictures
             picCath1Left.Image = Resource.DarkChYo2;
             picCath1Right.Image = Resource.NectarineTart4;
             picCath2Left.Image = Resource.Cherries4;
@@ -77,7 +83,7 @@ namespace Alexandra_s_Trove
 
         }
 
-        private List<int> GetRandomNumbers() 
+        private List<int> GetRandomNumbers() //get 3 random numbers
         {
             List <int> Numbers = new List<int>();
 
@@ -86,8 +92,9 @@ namespace Alexandra_s_Trove
             int number2 = rnd.Next(0,49);
             int number3 = rnd.Next(0, 49);
 
-            while ((number1 == number2)||(number1 == number3)||(number3 == number2)) 
+            while ((number1 == number2)||(number1 == number3)||(number3 == number2)) //check that numbers are not the same
             {
+                //if two number match then create another number
                 if (number1 == number2) 
                 {
                     number2 = rnd.Next(0, 49);
@@ -107,7 +114,7 @@ namespace Alexandra_s_Trove
             Numbers.Add(number2);   
             Numbers.Add(number3);
             
-            return Numbers; 
+            return Numbers;//return random numbers 
         
         }
         /*private void AdjustPictures()
@@ -328,7 +335,7 @@ namespace Alexandra_s_Trove
 
         }*/
 
-        private void AdjustPictures()
+        private void AdjustPictures()//display 3 random pictures in the picture boxes
         {
             List<int> Numbers = new List<int>();
             Numbers = GetRandomNumbers();
@@ -341,7 +348,7 @@ namespace Alexandra_s_Trove
 
             for (int i = 0; i < Images.Count; i++)
             {
-
+                //use dictonary to find the matching pictures
                 if (i == Numbers[0]) { picImage1.Image = Images.ContainsKey(i) ? Images[i] : null; }
                 if (i == Numbers[1]) { picImage2.Image = Images.ContainsKey(i) ? Images[i] : null; }
                 if (i == Numbers[2]) { picImage3.Image = Images.ContainsKey(i) ? Images[i] : null; }
@@ -351,69 +358,69 @@ namespace Alexandra_s_Trove
       
 
        
-        private void picArrowRight_MouseClick(object sender, MouseEventArgs e)
+        private void picArrowRight_MouseClick(object sender, MouseEventArgs e)//refresh the images in the boxes
         {
             AdjustPictures();
             
         }
 
-        private void picArrowLeft_Click(object sender, EventArgs e)
+        private void picArrowLeft_Click(object sender, EventArgs e)//refresh the images in the boxes
         {
             AdjustPictures();
             
 
         }
 
-        private void lblSignIn_Click(object sender, EventArgs e)
+        private void lblSignIn_Click(object sender, EventArgs e)//open sign in page and hide this page
         {
             SignInPage sip = new SignInPage(); sip.Show();
             Hide();
         }
 
-        private void picCath1Left_Click(object sender, EventArgs e)
+        private void picCath1Left_Click(object sender, EventArgs e)//show product page depending on product ID
         {
             ProductHandling.SetID("P13");
-            //MessageBox.Show(ProductHandling.GetID());
+            
             ProductPage pp = new ProductPage(); pp.Show();
-            //Form.Close();
-            Hide();// rp = new RegisterPage(); rp.Close();#
+           
+            Hide();
         }
 
-        private void picCath1Right_Click(object sender, EventArgs e)
+        private void picCath1Right_Click(object sender, EventArgs e)//show product page depending on product ID
         {
             ProductHandling.SetID("P8");
-            //MessageBox.Show(ProductHandling.GetID());
+            
             ProductPage pp = new ProductPage(); pp.Show();
-            //Form.Close();
-            Hide();// rp = new RegisterPage(); rp.Close();#
+            
+            Hide();
         }
 
-        private void picCath2Left_Click(object sender, EventArgs e)
+        private void picCath2Left_Click(object sender, EventArgs e)//show product page depending on product ID
         {
             ProductHandling.SetID("P2");
-            //MessageBox.Show(ProductHandling.GetID());
+            
             ProductPage pp = new ProductPage(); pp.Show();
-            //Form.Close();
-            Hide();// rp = new RegisterPage(); rp.Close();#
+            
+            Hide();
         }
 
-        private void picCath2Right_Click(object sender, EventArgs e)
+        private void picCath2Right_Click(object sender, EventArgs e)//show product page depending on product ID
         {
             ProductHandling.SetID("P7");
-            //MessageBox.Show(ProductHandling.GetID());
+            
             ProductPage pp = new ProductPage(); pp.Show();
-            //Form.Close();
-            Hide();// rp = new RegisterPage(); rp.Close();#
+            
+            Hide();
         }
 
-        private void picBasket_Click(object sender, EventArgs e)
+        private void picBasket_Click(object sender, EventArgs e)//open basket form - hide this form
         {
             BasketPage b = new BasketPage(); b.Show();
 
             Hide();
         }
 
-        private void lblVegetables_Click(object sender, EventArgs e)
+        private void lblVegetables_Click(object sender, EventArgs e)//show page for category depanding on the label text
         {
             string chategory = lblVegetables.Text;
             ChategoryHandling.SetChategory(chategory);
@@ -423,7 +430,7 @@ namespace Alexandra_s_Trove
             Hide();
         }
 
-        private void lblFruits_Click(object sender, EventArgs e)
+        private void lblFruits_Click(object sender, EventArgs e)//show page for category depanding on the label text
         {
             string chategory = lblFruits.Text;
             ChategoryHandling.SetChategory(chategory);
@@ -433,7 +440,7 @@ namespace Alexandra_s_Trove
             Hide();
         }
 
-        private void lblDesserts_Click(object sender, EventArgs e)
+        private void lblDesserts_Click(object sender, EventArgs e)//show page for category depanding on the label text 
         {
             string chategory = lblDesserts.Text;
             ChategoryHandling.SetChategory(chategory);
@@ -445,12 +452,13 @@ namespace Alexandra_s_Trove
 
         private void cboxSearchBar_SelectedIndexChanged(object sender, EventArgs e)
         {
-           // cboxSearchBar.Items.Add("Fruit");
+           
             
         }
 
-        private async void picSearchLoop_Click(object sender, EventArgs e)
+        private async void picSearchLoop_Click(object sender, EventArgs e)//show a product page depending on the selection made in the searchbox
         {
+            //connect to the database - to the correct table
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
             string CollectionName = "Product";
@@ -460,6 +468,7 @@ namespace Alexandra_s_Trove
 
             var data = await Coll.FindAsync(_ => true);
 
+            //create containers for the data that will be used
             List<string> ProductIDs = new List<string>();
             List<string> Names = new List<string>();
             List<string> Descriptions = new List<string>();
@@ -470,6 +479,7 @@ namespace Alexandra_s_Trove
             {
                 if (data != null)
                 {
+                    //store the data in the containers
                     ProductIDs.Add(datas.ID);
                     Names.Add(datas.Name);
                     Descriptions.Add(datas.Description);
@@ -483,7 +493,7 @@ namespace Alexandra_s_Trove
             bool productExists = false;
             for(int i = 0; i < Names.Count; i++)
             {
-                if (Names[i] == product) 
+                if (Names[i] == product) //if a product exist with the given name then open the product page and close this page
                 {
                     ProductHandling.SetID(ProductIDs[i]);
                     
@@ -494,7 +504,7 @@ namespace Alexandra_s_Trove
                     break;
                 }
             }
-            if (productExists == false) 
+            if (productExists == false) //if the product does not exist then refresh the search bar and show message below
             {
                 MessageBox.Show("Product Does NOT Exist. Please Try Again");
                 cboxSearchBar.Text = ""; 
@@ -503,7 +513,7 @@ namespace Alexandra_s_Trove
 
         }
 
-        private void lblFeedbackSurvey_Click(object sender, EventArgs e)
+        private void lblFeedbackSurvey_Click(object sender, EventArgs e)//show the feedback survey page
         {
             FeedbackSurveyPage fsp = new FeedbackSurveyPage();
             fsp.Show();
