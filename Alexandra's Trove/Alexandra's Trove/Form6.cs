@@ -20,30 +20,34 @@ namespace Alexandra_s_Trove
             InitializeComponent();
         }
 
-        private void ProductPage_Load(object sender, EventArgs e)
+        private void ProductPage_Load(object sender, EventArgs e)//code that runs when the form loads
         {
+            //get disctonary that contains the name of the products and their IDs as keys (both as strings)
             Dictionary<string, string> GetNames = new Dictionary<string, string>();
             GetNames = ProductHandling.ReturnProductNamesBasedOnIDs();
-            for (int i = 0; i < GetNames.Count; i++)
+            for (int i = 0; i < GetNames.Count; i++)//add the products to the search bar
             { cboxSearchBar.Items.Insert(0, GetNames.ElementAt(i).Value); }
 
-            string clientId = ClientAccountAccess.GetID();
+            string clientId = ClientAccountAccess.GetID();//get customer id (if id = C0 then the customer is a guest)
+
+            //check if the user is logged in
+            //if user is not logged in then do this
             if (clientId == "C0") { lblAccount.Text = "Sign In"; lblOrders.Visible = false;
-                lblAddReview.Enabled = false;
-                lblAddReview.Text = "Log In To Add A Review";
+                lblAddReview.Enabled = false;//hide the add review label - only logged in customers can add product reviews
+                lblAddReview.Text = "Log In To Add A Review";//change the text of the add review lable
             }
             
+            //run code of the two buttons when the form loads
             detailsInsertion.PerformClick();
             btnReviewsInsert.PerformClick();
-            //how to add scroll bar
-            //https://www.youtube.com/watch?v=6sTQhmZTiXY
+          
 
 
 
             string productID = ProductHandling.GetID();
             
             productID = productID.Substring(1);
-            //MessageBox.Show(productID);
+            
 
 
             Dictionary<string, Image> Images = new Dictionary<string, Image>();
