@@ -1,5 +1,6 @@
 ﻿using Alexandra_s_Trove.Resources;
 using MongoDB.Driver;
+using SharpCompress.Common;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Alexandra_s_Trove.Resources.DatabaseHandler;
 using static MongoDB.Bson.Serialization.Serializers.SerializerHelper;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Alexandra_s_Trove
 {
@@ -22,13 +24,16 @@ namespace Alexandra_s_Trove
         }
 
         private void CheckoutPage_Load(object sender, EventArgs e)
-        {
+        {//when form loads this code runs
 
+            //add names of the products to the search bar
             Dictionary<string, string> GetNames = new Dictionary<string, string>();
             GetNames = ProductHandling.ReturnProductNamesBasedOnIDs();
             for (int i = 0; i < GetNames.Count; i++)
             { cboxSearchBar.Items.Insert(0, GetNames.ElementAt(i).Value); }
 
+
+            //add products to pay for and their details to the list box
             List<int> NoOfItems = new List<int>();
             List<double> Totals = new List<double>();
             List<string> ProductID = new List<string>();
@@ -46,16 +51,19 @@ namespace Alexandra_s_Trove
                 total = total + Totals[i];
             }
 
+            //work out whether a delivery charge is required
+            //adjust labels accordingly
             if (total < 40) { lblDeliveryChargeNumber.Text = "2.50"; }
             double finalTotal = total + Convert.ToDouble(lblDeliveryChargeNumber.Text);
             lblTotalNumber.Text = finalTotal.ToString();
 
+            //hardcoded pictures
             pboxAd1.Image = Resource.Peas2;
             pboxAd2.Image = Resource.SpringOnions4;
             pboxAd3.Image = Resource.Raspberries3;
 
-            string ID = ClientAccountAccess.GetID();
-            if (ID == "C0")
+            string ID = ClientAccountAccess.GetID();//get user id
+            if (ID == "C0")//if user is not logged then run this
             {
                 cboxCardDetails.Enabled = false;
                 tboxSecurityCode1.Enabled = false;
@@ -63,82 +71,8 @@ namespace Alexandra_s_Trove
                 lblAccount.Text = "Sign In"; lblOrders.Visible = false;
 
 
-            }/*
-            else
-            {
-                string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
-                string DatabaseName = "Assignment";
-                string CollectionName = "Client";
-                var Connection = new MongoClient(ConnectionString);
-                var db = Connection.GetDatabase(DatabaseName);
-                var Coll = db.GetCollection<Client>(CollectionName);
-
-                var data = await Coll.FindAsync(_ => true);
-
-                List<string> ClientIDs = new List<string>();
-                List<string> names = new List<string>();
-                List<string> DOBs = new List<string>();
-                List<string> addresses = new List<string>();
-                List<string> phoneNumbers = new List<string>();
-                List<string> passwords = new List<string>();
-                List<string> creaditCardDetailsAll = new List<string>();
-                List<string> accountCreationDates = new List<string>();
-                List<string> emailAddresses = new List<string>();
-                string name1 = "";
-                string DOB1 = "";
-                string address1 = "";
-                string phoneNumber1 = "";
-                string password1 = "";
-                string creaditCardDetails1 = "";
-                string accountCreationDate1 = "";
-                string emailAddress1 = "";
-
-
-                foreach (var datas in data.ToList())
-                {
-                    if (data != null)
-                    {
-                        ClientIDs.Add(datas.ID);
-                        names.Add(datas.Name);
-                        DOBs.Add(datas.DOB);
-                        addresses.Add(datas.Address);
-                        phoneNumbers.Add(datas.PhoneNumber);
-                        passwords.Add(datas.Password);
-                        creaditCardDetailsAll.Add(datas.CardDetails);
-                        accountCreationDates.Add(datas.AccountCreationDate);
-                        emailAddresses.Add(datas.EmailAddress);
-                    }
-                }
-
-                bool IDExists = false;
-
-                for (int i = 0; i < ClientIDs.Count; i++)
-                {
-                    if (ClientIDs[i] == ID)
-                    {
-
-                        name1 = names[i];
-                        DOB1 = DOBs[i];
-                        address1 = addresses[i];
-                        phoneNumber1 = phoneNumbers[i];
-                        password1 = passwords[i];
-                        creaditCardDetails1 = creaditCardDetailsAll[i];
-                        accountCreationDate1 = accountCreationDates[i];
-                        emailAddress1 = emailAddresses[i];
-
-                        password1 = EncryptDecrypt.Decrypt(password1);
-                        creaditCardDetails1 = EncryptDecrypt.Decrypt(creaditCardDetails1);
-
-
-                        IDExists = true;
-                    }
-                }
-
-
-
-
-
-            }*/
+            }
+                    
 
 
 
@@ -146,6 +80,7 @@ namespace Alexandra_s_Trove
 
         private void pboxAd1_Click(object sender, EventArgs e)
         {
+            //take user to the product form - according to the ID
             ProductHandling.SetID("P5");
 
             ProductPage pp = new ProductPage(); pp.Show();
@@ -155,6 +90,7 @@ namespace Alexandra_s_Trove
 
         private void pboxAd2_Click(object sender, EventArgs e)
         {
+            //take user to the product form - according to the ID
             ProductHandling.SetID("P11");
 
             ProductPage pp = new ProductPage(); pp.Show();
@@ -164,6 +100,7 @@ namespace Alexandra_s_Trove
 
         private void pboxAd3_Click(object sender, EventArgs e)
         {
+            //take user to the product form - according to the ID
             ProductHandling.SetID("P6");
 
             ProductPage pp = new ProductPage(); pp.Show();
@@ -172,7 +109,7 @@ namespace Alexandra_s_Trove
         }
 
         private void tboxAddressLine1_Enter(object sender, EventArgs e)
-        {
+        {//do when user enters this text box
             tboxAddressLine1.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
             string ID = ClientAccountAccess.GetID();
             if (ID == "C0" || cboxAddress.Checked == false)
@@ -183,9 +120,12 @@ namespace Alexandra_s_Trove
 
 
         private void tboxAddressLine2_Enter(object sender, EventArgs e)
-        {
+        {//do when user enters this text box
+
+            //change colour of the writing
             tboxAddressLine2.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
-            string ID = ClientAccountAccess.GetID();
+            string ID = ClientAccountAccess.GetID();//depending on client id or wherther the box for the 
+            //address is check delete string in text box
             if (ID == "C0" || cboxAddress.Checked == false)
             {
                 tboxAddressLine2.Text = "";
@@ -194,10 +134,14 @@ namespace Alexandra_s_Trove
         }
 
         private void tboxAddressLine3_Enter(object sender, EventArgs e)
-        {
+        {//do when user enters this text box
+
+            //change colour of the writing
+
             tboxAddressLine3.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
 
-            string ID = ClientAccountAccess.GetID();
+            string ID = ClientAccountAccess.GetID();//depending on client id or wherther the box for the 
+            //address is check delete string in text box
             if (ID == "C0" || cboxAddress.Checked == false)
             {
                 tboxAddressLine3.Text = "";
@@ -205,10 +149,13 @@ namespace Alexandra_s_Trove
         }
 
         private void tboxAddressLine4_Enter(object sender, EventArgs e)
-        {
+        {//do when user enters this text box
+
+            //change colour of the writing
             tboxAddressLine4.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
 
-            string ID = ClientAccountAccess.GetID();
+            string ID = ClientAccountAccess.GetID();//depending on client id or wherther the box for the 
+            //address is check delete string in text box
             if (ID == "C0" || cboxAddress.Checked == false)
             {
                 tboxAddressLine4.Text = "";
@@ -216,56 +163,66 @@ namespace Alexandra_s_Trove
         }
 
         private void tboxAddressLine1_Leave(object sender, EventArgs e)
-        {
-
+        {//do when user leaves this text box
+            //reset text in text box
             if (tboxAddressLine1.Text == "") { tboxAddressLine1.Text = "First Line Of Address"; }
 
 
         }
 
         private void tboxAddressLine2_Leave(object sender, EventArgs e)
-        {
+        {//do when user leaves this text box
+            //reset text in text box
             if (tboxAddressLine2.Text == "") { tboxAddressLine2.Text = "Second Line Of Address"; }
         }
 
         private void tboxAddressLine3_Leave(object sender, EventArgs e)
-        {
+        {//do when user leaves this text box
+            //reset text in text box
             if (tboxAddressLine3.Text == "") { tboxAddressLine3.Text = "Third Line Of Address"; }
         }
 
         private void tboxAddressLine4_Leave(object sender, EventArgs e)
-        {
+        {//do when user leaves this text box
+            //reset text in text box
             if (tboxAddressLine4.Text == "") { tboxAddressLine4.Text = "Forth Line Of Address"; }
         }
 
         private void tboxCardNumber_Enter(object sender, EventArgs e)
         {
+            //do when user enters this text box
+
+            //change colour of the writing
             tboxCardNumber.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
 
-            tboxCardNumber.Text = "";
+            tboxCardNumber.Text = "";//get rid of text
 
         }
 
         private void tboxCardNumber_Leave(object sender, EventArgs e)
         {
+            //do when user leaves this text box
+
             if (tboxCardNumber.Text == "") { tboxCardNumber.Text = "Card Number"; }
         }
 
         private void tboxNameOnCard_Enter(object sender, EventArgs e)
-        {
+        {//do when user enters this text box
+            //change colour of text
             tboxNameOnCard.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
 
-            tboxNameOnCard.Text = "";
+            tboxNameOnCard.Text = "";//get rid of text
 
         }
 
         private void tboxNameOnCard_Leave(object sender, EventArgs e)
         {
+            //do when user leaves this text box
             if (tboxNameOnCard.Text == "") { tboxNameOnCard.Text = "Name On Card"; }
         }
 
         private void tboxExpirationDate_Enter(object sender, EventArgs e)
-        {
+        {//do when user enters this text box
             tboxExpirationDate.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
 
             tboxExpirationDate.Text = "";
@@ -273,42 +230,46 @@ namespace Alexandra_s_Trove
         }
 
         private void tboxExpirationDate_Leave(object sender, EventArgs e)
-        {
+        {//do when user leaves this text box
             if (tboxExpirationDate.Text == "") { tboxExpirationDate.Text = "Expiration Date"; }
         }
 
         private void tboxSecurityCode_Enter(object sender, EventArgs e)
-        {
+        {//do when user enters this text box
+
+            //change colour of text
             tboxSecurityCode.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
 
-            tboxSecurityCode.Text = "";
+            tboxSecurityCode.Text = "";//empty text box
 
         }
 
         private void tboxSecurityCode_Leave(object sender, EventArgs e)
-        {
+        {//do when user leaves this text box
             if (tboxSecurityCode.Text == "") { tboxSecurityCode.Text = "Security Code"; }
         }
 
         private void tboxSecurityCode1_Enter(object sender, EventArgs e)
-        {
+        {//do when user enters this text box
+
+            //change colour of text
             tboxSecurityCode1.ForeColor = System.Drawing.ColorTranslator.FromHtml("#000000");
 
-            tboxSecurityCode1.Text = "";
+            tboxSecurityCode1.Text = "";//empty text box
         }
 
         private void tboxSecurityCode1_Leave(object sender, EventArgs e)
-        {
+        {//do when user leaves this text box
             if (tboxSecurityCode1.Text == "") { tboxSecurityCode1.Text = "Security Code"; }
         }
 
         private async void cboxCardDetails_CheckedChanged(object sender, EventArgs e)
-        {
+        {//run when  cboxCardDetails gets checked and unchecked
             string ID = ClientAccountAccess.GetID();
-            if (cboxCardDetails.Checked == true)
+            if (cboxCardDetails.Checked == true)//if the box is checked
             {
 
-
+                //access database
                 string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
                 string DatabaseName = "Assignment";
                 string CollectionName = "Client";
@@ -359,7 +320,7 @@ namespace Alexandra_s_Trove
                 {
                     if (ClientIDs[i] == ID)
                     {
-
+                        //get data of the user but do not display it
                         name1 = names[i];
                         DOB1 = DOBs[i];
                         address1 = addresses[i];
@@ -380,18 +341,20 @@ namespace Alexandra_s_Trove
                 
                
 
-                // tboxSecurityCode1.Enabled = false;
+                // diable text boxes
                 tboxCardNumber.Enabled = false;
                 tboxNameOnCard.Enabled = false;
                 tboxSecurityCode.Enabled = false;
                 dtPicker.Enabled = false;
                 tboxSecurityCode1.Enabled = true;
 
+                //display message for user
                 MessageBox.Show("Please Enter Security Code To Enable Using The Default Card");
-                //dtPicker.Value = new DateTime(2008, 01, 24);//year/month/day
+               
             }
             else
             {
+                //if the box is not checked
                 tboxSecurityCode1.Text = "Security Code";
                 tboxCardNumber.Text = "Card Number";
                 tboxNameOnCard.Text = "Name On Card";
@@ -399,7 +362,7 @@ namespace Alexandra_s_Trove
                 dtPicker.Value = new DateTime(2008, 01, 24);
 
                 tboxSecurityCode1.Enabled = false;
-                //tboxSecurityCode1.Enabled = true;
+                
                 tboxCardNumber.Enabled = true;
                 tboxNameOnCard.Enabled = true;
                 tboxSecurityCode.Enabled = true;
@@ -411,9 +374,12 @@ namespace Alexandra_s_Trove
 
         private async void cboxAddress_CheckedChanged(object sender, EventArgs e)
         {
+            //run when  cboxAddress gets checked and unchecked
             string ID = ClientAccountAccess.GetID();
             if (cboxAddress.Checked == true)
-            {
+            {//if box is checked
+
+                //connect to database
                 string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
                 string DatabaseName = "Assignment";
                 string CollectionName = "Client";
@@ -464,7 +430,7 @@ namespace Alexandra_s_Trove
                 {
                     if (ClientIDs[i] == ID)
                     {
-
+                        //get the details of the user
                         name1 = names[i];
                         DOB1 = DOBs[i];
                         address1 = addresses[i];
@@ -486,12 +452,12 @@ namespace Alexandra_s_Trove
 
 
 
-
-                if (address1.ToLower().IndexOf(",") != -1)
-                {
-                    string substring1 = address1.Substring(0, address1.IndexOf(","));
-                    tboxAddressLine1.Text = substring1;
-                    address1 = address1.Substring(address1.IndexOf(",") + 2);
+                //separate and display the address of the user in deffent text boxes
+                if (address1.ToLower().IndexOf(",") != -1)//check if there is a "," in the string
+                {//if there is then do this
+                    string substring1 = address1.Substring(0, address1.IndexOf(","));//get a substring from the beginning of the string to the ","
+                    tboxAddressLine1.Text = substring1;//store the substring in the first box for the address
+                    address1 = address1.Substring(address1.IndexOf(",") + 2);//get rid of the display part + repeat
                     if (address1.ToLower().IndexOf(",") != -1)
                     {
                         substring1 = address1.Substring(0, address1.IndexOf(","));
@@ -503,12 +469,13 @@ namespace Alexandra_s_Trove
                             tboxAddressLine3.Text = substring1;
                             address1 = address1.Substring(address1.IndexOf(",") + 2);
                             if (address1 != "")
-                            {
+                            {//if anything is left after repeating the same process for each text box
+                                //display whatever is left in the last text box
 
                                 tboxAddressLine4.Text = address1;
 
                             }
-                        }
+                        }//if there are not sufficient ","s to split the string multiple times then display it accordingly
                         else { tboxAddressLine3.Text = address1; }
                     }
                     else { tboxAddressLine2.Text = address1; }
@@ -525,6 +492,7 @@ namespace Alexandra_s_Trove
             }
             else
             {
+                //if box is unchecked
                 tboxAddressLine1.Text = "First Line Of Address";
                 tboxAddressLine2.Text = "Second Line Of Address";
                 tboxAddressLine3.Text = "Third Line Of Address";
@@ -604,14 +572,13 @@ namespace Alexandra_s_Trove
                         emailAddress1 = emailAddresses[i];
 
                         password1 = EncryptDecrypt.Decrypt(password1);
-                        //creaditCardDetails1 = EncryptDecrypt.Decrypt(creaditCardDetails1);
+                        
 
 
 
                     }
                 }
-                //MessageBox.Show(password1);
-                //MessageBox.Show(EncryptDecrypt.Decrypt(creaditCardDetails1));
+                
                 string decryptedCardDetails = EncryptDecrypt.Decrypt(creaditCardDetails1);
                 if (decryptedCardDetails.ToLower().IndexOf(",") != -1)
                 {
@@ -635,7 +602,7 @@ namespace Alexandra_s_Trove
 
                 }
 
-                //MessageBox.Show(decryptedCardDetails);
+                
 
                 bool allDetailsHaveBeenAdded = true;
                 if (cboxCardDetails.Checked == true)
@@ -643,10 +610,10 @@ namespace Alexandra_s_Trove
 
                     if ((decryptedCardDetails != tboxSecurityCode1.Text) || (tboxSecurityCode1.Text == ""))
                     {
-                        //MessageBox.Show("Wrong Security Code - Please Try again");
+                        
                         cboxCardDetails.Checked = false;
                         tboxSecurityCode1.Enabled = false;
-                        //tboxSecurityCode1.Enabled = true;
+                        
                         tboxCardNumber.Enabled = true;
                         tboxNameOnCard.Enabled = true;
                         tboxSecurityCode.Enabled = true;

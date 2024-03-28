@@ -585,5 +585,7 @@ namespace Alexandra_s_Trove
         {//take user to orders page and hide this (open/visible) page
             OrdersPage ordersPage = new OrdersPage(); ordersPage.Show(); Hide();
         }
+
+   
     }
 }
