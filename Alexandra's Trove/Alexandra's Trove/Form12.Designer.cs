@@ -88,9 +88,10 @@
             // cboxSearchBar
             // 
             this.cboxSearchBar.FormattingEnabled = true;
-            this.cboxSearchBar.Location = new System.Drawing.Point(265, 16);
+            this.cboxSearchBar.Location = new System.Drawing.Point(353, 20);
+            this.cboxSearchBar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cboxSearchBar.Name = "cboxSearchBar";
-            this.cboxSearchBar.Size = new System.Drawing.Size(236, 21);
+            this.cboxSearchBar.Size = new System.Drawing.Size(313, 24);
             this.cboxSearchBar.TabIndex = 122;
             // 
             // lblDesserts
@@ -98,9 +99,10 @@
             this.lblDesserts.AutoSize = true;
             this.lblDesserts.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDesserts.Image = ((System.Drawing.Image)(resources.GetObject("lblDesserts.Image")));
-            this.lblDesserts.Location = new System.Drawing.Point(296, 56);
+            this.lblDesserts.Location = new System.Drawing.Point(395, 69);
+            this.lblDesserts.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDesserts.Name = "lblDesserts";
-            this.lblDesserts.Size = new System.Drawing.Size(81, 20);
+            this.lblDesserts.Size = new System.Drawing.Size(97, 25);
             this.lblDesserts.TabIndex = 129;
             this.lblDesserts.Text = "Desserts";
             this.lblDesserts.Click += new System.EventHandler(this.lblDesserts_Click);
@@ -110,9 +112,10 @@
             this.lblMore.AutoSize = true;
             this.lblMore.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMore.Image = ((System.Drawing.Image)(resources.GetObject("lblMore.Image")));
-            this.lblMore.Location = new System.Drawing.Point(611, 56);
+            this.lblMore.Location = new System.Drawing.Point(815, 69);
+            this.lblMore.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMore.Name = "lblMore";
-            this.lblMore.Size = new System.Drawing.Size(278, 20);
+            this.lblMore.Size = new System.Drawing.Size(339, 25);
             this.lblMore.TabIndex = 128;
             this.lblMore.Text = "More Cathegories Coming Soon...";
             // 
@@ -121,9 +124,10 @@
             this.lblFruits.AutoSize = true;
             this.lblFruits.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFruits.Image = ((System.Drawing.Image)(resources.GetObject("lblFruits.Image")));
-            this.lblFruits.Location = new System.Drawing.Point(176, 56);
+            this.lblFruits.Location = new System.Drawing.Point(235, 69);
+            this.lblFruits.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFruits.Name = "lblFruits";
-            this.lblFruits.Size = new System.Drawing.Size(55, 20);
+            this.lblFruits.Size = new System.Drawing.Size(66, 25);
             this.lblFruits.TabIndex = 127;
             this.lblFruits.Text = "Fruits";
             this.lblFruits.Click += new System.EventHandler(this.lblFruits_Click);
@@ -133,9 +137,10 @@
             this.lblVegetables.AutoSize = true;
             this.lblVegetables.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblVegetables.Image = ((System.Drawing.Image)(resources.GetObject("lblVegetables.Image")));
-            this.lblVegetables.Location = new System.Drawing.Point(11, 56);
+            this.lblVegetables.Location = new System.Drawing.Point(15, 69);
+            this.lblVegetables.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVegetables.Name = "lblVegetables";
-            this.lblVegetables.Size = new System.Drawing.Size(100, 20);
+            this.lblVegetables.Size = new System.Drawing.Size(121, 25);
             this.lblVegetables.TabIndex = 126;
             this.lblVegetables.Text = "Vegetables";
             this.lblVegetables.Click += new System.EventHandler(this.lblVegetables_Click);
@@ -143,10 +148,10 @@
             // picArrowDown
             // 
             this.picArrowDown.Image = ((System.Drawing.Image)(resources.GetObject("picArrowDown.Image")));
-            this.picArrowDown.Location = new System.Drawing.Point(572, 27);
-            this.picArrowDown.Margin = new System.Windows.Forms.Padding(2);
+            this.picArrowDown.Location = new System.Drawing.Point(763, 33);
+            this.picArrowDown.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picArrowDown.Name = "picArrowDown";
-            this.picArrowDown.Size = new System.Drawing.Size(21, 14);
+            this.picArrowDown.Size = new System.Drawing.Size(28, 17);
             this.picArrowDown.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picArrowDown.TabIndex = 124;
             this.picArrowDown.TabStop = false;
@@ -156,9 +161,10 @@
             this.lblSelectLanguage.AutoSize = true;
             this.lblSelectLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSelectLanguage.Image = ((System.Drawing.Image)(resources.GetObject("lblSelectLanguage.Image")));
-            this.lblSelectLanguage.Location = new System.Drawing.Point(568, 8);
+            this.lblSelectLanguage.Location = new System.Drawing.Point(757, 10);
+            this.lblSelectLanguage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSelectLanguage.Name = "lblSelectLanguage";
-            this.lblSelectLanguage.Size = new System.Drawing.Size(89, 20);
+            this.lblSelectLanguage.Size = new System.Drawing.Size(108, 25);
             this.lblSelectLanguage.TabIndex = 123;
             this.lblSelectLanguage.Text = "Language";
             // 
@@ -167,9 +173,10 @@
             this.lblOrders.AutoSize = true;
             this.lblOrders.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOrders.Image = ((System.Drawing.Image)(resources.GetObject("lblOrders.Image")));
-            this.lblOrders.Location = new System.Drawing.Point(755, 17);
+            this.lblOrders.Location = new System.Drawing.Point(1007, 21);
+            this.lblOrders.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOrders.Name = "lblOrders";
-            this.lblOrders.Size = new System.Drawing.Size(63, 20);
+            this.lblOrders.Size = new System.Drawing.Size(78, 25);
             this.lblOrders.TabIndex = 121;
             this.lblOrders.Text = "Orders";
             this.lblOrders.Click += new System.EventHandler(this.lblOrders_Click);
@@ -179,9 +186,10 @@
             this.lblAccount.AutoSize = true;
             this.lblAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAccount.Image = ((System.Drawing.Image)(resources.GetObject("lblAccount.Image")));
-            this.lblAccount.Location = new System.Drawing.Point(674, 17);
+            this.lblAccount.Location = new System.Drawing.Point(899, 21);
+            this.lblAccount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAccount.Name = "lblAccount";
-            this.lblAccount.Size = new System.Drawing.Size(75, 20);
+            this.lblAccount.Size = new System.Drawing.Size(91, 25);
             this.lblAccount.TabIndex = 120;
             this.lblAccount.Text = "Account";
             this.lblAccount.Click += new System.EventHandler(this.lblAccount_Click);
@@ -189,10 +197,10 @@
             // picBasket
             // 
             this.picBasket.Image = ((System.Drawing.Image)(resources.GetObject("picBasket.Image")));
-            this.picBasket.Location = new System.Drawing.Point(832, 9);
-            this.picBasket.Margin = new System.Windows.Forms.Padding(2);
+            this.picBasket.Location = new System.Drawing.Point(1109, 11);
+            this.picBasket.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picBasket.Name = "picBasket";
-            this.picBasket.Size = new System.Drawing.Size(43, 36);
+            this.picBasket.Size = new System.Drawing.Size(57, 44);
             this.picBasket.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBasket.TabIndex = 119;
             this.picBasket.TabStop = false;
@@ -201,10 +209,10 @@
             // picSearchLoop
             // 
             this.picSearchLoop.Image = ((System.Drawing.Image)(resources.GetObject("picSearchLoop.Image")));
-            this.picSearchLoop.Location = new System.Drawing.Point(506, 12);
-            this.picSearchLoop.Margin = new System.Windows.Forms.Padding(2);
+            this.picSearchLoop.Location = new System.Drawing.Point(675, 15);
+            this.picSearchLoop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picSearchLoop.Name = "picSearchLoop";
-            this.picSearchLoop.Size = new System.Drawing.Size(37, 29);
+            this.picSearchLoop.Size = new System.Drawing.Size(49, 36);
             this.picSearchLoop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picSearchLoop.TabIndex = 118;
             this.picSearchLoop.TabStop = false;
@@ -213,10 +221,10 @@
             // picAlex
             // 
             this.picAlex.Image = ((System.Drawing.Image)(resources.GetObject("picAlex.Image")));
-            this.picAlex.Location = new System.Drawing.Point(-2, 9);
-            this.picAlex.Margin = new System.Windows.Forms.Padding(2);
+            this.picAlex.Location = new System.Drawing.Point(-3, 11);
+            this.picAlex.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picAlex.Name = "picAlex";
-            this.picAlex.Size = new System.Drawing.Size(146, 30);
+            this.picAlex.Size = new System.Drawing.Size(195, 37);
             this.picAlex.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAlex.TabIndex = 115;
             this.picAlex.TabStop = false;
@@ -225,10 +233,10 @@
             // picTrove
             // 
             this.picTrove.Image = ((System.Drawing.Image)(resources.GetObject("picTrove.Image")));
-            this.picTrove.Location = new System.Drawing.Point(130, 9);
-            this.picTrove.Margin = new System.Windows.Forms.Padding(2);
+            this.picTrove.Location = new System.Drawing.Point(173, 11);
+            this.picTrove.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picTrove.Name = "picTrove";
-            this.picTrove.Size = new System.Drawing.Size(152, 32);
+            this.picTrove.Size = new System.Drawing.Size(203, 39);
             this.picTrove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picTrove.TabIndex = 116;
             this.picTrove.TabStop = false;
@@ -237,21 +245,22 @@
             // picFiller
             // 
             this.picFiller.Image = ((System.Drawing.Image)(resources.GetObject("picFiller.Image")));
-            this.picFiller.Location = new System.Drawing.Point(-2, -1);
-            this.picFiller.Margin = new System.Windows.Forms.Padding(2);
+            this.picFiller.Location = new System.Drawing.Point(-3, -1);
+            this.picFiller.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picFiller.Name = "picFiller";
-            this.picFiller.Size = new System.Drawing.Size(891, 55);
+            this.picFiller.Size = new System.Drawing.Size(1188, 68);
             this.picFiller.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picFiller.TabIndex = 117;
             this.picFiller.TabStop = false;
+           
             // 
             // picGreyRibbon
             // 
             this.picGreyRibbon.Image = ((System.Drawing.Image)(resources.GetObject("picGreyRibbon.Image")));
-            this.picGreyRibbon.Location = new System.Drawing.Point(-2, 49);
-            this.picGreyRibbon.Margin = new System.Windows.Forms.Padding(2);
+            this.picGreyRibbon.Location = new System.Drawing.Point(-3, 60);
+            this.picGreyRibbon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picGreyRibbon.Name = "picGreyRibbon";
-            this.picGreyRibbon.Size = new System.Drawing.Size(897, 33);
+            this.picGreyRibbon.Size = new System.Drawing.Size(1196, 41);
             this.picGreyRibbon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picGreyRibbon.TabIndex = 125;
             this.picGreyRibbon.TabStop = false;
@@ -261,9 +270,10 @@
             this.lblUserGuide.AutoSize = true;
             this.lblUserGuide.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserGuide.Image = ((System.Drawing.Image)(resources.GetObject("lblUserGuide.Image")));
-            this.lblUserGuide.Location = new System.Drawing.Point(410, 590);
+            this.lblUserGuide.Location = new System.Drawing.Point(547, 726);
+            this.lblUserGuide.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUserGuide.Name = "lblUserGuide";
-            this.lblUserGuide.Size = new System.Drawing.Size(75, 16);
+            this.lblUserGuide.Size = new System.Drawing.Size(94, 20);
             this.lblUserGuide.TabIndex = 133;
             this.lblUserGuide.Text = "User Guide";
             // 
@@ -273,9 +283,10 @@
             this.lblFeedbackSurvey.BackColor = System.Drawing.Color.Transparent;
             this.lblFeedbackSurvey.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFeedbackSurvey.Image = ((System.Drawing.Image)(resources.GetObject("lblFeedbackSurvey.Image")));
-            this.lblFeedbackSurvey.Location = new System.Drawing.Point(13, 590);
+            this.lblFeedbackSurvey.Location = new System.Drawing.Point(17, 726);
+            this.lblFeedbackSurvey.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFeedbackSurvey.Name = "lblFeedbackSurvey";
-            this.lblFeedbackSurvey.Size = new System.Drawing.Size(114, 16);
+            this.lblFeedbackSurvey.Size = new System.Drawing.Size(137, 20);
             this.lblFeedbackSurvey.TabIndex = 132;
             this.lblFeedbackSurvey.Text = "Feedback Survey";
             this.lblFeedbackSurvey.Click += new System.EventHandler(this.lblFeedbackSurvey_Click);
@@ -286,9 +297,10 @@
             this.lblTermsConditions.BackColor = System.Drawing.Color.Transparent;
             this.lblTermsConditions.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTermsConditions.Image = ((System.Drawing.Image)(resources.GetObject("lblTermsConditions.Image")));
-            this.lblTermsConditions.Location = new System.Drawing.Point(736, 590);
+            this.lblTermsConditions.Location = new System.Drawing.Point(981, 726);
+            this.lblTermsConditions.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTermsConditions.Name = "lblTermsConditions";
-            this.lblTermsConditions.Size = new System.Drawing.Size(139, 16);
+            this.lblTermsConditions.Size = new System.Drawing.Size(175, 20);
             this.lblTermsConditions.TabIndex = 131;
             this.lblTermsConditions.Text = "Terms And Conditions";
             this.lblTermsConditions.Click += new System.EventHandler(this.lblTermsConditions_Click);
@@ -296,10 +308,10 @@
             // picBottomLine
             // 
             this.picBottomLine.Image = ((System.Drawing.Image)(resources.GetObject("picBottomLine.Image")));
-            this.picBottomLine.Location = new System.Drawing.Point(-2, 581);
-            this.picBottomLine.Margin = new System.Windows.Forms.Padding(2);
+            this.picBottomLine.Location = new System.Drawing.Point(-3, 715);
+            this.picBottomLine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.picBottomLine.Name = "picBottomLine";
-            this.picBottomLine.Size = new System.Drawing.Size(891, 35);
+            this.picBottomLine.Size = new System.Drawing.Size(1188, 43);
             this.picBottomLine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBottomLine.TabIndex = 130;
             this.picBottomLine.TabStop = false;
@@ -307,36 +319,40 @@
             // tboxAddressLine4
             // 
             this.tboxAddressLine4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxAddressLine4.Location = new System.Drawing.Point(147, 292);
+            this.tboxAddressLine4.Location = new System.Drawing.Point(196, 359);
+            this.tboxAddressLine4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tboxAddressLine4.Name = "tboxAddressLine4";
-            this.tboxAddressLine4.Size = new System.Drawing.Size(341, 26);
+            this.tboxAddressLine4.Size = new System.Drawing.Size(453, 30);
             this.tboxAddressLine4.TabIndex = 155;
             this.tboxAddressLine4.Text = "Forth Line Of Address";
             // 
             // tboxAddressLine3
             // 
             this.tboxAddressLine3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxAddressLine3.Location = new System.Drawing.Point(147, 260);
+            this.tboxAddressLine3.Location = new System.Drawing.Point(196, 320);
+            this.tboxAddressLine3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tboxAddressLine3.Name = "tboxAddressLine3";
-            this.tboxAddressLine3.Size = new System.Drawing.Size(341, 26);
+            this.tboxAddressLine3.Size = new System.Drawing.Size(453, 30);
             this.tboxAddressLine3.TabIndex = 154;
             this.tboxAddressLine3.Text = "Third Line Of Address";
             // 
             // tboxAddressLine2
             // 
             this.tboxAddressLine2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxAddressLine2.Location = new System.Drawing.Point(147, 228);
+            this.tboxAddressLine2.Location = new System.Drawing.Point(196, 281);
+            this.tboxAddressLine2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tboxAddressLine2.Name = "tboxAddressLine2";
-            this.tboxAddressLine2.Size = new System.Drawing.Size(341, 26);
+            this.tboxAddressLine2.Size = new System.Drawing.Size(453, 30);
             this.tboxAddressLine2.TabIndex = 153;
             this.tboxAddressLine2.Text = "Second Line Of Address";
             // 
             // tboxAddressLine1
             // 
             this.tboxAddressLine1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxAddressLine1.Location = new System.Drawing.Point(147, 196);
+            this.tboxAddressLine1.Location = new System.Drawing.Point(196, 241);
+            this.tboxAddressLine1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tboxAddressLine1.Name = "tboxAddressLine1";
-            this.tboxAddressLine1.Size = new System.Drawing.Size(341, 26);
+            this.tboxAddressLine1.Size = new System.Drawing.Size(453, 30);
             this.tboxAddressLine1.TabIndex = 152;
             this.tboxAddressLine1.Text = "First Line Of Address";
             // 
@@ -345,9 +361,10 @@
             this.lblCreaditCardDetails1.AutoSize = true;
             this.lblCreaditCardDetails1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCreaditCardDetails1.Image = ((System.Drawing.Image)(resources.GetObject("lblCreaditCardDetails1.Image")));
-            this.lblCreaditCardDetails1.Location = new System.Drawing.Point(59, 365);
+            this.lblCreaditCardDetails1.Location = new System.Drawing.Point(79, 449);
+            this.lblCreaditCardDetails1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCreaditCardDetails1.Name = "lblCreaditCardDetails1";
-            this.lblCreaditCardDetails1.Size = new System.Drawing.Size(179, 24);
+            this.lblCreaditCardDetails1.Size = new System.Drawing.Size(235, 29);
             this.lblCreaditCardDetails1.TabIndex = 149;
             this.lblCreaditCardDetails1.Text = "Creadit Card Details:";
             // 
@@ -356,9 +373,10 @@
             this.lblPassword1.AutoSize = true;
             this.lblPassword1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword1.Image = ((System.Drawing.Image)(resources.GetObject("lblPassword1.Image")));
-            this.lblPassword1.Location = new System.Drawing.Point(59, 438);
+            this.lblPassword1.Location = new System.Drawing.Point(79, 539);
+            this.lblPassword1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPassword1.Name = "lblPassword1";
-            this.lblPassword1.Size = new System.Drawing.Size(141, 24);
+            this.lblPassword1.Size = new System.Drawing.Size(182, 29);
             this.lblPassword1.TabIndex = 148;
             this.lblPassword1.Text = "New Password:";
             // 
@@ -367,9 +385,10 @@
             this.lblPhoneNumber1.AutoSize = true;
             this.lblPhoneNumber1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPhoneNumber1.Image = ((System.Drawing.Image)(resources.GetObject("lblPhoneNumber1.Image")));
-            this.lblPhoneNumber1.Location = new System.Drawing.Point(59, 330);
+            this.lblPhoneNumber1.Location = new System.Drawing.Point(79, 406);
+            this.lblPhoneNumber1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhoneNumber1.Name = "lblPhoneNumber1";
-            this.lblPhoneNumber1.Size = new System.Drawing.Size(145, 24);
+            this.lblPhoneNumber1.Size = new System.Drawing.Size(182, 29);
             this.lblPhoneNumber1.TabIndex = 147;
             this.lblPhoneNumber1.Text = "Phone Number:";
             // 
@@ -378,9 +397,10 @@
             this.lblAddress1.AutoSize = true;
             this.lblAddress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddress1.Image = ((System.Drawing.Image)(resources.GetObject("lblAddress1.Image")));
-            this.lblAddress1.Location = new System.Drawing.Point(61, 196);
+            this.lblAddress1.Location = new System.Drawing.Point(81, 241);
+            this.lblAddress1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAddress1.Name = "lblAddress1";
-            this.lblAddress1.Size = new System.Drawing.Size(85, 24);
+            this.lblAddress1.Size = new System.Drawing.Size(108, 29);
             this.lblAddress1.TabIndex = 146;
             this.lblAddress1.Text = "Address:";
             // 
@@ -389,9 +409,10 @@
             this.lblDOB1.AutoSize = true;
             this.lblDOB1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDOB1.Image = ((System.Drawing.Image)(resources.GetObject("lblDOB1.Image")));
-            this.lblDOB1.Location = new System.Drawing.Point(61, 162);
+            this.lblDOB1.Location = new System.Drawing.Point(81, 199);
+            this.lblDOB1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDOB1.Name = "lblDOB1";
-            this.lblDOB1.Size = new System.Drawing.Size(119, 24);
+            this.lblDOB1.Size = new System.Drawing.Size(155, 29);
             this.lblDOB1.TabIndex = 145;
             this.lblDOB1.Text = "Date Of Birth:";
             // 
@@ -400,19 +421,20 @@
             this.lblName1.AutoSize = true;
             this.lblName1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName1.Image = ((System.Drawing.Image)(resources.GetObject("lblName1.Image")));
-            this.lblName1.Location = new System.Drawing.Point(61, 127);
+            this.lblName1.Location = new System.Drawing.Point(81, 156);
+            this.lblName1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName1.Name = "lblName1";
-            this.lblName1.Size = new System.Drawing.Size(66, 24);
+            this.lblName1.Size = new System.Drawing.Size(84, 29);
             this.lblName1.TabIndex = 144;
             this.lblName1.Text = "Name:";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(31, 101);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(41, 124);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(826, 459);
+            this.pictureBox1.Size = new System.Drawing.Size(1101, 565);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 158;
             this.pictureBox1.TabStop = false;
@@ -422,18 +444,20 @@
             this.lblOldPassword1.AutoSize = true;
             this.lblOldPassword1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOldPassword1.Image = ((System.Drawing.Image)(resources.GetObject("lblOldPassword1.Image")));
-            this.lblOldPassword1.Location = new System.Drawing.Point(126, 475);
+            this.lblOldPassword1.Location = new System.Drawing.Point(168, 585);
+            this.lblOldPassword1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblOldPassword1.Name = "lblOldPassword1";
-            this.lblOldPassword1.Size = new System.Drawing.Size(404, 24);
+            this.lblOldPassword1.Size = new System.Drawing.Size(515, 29);
             this.lblOldPassword1.TabIndex = 159;
             this.lblOldPassword1.Text = "Enter Current Password To Save The Changes";
             // 
             // tboxOldPassword
             // 
             this.tboxOldPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxOldPassword.Location = new System.Drawing.Point(536, 473);
+            this.tboxOldPassword.Location = new System.Drawing.Point(715, 582);
+            this.tboxOldPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tboxOldPassword.Name = "tboxOldPassword";
-            this.tboxOldPassword.Size = new System.Drawing.Size(195, 26);
+            this.tboxOldPassword.Size = new System.Drawing.Size(259, 30);
             this.tboxOldPassword.TabIndex = 160;
             this.tboxOldPassword.Text = "Current Password";
             this.tboxOldPassword.Enter += new System.EventHandler(this.tboxOldPassword_Enter);
@@ -442,9 +466,10 @@
             // tBoxName
             // 
             this.tBoxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tBoxName.Location = new System.Drawing.Point(133, 127);
+            this.tBoxName.Location = new System.Drawing.Point(177, 156);
+            this.tBoxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tBoxName.Name = "tBoxName";
-            this.tBoxName.Size = new System.Drawing.Size(352, 26);
+            this.tBoxName.Size = new System.Drawing.Size(468, 30);
             this.tBoxName.TabIndex = 161;
             this.tBoxName.Text = "Name";
             // 
@@ -452,26 +477,29 @@
             // 
             this.dtpDOB.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpDOB.Location = new System.Drawing.Point(180, 160);
+            this.dtpDOB.Location = new System.Drawing.Point(240, 197);
+            this.dtpDOB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpDOB.Name = "dtpDOB";
-            this.dtpDOB.Size = new System.Drawing.Size(202, 26);
+            this.dtpDOB.Size = new System.Drawing.Size(268, 30);
             this.dtpDOB.TabIndex = 163;
             // 
             // tboxPhoneNumber
             // 
             this.tboxPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxPhoneNumber.Location = new System.Drawing.Point(210, 328);
+            this.tboxPhoneNumber.Location = new System.Drawing.Point(280, 404);
+            this.tboxPhoneNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tboxPhoneNumber.Name = "tboxPhoneNumber";
-            this.tboxPhoneNumber.Size = new System.Drawing.Size(278, 26);
+            this.tboxPhoneNumber.Size = new System.Drawing.Size(369, 30);
             this.tboxPhoneNumber.TabIndex = 164;
             this.tboxPhoneNumber.Text = "Phone Number";
             // 
             // tboxNameOnCard
             // 
             this.tboxNameOnCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxNameOnCard.Location = new System.Drawing.Point(241, 365);
+            this.tboxNameOnCard.Location = new System.Drawing.Point(321, 449);
+            this.tboxNameOnCard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tboxNameOnCard.Name = "tboxNameOnCard";
-            this.tboxNameOnCard.Size = new System.Drawing.Size(247, 26);
+            this.tboxNameOnCard.Size = new System.Drawing.Size(328, 30);
             this.tboxNameOnCard.TabIndex = 165;
             this.tboxNameOnCard.Text = "Name On Card";
             this.tboxNameOnCard.Enter += new System.EventHandler(this.tboxNameOnCard_Enter);
@@ -480,9 +508,10 @@
             // tboxCardNumber
             // 
             this.tboxCardNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxCardNumber.Location = new System.Drawing.Point(494, 365);
+            this.tboxCardNumber.Location = new System.Drawing.Point(659, 449);
+            this.tboxCardNumber.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tboxCardNumber.Name = "tboxCardNumber";
-            this.tboxCardNumber.Size = new System.Drawing.Size(237, 26);
+            this.tboxCardNumber.Size = new System.Drawing.Size(315, 30);
             this.tboxCardNumber.TabIndex = 166;
             this.tboxCardNumber.Text = "Card Number";
             this.tboxCardNumber.Enter += new System.EventHandler(this.tboxCardNumber_Enter);
@@ -491,9 +520,10 @@
             // tboxNewPassword1
             // 
             this.tboxNewPassword1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxNewPassword1.Location = new System.Drawing.Point(206, 436);
+            this.tboxNewPassword1.Location = new System.Drawing.Point(275, 537);
+            this.tboxNewPassword1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tboxNewPassword1.Name = "tboxNewPassword1";
-            this.tboxNewPassword1.Size = new System.Drawing.Size(295, 26);
+            this.tboxNewPassword1.Size = new System.Drawing.Size(392, 30);
             this.tboxNewPassword1.TabIndex = 167;
             this.tboxNewPassword1.Text = "Password";
             this.tboxNewPassword1.Enter += new System.EventHandler(this.tboxNewPassword1_Enter);
@@ -502,9 +532,10 @@
             // tboxNewPassword2
             // 
             this.tboxNewPassword2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxNewPassword2.Location = new System.Drawing.Point(536, 436);
+            this.tboxNewPassword2.Location = new System.Drawing.Point(715, 537);
+            this.tboxNewPassword2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tboxNewPassword2.Name = "tboxNewPassword2";
-            this.tboxNewPassword2.Size = new System.Drawing.Size(282, 26);
+            this.tboxNewPassword2.Size = new System.Drawing.Size(375, 30);
             this.tboxNewPassword2.TabIndex = 168;
             this.tboxNewPassword2.Text = "Please Reintroduce Password";
             this.tboxNewPassword2.Enter += new System.EventHandler(this.tboxNewPassword2_Enter);
@@ -514,9 +545,10 @@
             // 
             this.tboxExpirationDate.Enabled = false;
             this.tboxExpirationDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxExpirationDate.Location = new System.Drawing.Point(65, 397);
+            this.tboxExpirationDate.Location = new System.Drawing.Point(87, 489);
+            this.tboxExpirationDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tboxExpirationDate.Name = "tboxExpirationDate";
-            this.tboxExpirationDate.Size = new System.Drawing.Size(151, 26);
+            this.tboxExpirationDate.Size = new System.Drawing.Size(200, 30);
             this.tboxExpirationDate.TabIndex = 169;
             this.tboxExpirationDate.Text = "Expiration Date";
             // 
@@ -524,17 +556,19 @@
             // 
             this.dtpCardExpiryDate.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpCardExpiryDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpCardExpiryDate.Location = new System.Drawing.Point(192, 397);
+            this.dtpCardExpiryDate.Location = new System.Drawing.Point(256, 489);
+            this.dtpCardExpiryDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dtpCardExpiryDate.Name = "dtpCardExpiryDate";
-            this.dtpCardExpiryDate.Size = new System.Drawing.Size(237, 26);
+            this.dtpCardExpiryDate.Size = new System.Drawing.Size(315, 30);
             this.dtpCardExpiryDate.TabIndex = 170;
             // 
             // btnSaveChanges
             // 
             this.btnSaveChanges.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveChanges.Location = new System.Drawing.Point(363, 516);
+            this.btnSaveChanges.Location = new System.Drawing.Point(484, 635);
+            this.btnSaveChanges.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSaveChanges.Name = "btnSaveChanges";
-            this.btnSaveChanges.Size = new System.Drawing.Size(197, 32);
+            this.btnSaveChanges.Size = new System.Drawing.Size(263, 39);
             this.btnSaveChanges.TabIndex = 171;
             this.btnSaveChanges.Text = "Save Changes";
             this.btnSaveChanges.UseVisualStyleBackColor = true;
@@ -543,9 +577,10 @@
             // tboxSecurityCode
             // 
             this.tboxSecurityCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxSecurityCode.Location = new System.Drawing.Point(494, 397);
+            this.tboxSecurityCode.Location = new System.Drawing.Point(659, 489);
+            this.tboxSecurityCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tboxSecurityCode.Name = "tboxSecurityCode";
-            this.tboxSecurityCode.Size = new System.Drawing.Size(237, 26);
+            this.tboxSecurityCode.Size = new System.Drawing.Size(315, 30);
             this.tboxSecurityCode.TabIndex = 172;
             this.tboxSecurityCode.Text = "Security Code";
             this.tboxSecurityCode.Enter += new System.EventHandler(this.tboxSecurityCode_Enter);
@@ -556,9 +591,10 @@
             this.lblWarning.AutoSize = true;
             this.lblWarning.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWarning.Image = ((System.Drawing.Image)(resources.GetObject("lblWarning.Image")));
-            this.lblWarning.Location = new System.Drawing.Point(516, 127);
+            this.lblWarning.Location = new System.Drawing.Point(688, 156);
+            this.lblWarning.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWarning.Name = "lblWarning";
-            this.lblWarning.Size = new System.Drawing.Size(281, 96);
+            this.lblWarning.Size = new System.Drawing.Size(362, 116);
             this.lblWarning.TabIndex = 173;
             this.lblWarning.Text = "*Credit Card Details And \r\nPassword Can Not Be Displayed\r\n*Any Saved Details Will" +
     " Override\r\nThe Currect Details";
@@ -566,9 +602,10 @@
             // btnSignOut
             // 
             this.btnSignOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignOut.Location = new System.Drawing.Point(610, 260);
+            this.btnSignOut.Location = new System.Drawing.Point(813, 320);
+            this.btnSignOut.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSignOut.Name = "btnSignOut";
-            this.btnSignOut.Size = new System.Drawing.Size(139, 32);
+            this.btnSignOut.Size = new System.Drawing.Size(185, 39);
             this.btnSignOut.TabIndex = 174;
             this.btnSignOut.Text = "Sign Out";
             this.btnSignOut.UseVisualStyleBackColor = true;
@@ -576,9 +613,9 @@
             // 
             // AccountPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 612);
+            this.ClientSize = new System.Drawing.Size(1181, 753);
             this.Controls.Add(this.btnSignOut);
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.tboxSecurityCode);
@@ -624,6 +661,7 @@
             this.Controls.Add(this.picFiller);
             this.Controls.Add(this.picGreyRibbon);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AccountPage";
             this.Text = "Account";
             this.Load += new System.EventHandler(this.AccountPage_Load);

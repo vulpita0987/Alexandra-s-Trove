@@ -17,8 +17,9 @@ namespace Alexandra_s_Trove
             InitializeComponent();
         }
 
-        private void OrderConfirmationPage_Load(object sender, EventArgs e)
+        private void OrderConfirmationPage_Load(object sender, EventArgs e)//core runs when form loads
         {
+            //show user when the order is placed
             DateTime d1 = (DateTime.Now).AddDays(1);
             string date = d1.ToString();
             lblExpectedDelivery.Text = "Expected Delivery -> " + date;    

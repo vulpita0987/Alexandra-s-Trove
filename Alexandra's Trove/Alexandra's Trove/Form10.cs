@@ -505,12 +505,13 @@ namespace Alexandra_s_Trove
             }
         }
 
-        private async void btnPlaceOrder_Click(object sender, EventArgs e)
+        private async void btnPlaceOrder_Click(object sender, EventArgs e)//button allows user to place the order
         {
-            string ID = ClientAccountAccess.GetID();
+            string ID = ClientAccountAccess.GetID();//get user id
 
-            if (ID != "C0")
+            if (ID != "C0")//if user is logged in
             {
+                //connect to database
                 string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
                 string DatabaseName = "Assignment";
                 string CollectionName = "Client";
@@ -520,6 +521,8 @@ namespace Alexandra_s_Trove
 
                 var data = await Coll.FindAsync(_ => true);
 
+
+                //create containers for the data
                 List<string> ClientIDs = new List<string>();
                 List<string> names = new List<string>();
                 List<string> DOBs = new List<string>();
@@ -529,6 +532,7 @@ namespace Alexandra_s_Trove
                 List<string> creaditCardDetailsAll = new List<string>();
                 List<string> accountCreationDates = new List<string>();
                 List<string> emailAddresses = new List<string>();
+                //variables used to store the data of the logged in user
                 string name1 = "";
                 string DOB1 = "";
                 string address1 = "";
@@ -542,7 +546,7 @@ namespace Alexandra_s_Trove
                 foreach (var datas in data.ToList())
                 {
                     if (data != null)
-                    {
+                    {//add data to lists
                         ClientIDs.Add(datas.ID);
                         names.Add(datas.Name);
                         DOBs.Add(datas.DOB);
@@ -559,9 +563,9 @@ namespace Alexandra_s_Trove
 
                 for (int i = 0; i < ClientIDs.Count; i++)
                 {
-                    if (ClientIDs[i] == ID)
+                    if (ClientIDs[i] == ID)//find the logged in user
                     {
-
+                        //store their data in the variables below
                         name1 = names[i];
                         DOB1 = DOBs[i];
                         address1 = addresses[i];
@@ -570,7 +574,7 @@ namespace Alexandra_s_Trove
                         creaditCardDetails1 = creaditCardDetailsAll[i];
                         accountCreationDate1 = accountCreationDates[i];
                         emailAddress1 = emailAddresses[i];
-
+                        //decrypt password
                         password1 = EncryptDecrypt.Decrypt(password1);
                         
 
@@ -579,7 +583,11 @@ namespace Alexandra_s_Trove
                     }
                 }
                 
+                //decrypt the card details 
                 string decryptedCardDetails = EncryptDecrypt.Decrypt(creaditCardDetails1);
+                
+
+                //used to get the security code for the user (last 3 digits from the card details)
                 if (decryptedCardDetails.ToLower().IndexOf(",") != -1)
                 {
                     decryptedCardDetails = decryptedCardDetails.Substring(decryptedCardDetails.IndexOf(",") + 2);
@@ -604,13 +612,15 @@ namespace Alexandra_s_Trove
 
                 
 
-                bool allDetailsHaveBeenAdded = true;
-                if (cboxCardDetails.Checked == true)
-                {
+                bool allDetailsHaveBeenAdded = true;//assume all details are correct
+                //if details are not correct the bool will be set to false
 
+                if (cboxCardDetails.Checked == true)//if box is checked
+                {
+                    //if no security code has been entered or the entered data in wrong
                     if ((decryptedCardDetails != tboxSecurityCode1.Text) || (tboxSecurityCode1.Text == ""))
                     {
-                        
+                        //reset the boxes for the card details
                         cboxCardDetails.Checked = false;
                         tboxSecurityCode1.Enabled = false;
                         
@@ -619,9 +629,10 @@ namespace Alexandra_s_Trove
                         tboxSecurityCode.Enabled = true;
                         dtPicker.Enabled = true;
 
-                        allDetailsHaveBeenAdded = false;
+                        allDetailsHaveBeenAdded = false;//bool set to false
                     }
 
+                    //if security code is correct then
                     if (creaditCardDetails1 == tboxSecurityCode1.Text)
                     {
                         //correct security code - do nothing
@@ -630,19 +641,18 @@ namespace Alexandra_s_Trove
                 }
                 else
                 {
-
+                    //check if data has been altered in those text boxes
+                    //if data was not changed or text boxes are empty then 
                     if (tboxCardNumber.Text == "" || tboxCardNumber.Text == "Card Number")
                     {
-                        //tboxCardNumber.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
-                        //MessageBox.Show("Card Number Required For Payment");
-                        tboxCardNumber.Text = "Card Number";
+                        tboxCardNumber.Text = "Card Number";//set value in bool to what was previously there
+                        //highlight the text 
                         tboxCardNumber.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
-                        allDetailsHaveBeenAdded = false;
+                        allDetailsHaveBeenAdded = false;//mark the details as being inccorect
                     }
 
                     if (tboxNameOnCard.Text == "" || tboxNameOnCard.Text == "Name On Card")
                     {
-                        //MessageBox.Show("Name On Card Required For Payment");
                         tboxNameOnCard.Text = "Name On Card";
                         tboxNameOnCard.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
                         allDetailsHaveBeenAdded = false;
@@ -650,7 +660,6 @@ namespace Alexandra_s_Trove
 
                     if (tboxSecurityCode.Text == "" || tboxSecurityCode.Text == "Security Code")
                     {
-                        //MessageBox.Show("Security Code Required For Payment");
                         tboxSecurityCode.Text = "Security Code";
                         tboxSecurityCode.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
                         allDetailsHaveBeenAdded = false;
@@ -658,12 +667,14 @@ namespace Alexandra_s_Trove
 
                 }
 
-                if (cboxAddress.Checked == true)
+                if (cboxAddress.Checked == true)//if address check box is checked
                 {
-
+                    //check to see if the text boxes for the address are empty or have not been changed
+                    //if any of the first two text boxes have not been changed then 
+                    //mark details as not been added and highlight text in text box
                     if (tboxAddressLine1.Text == "" || tboxAddressLine1.Text == "First Line Of Address")
                     {
-                        //MessageBox.Show("First Line Of Address Required For Transport");
+                        
                         tboxAddressLine1.Text = "First Line Of Address";
                         tboxAddressLine1.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
                         allDetailsHaveBeenAdded = false;
@@ -671,18 +682,20 @@ namespace Alexandra_s_Trove
 
                     if (tboxAddressLine2.Text == "" || tboxAddressLine2.Text == "Second Line Of Address")
                     {
-                        //MessageBox.Show("Second Line Of Address Required For Transport");
+                        
                         tboxAddressLine2.Text = "Second Line Of Address";
                         tboxAddressLine2.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
                         allDetailsHaveBeenAdded = false;
                     }
 
                 }
-                else
+                else//if address check box is not checked
                 {
+                    //check if the text boxes have been altered or if they are empty
+                    //if one of those is true then 
                     if (tboxAddressLine1.Text == "" || tboxAddressLine1.Text == "First Line Of Address")
                     {
-                        //MessageBox.Show("First Line Of Address Required For Transport");
+
                         tboxAddressLine1.Text = "First Line Of Address";
                         tboxAddressLine1.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
                         allDetailsHaveBeenAdded = false;
@@ -690,7 +703,7 @@ namespace Alexandra_s_Trove
 
                     if (tboxAddressLine2.Text == "" || tboxAddressLine2.Text == "Second Line Of Address")
                     {
-                        //MessageBox.Show("Second Line Of Address Required For Transport");
+                        
                         tboxAddressLine2.Text = "Second Line Of Address";
                         tboxAddressLine2.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
                         allDetailsHaveBeenAdded = false;
@@ -701,8 +714,9 @@ namespace Alexandra_s_Trove
 
                 
 
-                if (allDetailsHaveBeenAdded == true) 
+                if (allDetailsHaveBeenAdded == true) //if all data is correct
                 {
+                    //create containers for the data from the basket and retrive it
                     List<int> NoOfItems = new List<int>();
                     List<double> Totals = new List<double>();
                     List<string> ProductID = new List<string>();
@@ -711,13 +725,14 @@ namespace Alexandra_s_Trove
                     Totals = BasketHandler.RetriveValuesTotals();
                     ProductID = BasketHandler.RetriveValuesProductIDs();
                     ProductName = BasketHandler.RetriveValuesProductNames();
-                    //show order comfirmation page
+
+                    //get data of the user
                     string address = tboxAddressLine1.Text + ", " + tboxAddressLine2.Text + ", " + tboxAddressLine3.Text + ", " + tboxAddressLine4.Text;
 
                     string productsIDs = "";
                     string total = lblTotalNumber.Text;
                     string deliveryCharge = lblDeliveryChargeNumber.Text;
-                    for (int i = 0; i < NoOfItems.Count; i++)
+                    for (int i = 0; i < NoOfItems.Count; i++)//format for database
                     {
                         for (int j = 0; j < NoOfItems[i]; j++)
                         {
@@ -727,16 +742,16 @@ namespace Alexandra_s_Trove
 
                     }
 
-                    //InsertNewOrder(string OrderClientID, string OrderProductID, string OrderTotal, string OrderDeliveryPrice, string DeliveryAddress)
-                    //show order comfirmation page
+                    //insert new order in database
                     DatabaseHandler.InsertNewOrder(ID, productsIDs, total, deliveryCharge, address);
-                    //MessageBox.Show("Made It!");
+                    
 
 
-
+                    //opens order confirmation page and hides the payment page
                     OrderConfirmationPage ocp = new OrderConfirmationPage();
                     ocp.Show();
                     Hide();
+                    //depending on user id - show the main guest/signed in user page
                     if (ID == "C0")
                     {
                         GuestPage gp = new GuestPage();
@@ -748,26 +763,29 @@ namespace Alexandra_s_Trove
                         lip.Show();
                     }
 
-                    BasketHandler.ClearBasket();
+                    BasketHandler.ClearBasket();//empty basket
 
 
                 }
-                else 
+                else //if data is missing or inccorect
                 {
+                    //display message for user
                     MessageBox.Show("Please Recheck Your Information");
                 }
 
 
 
             }
-            else 
+            else //if client is not logged in
             {
-                bool allDetailsHaveBeenAdded = true;
+                bool allDetailsHaveBeenAdded = true;//all details assumed to be correct
+                //if details are missing or inccorect - bool will be set to false
 
+                //check if the contents of the text boxes have been altered or are empty
+                //if any of the two is true then reset the text box, set the text colour to red and mark details as inccorect
                 if (tboxCardNumber.Text == "" || tboxCardNumber.Text == "Card Number")
                 {
-                    //tboxCardNumber.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
-                    //MessageBox.Show("Card Number Required For Payment");
+                    
                     tboxCardNumber.Text = "Card Number";
                     tboxCardNumber.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
                     allDetailsHaveBeenAdded = false;
@@ -775,7 +793,7 @@ namespace Alexandra_s_Trove
 
                 if (tboxNameOnCard.Text == "" || tboxNameOnCard.Text == "Name On Card")
                 {
-                    //MessageBox.Show("Name On Card Required For Payment");
+                    
                     tboxNameOnCard.Text = "Name On Card";
                     tboxNameOnCard.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
                     allDetailsHaveBeenAdded = false;
@@ -783,7 +801,7 @@ namespace Alexandra_s_Trove
 
                 if (tboxSecurityCode.Text == "" || tboxSecurityCode.Text == "Security Code")
                 {
-                    //MessageBox.Show("Security Code Required For Payment");
+                    
                     tboxSecurityCode.Text = "Security Code";
                     tboxSecurityCode.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
                     allDetailsHaveBeenAdded = false;
@@ -791,7 +809,7 @@ namespace Alexandra_s_Trove
 
                 if (tboxAddressLine1.Text == "" || tboxAddressLine1.Text == "First Line Of Address")
                 {
-                    //MessageBox.Show("First Line Of Address Required For Transport");
+                    
                     tboxAddressLine1.Text = "First Line Of Address";
                     tboxAddressLine1.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
                     allDetailsHaveBeenAdded = false;
@@ -799,15 +817,16 @@ namespace Alexandra_s_Trove
 
                 if (tboxAddressLine2.Text == "" || tboxAddressLine2.Text == "Second Line Of Address")
                 {
-                    //MessageBox.Show("Second Line Of Address Required For Transport");
+                   
                     tboxAddressLine2.Text = "Second Line Of Address";
                     tboxAddressLine2.ForeColor = System.Drawing.ColorTranslator.FromHtml("#F61010");
                     allDetailsHaveBeenAdded = false;
                 }
 
 
-                if (allDetailsHaveBeenAdded == true)
+                if (allDetailsHaveBeenAdded == true)//if all details are correct
                 {
+                    //create containers for data from basker and store it in them
                     List<int> NoOfItems = new List<int>();
                     List<double> Totals = new List<double>();
                     List<string> ProductID = new List<string>();
@@ -816,13 +835,14 @@ namespace Alexandra_s_Trove
                     Totals = BasketHandler.RetriveValuesTotals();
                     ProductID = BasketHandler.RetriveValuesProductIDs();
                     ProductName = BasketHandler.RetriveValuesProductNames();
-                    //show order comfirmation page
+                   
+                    //get data for order
                     string address = tboxAddressLine1.Text + ", " + tboxAddressLine2.Text + ", " + tboxAddressLine3.Text + ", " + tboxAddressLine4.Text;
 
                     string productsIDs = "";
                     string total = lblTotalNumber.Text;
                     string deliveryCharge = lblDeliveryChargeNumber.Text;
-                    for (int i = 0; i < NoOfItems.Count; i++)
+                    for (int i = 0; i < NoOfItems.Count; i++)//format data 
                     {
                         for (int j = 0; j < NoOfItems[i]; j++)
                         {
@@ -832,13 +852,14 @@ namespace Alexandra_s_Trove
 
                     }
 
-                    //InsertNewOrder(string OrderClientID, string OrderProductID, string OrderTotal, string OrderDeliveryPrice, string DeliveryAddress)
-                    //show order comfirmation page
+                    //insert new order in the database
                     DatabaseHandler.InsertNewOrder(ID, productsIDs, total, deliveryCharge, address);
-                    //MessageBox.Show("Made It!");
+                    
+                    //open confirmation page
                     OrderConfirmationPage ocp = new OrderConfirmationPage();
                     ocp.Show();
                     Hide();
+                    //depending on user is - open main page for signed in/guest main page
                     if (ID == "C0")
                     {
                         GuestPage gp = new GuestPage();
@@ -849,10 +870,11 @@ namespace Alexandra_s_Trove
                         LoggedInPage lip = new LoggedInPage();
                         lip.Show();
                     }
-                    BasketHandler.ClearBasket();
+                    BasketHandler.ClearBasket();//clear basket
                 }
                 else
                 {
+                    //if any inccorect data exists then display this message for user
                     MessageBox.Show("Please Recheck Your Information");
                 }
             }
@@ -860,6 +882,7 @@ namespace Alexandra_s_Trove
 
         private void lblAccount_Click(object sender, EventArgs e)
         {
+            //depending on user id - open the registration page or account page
             string clientId = ClientAccountAccess.GetID();
             if (clientId == "C0")
             {
@@ -875,6 +898,8 @@ namespace Alexandra_s_Trove
 
         private async void picSearchLoop_Click(object sender, EventArgs e)
         {
+            //used to take user to product page - depending on the product selected by the user in the search bar
+            //connect to database
             string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
             string DatabaseName = "Assignment";
             string CollectionName = "Product";
@@ -894,6 +919,7 @@ namespace Alexandra_s_Trove
             {
                 if (data != null)
                 {
+                    //store products data in lists
                     ProductIDs.Add(datas.ID);
                     Names.Add(datas.Name);
                     Descriptions.Add(datas.Description);
@@ -905,28 +931,30 @@ namespace Alexandra_s_Trove
 
             string product = cboxSearchBar.Text;
             bool productExists = false;
-            for (int i = 0; i < Names.Count; i++)
+            for (int i = 0; i < Names.Count; i++)//check is the product name then user has inpputed exists
             {
-                if (Names[i] == product)
+                if (Names[i] == product)//if the name exists then
                 {
+                    //open the product form
                     ProductHandling.SetID(ProductIDs[i]);
 
                     ProductPage pp = new ProductPage(); pp.Show();
                     productExists = true;
-                    Hide();
+                    Hide();//hide currect form
 
                     break;
                 }
             }
-            if (productExists == false)
+            if (productExists == false)//if input does not match any product name in the database 
             {
+                //show message + empty search bar
                 MessageBox.Show("Product Does NOT Exist. Please Try Again");
                 cboxSearchBar.Text = "";
             }
         }
 
         private void lblVegetables_Click(object sender, EventArgs e)
-        {
+        {//open category page depending on text inside label
             string chategory = lblVegetables.Text;
             ChategoryHandling.SetChategory(chategory);
 
@@ -936,7 +964,7 @@ namespace Alexandra_s_Trove
         }
 
         private void lblFruits_Click(object sender, EventArgs e)
-        {
+        {//open category page depending on text inside label
             string chategory = lblFruits.Text;
             ChategoryHandling.SetChategory(chategory);
 
@@ -946,7 +974,7 @@ namespace Alexandra_s_Trove
         }
 
         private void lblDesserts_Click(object sender, EventArgs e)
-        {
+        {//open category page depending on text inside label
             string chategory = lblDesserts.Text;
             ChategoryHandling.SetChategory(chategory);
 
@@ -956,59 +984,59 @@ namespace Alexandra_s_Trove
         }
 
         private void picAlex_Click(object sender, EventArgs e)
-        {
+        {//depending on user id - open guest/signed in main form
             string clientId = ClientAccountAccess.GetID();
             if (clientId == "C0")
             {
                 GuestPage lip = new GuestPage(); lip.Show();
-                //Form.Close();
-                Hide();// rp = new RegisterPage(); rp.Close();#
+                
+                Hide();
             }
             else
             {
                 LoggedInPage lip = new LoggedInPage(); lip.Show();
-                //Form.Close();
-                Hide();// rp = new RegisterPage(); rp.Close();#
+                
+                Hide();
             }
 
         }
 
         private void picTrove_Click(object sender, EventArgs e)
-        {
+        {//depending on user id - open guest/signed in main form
             string clientId = ClientAccountAccess.GetID();
             if (clientId == "C0")
             {
                 GuestPage lip = new GuestPage(); lip.Show();
-                //Form.Close();
-                Hide();// rp = new RegisterPage(); rp.Close();#
+                
+                Hide();
             }
             else
             {
                 LoggedInPage lip = new LoggedInPage(); lip.Show();
-                //Form.Close();
-                Hide();// rp = new RegisterPage(); rp.Close();#
+                
+                Hide();
             }
 
         }
 
         private void picBasket_Click(object sender, EventArgs e)
-        {
+        {//open basket form and hide currect form
             BasketPage basket = new BasketPage(); basket.Show(); Hide();
         }
 
         private void lblFeedbackSurvey_Click(object sender, EventArgs e)
-        {
+        {//open feedback Survey form
             FeedbackSurveyPage feedbackSurveyPage = new FeedbackSurveyPage(); feedbackSurveyPage.Show();
         }
 
-        private void lblTermsConditions_Click(object sender, EventArgs e)
+        private void lblTermsConditions_Click(object sender, EventArgs e)//display terms and conditions
         {
             MessageBox.Show("Terms List\r\n1. ‘Terms’ refers to the rules listed in this agreement.\r\n2. ‘Contract’ refers to the entirety of this agreement.\r\n3. ‘Client’ refers to the buyer/customer/purchaser of goods/products through this shopping platform. \r\n4. ‘Product’ refers to each of the items/foods advertised on this shopping platform.\r\n5. ‘Seller’ refers to the individual/individuals that provides/provide the goods/products and advertises/sells them using this shopping platform. \r\n6. ’Company’ refers to the organisation that created the shopping platform. The company is also managing the shopping platform.\r\nThe ‘Company’ and ‘Seller’ exist as the same legal entity – they are differentiated by these two terms in this contract for clarity.\r\nTerms\r\nBy agreeing to this contract, the client understands that their information will be stored and used to improve the shopping platform therefore improving their shopping experience. \r\nThe company will strictly use the collected client information to improve the shopping platform. \r\nThe company will appropriately dispose of the client's information if the client decides to delete their account.\r\nThe company will not store any information of users that do not create accounts.\r\nThe client information will be disposed of in less than 1 year after the account closure. *The company may store the client’s information for longer if required by law/the authorities.\r\nClients understand that foul language will not be tolerated by the company. If any foul language is used by the client, the company may close the account. \r\nThe company will not use foul language. \r\nThe company will not share the client's information with any third parties unless required to do so by the client or because of legal reasons. \r\nThe client agrees to keep their password private for account security reasons.\r\nThe client understands that the seller does not take responsibility for any allergic reactions that the client might have to the products they purchase. \r\nThe client takes it upon themselves to read the specifications of the products and choose products that suit their specific needs/requirements.\r\nThe client agrees to never use the shopping platform for malicious purposes. If the company has reasonable beliefs that the client is using or has used to platform for malicious purposes, the company may report the client to the authorities or/and terminate the account.\r\nThe client understands that they may not resell the products purchased using this shopping platform. If the client resells/attempts to resell products that have been purchased using this platform, then the company may take legal action against them and/or terminate their account.\r\nThe client agrees to not use any of the content that is owned by the company. The content includes but is not limited to product pictures, product descriptions, company logos, company icons, and the company name.\r\nBy ticking the box, the client confirms that they have read and understood the terms and conditions of this contract.\r\n", "Terms And Conditions");
 
 
         }
 
-        private void lblOrders_Click(object sender, EventArgs e)
+        private void lblOrders_Click(object sender, EventArgs e)//take user to orders page and hide current page
         {
             OrdersPage ordersPage = new OrdersPage(); ordersPage.Show(); Hide();
         }
