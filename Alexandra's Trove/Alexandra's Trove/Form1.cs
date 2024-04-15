@@ -25,7 +25,10 @@ namespace Alexandra_s_Trove
         private void Form1_Load(object sender, EventArgs e)
         {
             //first commit - runs when form loads
-            
+            //DatabaseHandler dbh = new DatabaseHandler();
+            //DatabaseHandler.GetClient("C1");
+
+
         }
 
         private void DeveloperHelp_Click(object sender, EventArgs e)//used to open a new form (HelpDepeloper)
