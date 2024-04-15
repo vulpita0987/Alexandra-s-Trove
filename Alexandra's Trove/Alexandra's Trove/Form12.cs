@@ -371,8 +371,9 @@ namespace Alexandra_s_Trove
                         && tboxCardNumber.Text != "" && tboxCardNumber.Text != "Card Number"
                         && tboxSecurityCode.Text != "" && tboxSecurityCode.Text != "Security Code")
                     {
-                        string cardDetails = dateOne + ", " + tboxCardNumber.Text + ", " + tboxNameOnCard.Text + ", " + tboxSecurityCode;
-                        DatabaseHandler.UpdateClientName(ID, cardDetails); changedDetails = true;
+                       // MessageBox.Show();
+                        string cardDetails = dateOne + ", " + tboxCardNumber.Text + ", " + tboxNameOnCard.Text + ", " + tboxSecurityCode.Text;
+                        DatabaseHandler.UpdateClientCardDetails(ID, cardDetails); changedDetails = true;
 
                     }
 

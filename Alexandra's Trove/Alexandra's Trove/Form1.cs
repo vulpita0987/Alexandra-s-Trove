@@ -25,8 +25,8 @@ namespace Alexandra_s_Trove
         private void Form1_Load(object sender, EventArgs e)
         {
             //first commit - runs when form loads
-            //DatabaseHandler dbh = new DatabaseHandler();
-            //DatabaseHandler.GetClient("C1");
+            DatabaseHandler dbh = new DatabaseHandler();
+            DatabaseHandler.GetClient("C1");
 
 
         }
@@ -125,15 +125,56 @@ namespace Alexandra_s_Trove
             Hide();
         }
        
-        private void btnCreateAccount_Click(object sender, EventArgs e)//button used to create an account
+        private async void btnCreateAccount_Click(object sender, EventArgs e)//button used to create an account
         {
-            if (txtEmailAddress.Text == "Email Address")//check if an email address has been entered
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Client";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Client>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+
+            List<string> Emails = new List<string>();
+
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    Emails.Add(datas.EmailAddress);
+                }
+            }
+
+            bool emailExists = false;
+            if (Emails.Count > 0)
+            {
+                for (int i = 0; i < Emails.Count; i++)
+                {
+                    if (txtEmailAddress.Text == Emails[i])
+                    {
+                        txtEmailAddress.Text = "Email Address";
+                        emailExists = true;
+                        
+                    }
+
+
+
+
+                }
+            }
+
+
+            if ((txtEmailAddress.Text == "Email Address") || (txtEmailAddress.Text == "") || (emailExists == true))//check if an email address has been entered
             {
                 //is no email address has been inputted then display this
-                MessageBox.Show("You must input an email address in order to create an account");
+                MessageBox.Show("Invalid Email Address");
             }
             else
             {
+               
+
                 if (txtPassword.Text == txtReEnterPassword.Text)//check if the passwords match
                 {
 

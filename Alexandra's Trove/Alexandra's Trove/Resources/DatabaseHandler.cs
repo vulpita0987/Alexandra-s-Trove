@@ -564,7 +564,7 @@ namespace Alexandra_s_Trove.Resources
             if (IDExists == true)
             {
 
-                MessageBox.Show(name1 + "/" + DOB1 + "/" + address1 + "/" + phoneNumber1 + "/" + password1 + "/" + creaditCardDetails1 + "/" + accountCreationDate1 + "/" + emailAddress1);
+                MessageBox.Show(name1 + "\n" + DOB1 + "\n" + address1 + "\n" + phoneNumber1 + "\n" + password1 + "\n" + creaditCardDetails1 + "\n" + accountCreationDate1 + "\n" + emailAddress1);
                 //do bunch of stuff
             }
             else
@@ -572,6 +572,31 @@ namespace Alexandra_s_Trove.Resources
                 MessageBox.Show("ID " + ClientIDToGet + " does not exist");
 
             }
+
+        }
+
+        public async static void GetClientsEmails()//return all emails from the database
+        {
+            string ConnectionString = "mongodb+srv://IoanaBucur:DGUEYGPUScania11bia@atlascluster.kuxwwx2.mongodb.net/?retryWrites=true&w=majority";
+            string DatabaseName = "Assignment";
+            string CollectionName = "Client";
+            var Connection = new MongoClient(ConnectionString);
+            var db = Connection.GetDatabase(DatabaseName);
+            var Coll = db.GetCollection<Client>(CollectionName);
+
+            var data = await Coll.FindAsync(_ => true);
+
+            
+            List<string> Emails = new List<string>();
+            
+            foreach (var datas in data.ToList())
+            {
+                if (data != null)
+                {
+                    Emails.Add(datas.EmailAddress);
+                }
+            }
+
 
         }
 
