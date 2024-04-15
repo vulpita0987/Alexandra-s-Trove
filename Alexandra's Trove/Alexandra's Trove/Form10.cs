@@ -1040,5 +1040,10 @@ namespace Alexandra_s_Trove
         {
             OrdersPage ordersPage = new OrdersPage(); ordersPage.Show(); Hide();
         }
+
+        private void lblUserGuide_Click(object sender, EventArgs e)
+        {
+            UserGuide ug = new UserGuide(); ug.Show();
+        }
     }
 }

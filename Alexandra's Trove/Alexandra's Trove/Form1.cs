@@ -50,7 +50,10 @@ namespace Alexandra_s_Trove
 
         private void lblUserGuide_Click(object sender, EventArgs e)//opens a new forms - used to display the User Guide of the application
         {
-            MessageBox.Show("Actual User Guide", "User Guide");
+            
+            UserGuide ug = new UserGuide(); ug.Show();
+
+            
         }
 
 

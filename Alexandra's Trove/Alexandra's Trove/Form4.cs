@@ -39,7 +39,7 @@ namespace Alexandra_s_Trove
 
         private void lblUserGuide_Click(object sender, EventArgs e)//display the userguide of the application
         {
-            MessageBox.Show("Actual User Guide", "User Guide");
+            UserGuide ug = new UserGuide(); ug.Show();
         }
 
         private void lblFeedbackSurvey_Click(object sender, EventArgs e)//this label is hidden

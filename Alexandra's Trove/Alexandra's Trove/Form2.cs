@@ -276,7 +276,7 @@ namespace Alexandra_s_Trove
 
         private void lblUserGuide_Click(object sender, EventArgs e)//used to display the user guide
         {
-
+            UserGuide ug = new UserGuide(); ug.Show();
         }
 
         private void picBottomLine_Click(object sender, EventArgs e)

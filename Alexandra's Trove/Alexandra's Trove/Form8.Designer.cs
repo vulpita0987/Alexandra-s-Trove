@@ -298,6 +298,7 @@
             this.lblUserGuide.Size = new System.Drawing.Size(75, 16);
             this.lblUserGuide.TabIndex = 103;
             this.lblUserGuide.Text = "User Guide";
+            this.lblUserGuide.Click += new System.EventHandler(this.lblUserGuide_Click);
             // 
             // lblFeedbackSurvey
             // 

@@ -53,10 +53,10 @@
             // picBottomLine
             // 
             this.picBottomLine.Image = ((System.Drawing.Image)(resources.GetObject("picBottomLine.Image")));
-            this.picBottomLine.Location = new System.Drawing.Point(-3, 407);
-            this.picBottomLine.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.picBottomLine.Location = new System.Drawing.Point(-2, 331);
+            this.picBottomLine.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picBottomLine.Name = "picBottomLine";
-            this.picBottomLine.Size = new System.Drawing.Size(1188, 43);
+            this.picBottomLine.Size = new System.Drawing.Size(891, 35);
             this.picBottomLine.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBottomLine.TabIndex = 96;
             this.picBottomLine.TabStop = false;
@@ -67,10 +67,9 @@
             this.lblTermsConditions.BackColor = System.Drawing.Color.Transparent;
             this.lblTermsConditions.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTermsConditions.Image = ((System.Drawing.Image)(resources.GetObject("lblTermsConditions.Image")));
-            this.lblTermsConditions.Location = new System.Drawing.Point(985, 416);
-            this.lblTermsConditions.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTermsConditions.Location = new System.Drawing.Point(739, 338);
             this.lblTermsConditions.Name = "lblTermsConditions";
-            this.lblTermsConditions.Size = new System.Drawing.Size(175, 20);
+            this.lblTermsConditions.Size = new System.Drawing.Size(139, 16);
             this.lblTermsConditions.TabIndex = 97;
             this.lblTermsConditions.Text = "Terms And Conditions";
             this.lblTermsConditions.Click += new System.EventHandler(this.lblTermsConditions_Click);
@@ -80,12 +79,12 @@
             this.lblUserGuide.AutoSize = true;
             this.lblUserGuide.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserGuide.Image = ((System.Drawing.Image)(resources.GetObject("lblUserGuide.Image")));
-            this.lblUserGuide.Location = new System.Drawing.Point(575, 416);
-            this.lblUserGuide.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUserGuide.Location = new System.Drawing.Point(431, 338);
             this.lblUserGuide.Name = "lblUserGuide";
-            this.lblUserGuide.Size = new System.Drawing.Size(94, 20);
+            this.lblUserGuide.Size = new System.Drawing.Size(75, 16);
             this.lblUserGuide.TabIndex = 99;
             this.lblUserGuide.Text = "User Guide";
+            this.lblUserGuide.Click += new System.EventHandler(this.lblUserGuide_Click);
             // 
             // lblFeedbackSurvey
             // 
@@ -93,10 +92,9 @@
             this.lblFeedbackSurvey.BackColor = System.Drawing.Color.Transparent;
             this.lblFeedbackSurvey.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFeedbackSurvey.Image = ((System.Drawing.Image)(resources.GetObject("lblFeedbackSurvey.Image")));
-            this.lblFeedbackSurvey.Location = new System.Drawing.Point(23, 416);
-            this.lblFeedbackSurvey.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblFeedbackSurvey.Location = new System.Drawing.Point(17, 338);
             this.lblFeedbackSurvey.Name = "lblFeedbackSurvey";
-            this.lblFeedbackSurvey.Size = new System.Drawing.Size(137, 20);
+            this.lblFeedbackSurvey.Size = new System.Drawing.Size(114, 16);
             this.lblFeedbackSurvey.TabIndex = 100;
             this.lblFeedbackSurvey.Text = "Feedback Survey";
             this.lblFeedbackSurvey.Click += new System.EventHandler(this.lblFeedbackSurvey_Click);
@@ -104,10 +102,10 @@
             // pBoxBackground
             // 
             this.pBoxBackground.Image = ((System.Drawing.Image)(resources.GetObject("pBoxBackground.Image")));
-            this.pBoxBackground.Location = new System.Drawing.Point(61, 34);
-            this.pBoxBackground.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pBoxBackground.Location = new System.Drawing.Point(46, 28);
+            this.pBoxBackground.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pBoxBackground.Name = "pBoxBackground";
-            this.pBoxBackground.Size = new System.Drawing.Size(1060, 342);
+            this.pBoxBackground.Size = new System.Drawing.Size(795, 278);
             this.pBoxBackground.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pBoxBackground.TabIndex = 147;
             this.pBoxBackground.TabStop = false;
@@ -117,10 +115,9 @@
             this.lblNumberOfStars.AutoSize = true;
             this.lblNumberOfStars.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumberOfStars.Image = ((System.Drawing.Image)(resources.GetObject("lblNumberOfStars.Image")));
-            this.lblNumberOfStars.Location = new System.Drawing.Point(121, 151);
-            this.lblNumberOfStars.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNumberOfStars.Location = new System.Drawing.Point(91, 123);
             this.lblNumberOfStars.Name = "lblNumberOfStars";
-            this.lblNumberOfStars.Size = new System.Drawing.Size(180, 25);
+            this.lblNumberOfStars.Size = new System.Drawing.Size(148, 20);
             this.lblNumberOfStars.TabIndex = 152;
             this.lblNumberOfStars.Text = "Number Of Stars:";
             // 
@@ -129,10 +126,9 @@
             this.lblDescription.AutoSize = true;
             this.lblDescription.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDescription.Image = ((System.Drawing.Image)(resources.GetObject("lblDescription.Image")));
-            this.lblDescription.Location = new System.Drawing.Point(121, 210);
-            this.lblDescription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblDescription.Location = new System.Drawing.Point(91, 171);
             this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(111, 25);
+            this.lblDescription.Size = new System.Drawing.Size(90, 20);
             this.lblDescription.TabIndex = 153;
             this.lblDescription.Text = "Comment:";
             // 
@@ -141,10 +137,9 @@
             this.lblChosenName.AutoSize = true;
             this.lblChosenName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblChosenName.Image = ((System.Drawing.Image)(resources.GetObject("lblChosenName.Image")));
-            this.lblChosenName.Location = new System.Drawing.Point(121, 94);
-            this.lblChosenName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblChosenName.Location = new System.Drawing.Point(91, 76);
             this.lblChosenName.Name = "lblChosenName";
-            this.lblChosenName.Size = new System.Drawing.Size(433, 25);
+            this.lblChosenName.Size = new System.Drawing.Size(357, 20);
             this.lblChosenName.TabIndex = 154;
             this.lblChosenName.Text = "Name that will be displayed with this review:";
             // 
@@ -153,10 +148,9 @@
             this.lblAddReview.AutoSize = true;
             this.lblAddReview.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddReview.Image = ((System.Drawing.Image)(resources.GetObject("lblAddReview.Image")));
-            this.lblAddReview.Location = new System.Drawing.Point(557, 318);
-            this.lblAddReview.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAddReview.Location = new System.Drawing.Point(418, 258);
             this.lblAddReview.Name = "lblAddReview";
-            this.lblAddReview.Size = new System.Drawing.Size(126, 25);
+            this.lblAddReview.Size = new System.Drawing.Size(103, 20);
             this.lblAddReview.TabIndex = 159;
             this.lblAddReview.Text = "Add Review";
             this.lblAddReview.Click += new System.EventHandler(this.lblAddReview_Click);
@@ -164,20 +158,18 @@
             // tboxNickname
             // 
             this.tboxNickname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxNickname.Location = new System.Drawing.Point(592, 90);
-            this.tboxNickname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tboxNickname.Location = new System.Drawing.Point(444, 73);
             this.tboxNickname.Name = "tboxNickname";
-            this.tboxNickname.Size = new System.Drawing.Size(447, 30);
+            this.tboxNickname.Size = new System.Drawing.Size(336, 26);
             this.tboxNickname.TabIndex = 160;
             // 
             // tboxNumberOfStars
             // 
             this.tboxNumberOfStars.Enabled = false;
             this.tboxNumberOfStars.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tboxNumberOfStars.Location = new System.Drawing.Point(320, 148);
-            this.tboxNumberOfStars.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tboxNumberOfStars.Location = new System.Drawing.Point(240, 120);
             this.tboxNumberOfStars.Name = "tboxNumberOfStars";
-            this.tboxNumberOfStars.Size = new System.Drawing.Size(29, 30);
+            this.tboxNumberOfStars.Size = new System.Drawing.Size(23, 26);
             this.tboxNumberOfStars.TabIndex = 161;
             this.tboxNumberOfStars.Text = "1";
             this.tboxNumberOfStars.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -185,20 +177,19 @@
             // rtboxComment
             // 
             this.rtboxComment.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtboxComment.Location = new System.Drawing.Point(249, 207);
-            this.rtboxComment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtboxComment.Location = new System.Drawing.Point(187, 168);
             this.rtboxComment.Name = "rtboxComment";
-            this.rtboxComment.Size = new System.Drawing.Size(809, 79);
+            this.rtboxComment.Size = new System.Drawing.Size(608, 65);
             this.rtboxComment.TabIndex = 162;
             this.rtboxComment.Text = "";
             // 
             // pboxArrowU
             // 
             this.pboxArrowU.Image = ((System.Drawing.Image)(resources.GetObject("pboxArrowU.Image")));
-            this.pboxArrowU.Location = new System.Drawing.Point(320, 121);
-            this.pboxArrowU.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pboxArrowU.Location = new System.Drawing.Point(240, 98);
+            this.pboxArrowU.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pboxArrowU.Name = "pboxArrowU";
-            this.pboxArrowU.Size = new System.Drawing.Size(31, 25);
+            this.pboxArrowU.Size = new System.Drawing.Size(23, 20);
             this.pboxArrowU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pboxArrowU.TabIndex = 163;
             this.pboxArrowU.TabStop = false;
@@ -207,10 +198,10 @@
             // pboxArrowD
             // 
             this.pboxArrowD.Image = ((System.Drawing.Image)(resources.GetObject("pboxArrowD.Image")));
-            this.pboxArrowD.Location = new System.Drawing.Point(320, 182);
-            this.pboxArrowD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pboxArrowD.Location = new System.Drawing.Point(240, 148);
+            this.pboxArrowD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pboxArrowD.Name = "pboxArrowD";
-            this.pboxArrowD.Size = new System.Drawing.Size(31, 26);
+            this.pboxArrowD.Size = new System.Drawing.Size(23, 21);
             this.pboxArrowD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pboxArrowD.TabIndex = 164;
             this.pboxArrowD.TabStop = false;
@@ -221,18 +212,17 @@
             this.lblAllowedNumberOfStars.AutoSize = true;
             this.lblAllowedNumberOfStars.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAllowedNumberOfStars.Image = ((System.Drawing.Image)(resources.GetObject("lblAllowedNumberOfStars.Image")));
-            this.lblAllowedNumberOfStars.Location = new System.Drawing.Point(359, 151);
-            this.lblAllowedNumberOfStars.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAllowedNumberOfStars.Location = new System.Drawing.Point(269, 123);
             this.lblAllowedNumberOfStars.Name = "lblAllowedNumberOfStars";
-            this.lblAllowedNumberOfStars.Size = new System.Drawing.Size(60, 25);
+            this.lblAllowedNumberOfStars.Size = new System.Drawing.Size(47, 20);
             this.lblAllowedNumberOfStars.TabIndex = 165;
             this.lblAllowedNumberOfStars.Text = "(1-5)";
             // 
             // ReviewPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1181, 446);
+            this.ClientSize = new System.Drawing.Size(886, 362);
             this.Controls.Add(this.lblAllowedNumberOfStars);
             this.Controls.Add(this.pboxArrowD);
             this.Controls.Add(this.pboxArrowU);
@@ -248,10 +238,8 @@
             this.Controls.Add(this.lblUserGuide);
             this.Controls.Add(this.lblTermsConditions);
             this.Controls.Add(this.picBottomLine);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ReviewPage";
             this.Text = "Review Page";
-           
             ((System.ComponentModel.ISupportInitialize)(this.picBottomLine)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pboxArrowU)).EndInit();
