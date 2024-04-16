@@ -53,10 +53,21 @@ namespace Alexandra_s_Trove
             string description = rtboxComment.Text;
             string nickname = tboxNickname.Text;
 
-            //insert data in table
-            DatabaseHandler.InsertNewReview(clientId, productID, numberStars, description, nickname);
-            MessageBox.Show("Your review has been added");//display message
-            Hide();//hide form
+            if ((description == "") || (nickname == ""))
+            {
+
+                MessageBox.Show("All boxes must be filled before adding a review");//display message
+
+            }
+            else
+            { //insert data in table
+                DatabaseHandler.InsertNewReview(clientId, productID, numberStars, description, nickname);
+                MessageBox.Show("Your review has been added");//display message
+                Hide();//hide form
+            }
+
+
+
         }
 
         private void lblFeedbackSurvey_Click(object sender, EventArgs e)
