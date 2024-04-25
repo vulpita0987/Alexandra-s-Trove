@@ -21,7 +21,8 @@ namespace Alexandra_s_Trove.Resources
             using (MD5CryptoServiceProvider MD5 = new MD5CryptoServiceProvider())//use MD5CryptoServiceProvider to encrypt
             {
                 byte[] keys = MD5.ComputeHash(UTF32Encoding.UTF8.GetBytes(hash));//convert the hash value into bytes
-                using (TripleDESCryptoServiceProvider triple = new TripleDESCryptoServiceProvider() {Key = keys, Mode = CipherMode.ECB, Padding = PaddingMode.PKCS7})//create encryption provider for encryption
+                using (TripleDESCryptoServiceProvider triple = new TripleDESCryptoServiceProvider() 
+                {Key = keys, Mode = CipherMode.ECB, Padding = PaddingMode.PKCS7})//create encryption provider for encryption
                 {
                     ICryptoTransform transform = triple.CreateEncryptor();//create encryptor
                     byte[] results = transform.TransformFinalBlock(data, 0, data.Length);//encrypt string in bytes format
@@ -42,7 +43,8 @@ namespace Alexandra_s_Trove.Resources
             using (MD5CryptoServiceProvider MD5 = new MD5CryptoServiceProvider())//use MD5CryptoServiceProvider to decrypt
             {
                 byte[] keys = MD5.ComputeHash(UTF32Encoding.UTF8.GetBytes(hash));//convert the hash value into bytes
-                using (TripleDESCryptoServiceProvider triple = new TripleDESCryptoServiceProvider() { Key = keys, Mode = CipherMode.ECB, Padding = PaddingMode.PKCS7 })//create dencryption provider for dencryption
+                using (TripleDESCryptoServiceProvider triple = new TripleDESCryptoServiceProvider() 
+                { Key = keys, Mode = CipherMode.ECB, Padding = PaddingMode.PKCS7 })//create dencryption provider for dencryption
                 {
                     ICryptoTransform transform = triple.CreateDecryptor();//create dencryptor
                     byte[] results = transform.TransformFinalBlock(data, 0, data.Length);//dencrypt string in bytes format
